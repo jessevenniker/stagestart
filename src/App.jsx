@@ -23,6 +23,9 @@ import Werken from './pages/Werken'
 import Kaart from './pages/Kaart'
 import Vergunning from './pages/Vergunning'
 import Bronnen from './pages/Bronnen'
+import Disclaimer from './pages/Disclaimer'
+import Privacy from './pages/Privacy'
+import Cookies from './pages/Cookies'
 
 export default function App() {
   return (
@@ -50,6 +53,9 @@ export default function App() {
           <Route path="/kaart"         element={<Kaart />} />
           <Route path="/vergunning"    element={<Vergunning />} />
           <Route path="/bronnen"       element={<Bronnen />} />
+          <Route path="/disclaimer"    element={<Disclaimer />} />
+          <Route path="/privacy"       element={<Privacy />} />
+          <Route path="/cookies"       element={<Cookies />} />
         </Routes>
       </main>
       <Footer />

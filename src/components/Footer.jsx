@@ -10,33 +10,39 @@ const STRIPE = [
 
 const COL1 = [
   { to: '/begin-hier',   label: 'Begin hier' },
-  { to: '/kosten',       label: 'Wat kost een stage?' },
   { to: '/voor-vertrek', label: 'Voor vertrek' },
+  { to: '/vergunning',   label: 'Vergunning' },
+  { to: '/kosten',       label: 'Wat kost een stage?' },
   { to: '/wonen',        label: 'Wonen op Curaçao' },
+  { to: '/auto',         label: 'Auto nodig?' },
+  { to: '/eerste-week',  label: 'Je eerste week' },
 ]
 
 const COL2 = [
-  { to: '/auto',        label: 'Auto nodig?' },
-  { to: '/eerste-week', label: 'Je eerste week' },
-  { to: '/leven',       label: 'Leven op Curaçao' },
-  { to: '/startgids',   label: 'Gratis startgids' },
-  { to: '/veiligheid',  label: 'Veiligheid op Curaçao' },
-  { to: '/happy-hours', label: 'Happy hours & uitgaan' },
+  { to: '/werken',        label: 'Werken op Curaçao' },
+  { to: '/leven',         label: 'Leven op Curaçao' },
+  { to: '/veiligheid',    label: 'Veiligheid' },
   { to: '/eten',          label: 'Lokaal eten' },
+  { to: '/happy-hours',   label: 'Happy hours' },
   { to: '/stranden',      label: 'Stranden' },
   { to: '/weekend-trips', label: 'Weekend trips' },
-  { to: '/faq',           label: 'FAQ' },
-  { to: '/werken',        label: 'Werken op Curaçao' },
   { to: '/kaart',         label: 'Interactieve kaart' },
-  { to: '/vergunning',    label: 'Vergunning — uitleg' },
-  { to: '/bronnen',       label: 'Bronnen & verantwoording' },
+  { to: '/faq',           label: 'FAQ' },
+  { to: '/startgids',     label: 'Gratis startgids' },
+]
+
+const COL3 = [
+  { to: '/disclaimer', label: 'Disclaimer / Voorwaarden' },
+  { to: '/privacy',    label: 'Privacyverklaring' },
+  { to: '/cookies',    label: 'Cookieverklaring' },
+  { to: '/bronnen',    label: 'Bronnen & verantwoording' },
 ]
 
 export default function Footer() {
   return (
     <footer className="border-t border-gray-100 mt-16">
       <div className="max-w-5xl mx-auto px-5 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Brand */}
           <div>
             <div className="flex items-baseline leading-none mb-2">
@@ -53,9 +59,9 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Col 1 */}
+          {/* Col 1 — Stagekern */}
           <div>
-            <p className="text-[10px] font-medium tracking-widest uppercase text-gray-400 mb-3">Informatie</p>
+            <p className="text-[10px] font-medium tracking-widest uppercase text-gray-400 mb-3">Stagekern</p>
             <ul className="flex flex-col gap-2">
               {COL1.map(l => (
                 <li key={l.to}>
@@ -67,11 +73,25 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Col 2 */}
+          {/* Col 2 — Naast je stage */}
           <div>
-            <p className="text-[10px] font-medium tracking-widest uppercase text-gray-400 mb-3">Tools & Gidsen</p>
+            <p className="text-[10px] font-medium tracking-widest uppercase text-gray-400 mb-3">Naast je stage</p>
             <ul className="flex flex-col gap-2">
               {COL2.map(l => (
+                <li key={l.to}>
+                  <Link to={l.to} className="text-sm text-gray-500 hover:text-dark transition-colors">
+                    {l.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Col 3 — Juridisch */}
+          <div>
+            <p className="text-[10px] font-medium tracking-widest uppercase text-gray-400 mb-3">Juridisch</p>
+            <ul className="flex flex-col gap-2">
+              {COL3.map(l => (
                 <li key={l.to}>
                   <Link to={l.to} className="text-sm text-gray-500 hover:text-dark transition-colors">
                     {l.label}
