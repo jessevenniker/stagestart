@@ -1,6 +1,6 @@
 import PageHero from '../components/PageHero'
 import LastChecked from '../components/LastChecked'
-import { BRONNEN, BRONSOORTEN, GEVOELIGHEID, laatsteUpdate } from '../data/bronnen'
+import { BRONNEN, BRONSOORTEN, GEVOELIGHEID, REDACTIONELE_REGEL, laatsteUpdate } from '../data/bronnen'
 import { useState } from 'react'
 
 const PAGINA_LABELS = {
@@ -47,6 +47,16 @@ export default function Bronnen() {
             <p className="text-sm text-gray-600 leading-relaxed">
               Op deze pagina zie je per claim: de bron, de soort (officieel / richtlijn / ervaring), wanneer voor het laatst gecontroleerd, en de gevoeligheid voor verandering.
             </p>
+          </div>
+        </section>
+
+        {/* Redactionele besluitregel */}
+        <section className="mb-10">
+          <p className="section-label">Onze redactionele besluitregel</p>
+          <div className="card border-l-4" style={{ borderLeftColor: '#1A7EC5' }}>
+            <p className="text-sm font-medium text-dark mb-2">{REDACTIONELE_REGEL.titel}</p>
+            <p className="text-sm text-gray-600 leading-relaxed mb-2">{REDACTIONELE_REGEL.uitleg}</p>
+            <p className="text-xs text-gray-400">Vastgesteld: {REDACTIONELE_REGEL.vastgesteld}</p>
           </div>
         </section>
 

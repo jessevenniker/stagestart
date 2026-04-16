@@ -2,6 +2,22 @@
 // Volgens het Reliability Framework: elke claim met invloed op geld, documenten,
 // gezondheid, verzekering of verblijfsstatus moet hier staan met primaire bron.
 
+// REDACTIONELE BESLUITREGEL (vastgesteld 16 april 2026):
+// Als de officiële bron genuanceerder is dan de praktijkervaring,
+// wint de officiële bron in de hoofdtekst.
+// Praktijkervaring mag alleen terugkomen als aparte vertaling onder een
+// ervarings- of praktijklabel.
+//
+// Voorbeeld: VRW vs stagevergunning — de Immigratiedienst publiceert hier
+// twee aparte informatiestromen voor. Op de site beschrijven we ze daarom
+// ook apart, met de praktijk-interpretatie als gelabeld extra blok.
+
+export const REDACTIONELE_REGEL = {
+  titel: 'Officiële bron wint',
+  uitleg: 'Bij conflict tussen praktijkervaring en officiële bron, presenteren we de officiële formulering in de hoofdtekst. Praktijkervaring komt apart terug als gelabeld blok.',
+  vastgesteld: '2026-04-16',
+}
+
 export const BRONSOORTEN = {
   officieel: {
     label: 'Officieel bevestigd',
@@ -161,14 +177,35 @@ export const BRONNEN = [
   // ─────── VERGUNNING — terminologie ───────
   {
     pagina: 'vergunning',
-    claim: 'Verklaring van Rechtswege = stagevergunning',
-    waarde: 'Twee benamingen voor dezelfde wettelijke vergunning',
+    claim: 'Studie/stage informatiestroom (officieel)',
+    waarde: 'Aparte officiële pagina van Immigratiedienst voor studie en stage in Curaçao',
+    bron: PRIMAIRE_BRONNEN.immigratiedienst,
+    bronsoort: 'officieel',
+    laatsteCheck: '2026-04-16',
+    gevoeligheid: 'hoog',
+    status: 'actief',
+    notitie: 'Beschrijft procedure, vereiste documenten, legeskosten XCG 525 en verwerkingstijd 4 maanden voor studie/stage-aanvragen.',
+  },
+  {
+    pagina: 'vergunning',
+    claim: 'Verklaring van Rechtswege informatiestroom (officieel)',
+    waarde: 'Aparte officiële pagina van Immigratiedienst voor de Verklaring van Rechtswege',
     bron: PRIMAIRE_BRONNEN.vanRechtswege,
     bronsoort: 'officieel',
     laatsteCheck: '2026-04-16',
     gevoeligheid: 'hoog',
     status: 'actief',
-    notitie: 'In de praktijk geen verschil. VRW is de officiële term voor de verblijfsvergunning die nodig is om langer dan 6 maanden te verblijven, te werken of stage te lopen.',
+    notitie: 'Beschrijft de officiële erkenning dat bepaalde personen (waaronder meerderjarige Nederlanders) automatisch verblijfsrecht hebben in Curaçao.',
+  },
+  {
+    pagina: 'vergunning',
+    claim: 'Praktische relevantie voor Nederlandse stagiairs',
+    waarde: 'Beide informatiestromen kunnen relevant zijn — controleer welke route op jouw situatie van toepassing is',
+    bronsoort: 'richtlijn',
+    laatsteCheck: '2026-04-16',
+    gevoeligheid: 'hoog',
+    status: 'actief',
+    notitie: 'De Immigratiedienst publiceert deze als aparte informatiestromen. Controleer altijd zelf welke procedure en vereisten in jouw situatie gelden.',
   },
   {
     pagina: 'vergunning',
@@ -258,6 +295,60 @@ export const BRONNEN = [
     notitie: 'NL rijbewijs is geldig in Curaçao. Omzetten alleen relevant bij langdurig verblijf (>6 mnd) of registratie eigen voertuig.',
   },
 
+  // ─────── KOSTEN — eenmalig + opstart ───────
+  {
+    pagina: 'kosten',
+    claim: 'Retourticket Amsterdam-Curaçao',
+    waarde: '€ 600 - 1.000',
+    bronsoort: 'richtlijn',
+    laatsteCheck: '2026-04-16',
+    gevoeligheid: 'middel',
+    status: 'actief',
+    notitie: 'Range op basis van seizoen en boekingsmoment. Piek: dec-jan en schoolvakanties.',
+  },
+  {
+    pagina: 'kosten',
+    claim: 'Borg woning',
+    waarde: 'Meestal 1 tot 1,5 keer de maandhuur',
+    bronsoort: 'richtlijn',
+    laatsteCheck: '2026-04-16',
+    gevoeligheid: 'middel',
+    status: 'actief',
+    notitie: 'Krijg je terug aan het einde van het contract als alles in orde is.',
+  },
+  {
+    pagina: 'kosten',
+    claim: 'Borg auto',
+    waarde: '€ 500 - 1.000',
+    bronsoort: 'richtlijn',
+    laatsteCheck: '2026-04-16',
+    gevoeligheid: 'middel',
+    status: 'actief',
+    notitie: 'Verschilt per verhuurder en type voertuig.',
+  },
+  {
+    pagina: 'kosten',
+    claim: 'Caribbean Guilder (XCG) wisselkoers',
+    waarde: '1 EUR ≈ 2,00 XCG',
+    bronsoort: 'richtlijn',
+    laatsteCheck: '2026-04-16',
+    gevoeligheid: 'middel',
+    status: 'actief',
+    notitie: 'Sinds 31 maart 2025 gebruikt Curaçao de Caribbean Guilder, gekoppeld aan de USD. Controleer dagkoers via je bank.',
+  },
+
+  // ─────── EERSTE WEEK — rijbewijs ───────
+  {
+    pagina: 'eerste-week',
+    claim: 'DI Card (Digital Immigration Card)',
+    waarde: 'Verplicht voor alle bezoekers, gratis via dicardcuracao.com',
+    bronsoort: 'officieel',
+    laatsteCheck: '2026-04-16',
+    gevoeligheid: 'hoog',
+    status: 'actief',
+    notitie: 'Invullen binnen 7 dagen voor vertrek. Derde-partij websites die geld vragen zijn niet officieel.',
+  },
+
   // ─────── ERVARINGSINZICHTEN ───────
   {
     pagina: 'leven',
@@ -278,6 +369,26 @@ export const BRONNEN = [
     gevoeligheid: 'laag',
     status: 'actief',
     notitie: 'Inrichting, eerste boodschappen, SIM, eenmalige uitgaven.',
+  },
+  {
+    pagina: 'eerste-week',
+    claim: 'Bankrekening openen op Curaçao',
+    waarde: 'Doorlooptijd 2-4 maanden',
+    bronsoort: 'ervaring',
+    laatsteCheck: '2026-04-16',
+    gevoeligheid: 'laag',
+    status: 'actief',
+    notitie: 'Niet altijd nodig als je betalingen via NL regelt. Begin er vroeg mee als je het wel wilt.',
+  },
+  {
+    pagina: 'wonen',
+    claim: 'Stroom (airco) als verborgen kostenpost',
+    waarde: 'Kan honderden guldens per maand bedragen',
+    bronsoort: 'ervaring',
+    laatsteCheck: '2026-04-16',
+    gevoeligheid: 'laag',
+    status: 'actief',
+    notitie: 'Vraag bij ondertekenen contract expliciet of stroom inbegrepen is en of er een verbruikslimiet geldt.',
   },
 ]
 
