@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://stagestart-curacao.vercel.app/sitemap.xml
