@@ -6,7 +6,7 @@ import ClaimLabel from '../components/ClaimLabel'
 
 const STAPPEN = [
   {
-    n: '1', color: '#D4522A', tijd: '8–10 weken voor vertrek',
+    n: '1', bronType: 'officieel', color: '#D4522A', tijd: '8–10 weken voor vertrek',
     title: 'VOG (Verklaring Omtrent het Gedrag) aanvragen',
     desc: 'Je VOG mag niet ouder zijn dan 3 maanden op je aankomstdatum. Vraag hem dus op tijd aan, maar niet té vroeg.',
     detail: [
@@ -18,7 +18,7 @@ const STAPPEN = [
     ],
   },
   {
-    n: '2', color: '#F2B517', tijd: '8 weken voor vertrek',
+    n: '2', bronType: 'officieel', color: '#F2B517', tijd: '8 weken voor vertrek',
     title: 'Stageovereenkomst laten tekenen',
     desc: 'Je stageovereenkomst moet getekend zijn door drie partijen: jijzelf, je opleiding én het stagebedrijf.',
     detail: [
@@ -28,7 +28,7 @@ const STAPPEN = [
     ],
   },
   {
-    n: '3', color: '#3EAD6E', tijd: '6–8 weken voor vertrek',
+    n: '3', bronType: 'officieel', color: '#3EAD6E', tijd: '6–8 weken voor vertrek',
     title: 'Paspoort controleren + kopie maken',
     desc: 'Je paspoort moet minimaal 6 maanden geldig zijn bij indiening van de vergunning.',
     detail: [
@@ -38,7 +38,7 @@ const STAPPEN = [
     ],
   },
   {
-    n: '4', color: '#1A7EC5', tijd: '6 weken voor vertrek',
+    n: '4', bronType: 'officieel', color: '#1A7EC5', tijd: '6 weken voor vertrek',
     title: 'Verzekering afsluiten + polisblad bewaren',
     desc: 'Je hebt een reisverzekering nodig die de volledige duur van je verblijf dekt. Het polisblad is een verplicht document bij de vergunningsaanvraag.',
     detail: [
@@ -50,7 +50,7 @@ const STAPPEN = [
     ],
   },
   {
-    n: '5', color: '#E8507A', tijd: '8 weken voor vertrek',
+    n: '5', bronType: 'officieel', color: '#E8507A', tijd: '8 weken voor vertrek',
     title: 'Geboorteakte aanvragen bij gemeente',
     desc: 'Volgens Immigratiedienst Curaçao is een geboorteakte verplicht en mag deze niet ouder zijn dan 1 jaar.',
     detail: [
@@ -61,7 +61,7 @@ const STAPPEN = [
     ],
   },
   {
-    n: '6', color: '#D4522A', tijd: '6 weken voor vertrek',
+    n: '6', bronType: 'officieel', color: '#D4522A', tijd: '6 weken voor vertrek',
     title: 'Legeskosten betalen — XCG 525',
     desc: 'Volgens Immigratiedienst Curaçao kost de aanvraag XCG 525,00. Je moet dit betaald hebben vóór je de aanvraag indient.',
     detail: [
@@ -76,7 +76,7 @@ const STAPPEN = [
     ],
   },
   {
-    n: '7', color: '#F2B517', tijd: '5 weken voor vertrek',
+    n: '7', bronType: 'richtlijn', color: '#F2B517', tijd: '5 weken voor vertrek',
     title: 'Documenten scannen en benoemen',
     desc: 'Volgens Immigratiedienst moeten alle documenten als gescande PDF worden ingediend. Identiteitsbewijzen in kleur, beide zijden.',
     detail: [
@@ -94,7 +94,7 @@ const STAPPEN = [
     ],
   },
   {
-    n: '8', color: '#3EAD6E', tijd: '5 weken voor vertrek',
+    n: '8', bronType: 'officieel', color: '#3EAD6E', tijd: '5 weken voor vertrek',
     title: 'Aanvraag indienen per e-mail',
     desc: 'De aanvraag verloopt via e-mail naar de Toelatingsorganisatie. Stuur alle documenten in één e-mail, niet verspreid.',
     detail: [
@@ -108,7 +108,7 @@ const STAPPEN = [
     ],
   },
   {
-    n: '9', color: '#1A7EC5', tijd: '2 maanden voor vertrek',
+    n: '9', bronType: 'officieel', color: '#1A7EC5', tijd: '2 maanden voor vertrek',
     title: 'OV-kaart stopzetten bij DUO',
     desc: 'Zet je studentenreisproduct tijdig stop. Je krijgt daarvoor een OV-vergoeding terug van DUO.',
     detail: [
@@ -119,7 +119,7 @@ const STAPPEN = [
     ],
   },
   {
-    n: '10', color: '#1A7EC5', tijd: 'Binnen 7 dagen voor vertrek',
+    n: '10', bronType: 'officieel', color: '#1A7EC5', tijd: 'Binnen 7 dagen voor vertrek',
     title: 'Digital Immigration Card (DI Card) invullen',
     desc: 'Verplicht voor alle bezoekers van Curaçao. Invullen via dicardcuracao.com — dit is gratis en duurt 5 minuten.',
     detail: [
@@ -132,7 +132,7 @@ const STAPPEN = [
     ],
   },
   {
-    n: '11', color: '#E8507A', tijd: '2–3 weken voor vertrek',
+    n: '11', bronType: 'richtlijn', color: '#E8507A', tijd: '2–3 weken voor vertrek',
     title: 'Vliegticket boeken & woning bevestigen',
     desc: 'Boek je vlucht op tijd — prijzen stijgen flink richting vertrekdatum. Zorg dat je woning geregeld is.',
     detail: [
@@ -143,7 +143,7 @@ const STAPPEN = [
     ],
   },
   {
-    n: '12', color: '#D4522A', tijd: '1 week voor vertrek',
+    n: '12', bronType: 'richtlijn', color: '#D4522A', tijd: '1 week voor vertrek',
     title: 'Documenten printen + inpakken',
     desc: 'De douane kan op het vliegveld vragen naar je vergunningsdocumenten. Print alles uit en stop het in je handbagage.',
     detail: [
@@ -158,7 +158,7 @@ const STAPPEN = [
     ],
   },
   {
-    n: '13', color: '#F2B517', tijd: 'Op het eiland',
+    n: '13', bronType: 'officieel', color: '#F2B517', tijd: 'Op het eiland',
     title: 'Beslissing op aanvraag ontvangen',
     desc: 'Volgens Immigratiedienst heeft de Toelatingsorganisatie 4 maanden de tijd om een beslissing te nemen.',
     detail: [
@@ -320,6 +320,16 @@ export default function VoorVertrek() {
                             {s.title}
                           </p>
                           <div className="flex items-center gap-2 shrink-0">
+                            {s.bronType === 'officieel' && (
+                              <span className="text-[10px] font-medium tracking-wider uppercase px-2 py-0.5 rounded border" style={{ color: '#1A7EC5', borderColor: '#1A7EC5' }}>
+                                Officieel
+                              </span>
+                            )}
+                            {s.bronType === 'richtlijn' && (
+                              <span className="text-[10px] font-medium tracking-wider uppercase px-2 py-0.5 rounded border" style={{ color: '#F2B517', borderColor: '#F2B517' }}>
+                                Richtlijn
+                              </span>
+                            )}
                             <span className="text-[10px] text-gray-400 bg-gray-50 px-2 py-0.5 rounded">{s.tijd}</span>
                             <span className={`text-gray-400 text-xs transition-transform ${isOpen ? 'rotate-180' : ''}`}>▼</span>
                           </div>
