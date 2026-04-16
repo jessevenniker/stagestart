@@ -14,8 +14,8 @@ const TOPICS = [
   {
     to: '/vergunning',
     color: '#1A7EC5',
-    title: 'Vergunning — hoe zit het echt?',
-    desc: 'Stagevergunning en Verklaring van Rechtswege zijn hetzelfde. Eén aanvraag, twee namen — hier de officiële uitleg.',
+    title: 'Vergunning — wat zegt de officiële bron?',
+    desc: 'De Immigratiedienst publiceert twee aparte informatiestromen (studie/stage en Verklaring van Rechtswege). Voor jou kunnen beide relevant zijn — controleer het altijd zelf.',
     img: '/img/paspoort-en-reisdocumenten.jpg',
   },
   {
