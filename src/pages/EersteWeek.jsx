@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
+import LastChecked from '../components/LastChecked'
 
 const DAGEN = [
   {
@@ -191,6 +192,12 @@ export default function EersteWeek() {
           </div>
           <Link to="/leven" className="btn-terra shrink-0">Leven op Curaçao →</Link>
         </div>
+
+        <LastChecked
+          date="2026-04-16"
+          bron="Eigen redactie + ervaringen stagiairs"
+          gevoeligheid="middel"
+        />
       </div>
     </>
   )

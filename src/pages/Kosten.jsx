@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
 import LastChecked from '../components/LastChecked'
+import ClaimLabel from '../components/ClaimLabel'
 
 function fmt(n) {
   return '€\u00a0' + Math.round(n).toLocaleString('nl-NL')
@@ -60,6 +61,7 @@ export default function Kosten() {
         {/* Eenmalige kosten */}
         <section className="mb-14">
           <p className="section-label">Eenmalige kosten voor vertrek</p>
+          <ClaimLabel kind="officieel" bron="Immigratiedienst + Justis" link="https://immigrationcur.org/dep/studie-stage/" />
           <div className="border border-gray-100 rounded-xl overflow-hidden">
             {EENMALIG.map((r, i) => (
               <div key={i} className="px-5 py-4 border-b border-gray-100 last:border-0">
@@ -79,6 +81,7 @@ export default function Kosten() {
         {/* Maandelijkse kosten */}
         <section className="mb-14">
           <p className="section-label">Maandelijkse kosten</p>
+          <ClaimLabel kind="richtlijn" />
           <div className="border border-gray-100 rounded-xl overflow-hidden mb-3">
             {MAANDELIJKS.map((r, i) => (
               <div key={i} className="px-5 py-4 border-b border-gray-100 last:border-0">
@@ -95,6 +98,7 @@ export default function Kosten() {
         {/* Inkomsten */}
         <section className="mb-14">
           <p className="section-label">Inkomsten & vergoedingen</p>
+          <ClaimLabel kind="officieel" bron="DUO" link="https://duo.nl" />
           <div className="border border-gray-100 rounded-xl overflow-hidden">
             {INKOMSTEN.map((r, i) => (
               <div key={i} className="px-5 py-4 border-b border-gray-100 last:border-0">
@@ -111,6 +115,7 @@ export default function Kosten() {
         {/* Verborgen kosten */}
         <section className="mb-14">
           <p className="section-label">Verborgen kosten die bureaus niet noemen</p>
+          <ClaimLabel kind="ervaring" />
           <div className="grid sm:grid-cols-2 gap-4">
             {[
               { color: '#D4522A', title: 'DI Card — gratis maar val er niet voor nep-sites', desc: 'Curaçao vereist een Digital Immigration Card die je binnen 7 dagen voor vertrek invult. Dit is gratis via dicardcuracao.com. Er circuleren derde-partij sites die hier kosten voor rekenen. Betaal nooit voor de DI card.' },

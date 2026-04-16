@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
 import LastChecked from '../components/LastChecked'
+import ClaimLabel from '../components/ClaimLabel'
 
 const STAPPEN = [
   {
@@ -288,6 +289,7 @@ export default function VoorVertrek() {
         {/* Stappenplan */}
         <section className="mb-14">
           <p className="section-label">Stappenplan vergunning & vertrek</p>
+          <ClaimLabel kind="officieel" bron="Immigratiedienst Curaçao" link="https://immigrationcur.org/dep/studie-stage/" />
           <div className="flex flex-col gap-3">
             {STAPPEN.map((s) => {
               const key = `step-${s.n}`
@@ -379,6 +381,7 @@ export default function VoorVertrek() {
         {/* Kostenovererzicht vergunning */}
         <section className="mb-14">
           <p className="section-label">Kosten vergunningsaanvraag</p>
+          <ClaimLabel kind="officieel" bron="Immigratiedienst Curaçao + Justis" />
           <div className="card">
             <div className="flex flex-col gap-3">
               <div className="flex justify-between items-center py-2 border-b border-gray-100">

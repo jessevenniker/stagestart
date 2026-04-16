@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import PageHero from '../components/PageHero'
 import { Link } from 'react-router-dom'
+import ClaimLabel from '../components/ClaimLabel'
+import LastChecked from '../components/LastChecked'
 
 const WIJKEN = [
   {
@@ -180,9 +182,51 @@ export default function Wonen() {
           </div>
         </section>
 
+        {/* Welke wijk past bij jouw situatie */}
+        <section className="mb-10">
+          <p className="section-label">Welke wijk past bij jouw situatie?</p>
+          <ClaimLabel kind="richtlijn" />
+          <p className="text-sm text-gray-500 leading-relaxed mb-5 max-w-2xl">
+            De pros en cons hierboven zijn neutraal. Hieronder concrete adviezen op basis van jouw situatie. Eén kant op gaat altijd ten koste van een ander — kies wat het zwaarst weegt.
+          </p>
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3">
+            <div className="card border-l-4" style={{ borderLeftColor: '#3EAD6E' }}>
+              <p className="text-xs font-medium text-dark mb-1">Sociaal leven op loopafstand</p>
+              <p className="text-sm font-medium text-sage mb-2">→ Pietermaai</p>
+              <p className="text-xs text-gray-500 leading-relaxed">Kleurrijke gevels, bars en restaurants letterlijk om de hoek. Auto optioneel, prijs hoger.</p>
+            </div>
+            <div className="card border-l-4" style={{ borderLeftColor: '#1A7EC5' }}>
+              <p className="text-xs font-medium text-dark mb-1">Geen auto, wel actief</p>
+              <p className="text-sm font-medium text-sky mb-2">→ Pietermaai of Salinja/Otrobanda</p>
+              <p className="text-xs text-gray-500 leading-relaxed">Beide centraal en lopend bereikbaar. Salinja is goedkoper, Pietermaai gezelliger.</p>
+            </div>
+            <div className="card border-l-4" style={{ borderLeftColor: '#D4522A' }}>
+              <p className="text-xs font-medium text-dark mb-1">Veel sport en strand</p>
+              <p className="text-sm font-medium text-terra mb-2">→ Jan Thiel</p>
+              <p className="text-xs text-gray-500 leading-relaxed">Strand op loopafstand, veel medestudenten, beachclubs. Auto wel verplicht.</p>
+            </div>
+            <div className="card border-l-4" style={{ borderLeftColor: '#F2B517' }}>
+              <p className="text-xs font-medium text-dark mb-1">Stage bij UoC of ziekenhuis</p>
+              <p className="text-sm font-medium text-gold mb-2">→ Piscadera</p>
+              <p className="text-xs text-gray-500 leading-relaxed">Loop- of korte rijafstand naar campus en CMC. Rustige universiteitswijk.</p>
+            </div>
+            <div className="card border-l-4" style={{ borderLeftColor: '#E8507A' }}>
+              <p className="text-xs font-medium text-dark mb-1">Rust en ruimte</p>
+              <p className="text-sm font-medium text-blush mb-2">→ Bapor Kibra / Caracasbaai</p>
+              <p className="text-xs text-gray-500 leading-relaxed">Mooie omgeving, weinig drukte. Auto absoluut verplicht — anders zit je vast.</p>
+            </div>
+            <div className="card border-l-4" style={{ borderLeftColor: '#1A7EC5' }}>
+              <p className="text-xs font-medium text-dark mb-1">Zo goedkoop mogelijk</p>
+              <p className="text-sm font-medium text-sky mb-2">→ Salinja / Otrobanda</p>
+              <p className="text-xs text-gray-500 leading-relaxed">Laagste huur (€300-400). Let op vervoersimpact als stage of strand verder weg ligt.</p>
+            </div>
+          </div>
+        </section>
+
         {/* Woonfraude */}
         <section className="mb-10">
           <p className="section-label">Pas op voor woonfraude</p>
+          <ClaimLabel kind="ervaring" />
           <div className="card border-l-4" style={{ borderLeftColor: '#D4522A' }}>
             <p className="text-sm text-gray-600 leading-relaxed mb-4">
               Veel studenten zoeken een kamer vanuit Nederland via Facebook-groepen en WhatsApp. Dit is precies de context waar oplichters actief zijn.
@@ -235,6 +279,12 @@ export default function Wonen() {
           </div>
           <Link to="/auto" className="btn-terra shrink-0">Naar auto-beslisboom →</Link>
         </div>
+
+        <LastChecked
+          date="2026-04-16"
+          bron="Eigen redactie + ervaringen stagiairs"
+          gevoeligheid="middel"
+        />
       </div>
     </>
   )
