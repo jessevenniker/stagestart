@@ -60,6 +60,36 @@ export default function Bronnen() {
           </div>
         </section>
 
+        {/* Updatebeleid */}
+        <section className="mb-10">
+          <p className="section-label">Ons updatebeleid</p>
+          <div className="card">
+            <p className="text-sm text-gray-600 leading-relaxed mb-3">
+              Een betrouwbare gids is alleen betrouwbaar als de informatie niet verouderd raakt. Wij werken met een vast controleritme per gevoeligheidsniveau:
+            </p>
+            <div className="grid sm:grid-cols-3 gap-3 mb-4">
+              {Object.entries(GEVOELIGHEID).map(([key, cfg]) => (
+                <div key={key} className="border-l-2 pl-3" style={{ borderLeftColor: key === 'hoog' ? '#D4522A' : key === 'middel' ? '#F2B517' : '#9CA3AF' }}>
+                  <p className="text-xs font-medium text-dark mb-1">{cfg.label}</p>
+                  <p className="text-xs text-gray-500 leading-relaxed">{cfg.controlefrequentie}</p>
+                </div>
+              ))}
+            </div>
+            <p className="text-sm text-gray-600 leading-relaxed mb-3">
+              Concreet betekent dat:
+            </p>
+            <ul className="flex flex-col gap-1.5 text-sm text-gray-600 mb-3">
+              <li>· Elke claim heeft een <strong className="text-dark">laatste-check-datum</strong> die zichtbaar onderaan elke pagina staat.</li>
+              <li>· Bij officiële wijzigingen (Immigratiedienst, DUO, Justis) passen we de tekst én de datum direct aan.</li>
+              <li>· Minimaal één keer per kwartaal lopen we alle kritieke claims na tegen hun bron — ook als er geen aanleiding voor lijkt.</li>
+              <li>· Claims zonder recente check verhuizen naar "richtlijn" of worden verwijderd.</li>
+            </ul>
+            <p className="text-xs text-gray-400 leading-relaxed">
+              Signaleer je verouderde of onjuiste informatie? Laat het weten — de site leeft van die feedback.
+            </p>
+          </div>
+        </section>
+
         {/* Legenda */}
         <section className="mb-10">
           <p className="section-label">Hoe we claims labelen</p>
