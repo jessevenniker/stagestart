@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
+import SEO from '../components/SEO'
 import LastChecked from '../components/LastChecked'
 
 const FAQ_DATA = [
@@ -65,13 +66,14 @@ export default function FAQ() {
 
   return (
     <>
+      <SEO />
       <PageHero
         eyebrow="Veelgestelde vragen"
         title="Alles wat je nog wilt weten — op één plek."
         subtitle="Van vergunning tot zonnebrand. De antwoorden die je nodig hebt."
         accentColor="#1A7EC5"
         image="/img/hero-faq.jpg"
-        imageAlt="FAQ"
+        imageAlt="Veelgestelde vragen over stage lopen op Curaçao"
       />
 
       <div className="max-w-5xl mx-auto px-5 pb-16">

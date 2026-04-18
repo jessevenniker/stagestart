@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import PageHero from '../components/PageHero'
+import SEO from '../components/SEO'
 
 const INHOUD = [
   { n: '01', title: 'Vertrekchecklist', desc: '10 stappen met tijdlijn — van paspoort checken tot vliegticket boeken.' },
@@ -31,13 +32,14 @@ export default function Startgids() {
 
   return (
     <>
+      <SEO />
       <PageHero
         eyebrow="Gratis startgids"
         title="Alles wat je moet weten, in één PDF."
         subtitle="De vertrekchecklist, het vergunningsstappenplan, het budgetoverzicht en de eerste-weekplanning — gebundeld en klaar om te printen."
         accentColor="#3EAD6E"
         image="/img/cta-sunset.jpg"
-        imageAlt="Sunset Curaçao"
+        imageAlt="Zonsondergang aan de kust van Curaçao, einde van een stagedag"
       />
 
       <div className="max-w-5xl mx-auto px-5 pb-16">

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
+import SEO from '../components/SEO'
 import ClaimLabel from '../components/ClaimLabel'
 import LastChecked from '../components/LastChecked'
 
@@ -97,13 +98,14 @@ export default function EersteWeek() {
 
   return (
     <>
+      <SEO />
       <PageHero
         eyebrow="Je eerste week"
         title="Dag voor dag — wat doe je wanneer."
         subtitle="De eerste week is overweldigend. Hier is een praktisch plan zodat je niets vergeet en ook gewoon kunt genieten."
         accentColor="#E8507A"
         image="/img/hero-eerste-week.svg"
-        imageAlt="Willemstad skyline"
+        imageAlt="Skyline van Willemstad met Handelskade, eerste aanblik bij aankomst op Curaçao"
       />
 
       <div className="max-w-5xl mx-auto px-5 pb-16">

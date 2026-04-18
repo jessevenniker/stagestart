@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
+import SEO from '../components/SEO'
 import LastChecked from '../components/LastChecked'
 import ClaimLabel from '../components/ClaimLabel'
 
@@ -208,13 +209,14 @@ export default function VoorVertrek() {
 
   return (
     <>
+      <SEO />
       <PageHero
         eyebrow="Voor vertrek"
         title="Wat je moet regelen — en in welke volgorde."
         subtitle="Volgens Immigratiedienst Curaçao heeft de Toelatingsorganisatie officieel 4 maanden de tijd om een beslissing te nemen. Begin minimaal 8 weken voor vertrek met de aanvraag — niet 3."
         accentColor="#D4522A"
         image="/img/paspoort-en-reisdocumenten.jpg"
-        imageAlt="Paspoort en reisdocumenten"
+        imageAlt="Paspoort en reisdocumenten klaargelegd voor vertrek naar Curaçao"
       />
 
       <div className="max-w-5xl mx-auto px-5 pb-16">

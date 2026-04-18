@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
+import SEO from '../components/SEO'
 import LastChecked from '../components/LastChecked'
 
 const HAPPY_HOURS = [
@@ -109,13 +110,14 @@ export default function HappyHours() {
 
   return (
     <>
+      <SEO />
       <PageHero
         eyebrow="Happy hours & uitgaan"
         title="Het sociale ritme van Curaçao — dag voor dag."
         subtitle="Stagiairs delen dit schema onderling maar het staat nergens goed op één plek. Tot nu."
         accentColor="#F2B517"
         image="/img/hero-happy-hours.jpg"
-        imageAlt="Happy hours Curaçao"
+        imageAlt="Cocktails bij zonsondergang in een bar aan de Curaçaose kust"
       />
 
       <div className="max-w-5xl mx-auto px-5 pb-16">

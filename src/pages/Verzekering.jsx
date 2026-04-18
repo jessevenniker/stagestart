@@ -1,11 +1,13 @@
 import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
+import SEO from '../components/SEO'
 import ClaimLabel from '../components/ClaimLabel'
 import LastChecked from '../components/LastChecked'
 
 export default function Verzekering() {
   return (
     <>
+      <SEO />
       <PageHero
         eyebrow="Verzekering & gezondheid"
         title="Wat dekt wat, en wat regel je zelf?"

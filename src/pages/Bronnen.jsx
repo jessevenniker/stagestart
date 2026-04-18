@@ -1,4 +1,5 @@
 import PageHero from '../components/PageHero'
+import SEO from '../components/SEO'
 import LastChecked from '../components/LastChecked'
 import { BRONNEN, BRONSOORTEN, GEVOELIGHEID, REDACTIONELE_REGEL, laatsteUpdate } from '../data/bronnen'
 import { useState } from 'react'
@@ -29,6 +30,7 @@ export default function Bronnen() {
 
   return (
     <>
+      <SEO />
       <PageHero
         eyebrow="Bronnen & verantwoording"
         title="Hier staat waar onze informatie vandaan komt."

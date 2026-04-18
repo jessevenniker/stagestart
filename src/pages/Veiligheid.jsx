@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
+import SEO from '../components/SEO'
 import ClaimLabel from '../components/ClaimLabel'
 import LastChecked from '../components/LastChecked'
 
@@ -37,13 +38,14 @@ const RIJDEN = [
 export default function Veiligheid() {
   return (
     <>
+      <SEO />
       <PageHero
         eyebrow="Veiligheid op Curaçao"
         title="Praktisch gedrag, niet sensationeel."
         subtitle="Veiligheid op Curaçao gaat vooral over alertheid en gezond verstand. Hieronder concrete gedragstips per situatie. Geen wijkranglijsten — die geven vaak een vals gevoel van zekerheid."
         accentColor="#D4522A"
         image="/img/hero-veiligheid.jpg"
-        imageAlt="Veiligheid op Curaçao"
+        imageAlt="Rustige straat in Willemstad bij daglicht, dagelijks straatbeeld op Curaçao"
       />
 
       <div className="max-w-5xl mx-auto px-5 pb-16">

@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import PageHero from '../components/PageHero'
+import SEO from '../components/SEO'
 import { Link } from 'react-router-dom'
 import ClaimLabel from '../components/ClaimLabel'
 import LastChecked from '../components/LastChecked'
@@ -73,6 +74,7 @@ export default function Wonen() {
 
   return (
     <>
+      <SEO />
       <PageHero
         eyebrow="Wonen op Curaçao"
         title="Welke wijk past bij jou?"

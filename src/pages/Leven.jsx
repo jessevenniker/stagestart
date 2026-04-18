@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
+import SEO from '../components/SEO'
 import LastChecked from '../components/LastChecked'
 
 const STRANDEN = [
@@ -50,13 +51,14 @@ const GEZONDHEID = [
 export default function Leven() {
   return (
     <>
+      <SEO />
       <PageHero
         eyebrow="Leven op Curaçao"
         title="Het eiland als lokale — niet als toerist."
         subtitle="Stranden, eten, praktische tips en wat je echt moet meemaken. Geen glossy reisgids — gewoon wat werkt voor stagiairs."
         accentColor="#F2B517"
         image="/img/hero-leven.jpg"
-        imageAlt="Strand Curaçao"
+        imageAlt="Strand op Curaçao met helder turquoise zeewater en wit zand"
       />
 
       <div className="max-w-5xl mx-auto px-5 pb-16">

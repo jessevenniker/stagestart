@@ -1,9 +1,11 @@
 import PageHero from '../components/PageHero'
+import SEO from '../components/SEO'
 import LastChecked from '../components/LastChecked'
 
 export default function Cookies() {
   return (
     <>
+      <SEO />
       <PageHero
         eyebrow="Juridisch"
         title="Cookieverklaring"

@@ -1,11 +1,13 @@
 import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
+import SEO from '../components/SEO'
 import ClaimLabel from '../components/ClaimLabel'
 import LastChecked from '../components/LastChecked'
 
 export default function Vergunning() {
   return (
     <>
+      <SEO />
       <PageHero
         eyebrow="Vergunning — hoe zit het volgens de officiële bron?"
         title="Studie/stage en Verklaring van Rechtswege — twee informatiestromen."

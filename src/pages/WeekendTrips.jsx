@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
+import SEO from '../components/SEO'
 import LastChecked from '../components/LastChecked'
 
 const COLORS = ['#D4522A', '#F2B517', '#3EAD6E', '#1A7EC5', '#E8507A']
@@ -74,13 +75,14 @@ const TRIPS = [
 export default function WeekendTrips() {
   return (
     <>
+      <SEO />
       <PageHero
         eyebrow="Weekend trips"
         title="Het eiland verkennen — de beste uitstapjes."
         subtitle="Je vrije weekenden zijn kostbaar. Dit zijn de plekken die het waard zijn."
         accentColor="#E8507A"
         image="/img/hero-weekend-trips.jpg"
-        imageAlt="Weekend trips Curaçao"
+        imageAlt="Natuurpark op Curaçao met uitzicht vanaf een heuvel, populaire weekendbestemming voor stagiairs"
       />
 
       <div className="max-w-5xl mx-auto px-5 pb-16">

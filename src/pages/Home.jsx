@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import WeatherWidget from '../components/WeatherWidget'
+import SEO from '../components/SEO'
 
 // TOPICS = kern stage-gids (P1) — wat de stagiair direct nodig heeft
 const TOPICS = [
@@ -112,6 +113,7 @@ export default function Home() {
 
   return (
     <>
+      <SEO />
       {/* ── HERO ── */}
       <section className="max-w-5xl mx-auto px-5 pt-16 pb-12">
         <div className="flex items-center gap-3 mb-6">
@@ -358,7 +360,7 @@ export default function Home() {
         <div className="rounded-2xl overflow-hidden relative">
           <img
             src="/img/cta-sunset.jpg"
-            alt="Sunset Curaçao"
+            alt="Zonsondergang aan de Curaçaose kust"
             className="w-full h-[200px] md:h-[220px] object-cover"
             loading="lazy"
           />

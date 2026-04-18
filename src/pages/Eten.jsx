@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
+import SEO from '../components/SEO'
 import LastChecked from '../components/LastChecked'
 
 const TRUKIPAN = [
@@ -22,13 +23,14 @@ const SUPERMARKTEN = [
 export default function Eten() {
   return (
     <>
+      <SEO />
       <PageHero
         eyebrow="Eten op Curaçao"
         title="Lokaal eten — goedkoop, lekker, en totaal anders dan je gewend bent."
         subtitle="Wat de bureaus niet vertellen: je kunt goed eten op Curaçao zonder veel geld. Je moet alleen weten waar."
         accentColor="#3EAD6E"
         image="/img/hero-eten.jpg"
-        imageAlt="Lokaal eten op Curaçao"
+        imageAlt="Lokale Curaçaose maaltijd met vis, funchi en groente"
       />
 
       <div className="max-w-5xl mx-auto px-5 pb-16">

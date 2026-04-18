@@ -1,4 +1,5 @@
 import PageHero from '../components/PageHero'
+import SEO from '../components/SEO'
 import LastChecked from '../components/LastChecked'
 
 const SECTIES = [
@@ -123,6 +124,7 @@ const SECTIES = [
 export default function Privacy() {
   return (
     <>
+      <SEO />
       <PageHero
         eyebrow="Juridisch"
         title="Privacyverklaring"

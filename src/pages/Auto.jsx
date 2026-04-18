@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
+import SEO from '../components/SEO'
 import ClaimLabel from '../components/ClaimLabel'
 import LastChecked from '../components/LastChecked'
 
@@ -106,13 +107,14 @@ export default function Auto() {
 
   return (
     <>
+      <SEO />
       <PageHero
         eyebrow="Heb je een auto nodig?"
         title="Eerlijk antwoord — hangt af van jouw situatie."
         subtitle="Bureaus zeggen bijna altijd 'ja, je hebt een auto nodig'. Dat klopt niet altijd. Het hangt volledig af van waar je woont en werkt. Gebruik de beslisboom."
         accentColor="#1A7EC5"
         image="/img/hero-auto.jpg"
-        imageAlt="Kustweg Curaçao"
+        imageAlt="Kustweg op Curaçao met uitzicht op zee, typische rijroute van en naar stageplekken"
       />
 
       <div className="max-w-5xl mx-auto px-5 pb-16">

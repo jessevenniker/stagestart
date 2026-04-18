@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
+import SEO from '../components/SEO'
 import ClaimLabel from '../components/ClaimLabel'
 import LastChecked from '../components/LastChecked'
 
@@ -71,13 +72,14 @@ const QUICK = [
 export default function BeginHier() {
   return (
     <>
+      <SEO />
       <PageHero
         eyebrow="Begin hier"
         title="Je eerste stappen, in de juiste volgorde."
         subtitle="Of je nu net besloten hebt naar Curaçao te gaan of al een stageplek hebt — hier begin je. Geen overbodige informatie, alleen wat je nu nodig hebt."
         accentColor="#D4522A"
         image="/img/hero-begin-hier.jpg"
-        imageAlt="Student op Curaçao"
+        imageAlt="Student op stage op Curaçao met uitzicht op de kust"
       />
 
       <div className="max-w-5xl mx-auto px-5 pb-16">

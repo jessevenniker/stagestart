@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
+import SEO from '../components/SEO'
 import LastChecked from '../components/LastChecked'
 import ClaimLabel from '../components/ClaimLabel'
 
@@ -47,13 +48,14 @@ export default function Kosten() {
 
   return (
     <>
+      <SEO />
       <PageHero
         eyebrow="Wat kost een stage op Curaçao?"
         title="Eerlijk kostenoverzicht — zonder verborgen posten."
         subtitle="De meeste bureaus noemen €1.500–2.000 per maand. Dat klopt, maar de details maken het verschil. Hier zie je precies waar je geld naartoe gaat."
         accentColor="#F2B517"
         image="/img/hero-kosten.jpg"
-        imageAlt="Straatbeeld Willemstad Curaçao"
+        imageAlt="Handelskade Willemstad met kleurrijke gevels en lokale winkels"
       />
 
       <div className="max-w-5xl mx-auto px-5 pb-16">

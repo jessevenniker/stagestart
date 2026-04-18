@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
+import SEO from '../components/SEO'
 import LastChecked from '../components/LastChecked'
 
 const CULTUUR = [
@@ -53,13 +54,14 @@ const NETWERK = [
 export default function Werken() {
   return (
     <>
+      <SEO />
       <PageHero
         eyebrow="Werken op Curaçao"
         title="Hoe werken op Curaçao anders is dan in Nederland."
         subtitle="Tempo, hiërarchie, relaties en feedback werken hier anders. Dat weet je beter vooraf dan na je eerste werkweek."
         accentColor="#3B8FB5"
         image="/img/hero-werken.jpg"
-        imageAlt="Werken op Curaçao"
+        imageAlt="Werkomgeving op Curaçao met Caribische sfeer voor stagiairs"
       />
 
       <div className="max-w-5xl mx-auto px-5 pb-16">

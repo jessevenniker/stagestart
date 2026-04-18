@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
+import SEO from '../components/SEO'
 import LastChecked from '../components/LastChecked'
 
 const STRANDEN = [
@@ -310,13 +311,14 @@ export default function Stranden() {
 
   return (
     <>
+      <SEO />
       <PageHero
         eyebrow="Stranden van Curaçao"
         title="35+ stranden — van populair tot geheim."
         subtitle={`Van gezellige beachclubs tot verlaten baaien. Filter op wat bij je past.`}
         accentColor="#1A7EC5"
         image="/img/hero-stranden.jpg"
-        imageAlt="Stranden Curaçao"
+        imageAlt="Wit zandstrand op Curaçao met turquoise zee en rotsige kustlijn"
       />
 
       <div className="max-w-5xl mx-auto px-5 pb-16">

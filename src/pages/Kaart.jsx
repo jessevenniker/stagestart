@@ -4,6 +4,7 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import PageHero from '../components/PageHero'
+import SEO from '../components/SEO'
 import LastChecked from '../components/LastChecked'
 import { ALLE_LOCATIES, CATEGORIE_CONFIG } from '../data/locaties'
 
@@ -73,6 +74,7 @@ export default function Kaart() {
 
   return (
     <>
+      <SEO />
       <PageHero
         eyebrow="Interactieve kaart"
         title="Alles op Curaçao op één kaart."
