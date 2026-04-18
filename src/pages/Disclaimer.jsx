@@ -46,7 +46,7 @@ const SECTIES = [
   {
     n: '9',
     title: 'Contact',
-    body: 'Voor vragen over deze disclaimer of over de website kun je contact opnemen via: [E-MAILADRES]',
+    body: 'Voor vragen over deze disclaimer of over de website kun je contact opnemen via info@jescoinnovation.nl. StageStart Curaçao wordt beheerd door Jesco Innovation.',
   },
 ]
 

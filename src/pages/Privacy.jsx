@@ -11,9 +11,8 @@ const SECTIES = [
         <p className="text-sm text-gray-600 leading-relaxed mb-2">Verantwoordelijke voor de verwerking van persoonsgegevens via deze website is:</p>
         <div className="text-sm text-gray-600 leading-relaxed pl-4 border-l-2 border-gray-200">
           <p>StageStart Curaçao</p>
-          <p>[EIGENAAR / BEDRIJFSNAAM]</p>
-          <p>[E-MAILADRES]</p>
-          <p>[OPTIONEEL: ADRES OF VESTIGINGSPLAATS]</p>
+          <p>Jesco Innovation</p>
+          <p>info@jescoinnovation.nl</p>
         </div>
       </>
     ),
@@ -117,7 +116,7 @@ const SECTIES = [
   {
     n: '10',
     title: 'Contact',
-    body: <p className="text-sm text-gray-600 leading-relaxed">Vragen over deze privacyverklaring of een verzoek over jouw persoonsgegevens kun je sturen naar: [E-MAILADRES]</p>,
+    body: <p className="text-sm text-gray-600 leading-relaxed">Vragen over deze privacyverklaring of een verzoek over jouw persoonsgegevens kun je sturen naar: <a href="mailto:info@jescoinnovation.nl" className="text-sky underline">info@jescoinnovation.nl</a></p>,
   },
 ]
 
