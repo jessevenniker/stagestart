@@ -11,7 +11,7 @@ const TRUKIPAN = [
 ]
 
 const SUPERMARKTEN = [
-  { naam: 'Centrum Supermarkt', locaties: 'Mahaai (SBN Doormanweg 26) & Piscadera (Weg naar Bullenbaai)', waarom: 'Goedkoopste van het eiland, beste assortiment. Bewezen door Curaçaose Consumentenbond 2024. Grote groente/fruitafdeling.', wanneer: 'Wekelijkse boodschappen' },
+  { naam: 'Centrum Supermarkt', locaties: 'Mahaai (SBN Doormanweg 26) & Piscadera (Weg naar Bullenbaai)', waarom: 'Volgens vergelijkingen van de Curaçaose Consumentenbond (2024) een van de goedkoopste op het eiland, met breed assortiment en grote groente- en fruitafdeling.', wanneer: 'Wekelijkse boodschappen' },
   { naam: 'Van den Tweel', locaties: 'Willemstad (Kaya Jacob Posner 28) & Jan Thiel (Kaya Damasco 34)', waarom: 'Nederlandse producten, A-merken. Duurder maar vertrouwd.', wanneer: 'Als je specifiek NL-product wilt' },
   { naam: 'PriceSmart', locaties: 'Saliña', waarom: 'Bulkinkoopwinkel. Goedkoper per eenheid voor grote hoeveelheden.', wanneer: 'Samen met huisgenoten inkopen' },
   { naam: 'De Chino (overal)', locaties: 'Diverse locaties door het eiland', waarom: 'Goedkoper dan grote supers voor basisproducten. Open 7:00–22:00. Beperkte versproducten.', wanneer: 'Avond/nood-aankopen' },

@@ -25,10 +25,10 @@ export default function Verzekering() {
             <ClaimLabel kind="officieel" bron="Rijksoverheid" link="https://www.rijksoverheid.nl" />
             <h3 className="font-serif text-xl font-normal text-dark mb-2">Nederlandse basiszorgverzekering blijft geldig</h3>
             <p className="text-sm text-gray-600 leading-relaxed mb-3">
-              Als je in Nederland ingeschreven blijft staan (bij de gemeente) en je Nederlandse basisverzekering aanhoudt, dan dekt die spoedeisende zorg wereldwijd — tot het Nederlandse tarief.
+              Als je in Nederland ingeschreven blijft staan (bij de gemeente) en je Nederlandse basisverzekering aanhoudt, dan dekt die spoedeisende zorg wereldwijd, tot het Nederlandse tarief.
             </p>
             <p className="text-sm text-gray-600 leading-relaxed">
-              <strong className="text-dark">Belangrijk:</strong> Curaçao is geen EU-gebied. Je EHIC-kaart werkt daar niet. Het verschil tussen de lokale rekening en het Nederlandse tarief betaal je zelf — dit kan honderden tot duizenden euro's zijn bij serieuze zorg.
+              <strong className="text-dark">Belangrijk:</strong> Curaçao is geen EU-gebied. Je EHIC-kaart werkt daar niet. Het verschil tussen de lokale rekening en het Nederlandse tarief betaal je zelf. Dit kan honderden tot duizenden euro's zijn bij serieuze zorg.
             </p>
           </div>
 
@@ -36,7 +36,7 @@ export default function Verzekering() {
             <ClaimLabel kind="officieel" bron="Immigratiedienst Curaçao" link="https://immigrationcur.org/dep/studie-stage/" />
             <h3 className="font-serif text-xl font-normal text-dark mb-2">Polisblad ziektekostenverzekering verplicht</h3>
             <p className="text-sm text-gray-600 leading-relaxed">
-              Volgens de officiële Studie/Stage-pagina van de Immigratiedienst is een polisblad van een geldige ziektekostenverzekering <strong className="text-dark">met dekking voor Curaçao</strong> een vereist document voor de vergunning. Je Nederlandse basisverzekering alleen is hier meestal niet voldoende voor — je hebt een internationale aanvullende verzekering nodig die expliciet Curaçao noemt.
+              Volgens de officiële Studie/Stage-pagina van de Immigratiedienst is een polisblad van een geldige ziektekostenverzekering <strong className="text-dark">met dekking voor Curaçao</strong> een vereist document voor de vergunning. Je Nederlandse basisverzekering alleen is hier meestal niet voldoende voor. Je hebt een internationale aanvullende verzekering nodig die expliciet Curaçao noemt.
             </p>
           </div>
 
@@ -60,21 +60,21 @@ export default function Verzekering() {
               <ClaimLabel kind="richtlijn" />
               <p className="text-sm font-medium text-dark mb-2">Niet uitschrijven in Nederland</p>
               <p className="text-xs text-gray-500 leading-relaxed">
-                Blijf ingeschreven bij je Nederlandse gemeente tijdens je stage. Alleen dan loopt je basisverzekering door. Stagiairs die zich uitschrijven, verliezen dekking en moeten bij terugkeer opnieuw aanmelden — met mogelijke wachttijd.
+                Blijf ingeschreven bij je Nederlandse gemeente tijdens je stage. Alleen dan loopt je basisverzekering door. Stagiairs die zich uitschrijven, verliezen dekking en moeten bij terugkeer opnieuw aanmelden, met mogelijke wachttijd.
               </p>
             </div>
             <div className="card">
               <ClaimLabel kind="richtlijn" />
               <p className="text-sm font-medium text-dark mb-2">Sluit vóór vertrek af</p>
               <p className="text-xs text-gray-500 leading-relaxed">
-                Een aanvullende reis/stage-verzekering moet ingaan vóór je vertrekt en de hele stageperiode dekken. Vraag een polisblad met ingangsdatum én einddatum — dat heb je nodig voor de vergunning.
+                Een aanvullende reis/stage-verzekering moet ingaan vóór je vertrekt en de hele stageperiode dekken. Vraag een polisblad met ingangsdatum én einddatum. Dat heb je nodig voor de vergunning.
               </p>
             </div>
             <div className="card">
               <ClaimLabel kind="ervaring" />
               <p className="text-sm font-medium text-dark mb-2">Bekende aanbieders</p>
               <p className="text-xs text-gray-500 leading-relaxed">
-                Stagiairs noemen vaak OOM, JoHo Special ISIS, Insure to Study en Allianz Global Assistance. Vergelijk altijd zelf — premie, eigen risico en dekkingsgraad verschillen per aanbieder.
+                Stagiairs noemen vaak OOM, JoHo Special ISIS, Insure to Study en Allianz Global Assistance. Vergelijk altijd zelf, want premie, eigen risico en dekkingsgraad verschillen per aanbieder.
               </p>
             </div>
             <div className="card">
@@ -147,7 +147,7 @@ export default function Verzekering() {
             <div className="card">
               <p className="text-sm font-medium text-dark mb-2">Apotheek = botika</p>
               <p className="text-xs text-gray-500 leading-relaxed">
-                Standaardmedicijnen haal je zonder afspraak bij een botika. Sommige zijn gesloten tussen 12:00 en 14:00. Check welke 24 uur open is in je buurt — vraag je verhuurder of huisgenoten.
+                Standaardmedicijnen haal je zonder afspraak bij een botika. Sommige zijn gesloten tussen 12:00 en 14:00. Check welke 24 uur open is in je buurt en vraag je verhuurder of huisgenoten.
               </p>
             </div>
             <div className="card">
@@ -191,19 +191,19 @@ export default function Verzekering() {
             <div className="card">
               <p className="text-sm font-medium text-dark mb-2">Zon en uitdroging</p>
               <p className="text-xs text-gray-500 leading-relaxed">
-                Passaatwind maakt dat je de zon niet voelt branden — maar UV-index is hoog. Tussen 10:00 en 15:00 is zonnebrand het ergst. Draag SPF 50, hoed, lichte kleding. Drink meer water dan je denkt nodig te hebben — minimaal 2,5 liter per dag.
+                Passaatwind maakt dat je de zon niet voelt branden, maar UV-index is hoog. Tussen 10:00 en 15:00 is zonnebrand het ergst. Draag SPF 50, hoed, lichte kleding. Drink meer water dan je denkt nodig te hebben: minimaal 2,5 liter per dag.
               </p>
             </div>
             <div className="card">
               <p className="text-sm font-medium text-dark mb-2">Muggen (Dengue, Zika)</p>
               <p className="text-xs text-gray-500 leading-relaxed">
-                Vooral in regenseizoen (juni-november) actief. Gebruik DEET-spray 's avonds. Slaap met gesloten ramen of klamboe. Symptomen Dengue: hoge koorts, spierpijn, hoofdpijn — direct naar arts.
+                Vooral in regenseizoen (juni-november) actief. Gebruik DEET-spray 's avonds. Slaap met gesloten ramen of klamboe. Symptomen Dengue: hoge koorts, spierpijn, hoofdpijn. Ga in dat geval direct naar een arts.
               </p>
             </div>
             <div className="card">
               <p className="text-sm font-medium text-dark mb-2">Kraanwater</p>
               <p className="text-xs text-gray-500 leading-relaxed">
-                Kraanwater op Curaçao is drinkbaar — het komt van ontzilting. Sommige huizen hebben oudere leidingen, in dat geval filter of fles. Vraag je verhuurder of gewoon drinken oké is.
+                Kraanwater op Curaçao is drinkbaar, het komt van ontzilting. Sommige huizen hebben oudere leidingen, in dat geval filter of fles. Vraag je verhuurder of gewoon drinken oké is.
               </p>
             </div>
             <div className="card">
@@ -220,10 +220,10 @@ export default function Verzekering() {
           <p className="section-label">Wat jij nu moet doen</p>
           <div className="card border-l-4" style={{ borderLeftColor: '#3EAD6E' }}>
             <ol className="flex flex-col gap-2 text-sm text-gray-600 list-decimal pl-5">
-              <li>Controleer of je ingeschreven blijft in Nederland — niet uitschrijven bij gemeente.</li>
-              <li>Controleer je Nederlandse basiszorgverzekering — niet opzeggen.</li>
+              <li>Controleer of je ingeschreven blijft in Nederland en schrijf je niet uit bij de gemeente.</li>
+              <li>Controleer je Nederlandse basiszorgverzekering en zeg deze niet op.</li>
               <li>Vergelijk aanbieders voor aanvullende internationale stage-verzekering (OOM, JoHo, Insure to Study, Allianz).</li>
-              <li>Sluit af vóór vertrek — vraag om polisblad met begin- en einddatum (nodig voor vergunning).</li>
+              <li>Sluit af vóór vertrek en vraag om polisblad met begin- en einddatum (nodig voor vergunning).</li>
               <li>Check of je school een specifieke stage-aansprakelijkheidsverzekering eist.</li>
               <li>Neem zorgpas en polisblad mee in handbagage. Upload ook naar je cloud.</li>
               <li>Noteer de adressen van Centro Medico + CMC in je telefoon vóór vertrek.</li>
