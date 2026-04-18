@@ -15,6 +15,14 @@ export default function Vergunning() {
 
       <div className="max-w-5xl mx-auto px-5 pb-16">
 
+        {/* Autoriteitssignaal — deze pagina is geen vervanging voor de officiële bron */}
+        <div className="card border-l-4 mb-10" style={{ borderLeftColor: '#1A7EC5' }}>
+          <p className="text-xs font-medium text-dark mb-2">Deze pagina is geen vervanging voor de officiële bron</p>
+          <p className="text-xs text-gray-500 leading-relaxed">
+            Bij elk conflict tussen onze tekst en de Immigratiedienst geldt de Immigratiedienst. Controleer vóór aanvraag altijd de actuele eisen op <a href="https://immigrationcur.org/dep/studie-stage/" target="_blank" rel="noopener noreferrer" className="text-sky underline">immigrationcur.org</a>. Wij documenteren hier alleen hoe de officiële pagina's zich tot elkaar verhouden en wat dat voor Nederlandse stagiairs in de praktijk betekent.
+          </p>
+        </div>
+
         {/* BLOK 1 — Wat je officieel moet weten */}
         <section className="mb-14">
           <p className="section-label">1. Wat je officieel moet weten</p>
