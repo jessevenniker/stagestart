@@ -6,8 +6,11 @@ import { SEO_CONFIG, SITE } from '../utils/seoConfig'
  * Per-page SEO component. Reads configuration from seoConfig based on the
  * current route, or accepts direct props as override. Emits title, meta
  * description, canonical link, Open Graph tags and Twitter card tags.
+ *
+ * Pass noindex=true to add a robots meta tag that prevents indexing.
+ * Useful for the 404 page since SPA routes always return HTTP 200.
  */
-export default function SEO({ title, description, image, type }) {
+export default function SEO({ title, description, image, type, noindex }) {
   const { pathname } = useLocation()
   const config = SEO_CONFIG[pathname] || {}
 
@@ -23,6 +26,7 @@ export default function SEO({ title, description, image, type }) {
       <title>{finalTitle}</title>
       <meta name="description" content={finalDescription} />
       <link rel="canonical" href={canonical} />
+      {noindex && <meta name="robots" content="noindex,follow" />}
 
       {/* Open Graph */}
       <meta property="og:type" content={finalType} />

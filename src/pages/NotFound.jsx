@@ -8,6 +8,7 @@ export default function NotFound() {
       <SEO
         title="Pagina niet gevonden"
         description="Deze pagina bestaat niet of is verplaatst. Vind via de menu of de kernpagina's hieronder wat je zoekt."
+        noindex
       />
       <PageHero
         eyebrow="404"
