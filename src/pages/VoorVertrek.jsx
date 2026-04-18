@@ -66,14 +66,14 @@ const STAPPEN = [
     title: 'Legeskosten betalen — XCG 525',
     desc: 'Volgens Immigratiedienst Curaçao kost de aanvraag XCG 525,00. Je moet dit betaald hebben vóór je de aanvraag indient.',
     detail: [
-      'Bedrag: XCG 525,00 (Caribische gulden) — maak niet over in euro\'s.',
+      'Bedrag: XCG 525,00 (Caribische gulden). Maak niet over in euro\'s.',
       'Bank: Maduro & Curiel\'s Bank (MCB)',
       'BIC/SWIFT: MCBKCWCU',
       'Naam ontvanger: Toelatingsorganisatie',
       'Adres: Plasa Jojo Correa 2-4, Willemstad, Curaçao',
       'Omschrijving: volledige naam zoals in paspoort + geboortedatum. Voorbeeld: "Leges Jan Jansen 20 januari 2000".',
       'Kies bij kosten voor OUR (jij betaalt de bankkosten, niet delen).',
-      'Maak een screenshot van de betaling — dit is je betaalbewijs voor indiening.',
+      'Maak een screenshot van de betaling. Dit is je betaalbewijs voor indiening.',
     ],
   },
   {
@@ -105,7 +105,7 @@ const STAPPEN = [
       'Identiteitsbewijzen in kleur, beide zijden.',
       'Documenten moeten volledig, recht en goed leesbaar zijn.',
       'Belangrijk: alles moet in één (1) mail zitten.',
-      'Na indiening ontvang je een voorlopig bewijs van aanvraag — bewaar dit goed.',
+      'Na indiening ontvang je een voorlopig bewijs van aanvraag. Bewaar dit goed.',
     ],
   },
   {
@@ -122,7 +122,7 @@ const STAPPEN = [
   {
     n: '10', bronType: 'officieel', color: '#1A7EC5', tijd: 'Binnen 7 dagen voor vertrek',
     title: 'Digital Immigration Card (DI Card) invullen',
-    desc: 'Verplicht voor alle bezoekers van Curaçao. Invullen via dicardcuracao.com — dit is gratis en duurt 5 minuten.',
+    desc: 'Verplicht voor alle bezoekers van Curaçao. Invullen via dicardcuracao.com. Gratis en duurt 5 minuten.',
     detail: [
       'Vul de DI Card in via dicardcuracao.com — dit is gratis.',
       'Er circuleren derde-partij websites die hiervoor betaling vragen. Betaal nooit.',
@@ -135,7 +135,7 @@ const STAPPEN = [
   {
     n: '11', bronType: 'richtlijn', color: '#E8507A', tijd: '2–3 weken voor vertrek',
     title: 'Vliegticket boeken & woning bevestigen',
-    desc: 'Boek je vlucht op tijd — prijzen stijgen flink richting vertrekdatum. Zorg dat je woning geregeld is.',
+    desc: 'Boek je vlucht op tijd. Prijzen stijgen flink richting vertrekdatum. Zorg dat je woning geregeld is.',
     detail: [
       'Retourvlucht: reken op circa €600–€1.000 afhankelijk van seizoen.',
       'Piekperiodes (duurder): december, januari, schoolvakanties.',
@@ -179,7 +179,7 @@ const TIJDLIJN_ITEMS = [
   { weken: 16, kleur: '#C0522A', taak: 'Controleer geldigheid paspoort (minimaal 6 maanden na terugkeer geldig)' },
   { weken: 12, kleur: '#C0522A', taak: 'Start zoeken naar woonruimte — begin vroeg, goed aanbod raakt op' },
   { weken: 10, kleur: '#C0522A', taak: 'VOG aanvragen via Justis.nl — duurt 4–6 weken' },
-  { weken: 8,  kleur: '#C0522A', taak: 'Stagevergunning aanvragen bij Toelatingsorganisatie Curaçao — kost ~€307' },
+  { weken: 8,  kleur: '#C0522A', taak: 'Stagevergunning aanvragen bij Toelatingsorganisatie Curaçao: legeskosten XCG 525 (± €263)' },
   { weken: 8,  kleur: '#E2A832', taak: 'Verzekering afsluiten (reis + zorg + WA)' },
   { weken: 8,  kleur: '#3B8FB5', taak: 'DUO: studentenreisproduct stopzetten — levert €115/mnd op' },
   { weken: 6,  kleur: '#C0522A', taak: 'Stagecontract ondertekend en goedgekeurd door school' },
@@ -213,7 +213,7 @@ export default function VoorVertrek() {
       <PageHero
         eyebrow="Voor vertrek"
         title="Wat je moet regelen — en in welke volgorde."
-        subtitle="Volgens Immigratiedienst Curaçao heeft de Toelatingsorganisatie officieel 4 maanden de tijd om een beslissing te nemen. Begin minimaal 8 weken voor vertrek met de aanvraag — niet 3."
+        subtitle="Volgens Immigratiedienst Curaçao heeft de Toelatingsorganisatie officieel 4 maanden de tijd om een beslissing te nemen. Begin minimaal 8 weken voor vertrek met de aanvraag, niet 3."
         accentColor="#D4522A"
         image="/img/paspoort-en-reisdocumenten.jpg"
         imageAlt="Paspoort en reisdocumenten klaargelegd voor vertrek naar Curaçao"
