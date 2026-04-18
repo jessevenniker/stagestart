@@ -1,146 +1,150 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Tier 1 — Stagekern (hoogste prioriteit) -->
+  <!-- Home -->
   <url>
     <loc>https://stagestart-curacao.vercel.app/</loc>
-    <lastmod>2026-04-16</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- Tier 1: Stagekern (6 kernpagina's + verzekering + begin-hier) -->
   <url>
     <loc>https://stagestart-curacao.vercel.app/begin-hier</loc>
-    <lastmod>2026-04-16</lastmod>
+    <lastmod>2026-04-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://stagestart-curacao.vercel.app/voor-vertrek</loc>
-    <lastmod>2026-04-16</lastmod>
+    <lastmod>2026-04-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://stagestart-curacao.vercel.app/vergunning</loc>
-    <lastmod>2026-04-16</lastmod>
+    <lastmod>2026-04-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://stagestart-curacao.vercel.app/kosten</loc>
-    <lastmod>2026-04-16</lastmod>
+    <lastmod>2026-04-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://stagestart-curacao.vercel.app/wonen</loc>
-    <lastmod>2026-04-16</lastmod>
+    <lastmod>2026-04-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://stagestart-curacao.vercel.app/auto</loc>
-    <lastmod>2026-04-16</lastmod>
+    <lastmod>2026-04-18</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://stagestart-curacao.vercel.app/eerste-week</loc>
-    <lastmod>2026-04-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://stagestart-curacao.vercel.app/verzekering</loc>
-    <lastmod>2026-04-16</lastmod>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://stagestart-curacao.vercel.app/eerste-week</loc>
+    <lastmod>2026-04-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- Tier 2 — Naast je stage -->
+  <!-- Ondersteunende autoriteitspagina's -->
   <url>
-    <loc>https://stagestart-curacao.vercel.app/werken</loc>
-    <lastmod>2026-04-16</lastmod>
-    <changefreq>quarterly</changefreq>
+    <loc>https://stagestart-curacao.vercel.app/bronnen</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://stagestart-curacao.vercel.app/leven</loc>
-    <lastmod>2026-04-16</lastmod>
-    <changefreq>quarterly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://stagestart-curacao.vercel.app/veiligheid</loc>
-    <lastmod>2026-04-16</lastmod>
-    <changefreq>quarterly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://stagestart-curacao.vercel.app/eten</loc>
-    <lastmod>2026-04-16</lastmod>
-    <changefreq>quarterly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://stagestart-curacao.vercel.app/happy-hours</loc>
-    <lastmod>2026-04-16</lastmod>
-    <changefreq>quarterly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://stagestart-curacao.vercel.app/stranden</loc>
-    <lastmod>2026-04-16</lastmod>
-    <changefreq>quarterly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://stagestart-curacao.vercel.app/weekend-trips</loc>
-    <lastmod>2026-04-16</lastmod>
-    <changefreq>quarterly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://stagestart-curacao.vercel.app/kaart</loc>
-    <lastmod>2026-04-16</lastmod>
-    <changefreq>quarterly</changefreq>
-    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://stagestart-curacao.vercel.app/faq</loc>
-    <lastmod>2026-04-16</lastmod>
-    <changefreq>quarterly</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://stagestart-curacao.vercel.app/startgids</loc>
-    <lastmod>2026-04-16</lastmod>
-    <changefreq>quarterly</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 
-  <!-- Transparantie + juridisch -->
+  <!-- Tier 2: Ondersteunende content naast je stage -->
   <url>
-    <loc>https://stagestart-curacao.vercel.app/bronnen</loc>
-    <lastmod>2026-04-16</lastmod>
+    <loc>https://stagestart-curacao.vercel.app/werken</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://stagestart-curacao.vercel.app/leven</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://stagestart-curacao.vercel.app/veiligheid</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://stagestart-curacao.vercel.app/eten</loc>
+    <lastmod>2026-04-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://stagestart-curacao.vercel.app/happy-hours</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://stagestart-curacao.vercel.app/stranden</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://stagestart-curacao.vercel.app/weekend-trips</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://stagestart-curacao.vercel.app/kaart</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Juridisch -->
+  <url>
     <loc>https://stagestart-curacao.vercel.app/disclaimer</loc>
-    <lastmod>2026-04-16</lastmod>
+    <lastmod>2026-04-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://stagestart-curacao.vercel.app/privacy</loc>
-    <lastmod>2026-04-16</lastmod>
+    <lastmod>2026-04-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://stagestart-curacao.vercel.app/cookies</loc>
-    <lastmod>2026-04-16</lastmod>
+    <lastmod>2026-04-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
