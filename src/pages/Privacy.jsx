@@ -69,14 +69,19 @@ const SECTIES = [
     title: 'Delen wij gegevens met derden?',
     body: (
       <>
-        <p className="text-sm text-gray-600 leading-relaxed mb-2">Wij verkopen jouw persoonsgegevens niet. Wij delen gegevens alleen met derden als dat nodig is voor de werking van de website of dienstverlening, bijvoorbeeld:</p>
-        <ul className="flex flex-col gap-1.5 text-sm text-gray-600 pl-5 list-disc">
-          <li>hostingproviders</li>
-          <li>e-mail- of formuliertools</li>
-          <li>analysetools</li>
-          <li>andere technische dienstverleners</li>
+        <p className="text-sm text-gray-600 leading-relaxed mb-2">Wij verkopen jouw persoonsgegevens niet. Wij delen gegevens alleen met derden als dat nodig is voor de werking van de website of dienstverlening. De volgende verwerkers worden door StageStart Curaçao gebruikt:</p>
+        <ul className="flex flex-col gap-2 text-sm text-gray-600 pl-5 list-disc mb-2">
+          <li>
+            <strong className="text-dark">Vercel Inc. (Verenigde Staten)</strong>: hostingprovider die de website serveert. Vercel ontvangt automatisch IP-adressen en technische verzoekgegevens. Verwerking onder Standard Contractual Clauses. Zie <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-sky underline">Vercel privacy policy</a>.
+          </li>
+          <li>
+            <strong className="text-dark">Resend (Verenigde Staten)</strong>: e-mail-API voor het versturen van berichten via het contactformulier. Resend ontvangt naam, e-mailadres en berichtinhoud. Verwerking onder Data Processing Addendum. Zie <a href="https://resend.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-sky underline">Resend privacy policy</a>.
+          </li>
+          <li>
+            <strong className="text-dark">TransIP B.V. (Nederland)</strong>: domeinnaamregistratie en DNS-beheer. Verwerkt geen gebruikersgegevens van bezoekers.
+          </li>
         </ul>
-        <p className="text-sm text-gray-600 leading-relaxed mt-2">Met dergelijke partijen sluiten wij waar nodig passende afspraken.</p>
+        <p className="text-sm text-gray-600 leading-relaxed mt-2">Wanneer wij in de toekomst aanvullende verwerkers inschakelen (bijvoorbeeld voor analytics of nieuwsbrieven), passen wij deze verklaring aan.</p>
       </>
     ),
   },
