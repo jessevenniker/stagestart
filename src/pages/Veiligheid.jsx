@@ -5,7 +5,7 @@ import ClaimLabel from '../components/ClaimLabel'
 import LastChecked from '../components/LastChecked'
 
 const TIPS = [
-  { title: 'Telefoon en waardespullen', desc: 'Neem op feesten alleen cash mee. Laat paspoort en laptop thuis in de kluis. Witte oordopjes vallen op — gebruik zwarte. Houd je telefoon in het openbaar zo veel mogelijk uit het zicht.' },
+  { title: 'Telefoon en waardespullen', desc: 'Neem op feesten alleen cash mee. Laat paspoort en laptop thuis in de kluis. Witte oordopjes vallen op, gebruik zwarte. Houd je telefoon in het openbaar zo veel mogelijk uit het zicht.' },
   { title: 'In de auto', desc: 'Kijk bij het uitstappen rustig om je heen. Word je na een avond gevolgd, rijd dan eerst naar een drukke plek voor je naar huis gaat. Sluit ramen en deuren altijd af.' },
   { title: 'Te voet na donker', desc: 'Ga liever niet alleen op pad. Neem een vriend mee of regel vervoer. Vermijd donkere steegjes en verlaten parkeerplaatsen, ook in vertrouwde buurten.' },
   { title: 'Op het strand', desc: 'Laat geen waardevolle spullen onbewaakt liggen tijdens het zwemmen. Op afgelegen stranden geldt: na zonsondergang weg zijn.' },
@@ -91,7 +91,7 @@ export default function Veiligheid() {
           <div className="card border-l-4 mt-3" style={{ borderLeftColor: '#F2B517' }}>
             <p className="text-xs font-medium text-dark mb-1">Bij een verkeersongeval</p>
             <p className="text-xs text-gray-500 leading-relaxed">
-              Bel 9223 voor Forensys. Inspecteurs in rode T-shirts komen ter plaatse, spreken Engels en handelen het af. Verplaats de auto niet tot zij er zijn. Het proces duurt ongeveer een uur — neem water mee.
+              Bel 9223 voor Forensys. Inspecteurs in rode T-shirts komen ter plaatse, spreken Engels en handelen het af. Verplaats de auto niet tot zij er zijn. Het proces duurt ongeveer een uur. Neem water mee.
             </p>
           </div>
         </section>

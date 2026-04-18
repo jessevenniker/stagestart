@@ -16,7 +16,7 @@ const STRANDEN = [
   {
     naam: 'Playa Kleine Knip',
     type: 'zand', entree: 'gratis', snorkelen: true, sfeer: 'rustig',
-    desc: 'Kleiner en rustiger dan Grote Knip. Zacht zand, kalm water, rotswanden. Favoriet voor snorkelen dicht bij de kust — papegaaivissen en koninginnenvissen.',
+    desc: 'Kleiner en rustiger dan Grote Knip. Zacht zand, kalm water, rotswanden. Favoriet voor snorkelen dicht bij de kust, met papegaaivissen en koninginnenvissen.',
     faciliteiten: 'Palapa’s, beperkte snackverkopers, kleine parkeerplaats',
     snorkelNote: 'Een van de beste plekken voor snorkelen dicht bij de kust.',
     coords: [12.3413, -69.1525],
@@ -32,7 +32,7 @@ const STRANDEN = [
   {
     naam: 'Playa Porto Mari',
     type: 'zand', entree: 'betaald', snorkelen: true, sfeer: 'gezellig',
-    desc: 'Beroemd om het dubbele rif — een van Curaçao’s beste snorkel- en duikplekken. Let op de varkens die soms over het strand wandelen.',
+    desc: 'Beroemd om het dubbele rif. Een van Curaçao’s beste snorkel- en duikplekken. Let op de varkens die soms over het strand wandelen.',
     faciliteiten: 'Restaurant, strandbar, duikcentrum, toiletten, douches, parkeerplaats',
     snorkelNote: 'Dubbel rifsysteem, top shore dive site. Snorkelen kan ook bij de steiger.',
     coords: [12.2190, -69.0863],
@@ -104,7 +104,7 @@ const STRANDEN = [
   {
     naam: 'Kokomo Beach',
     type: 'zand', entree: 'betaald', snorkelen: true, sfeer: 'gezellig',
-    desc: 'Relaxte lokale sfeer met beachclub-vibes. Houten decks, hangmatten en de beroemde “Kokomo swing” — dé fotoplek bij zonsondergang.',
+    desc: 'Relaxte lokale sfeer met beachclub-vibes. Houten decks, hangmatten en de beroemde “Kokomo swing”, dé fotoplek bij zonsondergang.',
     faciliteiten: 'Beachclub, restaurant, bar, duikshop, toiletten, douches, parkeerplaats',
     snorkelNote: 'Goed voor casual snorkelen in kalm water.',
     coords: [12.1610, -69.0046],
@@ -149,7 +149,7 @@ const STRANDEN = [
   {
     naam: 'Playa Canoa / Kanoa Beach',
     type: 'zand', entree: 'gratis', snorkelen: false, sfeer: 'rustig',
-    desc: 'Curaçao’s ruige surfstrand. Rauw, winderig en vol energie. Noordoostkust met consistente golven. Niet zwemmen — sterke stroming. Wel de beste plek om surfers te kijken.',
+    desc: 'Curaçao’s ruige surfstrand. Rauw, winderig en vol energie. Noordoostkust met consistente golven. Niet zwemmen wegens sterke stroming. Wel de beste plek om surfers te kijken.',
     faciliteiten: 'Kleine snackstands in het weekend, parkeerplaats',
     coords: [12.1748, -68.8661],
   },

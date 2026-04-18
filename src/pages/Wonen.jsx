@@ -215,7 +215,7 @@ export default function Wonen() {
             <div className="card border-l-4" style={{ borderLeftColor: '#E8507A' }}>
               <p className="text-xs font-medium text-dark mb-1">Rust en ruimte</p>
               <p className="text-sm font-medium text-blush mb-2">→ Bapor Kibra / Caracasbaai</p>
-              <p className="text-xs text-gray-500 leading-relaxed">Mooie omgeving, weinig drukte. Auto absoluut verplicht — anders zit je vast.</p>
+              <p className="text-xs text-gray-500 leading-relaxed">Mooie omgeving, weinig drukte. Auto absoluut verplicht, anders zit je vast.</p>
             </div>
             <div className="card border-l-4" style={{ borderLeftColor: '#1A7EC5' }}>
               <p className="text-xs font-medium text-dark mb-1">Zo goedkoop mogelijk</p>
@@ -377,7 +377,7 @@ export default function Wonen() {
 
         {/* OB-belasting uitleg */}
         <div className="card border-l-4 mb-10" style={{ borderLeftColor: '#E8507A' }}>
-          <p className="text-sm font-medium text-dark mb-2">OB-belasting (6-7%) — vraag expliciet na</p>
+          <p className="text-sm font-medium text-dark mb-2">OB-belasting (6-7%): vraag expliciet na</p>
           <p className="text-sm text-gray-600 leading-relaxed">
             Op Curaçao geldt omzetbelasting (OB) op huur. Dat is 6% over woonruimte, 7% over short-stay. Deze komt meestal bovenop de prijs — sommige verhuurders communiceren "€450" maar factureren €480. Vraag vóór het tekenen: <strong className="text-dark">"Is deze prijs inclusief OB?"</strong> Laat het antwoord schriftelijk vastleggen.
           </p>
@@ -407,7 +407,7 @@ export default function Wonen() {
 
         {/* Stroom & airco */}
         <div className="card border-l-4 mb-10" style={{ borderLeftColor: '#F2B517' }}>
-          <p className="text-sm font-medium text-dark mb-2">Stroom & airco — vraag dit voor je tekent</p>
+          <p className="text-sm font-medium text-dark mb-2">Stroom en airco: vraag dit voor je tekent</p>
           <ul className="flex flex-col gap-1.5 mb-3">
             <li className="text-xs text-gray-500">· Is stroom inbegrepen in de huurprijs?</li>
             <li className="text-xs text-gray-500">· Is er een dagelijks verbruikslimiet?</li>

@@ -7,12 +7,12 @@ const CULTUUR = [
   {
     color: '#C0522A',
     title: 'Poko poko',
-    desc: 'Curaçao werkt op een ander tempo. "Poko poko" betekent letterlijk "rustig aan" en dat is geen uitdrukking, het is een levenshouding. Vergaderingen beginnen later. Beslissingen duren langer. Zaken gaan via persoonlijke relaties, niet via efficiëntie. Pas je aan in plaats van te pushen — dan kom je verder.',
+    desc: 'Curaçao werkt op een ander tempo. "Poko poko" betekent letterlijk "rustig aan" en dat is geen uitdrukking, het is een levenshouding. Vergaderingen beginnen later. Beslissingen duren langer. Zaken gaan via persoonlijke relaties, niet via efficiëntie. Pas je aan in plaats van te pushen, dan kom je verder.',
   },
   {
     color: '#E2A832',
     title: 'Begin altijd met een begroeting',
-    desc: 'Op Curaçao groet je iedereen voordat je over werk begint. Geen "even snel een vraag" zonder eerst te vragen hoe het gaat. Dit is geen tijdverspilling — het is respect. Collega\'s die je dag niet gegroet hebt, zullen dat opmerken.',
+    desc: 'Op Curaçao groet je iedereen voordat je over werk begint. Geen "even snel een vraag" zonder eerst te vragen hoe het gaat. Dit is geen tijdverspilling, het is respect. Collega\'s die je dag niet gegroet hebt, zullen dat opmerken.',
   },
   {
     color: '#5A9E7A',

@@ -9,7 +9,7 @@ const STEPS = [
     step: '1',
     color: '#D4522A',
     title: 'Regel je stage zelf of via een bureau?',
-    desc: 'Het eerste wat je moet beslissen. Een bureau kost €500–800 maar neemt veel uit handen. Zelf doen is goedkoper maar vergt meer werk. We leggen beide opties eerlijk uit — zonder voorkeur.',
+    desc: 'Het eerste wat je moet beslissen. Een bureau kost €500–800 maar neemt veel uit handen. Zelf doen is goedkoper maar vergt meer werk. We leggen beide opties eerlijk uit, zonder voorkeur.',
     to: null,
   },
   {

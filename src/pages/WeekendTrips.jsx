@@ -27,7 +27,7 @@ const TRIPS = [
     duur: '2–3 uur',
     kosten: '±15 XCG entree',
     moeilijkheid: 'makkelijk',
-    desc: 'Ruige noordkust met spectaculaire branding, grotten en boka\'s. Boka Tabla is de beroemdste grot. Niet zwemmen — de golven zijn gevaarlijk!',
+    desc: 'Ruige noordkust met spectaculaire branding, grotten en boka\'s. Boka Tabla is de beroemdste grot. Niet zwemmen, de golven zijn gevaarlijk!',
     meenemen: ['Water', 'Stevige schoenen', 'Camera'],
   },
   {
@@ -35,7 +35,7 @@ const TRIPS = [
     duur: '1–1,5 uur',
     kosten: '±20 XCG',
     moeilijkheid: 'makkelijk',
-    desc: 'Kalksteen grotten met stalactieten, ondergrondse meren en vleermuizen. Rondleiding inclusief. Koel en aangenaam — een welkome pauze van de hitte.',
+    desc: 'Kalksteen grotten met stalactieten, ondergrondse meren en vleermuizen. Rondleiding inclusief. Koel en aangenaam, een welkome pauze van de hitte.',
     meenemen: ['Comfortabele schoenen'],
   },
   {
@@ -67,7 +67,7 @@ const TRIPS = [
     duur: '1,5 uur',
     kosten: '±28 XCG',
     moeilijkheid: 'makkelijk',
-    desc: 'Struisvogelfarm met rondleiding. Verrassend leuk — je kunt struisvogeleieren vasthouden en de vogels voeren. Goed voor een rustige middag.',
+    desc: 'Struisvogelfarm met rondleiding. Verrassend leuk: je kunt struisvogeleieren vasthouden en de vogels voeren. Goed voor een rustige middag.',
     meenemen: ['Zonnebrand', 'Pet'],
   },
 ]
@@ -132,7 +132,7 @@ export default function WeekendTrips() {
         <div className="bg-cream rounded-2xl p-8 flex flex-col md:flex-row gap-5 items-start md:items-center justify-between">
           <div>
             <p className="font-serif text-xl font-normal text-dark mb-1">Op zoek naar het perfecte strand?</p>
-            <p className="text-sm text-gray-600">35+ stranden vergeleken — van gezellige beachclubs tot verlaten baaien.</p>
+            <p className="text-sm text-gray-600">35+ stranden vergeleken, van gezellige beachclubs tot verlaten baaien.</p>
           </div>
           <Link to="/stranden" className="btn-terra shrink-0">Bekijk stranden →</Link>
         </div>

@@ -14,7 +14,7 @@ const EENMALIG = [
   { label: 'Stagevergunning', range: '± € 320', tip: 'Legeskosten: XCG 525 (± €263). VOG: €41,35. Geboorteakte: ±€15. Bankkosten overboeking: ±€10–20. Bron: Immigratiedienst Curaçao.' },
   { label: 'Borg woning', range: '€ 375 – 675', tip: 'Meestal 1 tot 1,5 keer de maandhuur. Krijg je terug aan het einde als alles in orde is.' },
   { label: 'Borg auto', range: '€ 500 – 1.000', tip: 'Afhankelijk van de verhuurder en het type auto. Krijg je terug bij inlevering zonder schade.' },
-  { label: 'Inrichting & eerste boodschappen', range: '€ 100 – 300', tip: 'Handdoeken, beddengoed, kookgerei — afhankelijk van hoe volledig de woning al is.' },
+  { label: 'Inrichting & eerste boodschappen', range: '€ 100 – 300', tip: 'Handdoeken, beddengoed, kookgerei. Afhankelijk van hoe volledig de woning al is.' },
   { label: 'SIM-kaart Curaçao', range: '€ 10 – 25', tip: 'Digicel of Flow. Prepaid-bundels werken goed.' },
 ]
 
@@ -120,16 +120,16 @@ export default function Kosten() {
           <ClaimLabel kind="ervaring" />
           <div className="grid sm:grid-cols-2 gap-4">
             {[
-              { color: '#D4522A', title: 'DI Card — gratis maar val er niet voor nep-sites', desc: 'Curaçao vereist een Digital Immigration Card die je binnen 7 dagen voor vertrek invult. Dit is gratis via dicardcuracao.com. Er circuleren derde-partij sites die hier kosten voor rekenen. Betaal nooit voor de DI card.' },
+              { color: '#D4522A', title: 'DI Card: gratis, maar val er niet voor nep-sites', desc: 'Curaçao vereist een Digital Immigration Card die je binnen 7 dagen voor vertrek invult. Dit is gratis via dicardcuracao.com. Er circuleren derde-partij sites die hier kosten voor rekenen. Betaal nooit voor de DI card.' },
               { color: '#F2B517', title: 'Caribbean Guilder (Cg) wisselkoers', desc: 'Curaçao gebruikt sinds 31 maart 2025 de Caribbean Guilder, gekoppeld aan de dollar. In winkels rekenen ze USD 1 = Cg 1,82; officieel is dat Cg 1,79. Klein verschil maar relevant voor je budget.' },
               { color: '#3EAD6E', title: 'Service charge in restaurants', desc: 'Ongeveer 10% is vaak al verwerkt in de rekening. In hotels soms 12%. Controleer je bon voordat je extra fooi geeft.' },
               { color: '#1A7EC5', title: 'Taxi\'s accepteren geen pin', desc: 'Taxi\'s werken bijna altijd op cash. Heb je bij aankomst geen cash, dan is je eerste rit duur of problematisch. Zorg altijd voor cash bij je.' },
-              { color: '#E8507A', title: 'Elektriciteit en water niet altijd inbegrepen', desc: 'Veel studentenwoningen rekenen G/W/L apart. Airco verbruikt veel stroom. Dit is een echte maandelijkse post — vraag dit expliciet na bij je verhuurder.' },
+              { color: '#E8507A', title: 'Elektriciteit en water niet altijd inbegrepen', desc: 'Veel studentenwoningen rekenen G/W/L apart. Airco verbruikt veel stroom. Dit is een echte maandelijkse post. Vraag dit expliciet na bij je verhuurder.' },
               { color: '#D4522A', title: 'Tankprocedure werkt anders', desc: 'Je betaalt vooraf het bedrag waarvoor je wilt tanken, daarna gaat de pomp open. Je moet dus vooraf inschatten hoeveel je nodig hebt. Te veel betaald? Je krijgt terug bij de kassa.' },
               { color: '#F2B517', title: 'Supermarkt inpakkers', desc: 'Bij grote supers wordt je boodschappen ingepakt. Ze leven van fooi: 2–3 gulden bij de band, 5 gulden naar de auto.' },
               { color: '#3EAD6E', title: 'Auto eigen risico', desc: 'Curaçao-auto\'s hebben vrijwel altijd schade. Controleer of jouw verzekering een eigen risico heeft en hoe hoog dat is. Bij lokale verhuurders is de WA-dekking soms lager dan de Nederlandse standaard.' },
               { color: '#1A7EC5', title: 'Retourticket is verplicht', desc: 'De douane laat je niet het eiland op zonder retourticket. Op het laatste moment boeken is altijd duurder.' },
-              { color: '#E8507A', title: 'Stroom is duur — airco tikt snel aan', desc: 'Elektriciteit op Curaçao is een van de duurste van de regio. Zet de airco uit als je de deur uitgaat.' },
+              { color: '#E8507A', title: 'Stroom is duur, airco tikt snel aan', desc: 'Elektriciteit op Curaçao is een van de duurste van de regio. Zet de airco uit als je de deur uitgaat.' },
               { color: '#D4522A', title: 'Adapter meenemen', desc: 'Curaçao gebruikt zowel 220V Europees als 110V Amerikaans. Neem een universele adapter mee vanuit Nederland.' },
               { color: '#F2B517', title: 'Fooi is 15–20%', desc: 'Standaard in restaurants. Keukenmedewerkers delen mee. Geen extra fooi als service charge al op de bon staat.' },
               { color: '#3EAD6E', title: 'Bankrekening openen duurt 2–4 maanden', desc: 'Begin er vroeg mee als je langer blijft. Regel betalingen zoveel mogelijk via je Nederlandse rekening.' },

@@ -85,7 +85,7 @@ export default function Eten() {
         <section className="mb-14">
           <p className="section-label">Plasa Bieu — dé lunchtip</p>
           <div className="card border-l-4" style={{ borderLeftColor: '#3EAD6E' }}>
-            <p className="text-sm font-medium text-dark mb-2">Marshe Bieu — overdekte markthal</p>
+            <p className="text-sm font-medium text-dark mb-2">Marshe Bieu: overdekte markthal</p>
             <p className="text-sm text-gray-600 leading-relaxed">
               Plasa Bieu (ook: Marshe Bieu) is de overdekte markthal in het centrum van Willemstad. Hier komen Curaçaoënaars massaal naartoe voor een lokale lunch. Stoba, keshi yena, funchi — echte Curaçaose keuken voor een paar gulden.
             </p>

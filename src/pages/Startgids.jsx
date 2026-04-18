@@ -3,7 +3,7 @@ import PageHero from '../components/PageHero'
 import SEO from '../components/SEO'
 
 const INHOUD = [
-  { n: '01', title: 'Vertrekchecklist', desc: '10 stappen met tijdlijn — van paspoort checken tot vliegticket boeken.' },
+  { n: '01', title: 'Vertrekchecklist', desc: '10 stappen met tijdlijn, van paspoort checken tot vliegticket boeken.' },
   { n: '02', title: 'Vergunning stappenplan', desc: 'Alle documenten op een rij, in de juiste volgorde, met kosten.' },
   { n: '03', title: 'Budgetoverzicht', desc: 'Eenmalige kosten + maandkosten + inkomsten in één overzicht.' },
   { n: '04', title: 'Inpaklijst', desc: 'Wat neem je mee? En wat koop je beter lokaal?' },

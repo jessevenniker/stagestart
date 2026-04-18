@@ -39,7 +39,7 @@ export const STRANDEN_LOCATIES = [
   { naam: 'Avila Hotel Beach', coords: [12.1007, -68.9219], desc: 'Privé strand van historisch hotel met huisrif.' },
   { naam: 'Boka Sami', coords: [12.1481, -68.9989], desc: 'Traditioneel vissersdorp met kleurrijke boten.' },
   { naam: 'Playa Parasasa', coords: [12.1186, -68.9676], desc: 'Stadsstrand met BBQ\'s en zonsondergang.' },
-  { naam: 'Playa Santu Pretu', coords: [12.3029, -69.1490], desc: 'Black Sand Beach — uniek vulkanisch zand.' },
+  { naam: 'Playa Santu Pretu', coords: [12.3029, -69.1490], desc: 'Black Sand Beach: uniek vulkanisch zand.' },
   { naam: 'San Juan Beaches', coords: [12.2535, -69.0987], desc: 'Drie kleine baaien op privé terrein.' },
   { naam: 'Santa Martha Bay', coords: [12.2690, -69.1282], desc: 'Rustige baai met vliegtuigwrak voor duikers.' },
   { naam: 'Playa Hundu', coords: [12.2610, -69.1203], desc: 'Kleine, rustige picknickplek met natuurlijke schaduw.' },
@@ -98,10 +98,10 @@ export const HAPPYHOUR_LOCATIES = HAPPY_HOURS_RAW.map(h => ({
 // ─────────────────────────────────────────
 export const ETEN_LOCATIES = [
   // Truk'i Pan
-  { naam: 'BBQ Express', coords: [12.1038, -68.8880], desc: 'Foodtruck — kip, ribs, vis met sauzen. Naast Piri Piri.' },
+  { naam: 'BBQ Express', coords: [12.1038, -68.8880], desc: 'Foodtruck met kip, ribs en vis met sauzen. Naast Piri Piri.' },
   { naam: 'Disfruta Más', coords: [12.1042, -68.8870], desc: 'Beste batidos en Venezolaanse arepas.' },
   { naam: 'Hot Pepper', coords: [12.1380, -68.9100], desc: 'Burritos en Mexicaans, open vanaf 21:00.' },
-  { naam: 'The Don', coords: [12.1070, -68.9220], desc: 'Street restaurant in Saliña — lomito, burgers, pizza.' },
+  { naam: 'The Don', coords: [12.1070, -68.9220], desc: 'Street restaurant in Saliña met lomito, burgers en pizza.' },
   // Supermarkten
   { naam: 'Centrum Supermarkt (Mahaai)', coords: [12.1280, -68.9230], desc: 'Goedkoopste supermarkt. Beste assortiment.' },
   { naam: 'Centrum Supermarkt (Piscadera)', coords: [12.1228, -68.9690], desc: 'Goedkoopste supermarkt. Beste assortiment.' },

@@ -134,7 +134,7 @@ export default function FAQ() {
         <div className="bg-cream rounded-2xl p-8 flex flex-col md:flex-row gap-5 items-start md:items-center justify-between mt-8">
           <div>
             <p className="font-serif text-xl font-normal text-dark mb-1">Nog meer hulp nodig?</p>
-            <p className="text-sm text-gray-600">Begin met ons stappenplan — van papieren tot je eerste week op het eiland.</p>
+            <p className="text-sm text-gray-600">Begin met ons stappenplan, van papieren tot je eerste week op het eiland.</p>
           </div>
           <Link to="/begin-hier" className="btn-terra shrink-0">Begin hier →</Link>
         </div>

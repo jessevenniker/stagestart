@@ -16,7 +16,7 @@ const TOPICS = [
     to: '/vergunning',
     color: '#1A7EC5',
     title: 'Vergunning — wat zegt de officiële bron?',
-    desc: 'De Immigratiedienst publiceert twee aparte informatiestromen (studie/stage en Verklaring van Rechtswege). Voor jou kunnen beide relevant zijn — controleer het altijd zelf.',
+    desc: 'De Immigratiedienst publiceert twee aparte informatiestromen (studie/stage en Verklaring van Rechtswege). Voor jou kunnen beide relevant zijn. Controleer dat altijd zelf.',
     img: '/img/home-vergunning.jpg',
   },
   {
@@ -30,7 +30,7 @@ const TOPICS = [
     to: '/wonen',
     color: '#3EAD6E',
     title: 'Waar woon je op Curaçao?',
-    desc: 'Jan Thiel, Piscadera, Pietermaai, centrum — wijken eerlijk vergeleken.',
+    desc: 'Jan Thiel, Piscadera, Pietermaai, centrum: wijken eerlijk vergeleken.',
     img: '/img/hero-wonen.jpg',
   },
   {
@@ -44,7 +44,7 @@ const TOPICS = [
     to: '/eerste-week',
     color: '#E8507A',
     title: 'Je eerste week op Curaçao',
-    desc: 'SIM-kaart, supermarkt, bank, wifi — wat doe je wanneer.',
+    desc: 'SIM-kaart, supermarkt, bank, wifi: wat doe je wanneer.',
     img: '/img/hero-eerste-week.jpg',
   },
 ]
@@ -78,7 +78,7 @@ const UNDERESTIMATE = [
     num: '03',
     color: '#3EAD6E',
     title: 'Zonnebrand en verzorging zijn duurder op het eiland',
-    desc: 'Factor 50 kost op Curaçao soms het dubbele. Neem voldoende mee vanuit Nederland — ook tandpasta, shampoo en medicijnen.',
+    desc: 'Factor 50 kost op Curaçao soms het dubbele. Neem voldoende mee vanuit Nederland, plus tandpasta, shampoo en medicijnen.',
   },
   {
     num: '04',
@@ -132,7 +132,7 @@ export default function Home() {
         </h1>
 
         <p className="text-gray-500 text-base leading-relaxed max-w-xl mb-8">
-          Geen bureau. Geen pakket. Geen glossy verkoopverhaal. Gewoon eerlijke, praktische informatie — zodat jij zelf goede beslissingen kunt nemen.
+          Geen bureau. Geen pakket. Geen glossy verkoopverhaal. Gewoon eerlijke, praktische informatie zodat jij zelf goede beslissingen kunt nemen.
         </p>
 
         <div className="flex flex-wrap gap-3 mb-6">
@@ -216,7 +216,7 @@ export default function Home() {
               Bereken je maandelijkse kosten
             </h2>
             <p className="text-sm text-gray-500 leading-relaxed mb-6">
-              Pas de sliders aan op basis van jouw situatie. Gratis — geen e-mail, geen account.
+              Pas de sliders aan op basis van jouw situatie. Gratis, geen e-mail, geen account.
             </p>
 
             {[
@@ -342,7 +342,7 @@ export default function Home() {
             {[
               'Legt uit wat je zelf kunt regelen',
               'Altijd gratis en openbaar toegankelijk',
-              'Onafhankelijk — geen commissie, geen belang',
+              'Onafhankelijk: geen commissie, geen belang',
               'Eerlijke voor- én nadelen',
               'Jij beslist, wij informeren',
             ].map((t, i) => (
@@ -371,7 +371,7 @@ export default function Home() {
                 Gratis startgids + vertrekchecklist
               </h3>
               <p className="text-sm text-white/70">
-                Alles wat je moet regelen voor vertrek, in de juiste volgorde. PDF — direct beschikbaar.
+                Alles wat je moet regelen voor vertrek, in de juiste volgorde. PDF, direct beschikbaar.
               </p>
             </div>
             <Link
