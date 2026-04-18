@@ -250,6 +250,137 @@ export default function Wonen() {
           </div>
         </section>
 
+        {/* Waar zoeken */}
+        <section className="mb-10">
+          <p className="section-label">Waar zoek je een woning?</p>
+          <ClaimLabel kind="ervaring" />
+          <p className="text-sm text-gray-600 leading-relaxed mb-5 max-w-2xl">
+            Er bestaat geen centraal platform zoals Funda. Stagiairs vinden woningen via een mix van kanalen — kies er liever twee serieuze dan tien oppervlakkige.
+          </p>
+          <div className="grid sm:grid-cols-2 gap-3">
+            <div className="card">
+              <p className="text-sm font-medium text-dark mb-1">Studentenhuizen via stage-bureaus</p>
+              <p className="text-xs text-gray-500 leading-relaxed">
+                Bureaus als Bo Curaçao, Een Stage op Curaçao, Wereldstap bieden huisvesting aan. Je bent geen klant van hun stage-bemiddeling nodig om een kamer te huren — vraag dat expliciet. Voordeel: zeker niet frauduleus. Nadeel: je kunt van bureau naar bureau shoppen.
+              </p>
+            </div>
+            <div className="card">
+              <p className="text-sm font-medium text-dark mb-1">Facebook-groepen</p>
+              <p className="text-xs text-gray-500 leading-relaxed">
+                "Stagiairs op Curaçao", "Huisvesting Curaçao" en vergelijkbare groepen. Veel aanbod, maar ook veel oplichting. Zie de fraude-waarschuwing hierboven.
+              </p>
+            </div>
+            <div className="card">
+              <p className="text-sm font-medium text-dark mb-1">Via je stagebedrijf of school</p>
+              <p className="text-xs text-gray-500 leading-relaxed">
+                Sommige stagebedrijven hebben een vast contact met een verhuurder. School heeft soms een lijst met woningen waar eerdere stagiairs positief over waren. Vraag ernaar.
+              </p>
+            </div>
+            <div className="card">
+              <p className="text-sm font-medium text-dark mb-1">Eerst naar een short-stay, dan zoeken vanaf het eiland</p>
+              <p className="text-xs text-gray-500 leading-relaxed">
+                Boek je eerste 1-2 weken via Airbnb of Booking. Kijk ter plaatse rond, bezichtig fysiek, onderhandel. Dit werkt het beste — maar vraagt meer flexibiliteit.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Huurcontract checklist */}
+        <section className="mb-10">
+          <p className="section-label">Wat controleer je in het huurcontract?</p>
+          <ClaimLabel kind="richtlijn" />
+          <p className="text-sm text-gray-600 leading-relaxed mb-5 max-w-2xl">
+            Op Curaçao zijn huurcontracten minder standaard dan in Nederland. Lees het contract woord-voor-woord door voor je tekent en vraag alles wat onduidelijk is expliciet na.
+          </p>
+          <div className="card">
+            <p className="text-xs font-medium text-dark mb-3 uppercase tracking-wider">Kernpunten om te checken</p>
+            <ul className="flex flex-col gap-2 text-sm text-gray-600">
+              <li className="flex gap-2"><span className="text-sky shrink-0">·</span><strong className="text-dark">Borg:</strong> hoeveel, wanneer terug, onder welke voorwaarden ingehouden (bv. schoonmaakkosten)</li>
+              <li className="flex gap-2"><span className="text-sky shrink-0">·</span><strong className="text-dark">Huurtermijn + opzegtermijn:</strong> kun je eerder opzeggen als je stage korter wordt? Welke termijn geldt?</li>
+              <li className="flex gap-2"><span className="text-sky shrink-0">·</span><strong className="text-dark">Wat is inbegrepen:</strong> stroom, water, gas, internet, meubels, keukengerei, linnengoed?</li>
+              <li className="flex gap-2"><span className="text-sky shrink-0">·</span><strong className="text-dark">OB-belasting (6-7%):</strong> komt die bovenop de prijs of is die inbegrepen? Dit staat niet altijd duidelijk.</li>
+              <li className="flex gap-2"><span className="text-sky shrink-0">·</span><strong className="text-dark">Stroomlimiet:</strong> is er een dagelijks of maandelijks verbruikslimiet? Boven de limiet zelf betalen?</li>
+              <li className="flex gap-2"><span className="text-sky shrink-0">·</span><strong className="text-dark">Service fee:</strong> eenmalige kosten voor schoonmaak, ontvangst, sleutels?</li>
+              <li className="flex gap-2"><span className="text-sky shrink-0">·</span><strong className="text-dark">Bezoekers:</strong> mag je logés ontvangen? Extra kosten?</li>
+              <li className="flex gap-2"><span className="text-sky shrink-0">·</span><strong className="text-dark">Huisregels:</strong> feesten, muziek, huisdieren — wat is wel/niet toegestaan?</li>
+              <li className="flex gap-2"><span className="text-sky shrink-0">·</span><strong className="text-dark">Betaling:</strong> hoe betaal je (NL-rekening, lokaal, cash)? Maandelijks of per kwartaal vooruit?</li>
+            </ul>
+          </div>
+        </section>
+
+        {/* Bezichtiging checklist */}
+        <section className="mb-10">
+          <p className="section-label">Bezichtiging — wat kijk je aan?</p>
+          <ClaimLabel kind="ervaring" />
+          <p className="text-sm text-gray-600 leading-relaxed mb-5 max-w-2xl">
+            Als je fysiek kunt bezichtigen (of iemand voor je): loop de kamer en het hele huis door met deze checklist. Maak foto's van alles.
+          </p>
+          <div className="grid sm:grid-cols-2 gap-3">
+            <div className="card">
+              <p className="text-xs font-medium text-dark mb-2 uppercase tracking-wider">Airco & stroom</p>
+              <ul className="flex flex-col gap-1.5 text-xs text-gray-500">
+                <li>· Zet de airco aan — koelt hij snel?</li>
+                <li>· Hoe oud ziet de airco eruit? Oud = duur stroom.</li>
+                <li>· Check stopcontacten (220V Europees of 110V Amerikaans — of beide?)</li>
+                <li>· Zijn er veel lampen of ledverlichting?</li>
+              </ul>
+            </div>
+            <div className="card">
+              <p className="text-xs font-medium text-dark mb-2 uppercase tracking-wider">Water & sanitair</p>
+              <ul className="flex flex-col gap-1.5 text-xs text-gray-500">
+                <li>· Draai de kraan open — genoeg druk?</li>
+                <li>· Warm water: hoe snel komt het?</li>
+                <li>· Douche — werkt hij, schimmel zichtbaar?</li>
+                <li>· Toilet — vlotter en spoeling oké?</li>
+              </ul>
+            </div>
+            <div className="card">
+              <p className="text-xs font-medium text-dark mb-2 uppercase tracking-wider">Wifi & connectiviteit</p>
+              <ul className="flex flex-col gap-1.5 text-xs text-gray-500">
+                <li>· Vraag om te testen — open een snelheidstest op je telefoon.</li>
+                <li>· Minimaal 25 Mbps download voor stage-calls.</li>
+                <li>· Bereik: werkt wifi in alle kamers?</li>
+                <li>· Mobiele ontvangst (4G/5G) in huis als fallback?</li>
+              </ul>
+            </div>
+            <div className="card">
+              <p className="text-xs font-medium text-dark mb-2 uppercase tracking-wider">Veiligheid & omgeving</p>
+              <ul className="flex flex-col gap-1.5 text-xs text-gray-500">
+                <li>· Sloten op deuren en ramen?</li>
+                <li>· Kluis of afsluitbare kast voor paspoort/laptop?</li>
+                <li>· Hoe is de straat 's avonds verlicht?</li>
+                <li>· Rollen of gordijnen — muggennet op ramen?</li>
+              </ul>
+            </div>
+            <div className="card">
+              <p className="text-xs font-medium text-dark mb-2 uppercase tracking-wider">Inrichting</p>
+              <ul className="flex flex-col gap-1.5 text-xs text-gray-500">
+                <li>· Bed met matras + dekbed + kussen?</li>
+                <li>· Bureau en stoel (belangrijk voor thuiswerken)?</li>
+                <li>· Kookgerei, borden, bestek in keuken?</li>
+                <li>· Linnengoed en handdoeken inbegrepen?</li>
+              </ul>
+            </div>
+            <div className="card">
+              <p className="text-xs font-medium text-dark mb-2 uppercase tracking-wider">Route naar stage</p>
+              <ul className="flex flex-col gap-1.5 text-xs text-gray-500">
+                <li>· Open Google Maps — hoe ver is je stageplek?</li>
+                <li>· Met auto, scooter, te voet? (bepaalt vervoerskeuze)</li>
+                <li>· Is er parkeergelegenheid?</li>
+                <li>· Kom je langs een supermarkt?</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* OB-belasting uitleg */}
+        <div className="card border-l-4 mb-10" style={{ borderLeftColor: '#E8507A' }}>
+          <p className="text-sm font-medium text-dark mb-2">OB-belasting (6-7%) — vraag expliciet na</p>
+          <p className="text-sm text-gray-600 leading-relaxed">
+            Op Curaçao geldt omzetbelasting (OB) op huur. Dat is 6% over woonruimte, 7% over short-stay. Deze komt meestal bovenop de prijs — sommige verhuurders communiceren "€450" maar factureren €480. Vraag vóór het tekenen: <strong className="text-dark">"Is deze prijs inclusief OB?"</strong> Laat het antwoord schriftelijk vastleggen.
+          </p>
+        </div>
+
         {/* Stroom & airco */}
         <div className="card border-l-4 mb-10" style={{ borderLeftColor: '#F2B517' }}>
           <p className="text-sm font-medium text-dark mb-2">Stroom & airco — vraag dit voor je tekent</p>
