@@ -59,7 +59,7 @@ const HAPPY_HOURS_RAW = [
   { naam: 'Wet & Wild', coords: [12.08769, -68.89809], dag: 'Dag.', tijd: '20:00–21:00', desc: 'Strandfeest met oceaanzicht.' },
   { naam: 'Sopranos Sports Bar', coords: [12.10551, -68.93717], dag: 'Vr', tijd: '21:00–22:00', desc: 'Salsa, bachata, merengue.' },
   { naam: 'Cascada Rooftop Bar', coords: [12.10453, -68.93289], dag: 'Dag.', tijd: '17:00–19:00', desc: 'Stad- en oceaanzicht op een dak.' },
-  { naam: "5 o'Clock Somewhere", coords: [12.10514, -68.93929], dag: 'Dag.', tijd: '17–19u & 21–22u', desc: 'Twee happy hours per dag in Rif Fort.' },
+  { naam: "5 o'Clock Somewhere", coords: [12.10514, -68.93929], dag: 'Dag.', tijd: '17:00–19:00 en 21:00–22:00', desc: 'Twee happy hours per dag in Rif Fort.' },
   { naam: 'Lemongrass at Blue Bay', coords: [12.13937, -68.98281], dag: 'Do', tijd: '17:00–18:00', desc: 'Cocktails met sunset views.' },
   { naam: 'Fresh Curaçao', coords: [12.10492, -68.88175], dag: 'Wo', tijd: 'vanaf 18:00', desc: 'Rustige midweek stop in Eden Mall.' },
   { naam: 'De Heeren at Sea', coords: [12.10194, -68.92651], dag: 'Dag.', tijd: 'vanaf 17:00', desc: 'Oceanfront in Pietermaai.' },

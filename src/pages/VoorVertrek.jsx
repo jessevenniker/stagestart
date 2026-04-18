@@ -166,7 +166,7 @@ const STAPPEN = [
     desc: 'Volgens Immigratiedienst heeft de Toelatingsorganisatie 4 maanden de tijd om een beslissing te nemen.',
     detail: [
       'Verwerkingstijd: officieel 4 maanden na indiening.',
-      'Je mag wettelijk al werken/stagelopen ná indiening van de aanvraag, niet pas na goedkeuring.',
+      'Je mag wettelijk al werken of stage lopen ná indiening van de aanvraag, niet pas na goedkeuring.',
       'Bewaar je originele documenten goed.',
       'Als je wordt gevraagd het document persoonlijk op te halen, maak dan een afspraak via immigrationcur.org.',
     ],
