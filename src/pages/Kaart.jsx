@@ -4,6 +4,7 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import PageHero from '../components/PageHero'
+import LastChecked from '../components/LastChecked'
 import { ALLE_LOCATIES, CATEGORIE_CONFIG } from '../data/locaties'
 
 const CURACAO_CENTER = [12.18, -68.97]
@@ -80,6 +81,13 @@ export default function Kaart() {
       />
 
       <div className="max-w-6xl mx-auto px-5 pb-16">
+
+        {/* Anti-drift marker */}
+        <div className="mb-8 border-l-2 border-gray-200 pl-4 py-1">
+          <p className="text-xs text-gray-500 leading-relaxed max-w-2xl">
+            Onderdeel van de stagegids StageStart Curaçao. Deze kaart is ondersteunend — voor harde vereisten rond vergunning, kosten en verblijf gelden de officiële bronnen op de kernpagina's.
+          </p>
+        </div>
 
         {/* Filter paneel */}
         <div className="card mb-4">
@@ -197,6 +205,12 @@ export default function Kaart() {
             </p>
           </div>
         </div>
+
+        <LastChecked
+          date="2026-04-18"
+          bron="Eigen redactie — locatie-overzicht"
+          gevoeligheid="laag"
+        />
       </div>
     </>
   )

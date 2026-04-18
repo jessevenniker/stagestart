@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
+import LastChecked from '../components/LastChecked'
 
 const COLORS = ['#D4522A', '#F2B517', '#3EAD6E', '#1A7EC5', '#E8507A']
 
@@ -83,6 +84,14 @@ export default function WeekendTrips() {
       />
 
       <div className="max-w-5xl mx-auto px-5 pb-16">
+
+        {/* Anti-drift marker */}
+        <div className="mb-8 border-l-2 border-gray-200 pl-4 py-1">
+          <p className="text-xs text-gray-500 leading-relaxed max-w-2xl">
+            Onderdeel van de stagegids StageStart Curaçao. Deze pagina is ondersteunend — voor harde vereisten rond vergunning, kosten en verblijf gelden de officiële bronnen op de kernpagina's.
+          </p>
+        </div>
+
         <section className="mb-14">
           <p className="section-label">Uitstapjes</p>
           <div className="grid sm:grid-cols-2 gap-3">
@@ -125,6 +134,12 @@ export default function WeekendTrips() {
           </div>
           <Link to="/stranden" className="btn-terra shrink-0">Bekijk stranden →</Link>
         </div>
+
+        <LastChecked
+          date="2026-04-18"
+          bron="Eigen redactie — ervaringsinzicht"
+          gevoeligheid="laag"
+        />
       </div>
     </>
   )

@@ -48,6 +48,13 @@ export default function Veiligheid() {
 
       <div className="max-w-5xl mx-auto px-5 pb-16">
 
+        {/* Anti-drift marker */}
+        <div className="mb-8 border-l-2 border-gray-200 pl-4 py-1">
+          <p className="text-xs text-gray-500 leading-relaxed max-w-2xl">
+            Onderdeel van de stagegids StageStart Curaçao. Deze pagina is ondersteunend — voor harde vereisten rond vergunning, kosten en verblijf gelden de officiële bronnen op de kernpagina's.
+          </p>
+        </div>
+
         {/* Gedragstips per situatie */}
         <section className="mb-14">
           <p className="section-label">Gedrag op locatie</p>

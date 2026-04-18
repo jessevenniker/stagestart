@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
+import LastChecked from '../components/LastChecked'
 
 const STRANDEN = [
   { naam: 'Knip (Playa Kenepa)', afstand: '45 min', tip: 'Spectaculaire baai. Ga vroeg — vol na 11u. Betaald parkeren (±ANG 10). Een van de mooiste van het eiland.', kleur: '#1A7EC5' },
@@ -59,6 +60,13 @@ export default function Leven() {
       />
 
       <div className="max-w-5xl mx-auto px-5 pb-16">
+
+        {/* Anti-drift marker */}
+        <div className="mb-8 border-l-2 border-gray-200 pl-4 py-1">
+          <p className="text-xs text-gray-500 leading-relaxed max-w-2xl">
+            Onderdeel van de stagegids StageStart Curaçao. Deze pagina is ondersteunend — voor harde vereisten rond vergunning, kosten en verblijf gelden de officiële bronnen op de kernpagina's.
+          </p>
+        </div>
 
         {/* Stranden */}
         <section className="mb-14">
@@ -221,6 +229,12 @@ export default function Leven() {
           </div>
           <Link to="/voor-vertrek" className="btn-terra shrink-0">Checklist bekijken →</Link>
         </div>
+
+        <LastChecked
+          date="2026-04-18"
+          bron="Eigen redactie — ervaringsinzicht"
+          gevoeligheid="laag"
+        />
       </div>
     </>
   )
