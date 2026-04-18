@@ -17,6 +17,7 @@ const PRIMARY_LINKS = [
   { to: '/kosten',       label: 'Kosten' },
   { to: '/wonen',        label: 'Wonen' },
   { to: '/auto',         label: 'Auto?' },
+  { to: '/verzekering',  label: 'Verzekering' },
   { to: '/eerste-week',  label: 'Eerste week' },
 ]
 

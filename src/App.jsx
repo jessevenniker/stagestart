@@ -26,6 +26,7 @@ import Bronnen from './pages/Bronnen'
 import Disclaimer from './pages/Disclaimer'
 import Privacy from './pages/Privacy'
 import Cookies from './pages/Cookies'
+import Verzekering from './pages/Verzekering'
 
 export default function App() {
   return (
@@ -56,6 +57,7 @@ export default function App() {
           <Route path="/disclaimer"    element={<Disclaimer />} />
           <Route path="/privacy"       element={<Privacy />} />
           <Route path="/cookies"       element={<Cookies />} />
+          <Route path="/verzekering"   element={<Verzekering />} />
         </Routes>
       </main>
       <Footer />

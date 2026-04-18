@@ -15,6 +15,7 @@ const COL1 = [
   { to: '/kosten',       label: 'Wat kost een stage?' },
   { to: '/wonen',        label: 'Wonen op Curaçao' },
   { to: '/auto',         label: 'Auto nodig?' },
+  { to: '/verzekering',  label: 'Verzekering & gezondheid' },
   { to: '/eerste-week',  label: 'Je eerste week' },
 ]
 
