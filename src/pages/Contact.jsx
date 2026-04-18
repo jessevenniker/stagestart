@@ -86,7 +86,7 @@ export default function Contact() {
           <p className="section-label">Wie zit hierachter?</p>
           <div className="card">
             <p className="text-sm text-gray-600 leading-relaxed">
-              StageStart Curaçao is een onafhankelijk initiatief vanuit Jesco Innovation. Geen bureau, geen bemiddeling, geen commissies. De site draait op eigen onderzoek, officiële bronnen en ervaringen van eerdere stagiairs. Je bereikt de redactie rechtstreeks via onderstaand formulier of per e-mail.
+              StageStart Curaçao is een onafhankelijk initiatief vanuit Jesco Innovation B.V. Geen bureau, geen bemiddeling, geen commissies. De site draait op eigen onderzoek, officiële bronnen en ervaringen van eerdere stagiairs. Je bereikt de redactie rechtstreeks via onderstaand formulier of per e-mail.
             </p>
           </div>
         </section>

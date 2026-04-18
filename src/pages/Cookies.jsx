@@ -71,7 +71,7 @@ export default function Cookies() {
           <section>
             <h2 className="font-serif text-lg font-normal text-dark mb-2">5. Meer informatie</h2>
             <p className="text-sm text-gray-600 leading-relaxed">
-              Voor vragen over ons cookiegebruik kun je contact opnemen via <a href="mailto:info@jescoinnovation.nl" className="text-sky underline">info@jescoinnovation.nl</a>. StageStart Curaçao wordt beheerd door Jesco Innovation.
+              Voor vragen over ons cookiegebruik kun je contact opnemen via <a href="mailto:info@jescoinnovation.nl" className="text-sky underline">info@jescoinnovation.nl</a>. StageStart Curaçao wordt beheerd door Jesco Innovation B.V.
             </p>
           </section>
 
