@@ -104,7 +104,7 @@ export default function EersteWeek() {
         title="Dag voor dag — wat doe je wanneer."
         subtitle="De eerste week is overweldigend. Hier is een praktisch plan zodat je niets vergeet en ook gewoon kunt genieten."
         accentColor="#E8507A"
-        image="/img/hero-eerste-week.svg"
+        image="/img/hero-eerste-week.jpg"
         imageAlt="Skyline van Willemstad met Handelskade, eerste aanblik bij aankomst op Curaçao"
       />
 

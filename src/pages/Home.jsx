@@ -10,14 +10,14 @@ const TOPICS = [
     color: '#D4522A',
     title: 'Wat moet je regelen voor vertrek?',
     desc: 'Volgens Immigratiedienst: VOG, geboorteakte, KvK-uittreksel, polisblad. In de juiste volgorde, met deadlines.',
-    img: '/img/home-voor-vertrek.svg',
+    img: '/img/home-voor-vertrek.jpg',
   },
   {
     to: '/vergunning',
     color: '#1A7EC5',
     title: 'Vergunning — wat zegt de officiële bron?',
     desc: 'De Immigratiedienst publiceert twee aparte informatiestromen (studie/stage en Verklaring van Rechtswege). Voor jou kunnen beide relevant zijn — controleer het altijd zelf.',
-    img: '/img/home-vergunning.svg',
+    img: '/img/home-vergunning.jpg',
   },
   {
     to: '/kosten',
@@ -45,7 +45,7 @@ const TOPICS = [
     color: '#E8507A',
     title: 'Je eerste week op Curaçao',
     desc: 'SIM-kaart, supermarkt, bank, wifi — wat doe je wanneer.',
-    img: '/img/hero-eerste-week.svg',
+    img: '/img/hero-eerste-week.jpg',
   },
 ]
 
