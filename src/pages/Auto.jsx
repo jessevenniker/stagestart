@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
+import ClaimLabel from '../components/ClaimLabel'
+import LastChecked from '../components/LastChecked'
 
 const TREE = [
   {
@@ -179,6 +181,129 @@ export default function Auto() {
           )}
         </section>
 
+        {/* Verzekering — kern van wat stagiairs onderschatten */}
+        <section className="mb-14">
+          <p className="section-label">Verzekering — grootste financiële risico</p>
+          <ClaimLabel kind="richtlijn" />
+          <p className="text-sm text-gray-600 leading-relaxed mb-5 max-w-2xl">
+            Curaçao-auto's hebben vrijwel altijd al wat schade. Hoe je verzekering geregeld is, bepaalt of één deuk je €500 of €0 kost. Controleer dit expliciet bij het tekenen van het huurcontract.
+          </p>
+          <div className="grid sm:grid-cols-2 gap-4 mb-4">
+            <div className="card border-l-4" style={{ borderLeftColor: '#D4522A' }}>
+              <p className="text-xs font-medium text-dark mb-2 uppercase tracking-wider">WA-only</p>
+              <p className="text-sm text-gray-600 leading-relaxed mb-2">
+                Alleen schade aan anderen gedekt. Elke kras op de huurauto zelf betaal je volledig uit eigen zak.
+              </p>
+              <p className="text-xs text-gray-500 leading-relaxed">
+                Goedkoopste optie, hoogste risico. Op Curaçao vaak af te raden door parkeersituaties en lokaal verkeer.
+              </p>
+            </div>
+            <div className="card border-l-4" style={{ borderLeftColor: '#3EAD6E' }}>
+              <p className="text-xs font-medium text-dark mb-2 uppercase tracking-wider">All-risk / CDW</p>
+              <p className="text-sm text-gray-600 leading-relaxed mb-2">
+                Ook schade aan de huurauto gedekt — met een eigen risico van meestal €500 tot €1.500.
+              </p>
+              <p className="text-xs text-gray-500 leading-relaxed">
+                Duurder per maand, maar een deuk kost je dan alleen het eigen risico, niet duizenden euro's.
+              </p>
+            </div>
+          </div>
+          <div className="card">
+            <p className="text-xs font-medium text-dark mb-3 uppercase tracking-wider">Vragen om altijd te stellen</p>
+            <ul className="flex flex-col gap-2 text-sm text-gray-600">
+              <li className="flex gap-2"><span className="text-sky shrink-0">·</span>Wat is het eigen risico bij schade?</li>
+              <li className="flex gap-2"><span className="text-sky shrink-0">·</span>Is banden/velgen/onderkant gedekt? (vaak uitgesloten)</li>
+              <li className="flex gap-2"><span className="text-sky shrink-0">·</span>Geldt de verzekering ook bij onverharde wegen?</li>
+              <li className="flex gap-2"><span className="text-sky shrink-0">·</span>Wordt de borg volledig ingehouden bij schade, of alleen het eigen risico?</li>
+              <li className="flex gap-2"><span className="text-sky shrink-0">·</span>Mag een ander in je huisgenotengroep ook rijden? (bijverzekering)</li>
+            </ul>
+          </div>
+        </section>
+
+        {/* Ophalen — schade-inspectie */}
+        <section className="mb-14">
+          <p className="section-label">Bij het ophalen — schade-inspectie</p>
+          <ClaimLabel kind="ervaring" />
+          <p className="text-sm text-gray-600 leading-relaxed mb-5 max-w-2xl">
+            Op Curaçao hebben auto's vaak al bestaande schade. Als die niet genoteerd staat bij het ophalen, kun je die bij inlevering zelf moeten betalen. Een half uurtje extra kost je een hoop geld later.
+          </p>
+          <div className="card">
+            <p className="text-xs font-medium text-dark mb-3 uppercase tracking-wider">Checklist voor je wegrijdt</p>
+            <ul className="flex flex-col gap-2 text-sm text-gray-600">
+              <li className="flex gap-2"><span className="text-sage shrink-0">✓</span>Loop rondom de auto. Maak foto's van elke bestaande kras, deuk of schade.</li>
+              <li className="flex gap-2"><span className="text-sage shrink-0">✓</span>Laat alle bestaande schade vastleggen in het contract — ook kleine.</li>
+              <li className="flex gap-2"><span className="text-sage shrink-0">✓</span>Check of een reserveband aanwezig is (niet vanzelfsprekend op Curaçao).</li>
+              <li className="flex gap-2"><span className="text-sage shrink-0">✓</span>Check bandenspanning en bandenprofiel.</li>
+              <li className="flex gap-2"><span className="text-sage shrink-0">✓</span>Start de auto, check airco, ruitenwissers, lichten.</li>
+              <li className="flex gap-2"><span className="text-sage shrink-0">✓</span>Vraag naar de tankprocedure: vol inleveren of leeg — wat is de afspraak?</li>
+              <li className="flex gap-2"><span className="text-sage shrink-0">✓</span>Bewaar foto's en contract-copy digitaal in je cloud.</li>
+            </ul>
+          </div>
+        </section>
+
+        {/* Tanken op Curaçao */}
+        <section className="mb-14">
+          <p className="section-label">Tanken — werkt anders dan in Nederland</p>
+          <ClaimLabel kind="richtlijn" />
+          <div className="card">
+            <p className="text-sm text-gray-600 leading-relaxed mb-3">
+              Op Curaçao betaal je vooraf het bedrag waarvoor je wilt tanken. Daarna gaat de pomp open. Je moet dus vooraf inschatten hoeveel je nodig hebt.
+            </p>
+            <ul className="flex flex-col gap-2 text-sm text-gray-600 mb-3">
+              <li className="flex gap-2"><span className="text-gold shrink-0">·</span>Loop eerst naar de kassa en zeg hoeveel je wilt tanken (in XCG).</li>
+              <li className="flex gap-2"><span className="text-gold shrink-0">·</span>Gele slang = benzine. Zwarte slang = diesel.</li>
+              <li className="flex gap-2"><span className="text-gold shrink-0">·</span>Kwam de pomp niet tot je ingevoerde bedrag? Terug naar de kassa voor wisselgeld.</li>
+              <li className="flex gap-2"><span className="text-gold shrink-0">·</span>Prijs per liter is op heel Curaçao gelijk en wordt op de 3e van elke maand vastgesteld.</li>
+              <li className="flex gap-2"><span className="text-gold shrink-0">·</span>Cash werkt altijd. Pin niet overal — houd cash bij je.</li>
+            </ul>
+          </div>
+        </section>
+
+        {/* Ongeval — Forensys */}
+        <section className="mb-14">
+          <p className="section-label">Bij schade of een ongeluk</p>
+          <ClaimLabel kind="officieel" bron="Curaçaose hulpdiensten" />
+          <div className="card border-l-4" style={{ borderLeftColor: '#D4522A' }}>
+            <p className="text-sm font-medium text-dark mb-2">Bel Forensys: 9223</p>
+            <p className="text-sm text-gray-600 leading-relaxed mb-3">
+              Bij elk ongeval — hoe klein ook — bel je Forensys. Dat zijn verkeersinspecteurs in rode T-shirts. Ze komen ter plaatse, spreken Engels en maken een rapport op.
+            </p>
+            <ul className="flex flex-col gap-2 text-sm text-gray-600 mb-3">
+              <li className="flex gap-2"><span className="text-terra shrink-0">·</span><strong className="text-dark">Verplaats de auto niet</strong> tot Forensys er is — ook niet als je verkeer blokkeert.</li>
+              <li className="flex gap-2"><span className="text-terra shrink-0">·</span>Maak foto's van beide auto's, het hele wegdek, eventuele verkeersborden.</li>
+              <li className="flex gap-2"><span className="text-terra shrink-0">·</span>Wissel geen geld uit met de andere partij. Laat Forensys het regelen.</li>
+              <li className="flex gap-2"><span className="text-terra shrink-0">·</span>Bel direct ook je verhuurder om de procedure af te stemmen.</li>
+              <li className="flex gap-2"><span className="text-terra shrink-0">·</span>Bewaar het Forensys-rapportnummer — je verzekering en verhuurder hebben dit nodig.</li>
+              <li className="flex gap-2"><span className="text-terra shrink-0">·</span>Reken op circa een uur — neem water mee.</li>
+            </ul>
+            <p className="text-xs text-gray-500 leading-relaxed">
+              Alternatief voor Forensys: WhatsApp +599 9 461-3282. Bij gewonden eerst 911 bellen.
+            </p>
+          </div>
+        </section>
+
+        {/* Auto delen tussen huisgenoten */}
+        <section className="mb-14">
+          <p className="section-label">Auto delen met huisgenoten</p>
+          <ClaimLabel kind="ervaring" />
+          <div className="card">
+            <p className="text-sm text-gray-600 leading-relaxed mb-3">
+              Delen is de goedkoopste optie — €200-300 per persoon per maand. Maar de afspraken moeten kloppen, anders gaat het misschien mis.
+            </p>
+            <p className="text-xs font-medium text-dark mb-2 uppercase tracking-wider">Vooraf afspreken</p>
+            <ul className="flex flex-col gap-2 text-sm text-gray-600 mb-4">
+              <li className="flex gap-2"><span className="text-sage shrink-0">·</span>Wie staat er op het huurcontract? Die persoon draagt de juridische verantwoordelijkheid.</li>
+              <li className="flex gap-2"><span className="text-sage shrink-0">·</span>Mogen alle huisgenoten rijden? Vraag of bijrijder-dekking standaard is of extra kost.</li>
+              <li className="flex gap-2"><span className="text-sage shrink-0">·</span>Hoe verdeel je de huur en benzine? (gelijk, of naar gebruik?)</li>
+              <li className="flex gap-2"><span className="text-sage shrink-0">·</span>Wie betaalt als er schade is — de rijder, de contractant, of gedeeld?</li>
+              <li className="flex gap-2"><span className="text-sage shrink-0">·</span>Hoe plan je de auto? (gedeelde agenda, WhatsApp-groep, eerst aanvraagt eerst krijgt?)</li>
+            </ul>
+            <p className="text-xs text-gray-500 leading-relaxed italic">
+              Zet afspraken op papier — ook als het met vrienden is. Schade, verkeersboetes en rechtszaken gaan altijd via de persoon op het contract, ongeacht wie er reed.
+            </p>
+          </div>
+        </section>
+
         {/* Alternatieven */}
         <section className="mb-14">
           <p className="section-label">Alternatieven voor een auto</p>
@@ -205,6 +330,12 @@ export default function Auto() {
           </div>
           <Link to="/wonen" className="btn-terra shrink-0">Wijken vergelijken →</Link>
         </div>
+
+        <LastChecked
+          date="2026-04-16"
+          bron="Eigen redactie + ervaringen stagiairs"
+          gevoeligheid="middel"
+        />
       </div>
     </>
   )
