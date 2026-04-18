@@ -381,6 +381,28 @@ export default function Wonen() {
           </p>
         </div>
 
+        {/* Pagatinu — prepaid stroom */}
+        <section className="mb-10">
+          <p className="section-label">Pagatinu — prepaid stroom</p>
+          <ClaimLabel kind="richtlijn" />
+          <div className="card">
+            <p className="text-sm text-gray-600 leading-relaxed mb-3">
+              In sommige huizen op Curaçao werkt stroom prepaid. Dat heet <strong className="text-dark">Pagatinu</strong>. In de kamer zit een klein kastje met een teller. Op is op — de airco valt uit, het licht gaat uit, de koelkast stopt.
+            </p>
+            <p className="text-xs font-medium text-dark mb-2 uppercase tracking-wider">Hoe het werkt</p>
+            <ul className="flex flex-col gap-2 text-sm text-gray-600 mb-3">
+              <li className="flex gap-2"><span className="text-gold shrink-0">·</span>Bij tellerstand 25 begint het kastje te piepen — je hebt dan nog ongeveer 3-4 dagen.</li>
+              <li className="flex gap-2"><span className="text-gold shrink-0">·</span>Opwaarderen kan bij tankstations en sommige lokale supermarkten/toko's.</li>
+              <li className="flex gap-2"><span className="text-gold shrink-0">·</span>Vraag voor een bedrag aan Caribische gulden (XCG). Met ±80 XCG kom je ongeveer een maand door.</li>
+              <li className="flex gap-2"><span className="text-gold shrink-0">·</span>Je hebt een <strong className="text-dark">code van je verhuurder</strong> nodig — krijg je bij het tekenen van het contract.</li>
+              <li className="flex gap-2"><span className="text-gold shrink-0">·</span>Na betaling krijg je een bonnetje met een nummer. Dit nummer voer je in op het kastje.</li>
+            </ul>
+            <p className="text-xs text-gray-500 leading-relaxed italic">
+              Vraag bij het tekenen van het huurcontract expliciet of er Pagatinu is, en laat je verhuurder voordoen hoe je opwaardeert. Niks zo vervelend als een maand zonder airco in het weekend omdat je code niet werkt.
+            </p>
+          </div>
+        </section>
+
         {/* Stroom & airco */}
         <div className="card border-l-4 mb-10" style={{ borderLeftColor: '#F2B517' }}>
           <p className="text-sm font-medium text-dark mb-2">Stroom & airco — vraag dit voor je tekent</p>
