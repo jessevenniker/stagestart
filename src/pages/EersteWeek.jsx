@@ -34,8 +34,10 @@ const DAGEN = [
     title: 'Bank & wifi',
     taken: [
       { taak: 'Geen rijbewijs omzetten nodig', detail: 'Je Nederlandse rijbewijs is geldig in Curaçao. Je kunt direct een auto huren of besturen. Omzetten naar Curaçaos rijbewijs is alleen relevant bij langdurig verblijf (>6 maanden) of registratie van een eigen voertuig.' },
+      { taak: 'Pinpas testen bij een geldautomaat', detail: 'Controleer of je NL-pinpas werkt — je hebt hem vóór vertrek "op wereld" gezet. Bij een V-pay pinpas (vooral ING) moet je bij afrekenen aangeven dat het in dollars wordt verrekend, niet in euro\'s.' },
       { taak: 'Bankrekening openen (optioneel)', detail: 'MCB of Maduro & Curiel\'s Bank. Niet altijd nodig als je betalingen via NL regelt. Wel handig voor huurbetalingen lokaal. Verwacht 2-4 maanden doorlooptijd.' },
       { taak: 'Internet & wifi checken', detail: 'Is de wifi op je woning snel genoeg? Zo niet: dataplan upgraden of een hotspot regelen.' },
+      { taak: 'Tijdverschil instellen', detail: 'In de Nederlandse zomer is het op Curaçao 6 uur vroeger. In de Nederlandse winter 5 uur. Handig om dit te weten voor calls met thuis of met school.' },
     ],
   },
   {
@@ -182,6 +184,30 @@ export default function EersteWeek() {
                 <p className="text-sm text-gray-600 leading-relaxed">{tip}</p>
               </div>
             ))}
+          </div>
+        </section>
+
+        {/* Wasserettes */}
+        <section className="mb-14">
+          <p className="section-label">Wassen — waar regel je dat?</p>
+          <p className="text-sm text-gray-500 leading-relaxed mb-5 max-w-2xl">
+            Niet elk studentenhuis heeft een eigen wasmachine. Twee wasserettes die stagiairs vaak gebruiken:
+          </p>
+          <div className="grid sm:grid-cols-2 gap-3">
+            <div className="card">
+              <p className="text-sm font-medium text-dark mb-1">Het Washok</p>
+              <p className="text-xs text-gray-400 mb-2">Caracasbaaiweg 240 · 08:00–17:00</p>
+              <p className="text-xs text-gray-500 leading-relaxed">
+                Je brengt je was, wordt gewassen, gedroogd en gevouwen. Na 1–2 dagen ophalen.
+              </p>
+            </div>
+            <div className="card">
+              <p className="text-sm font-medium text-dark mb-1">Laundromat City Home</p>
+              <p className="text-xs text-gray-400 mb-2">Rodeweg 11 · 09:00–18:00</p>
+              <p className="text-xs text-gray-500 leading-relaxed">
+                Service wassen of zelf machine gebruiken en meenemen om op te hangen in de zon.
+              </p>
+            </div>
           </div>
         </section>
 
