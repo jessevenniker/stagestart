@@ -318,7 +318,7 @@ export default function Auto() {
                 <strong className="text-dark">Legale taxi's op Curaçao hebben een nummerbord dat begint met "TX".</strong> Taxi's zonder TX-nummerbord zijn niet officieel — stap daar niet in, ook niet als het goedkoper lijkt.
               </p>
               <p className="text-xs text-gray-500 leading-relaxed">
-                Populaire apps: 24-7 TAXI (bestellen via app, cash of pin). Als alternatief nummer: Taxi Tiger +5999 515 2141.
+                Populaire apps: 24-7 TAXI (bestellen via app, cash of pin). Als alternatief nummer: Taxi Tiger +599 9 515-2141.
               </p>
             </div>
             <div className="card">

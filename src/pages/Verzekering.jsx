@@ -135,13 +135,13 @@ export default function Verzekering() {
             <div className="card">
               <p className="text-sm font-medium text-dark mb-2">Huisarts</p>
               <p className="text-xs text-gray-500 leading-relaxed mb-2">
-                Nederlandstalige huisarts: Centro Medico Aesculapius, SBN Doormanweg 47. Telefoon: +599 9 737 0522. Ochtend open spreekuur, middag op afspraak. Bewaar altijd je bon — je verzekering heeft die nodig voor vergoeding.
+                Nederlandstalige huisarts: Centro Medico Aesculapius, SBN Doormanweg 47. Telefoon: +599 9 737-0522. Ochtend open spreekuur, middag op afspraak. Bewaar altijd je bon. Je verzekering heeft die nodig voor vergoeding.
               </p>
             </div>
             <div className="card">
               <p className="text-sm font-medium text-dark mb-2">Ziekenhuis</p>
               <p className="text-xs text-gray-500 leading-relaxed mb-2">
-                Curaçao Medical Center (CMC) — het centrale ziekenhuis in Otrobanda. SEH: +599 9 745-0026. Algemeen: +599 9 745-0000.
+                Curaçao Medical Center (CMC), het centrale ziekenhuis in Otrobanda. SEH: +599 9 745-0026. Algemeen: +599 9 745-0000.
               </p>
             </div>
             <div className="card">
@@ -159,13 +159,13 @@ export default function Verzekering() {
             <div className="card">
               <p className="text-sm font-medium text-dark mb-2">Alternatieve huisarts</p>
               <p className="text-xs text-gray-500 leading-relaxed">
-                Mangrove Medical Center — +5999 695 9252 (of +5999 462 3465). Handig als Centro Medico vol zit of als je dichter bij een andere wijk woont.
+                Mangrove Medical Center: +599 9 695-9252 (of +599 9 462-3465). Handig als Centro Medico vol zit of als je dichter bij een andere wijk woont.
               </p>
             </div>
             <div className="card">
               <p className="text-sm font-medium text-dark mb-2">Tandarts</p>
               <p className="text-xs text-gray-500 leading-relaxed">
-                Centro Denthal in Mahaai — +5999 737 0285. Tandartsbezoeken worden meestal niet volledig gedekt door een aanvullende reisverzekering (alleen spoed, beperkt bedrag). Voor niet-spoed planning: sparen of thuis laten doen.
+                Centro Denthal in Mahaai: +599 9 737-0285. Tandartsbezoeken worden meestal niet volledig gedekt door een aanvullende reisverzekering (alleen spoed, beperkt bedrag). Voor niet-spoed planning: sparen of thuis laten doen.
               </p>
             </div>
           </div>
