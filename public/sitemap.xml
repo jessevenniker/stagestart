@@ -3,7 +3,7 @@
 
   <!-- Home -->
   <url>
-    <loc>https://stagestart-curacao.vercel.app/</loc>
+    <loc>https://stagestartcuracao.nl/</loc>
     <lastmod>2026-04-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -11,49 +11,49 @@
 
   <!-- Tier 1: Stagekern (6 kernpagina's + verzekering + begin-hier) -->
   <url>
-    <loc>https://stagestart-curacao.vercel.app/begin-hier</loc>
+    <loc>https://stagestartcuracao.nl/begin-hier</loc>
     <lastmod>2026-04-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://stagestart-curacao.vercel.app/voor-vertrek</loc>
+    <loc>https://stagestartcuracao.nl/voor-vertrek</loc>
     <lastmod>2026-04-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://stagestart-curacao.vercel.app/vergunning</loc>
+    <loc>https://stagestartcuracao.nl/vergunning</loc>
     <lastmod>2026-04-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://stagestart-curacao.vercel.app/kosten</loc>
+    <loc>https://stagestartcuracao.nl/kosten</loc>
     <lastmod>2026-04-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://stagestart-curacao.vercel.app/wonen</loc>
+    <loc>https://stagestartcuracao.nl/wonen</loc>
     <lastmod>2026-04-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://stagestart-curacao.vercel.app/auto</loc>
+    <loc>https://stagestartcuracao.nl/auto</loc>
     <lastmod>2026-04-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://stagestart-curacao.vercel.app/verzekering</loc>
+    <loc>https://stagestartcuracao.nl/verzekering</loc>
     <lastmod>2026-04-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://stagestart-curacao.vercel.app/eerste-week</loc>
+    <loc>https://stagestartcuracao.nl/eerste-week</loc>
     <lastmod>2026-04-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -61,19 +61,19 @@
 
   <!-- Ondersteunende autoriteitspagina's -->
   <url>
-    <loc>https://stagestart-curacao.vercel.app/bronnen</loc>
+    <loc>https://stagestartcuracao.nl/bronnen</loc>
     <lastmod>2026-04-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://stagestart-curacao.vercel.app/faq</loc>
+    <loc>https://stagestartcuracao.nl/faq</loc>
     <lastmod>2026-04-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://stagestart-curacao.vercel.app/startgids</loc>
+    <loc>https://stagestartcuracao.nl/startgids</loc>
     <lastmod>2026-04-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -81,49 +81,49 @@
 
   <!-- Tier 2: Ondersteunende content naast je stage -->
   <url>
-    <loc>https://stagestart-curacao.vercel.app/werken</loc>
+    <loc>https://stagestartcuracao.nl/werken</loc>
     <lastmod>2026-04-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stagestart-curacao.vercel.app/leven</loc>
+    <loc>https://stagestartcuracao.nl/leven</loc>
     <lastmod>2026-04-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stagestart-curacao.vercel.app/veiligheid</loc>
+    <loc>https://stagestartcuracao.nl/veiligheid</loc>
     <lastmod>2026-04-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stagestart-curacao.vercel.app/eten</loc>
+    <loc>https://stagestartcuracao.nl/eten</loc>
     <lastmod>2026-04-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://stagestart-curacao.vercel.app/happy-hours</loc>
+    <loc>https://stagestartcuracao.nl/happy-hours</loc>
     <lastmod>2026-04-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://stagestart-curacao.vercel.app/stranden</loc>
+    <loc>https://stagestartcuracao.nl/stranden</loc>
     <lastmod>2026-04-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://stagestart-curacao.vercel.app/weekend-trips</loc>
+    <loc>https://stagestartcuracao.nl/weekend-trips</loc>
     <lastmod>2026-04-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://stagestart-curacao.vercel.app/kaart</loc>
+    <loc>https://stagestartcuracao.nl/kaart</loc>
     <lastmod>2026-04-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -131,7 +131,7 @@
 
   <!-- Contact -->
   <url>
-    <loc>https://stagestart-curacao.vercel.app/contact</loc>
+    <loc>https://stagestartcuracao.nl/contact</loc>
     <lastmod>2026-04-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
@@ -139,19 +139,19 @@
 
   <!-- Juridisch -->
   <url>
-    <loc>https://stagestart-curacao.vercel.app/disclaimer</loc>
+    <loc>https://stagestartcuracao.nl/disclaimer</loc>
     <lastmod>2026-04-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://stagestart-curacao.vercel.app/privacy</loc>
+    <loc>https://stagestartcuracao.nl/privacy</loc>
     <lastmod>2026-04-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://stagestart-curacao.vercel.app/cookies</loc>
+    <loc>https://stagestartcuracao.nl/cookies</loc>
     <lastmod>2026-04-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>

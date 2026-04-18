@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://stagestart-curacao.vercel.app/sitemap.xml
+Sitemap: https://stagestartcuracao.nl/sitemap.xml

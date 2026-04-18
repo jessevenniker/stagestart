@@ -2,7 +2,7 @@
 
 > Onafhankelijke, bronvaste gids voor Nederlandse stagiairs op Curaçao.
 
-**Live:** [stagestart-curacao.vercel.app](https://stagestart-curacao.vercel.app)
+**Live:** [stagestartcuracao.nl](https://stagestartcuracao.nl)
 
 ## Wat is dit
 

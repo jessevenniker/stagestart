@@ -3,7 +3,7 @@
 // Descriptions: max 160 characters (target 140 to 155).
 
 export const SITE = {
-  baseUrl: 'https://stagestart-curacao.vercel.app',
+  baseUrl: 'https://stagestartcuracao.nl',
   siteName: 'StageStart Curaçao',
   twitterHandle: '',
   defaultImage: '/og-image.png',
