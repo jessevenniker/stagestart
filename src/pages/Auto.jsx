@@ -216,6 +216,7 @@ export default function Auto() {
               <li className="flex gap-2"><span className="text-sky shrink-0">·</span>Geldt de verzekering ook bij onverharde wegen?</li>
               <li className="flex gap-2"><span className="text-sky shrink-0">·</span>Wordt de borg volledig ingehouden bij schade, of alleen het eigen risico?</li>
               <li className="flex gap-2"><span className="text-sky shrink-0">·</span>Mag een ander in je huisgenotengroep ook rijden? (bijverzekering)</li>
+              <li className="flex gap-2"><span className="text-sky shrink-0">·</span>Ben je jonger dan 23? Controleer of de verzekering óók geldt voor bestuurders onder de 23 — dit is geen standaard.</li>
             </ul>
           </div>
         </section>
@@ -301,6 +302,43 @@ export default function Auto() {
             <p className="text-xs text-gray-500 leading-relaxed italic">
               Zet afspraken op papier — ook als het met vrienden is. Schade, verkeersboetes en rechtszaken gaan altijd via de persoon op het contract, ongeacht wie er reed.
             </p>
+          </div>
+        </section>
+
+        {/* Taxi, bus, navigatie */}
+        <section className="mb-14">
+          <p className="section-label">Taxi's, bussen en navigatie</p>
+          <ClaimLabel kind="richtlijn" />
+          <div className="grid sm:grid-cols-2 gap-3 mb-3">
+            <div className="card">
+              <p className="text-sm font-medium text-dark mb-2">Taxi — check het nummerbord</p>
+              <p className="text-xs text-gray-500 leading-relaxed mb-2">
+                <strong className="text-dark">Legale taxi's op Curaçao hebben een nummerbord dat begint met "TX".</strong> Taxi's zonder TX-nummerbord zijn niet officieel — stap daar niet in, ook niet als het goedkoper lijkt.
+              </p>
+              <p className="text-xs text-gray-500 leading-relaxed">
+                Populaire apps: 24-7 TAXI (bestellen via app, cash of pin). Als alternatief nummer: Taxi Tiger +5999 515 2141.
+              </p>
+            </div>
+            <div className="card">
+              <p className="text-sm font-medium text-dark mb-2">Bus / openbaar vervoer</p>
+              <p className="text-xs text-gray-500 leading-relaxed">
+                Er rijdt wel degelijk openbaar vervoer op Curaçao, al is het beperkt. De app <strong className="text-dark">ABC Curaçao</strong> toont dienstregelingen en bushalte-informatie. Niet altijd betrouwbaar, wel goedkoop.
+              </p>
+            </div>
+            <div className="card">
+              <p className="text-sm font-medium text-dark mb-2">Navigatie — ook offline</p>
+              <p className="text-xs text-gray-500 leading-relaxed">
+                Google Maps werkt goed op Curaçao. Voor offline navigatie (bij slechte dekking op de noordkust): download de kaart van Curaçao vooraf in Google Maps, of gebruik de app <strong className="text-dark">maps.me</strong> voor volledige offline dekking.
+              </p>
+            </div>
+            <div className="card">
+              <p className="text-sm font-medium text-dark mb-2">Praktisch</p>
+              <ul className="flex flex-col gap-1.5 text-xs text-gray-500">
+                <li>· Spreek vóór instappen af wat de rit kost — niet alle taxi's hebben een meter.</li>
+                <li>· Cash bij de hand — pin werkt niet altijd.</li>
+                <li>· 's Nachts alleen met iemand reizen, niet solo in een taxi.</li>
+              </ul>
+            </div>
           </div>
         </section>
 
