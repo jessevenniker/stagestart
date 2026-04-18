@@ -1,14 +1,16 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
+import LastChecked from '../components/LastChecked'
 
 const FAQ_DATA = [
   {
     categorie: 'Vergunning & papieren',
     vragen: [
-      { q: 'Heb ik een visum nodig?', a: 'Nee. Als Nederlander heb je geen visum nodig voor Curaçao. Je hebt wel een stagevergunning (Verklaring van Rechtswege) nodig.' },
-      { q: 'Hoe lang duurt de vergunningsaanvraag?', a: 'De verwerking duurt 2–4 maanden. Je mag wettelijk al werken na indiening van de aanvraag.' },
-      { q: 'Heb ik een geboorteakte nodig?', a: 'Nee. Je stageovereenkomst geldt als bewijs van voldoende middelen.' },
+      { q: 'Heb ik een visum nodig?', a: 'Als Nederlander heb je geen visum nodig voor verblijf tot 90 dagen. Voor stage langer dan 90 dagen geldt de aanvraagprocedure op de Studie/Stage-pagina van de Immigratiedienst. Zie onze Vergunning-pagina voor details.' },
+      { q: 'Hoe lang duurt de vergunningsaanvraag?', a: 'De Toelatingsorganisatie heeft volgens de officiële Studie/Stage-pagina maximaal 4 maanden om te beslissen. Dit is een beslistermijn — soms sneller, maar reken er niet op. Plan vooruit.' },
+      { q: 'Heb ik een geboorteakte nodig?', a: 'Ja. Volgens de officiële Immigratiedienst-pagina is een geboorteakte vereist, niet ouder dan 1 jaar bij indiening. Vraag hem op tijd aan bij je gemeente.' },
+      { q: 'Wat is het verschil tussen stagevergunning en Verklaring van Rechtswege?', a: 'De Immigratiedienst publiceert hier twee aparte officiële pagina\'s voor: Studie/Stage en Verklaring van Rechtswege. Dit zijn twee informatiestromen die allebei relevant kunnen zijn voor Nederlandse stagiairs. Controleer altijd zelf welke officiële route in jouw situatie geldt. Zie onze Vergunning-pagina voor uitleg.' },
       { q: 'Wat is een DI Card?', a: 'Verplichte Digital Immigration Card. Gratis invullen via dicardcuracao.com binnen 7 dagen voor vertrek. Betaal nooit via derde-partij sites.' },
     ],
   },
@@ -35,7 +37,7 @@ const FAQ_DATA = [
       { q: 'Is Curaçao veilig?', a: 'Ja, mits je je gedrag aanpast. Geen waardespullen open laten liggen, niet alleen door donkere wijken lopen, altijd met z\'n tweeën na donker.' },
       { q: 'Welke taal spreken ze?', a: 'Papiaments, Nederlands, Spaans en Engels. Met Nederlands kom je overal. "Bon dia" (goedemorgen) gaat een lange weg.' },
       { q: 'Hoe is het internet?', a: 'Goed. Digicel en Flow bieden prepaid data-bundels. WiFi in de meeste studentenhuizen. DennisMobile biedt eSIM waarmee je je NL-nummer behoudt.' },
-      { q: 'Kan ik mijn rijbewijs gebruiken?', a: 'Je Nederlands rijbewijs is 6 maanden geldig op Curaçao. Daarna omzetten bij SDKK (±€25, tel: +599 9 461-2811).' },
+      { q: 'Kan ik mijn rijbewijs gebruiken?', a: 'Je Nederlands rijbewijs is geldig op Curaçao. Voor een reguliere stage is omzetten naar een Curaçaos rijbewijs niet nodig. Bij langdurig verblijf (>6 maanden) of registratie van een eigen voertuig kan omzetting relevant worden — contacteer dan SDKK (+599 9 461-2811).' },
     ],
   },
   {
@@ -73,6 +75,13 @@ export default function FAQ() {
       />
 
       <div className="max-w-5xl mx-auto px-5 pb-16">
+
+        {/* Anti-drift marker */}
+        <div className="mb-8 border-l-2 border-gray-200 pl-4 py-1">
+          <p className="text-xs text-gray-500 leading-relaxed max-w-2xl">
+            Onderdeel van de stagegids StageStart Curaçao. Korte antwoorden voor oriëntatie — voor harde eisen rond vergunning, kosten en verblijf zijn de dieptepagina's leidend. Officiële bronnen winnen altijd bij conflict.
+          </p>
+        </div>
 
         {/* Zoekbalk */}
         <div className="mb-8">
@@ -127,6 +136,13 @@ export default function FAQ() {
           </div>
           <Link to="/begin-hier" className="btn-terra shrink-0">Begin hier →</Link>
         </div>
+
+        <LastChecked
+          date="2026-04-18"
+          bron="Immigratiedienst Curaçao + eigen redactie"
+          bronUrl="https://immigrationcur.org/dep/studie-stage/"
+          gevoeligheid="hoog"
+        />
       </div>
     </>
   )
