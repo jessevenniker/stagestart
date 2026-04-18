@@ -154,6 +154,18 @@ export default function Verzekering() {
                 MedPoint (medpoint.cw) werkt 7 dagen per week, biedt huisbezoek en teleconsultatie. Handig als het niet spoedeisend is maar je wel snel hulp wilt.
               </p>
             </div>
+            <div className="card">
+              <p className="text-sm font-medium text-dark mb-2">Alternatieve huisarts</p>
+              <p className="text-xs text-gray-500 leading-relaxed">
+                Mangrove Medical Center — +5999 695 9252 (of +5999 462 3465). Handig als Centro Medico vol zit of als je dichter bij een andere wijk woont.
+              </p>
+            </div>
+            <div className="card">
+              <p className="text-sm font-medium text-dark mb-2">Tandarts</p>
+              <p className="text-xs text-gray-500 leading-relaxed">
+                Centro Denthal in Mahaai — +5999 737 0285. Tandartsbezoeken worden meestal niet volledig gedekt door een aanvullende reisverzekering (alleen spoed, beperkt bedrag). Voor niet-spoed planning: sparen of thuis laten doen.
+              </p>
+            </div>
           </div>
 
           <div className="card border-l-4" style={{ borderLeftColor: '#F2B517' }}>
