@@ -140,6 +140,8 @@ const STAPPEN = [
       'Piekperiodes (duurder): december, januari, schoolvakanties.',
       'Tip: boek op dinsdagen, 1 maand van tevoren bij Corendon/TUI, eerder bij KLM.',
       'Zorg dat je huurcontract getekend is en de borg betaald voordat je vertrekt.',
+      'Zet je Nederlandse pinpas "op wereld" via je bank-app of klantenservice — anders wordt hij op Curaçao geblokkeerd.',
+      'Meld bij je bank dat je langere tijd op Curaçao zit. Voorkomt fraudeblokkades.',
     ],
   },
   {
@@ -191,7 +193,7 @@ const INPAKKEN = [
   { cat: 'Documenten (in handbagage)', items: ['Paspoort', 'Originele VOG', 'Stageovereenkomst (getekend)', 'Voorlopig bewijs van aanvraag vergunning', 'Betaalbewijs legeskosten', 'Polisblad verzekering', 'Aanvraagformulier', 'Vliegtickets', 'Kopieën van alles'] },
   { cat: 'Verzorging (neem ruim mee)', items: ['Zonnebrand SPF50+', 'Aftersun', 'Tandpasta', 'Shampoo & conditioner', 'Medicijnen (ook vrij verkrijgbare)', 'Anticonceptie indien van toepassing'] },
   { cat: 'Kleding & strand', items: ['Lichte katoenen kleding', 'Minimaal 3 zwembroeken/bikini\'s', 'Flip flops', 'Sportschoenen', 'Één nette outfit (voor kantoor)'] },
-  { cat: 'Handig mee', items: ['Adapter (Curaçao = type A/B)', 'Powerbank', 'Herbruikbare waterfles', 'Koffer slot', 'Stukje kaas in vacuüm (mag echt)', 'Favoriete Nederlandse snacks'] },
+  { cat: 'Handig mee', items: ['Wereldstekker / adapter (Curaçao = type A/B, 110V én 220V)', 'Powerbank', 'Herbruikbare waterfles', 'Koffer slot', 'Stukje kaas in vacuüm (mag echt)', 'Favoriete Nederlandse snacks'] },
 ]
 
 export default function VoorVertrek() {
