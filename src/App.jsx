@@ -28,6 +28,7 @@ import Privacy from './pages/Privacy'
 import Cookies from './pages/Cookies'
 import Verzekering from './pages/Verzekering'
 import Contact from './pages/Contact'
+import NotFound from './pages/NotFound'
 
 export default function App() {
   return (
@@ -60,6 +61,7 @@ export default function App() {
           <Route path="/cookies"       element={<Cookies />} />
           <Route path="/verzekering"   element={<Verzekering />} />
           <Route path="/contact"       element={<Contact />} />
+          <Route path="*"              element={<NotFound />} />
         </Routes>
       </main>
       <Footer />
