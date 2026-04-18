@@ -4,7 +4,7 @@ import SEO from '../components/SEO'
 import LastChecked from '../components/LastChecked'
 
 const STRANDEN = [
-  { naam: 'Knip (Playa Kenepa)', afstand: '45 min', tip: 'Spectaculaire baai. Ga vroeg — vol na 11u. Betaald parkeren (±ANG 10). Een van de mooiste van het eiland.', kleur: '#1A7EC5' },
+  { naam: 'Knip (Playa Kenepa)', afstand: '45 min', tip: 'Spectaculaire baai. Ga vroeg, want vol na 11u. Betaald parkeren (±ANG 10). Een van de mooiste van het eiland.', kleur: '#1A7EC5' },
   { naam: 'Cas Abao', afstand: '30 min', tip: 'Privébeheer, betaald (ANG 15–20). Goed rif, goede faciliteiten. Populair bij expats.', kleur: '#3EAD6E' },
   { naam: 'Playa Lagun', afstand: '40 min', tip: 'Klein, rustig, geweldig snorkelen direct vanaf het strand. Schildpadden. Gratis.', kleur: '#D4522A' },
   { naam: 'Mambo Beach', afstand: '10–20 min', tip: 'Betaald (ANG 10). Goed voor een doordeweekse avond. Boulevard met eten, bars en winkels.', kleur: '#F2B517' },
@@ -14,19 +14,19 @@ const STRANDEN = [
 
 const ETEN = [
   { type: 'Lokaal & goedkoop', items: [
-    { naam: 'Plasa Bieu', buurt: 'Willemstad centrum', desc: 'Overdekte markt met lokale kramen. Stoba, keshi yena, funchi — echte Curaçaose keuken voor een paar tientjes ANG.' },
+    { naam: 'Plasa Bieu', buurt: 'Willemstad centrum', desc: 'Overdekte markt met lokale kramen. Stoba, keshi yena, funchi: echte Curaçaose keuken voor een paar tientjes ANG.' },
     { naam: 'Gouverneur de Rouville', buurt: 'Otrobanda', desc: 'Geen toeristenprijzen, lokale sfeer, mooi terras aan het water. Heerlijk ontbijt en lunch.' },
     { naam: 'Zest Beach Club (lunch)', buurt: 'Jan Thiel', desc: 'Beach-vibes met goedkope lunchopties als je vlak in de buurt woont.' },
   ]},
   { type: 'Supermarkten', items: [
     { naam: 'Van den Tweel', buurt: 'meerdere filialen', desc: 'Nederlandse producten, bekende merken. Duurder dan in NL maar vertrouwd. Vind je AH-products hier.' },
-    { naam: 'Pricesmart', buurt: 'Salinja', desc: 'Bulkinkopen — goedkoper per eenheid. Ideaal als je met meerdere housegenoten boodschappen doet.' },
+    { naam: 'Pricesmart', buurt: 'Salinja', desc: 'Bulkinkopen, goedkoper per eenheid. Ideaal als je met meerdere huisgenoten boodschappen doet.' },
     { naam: 'MCD (lokale supers)', buurt: 'overal', desc: 'Lokale supermarktketens zijn goedkoper voor basisproducten. Minder NL-merken, prima voor alledaags.' },
   ]},
   { type: 'Uiteten (betaalbaar)', items: [
     { naam: 'Jaanchie\'s', buurt: 'Westpunt', desc: 'Lokale legende. Iguanastoofpot en andere eilandspecialiteiten. Ver maar de moeite waard voor één keer.' },
     { naam: 'Mundo Bizarro', buurt: 'Pietermaai', desc: 'Trendy maar betaalbaar. Goede cocktails, goede sfeer. Populair bij jonge expats en studenten.' },
-    { naam: 'Pasta & Vino', buurt: 'Salinja', desc: 'Goede Italiaan, redelijke prijzen voor Curaçao, altijd vol — reserveer.' },
+    { naam: 'Pasta & Vino', buurt: 'Salinja', desc: 'Goede Italiaan, redelijke prijzen voor Curaçao, altijd vol. Reserveer.' },
   ]},
 ]
 
@@ -34,7 +34,7 @@ const PRAKTISCH = [
   { titel: 'Geld & pinnen', tekst: 'PIN werkt prima bij de meeste supermarkten en winkels. ATM\'s zijn er bij Maduro bank en MCB. Creditcard wordt overal geaccepteerd. Wisselkoers: €1 ≈ ANG 2,00–2,10.' },
   { titel: 'Uitrijden naar Klein Curaçao', tekst: 'Onbewoond eiland, ± 1,5 uur per boot. Absoluut doen. Boek via Miss Ann Boat Trips of Mermaid Boat Trips. ±€50–70 pp inclusief lunch. Plan het voor een rustige dag.' },
   { titel: 'Duiken & snorkelen', tekst: 'Curaçao heeft een van de beste huisriffen ter wereld. Ocean Encounters op Mambo is betrouwbaar. Een duikbrevet halen kan al voor ±€350. Snorkelen is overal goedkoop mogelijk.' },
-  { titel: 'Nachtleven', tekst: "Mambo Beach Boulevard voor een casual avond. Wet & Wild voor feesten op zaterdag. Happy hours zijn populair — begin vroeg. Neem altijd een buddy mee voor taxi's 's avonds." },
+  { titel: 'Nachtleven', tekst: "Mambo Beach Boulevard voor een casual avond. Wet & Wild voor feesten op zaterdag. Happy hours zijn populair — begin vroeg. Neem altijd iemand mee voor taxi's 's avonds." },
   { titel: 'Zondagsregels', tekst: 'Veel winkels zijn gesloten of sluiten vroeg op zondag. Plan je boodschappen op zaterdag. Strand en restaurants zijn open. Rustigste dag van de week.' },
   { titel: 'Mobiel & internet', tekst: 'Prepaid bundels bij Digicel of Flow. ±ANG 40 voor een maandbundel met 10GB. WhatsApp werkt op wifi — meeste studenten houden hun NL-nummer actief.' },
 ]
@@ -215,11 +215,11 @@ export default function Leven() {
           <p className="section-label">Lokale gerechten die je moet proberen</p>
           <div className="card">
             <ul className="space-y-2">
-              <li className="text-xs text-gray-500 leading-relaxed"><span className="font-medium text-dark">Keshi Yena</span> — gevulde kaas, iconisch Curaçaos gerecht</li>
-              <li className="text-xs text-gray-500 leading-relaxed"><span className="font-medium text-dark">Stoba</span> — stevige stoofschotel, typisch lokaal</li>
-              <li className="text-xs text-gray-500 leading-relaxed"><span className="font-medium text-dark">Pastechi</span> — gebakken bladerdeegbroodje (kaas, tonijn, vlees of kip)</li>
-              <li className="text-xs text-gray-500 leading-relaxed"><span className="font-medium text-dark">Batido</span> — verse fruitshake met of zonder melk en suiker</li>
-              <li className="text-xs text-gray-500 leading-relaxed"><span className="font-medium text-dark">Seafood</span> — verse vis is overal, combinatie van Caribisch, Nederlands en Latijns-Amerikaans</li>
+              <li className="text-xs text-gray-500 leading-relaxed"><span className="font-medium text-dark">Keshi Yena:</span> gevulde kaas, iconisch Curaçaos gerecht</li>
+              <li className="text-xs text-gray-500 leading-relaxed"><span className="font-medium text-dark">Stoba:</span> stevige stoofschotel, typisch lokaal</li>
+              <li className="text-xs text-gray-500 leading-relaxed"><span className="font-medium text-dark">Pastechi:</span> gebakken bladerdeegbroodje (kaas, tonijn, vlees of kip)</li>
+              <li className="text-xs text-gray-500 leading-relaxed"><span className="font-medium text-dark">Batido:</span> verse fruitshake met of zonder melk en suiker</li>
+              <li className="text-xs text-gray-500 leading-relaxed"><span className="font-medium text-dark">Seafood:</span> verse vis is overal, combinatie van Caribisch, Nederlands en Latijns-Amerikaans</li>
             </ul>
           </div>
         </section>

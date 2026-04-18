@@ -59,7 +59,7 @@ const DAGEN = [
     taken: [
       { taak: 'Een strand bezoeken', detail: 'Knip Groot of Klein, Cas Abao, Playa Lagun — zet je auto neer en spring het water in. Je verdiende het.' },
       { taak: 'Willemstad centrum verkennen', detail: 'Loop over de Emma-brug, kijk naar de Handelskade, eet iets lokaals bij Gouverneur de Rouville of Plasa Bieu.' },
-      { taak: 'Medestudenten ontmoeten', detail: 'De meeste studentenhuizen organiseren iets in het eerste weekend. Zo niet: stel jezelf voor aan je housegenoten.' },
+      { taak: 'Medestudenten ontmoeten', detail: 'De meeste studentenhuizen organiseren iets in het eerste weekend. Zo niet: stel jezelf voor aan je huisgenoten.' },
     ],
   },
 ]
@@ -89,7 +89,7 @@ const EERSTE_WEEK_TIPS = [
   'Accepteer dat de eerste week chaotisch is. Dat is normaal.',
   'Sms je ouders als je er bent. Ze zitten te wachten.',
   "Open je raam 's nachts niet zonder vliegengaas — muggen zijn echt aanwezig.",
-  'Betaal nooit toeristenprijzen voor eten. Vraag housegenoten waar de locals eten.',
+  'Betaal nooit toeristenprijzen voor eten. Vraag huisgenoten waar de locals eten.',
 ]
 
 export default function EersteWeek() {
@@ -232,7 +232,7 @@ export default function EersteWeek() {
         <div className="bg-cream rounded-2xl p-8 flex flex-col md:flex-row gap-5 items-start md:items-center justify-between">
           <div>
             <p className="font-serif text-xl font-normal text-dark mb-1">Nu je er bent — ontdek het eiland</p>
-            <p className="text-sm text-gray-600">Plekken, eten, strand en uitgaan als lokale — niet als toerist.</p>
+            <p className="text-sm text-gray-600">Plekken, eten, strand en uitgaan als lokale, niet als toerist.</p>
           </div>
           <Link to="/leven" className="btn-terra shrink-0">Leven op Curaçao →</Link>
         </div>

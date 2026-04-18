@@ -42,7 +42,7 @@ const UITKOMSTEN = {
     color: '#D4522A',
     icon: '🚗',
     titel: 'Ja, je hebt waarschijnlijk een auto nodig.',
-    body: 'Op basis van je woon- en werklocatie is een auto vrijwel noodzakelijk. Openbaar vervoer op Curaçao is minimaal en onregelmatig. Overweeg een auto te delen met medestudenten — dat scheelt €200–300 per persoon per maand.',
+    body: 'Op basis van je woon- en werklocatie is een auto vrijwel noodzakelijk. Openbaar vervoer op Curaçao is minimaal en onregelmatig. Overweeg een auto te delen met medestudenten. Dat scheelt €200–300 per persoon per maand.',
     tips: [
       'Regel een auto al voor je vertrekt — aanbod raakt op',
       'Deel met medestudenten via studentenhuisgroepen',
@@ -54,7 +54,7 @@ const UITKOMSTEN = {
     color: '#3EAD6E',
     icon: '🚶',
     titel: 'Nee, je hebt waarschijnlijk geen auto nodig.',
-    body: 'Gefeliciteerd — je bent in de minderheid. Vanuit centrum/Pietermaai kun je op loopafstand werken en de meeste boodschappen doen. Overweeg wel een scooter of fiets voor wat meer vrijheid.',
+    body: 'Gefeliciteerd, je bent in de minderheid. Vanuit centrum of Pietermaai kun je op loopafstand werken en de meeste boodschappen doen. Overweeg wel een scooter of fiets voor wat meer vrijheid.',
     tips: [
       'Een scooter kost ±€200/mnd — stuk goedkoper dan een auto',
       'Taxi\'s zijn relatief betaalbaar voor incidenteel gebruik',
@@ -313,7 +313,7 @@ export default function Auto() {
           <ClaimLabel kind="richtlijn" />
           <div className="grid sm:grid-cols-2 gap-3 mb-3">
             <div className="card">
-              <p className="text-sm font-medium text-dark mb-2">Taxi — check het nummerbord</p>
+              <p className="text-sm font-medium text-dark mb-2">Taxi: check het nummerbord</p>
               <p className="text-xs text-gray-500 leading-relaxed mb-2">
                 <strong className="text-dark">Legale taxi's op Curaçao hebben een nummerbord dat begint met "TX".</strong> Taxi's zonder TX-nummerbord zijn niet officieel — stap daar niet in, ook niet als het goedkoper lijkt.
               </p>
@@ -328,7 +328,7 @@ export default function Auto() {
               </p>
             </div>
             <div className="card">
-              <p className="text-sm font-medium text-dark mb-2">Navigatie — ook offline</p>
+              <p className="text-sm font-medium text-dark mb-2">Navigatie: ook offline</p>
               <p className="text-xs text-gray-500 leading-relaxed">
                 Google Maps werkt goed op Curaçao. Voor offline navigatie (bij slechte dekking op de noordkust): download de kaart van Curaçao vooraf in Google Maps, of gebruik de app <strong className="text-dark">maps.me</strong> voor volledige offline dekking.
               </p>
@@ -350,7 +350,7 @@ export default function Auto() {
           <div className="grid sm:grid-cols-3 gap-4">
             {[
               { title: 'Scooter', color: '#F2B517', prijs: '±€ 150–250/mnd', desc: 'Goedkoper, handig voor kortere ritten. Minder comfortabel in de warmte. Kijk goed naar de verzekering.' },
-              { title: 'Auto delen', color: '#3EAD6E', prijs: '±€ 150–250/mnd/pp', desc: 'Deel een auto met 2–3 housegenoten. Goedkoopste optie als de planning werkt.' },
+              { title: 'Auto delen', color: '#3EAD6E', prijs: '±€ 150–250/mnd/pp', desc: 'Deel een auto met 2–3 huisgenoten. Goedkoopste optie als de planning werkt.' },
               { title: 'Taxi (incidenteel)', color: '#1A7EC5', prijs: '€ 10–20 per rit', desc: 'Voor avonden en uitstapjes. Als je echt vlak bij je werk woont kan dit genoeg zijn.' },
             ].map(a => (
               <div key={a.title} className="card">
