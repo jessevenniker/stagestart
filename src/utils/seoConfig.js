@@ -88,6 +88,11 @@ export const SEO_CONFIG = {
     title: 'Bronnen en verantwoording van StageStart',
     description: 'Elke claim met bron, datum en gevoeligheid. Het reliability framework volledig transparant.',
   },
+  '/contact': {
+    title: 'Contact met StageStart Curaçao',
+    description: 'Mail de redactie voor correcties, suggesties of samenwerkingen. Kleine redactie, duidelijke scope, reactie binnen enkele werkdagen.',
+    type: 'website',
+  },
   '/startgids': {
     title: 'Gratis startgids voor stage op Curaçao',
     description: 'Download de checklist die je vóór vertrek, tijdens voorbereiding en in je eerste week nodig hebt.',

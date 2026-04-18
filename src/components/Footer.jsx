@@ -33,6 +33,7 @@ const COL2 = [
 ]
 
 const COL3 = [
+  { to: '/contact',    label: 'Contact' },
   { to: '/disclaimer', label: 'Disclaimer / Voorwaarden' },
   { to: '/privacy',    label: 'Privacyverklaring' },
   { to: '/cookies',    label: 'Cookieverklaring' },

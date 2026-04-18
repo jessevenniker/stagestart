@@ -129,6 +129,14 @@
     <priority>0.5</priority>
   </url>
 
+  <!-- Contact -->
+  <url>
+    <loc>https://stagestart-curacao.vercel.app/contact</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
   <!-- Juridisch -->
   <url>
     <loc>https://stagestart-curacao.vercel.app/disclaimer</loc>
