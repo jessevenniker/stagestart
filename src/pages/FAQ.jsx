@@ -38,14 +38,14 @@ const FAQ_DATA = [
       { q: 'Is Curaçao veilig?', a: 'Ja, mits je je gedrag aanpast. Geen waardespullen open laten liggen, niet alleen door donkere wijken lopen, altijd met z\'n tweeën na donker.' },
       { q: 'Welke taal spreken ze?', a: 'Papiaments, Nederlands, Spaans en Engels. Met Nederlands kom je overal. "Bon dia" (goedemorgen) gaat een lange weg.' },
       { q: 'Hoe is het internet?', a: 'Goed. Digicel en Flow bieden prepaid data-bundels. WiFi in de meeste studentenhuizen. DennisMobile biedt eSIM waarmee je je NL-nummer behoudt.' },
-      { q: 'Kan ik mijn rijbewijs gebruiken?', a: 'Je Nederlands rijbewijs is geldig op Curaçao. Voor een reguliere stage is omzetten naar een Curaçaos rijbewijs niet nodig. Bij langdurig verblijf (>6 maanden) of registratie van een eigen voertuig kan omzetting relevant worden — contacteer dan SDKK (+599 9 461-2811).' },
+      { q: 'Kan ik mijn rijbewijs gebruiken?', a: 'Je Nederlands rijbewijs is geldig op Curaçao. Voor een reguliere stage is omzetten naar een Curaçaos rijbewijs niet nodig. Bij langdurig verblijf (>6 maanden) of registratie van een eigen voertuig kan omzetting relevant worden. Informeer in dat geval bij de bevoegde instantie op Curaçao.' },
     ],
   },
   {
     categorie: 'Gezondheid',
     vragen: [
       { q: 'Moet ik me laten vaccineren?', a: 'Geen verplichte vaccinaties voor Curaçao. Zorg dat je Nederlandse basisverzekering actief blijft en sluit een reisverzekering af.' },
-      { q: 'Is er een Nederlandstalige huisarts?', a: 'Ja. Centro Medico Aesculapius, SBN Doormanweg 47. Tel: +599 9 737 0522. Ochtend: open spreekuur. Middag: op afspraak.' },
+      { q: 'Is er een Nederlandstalige huisarts?', a: 'Ja. Centro Medico Aesculapius, SBN Doormanweg 47. Tel: +599 9 737-0522. Ochtend: open spreekuur. Middag: op afspraak.' },
       { q: 'Hoe zit het met muggen?', a: 'Actief in het regenseizoen (juni–november) en \'s avonds. Gebruik insectenwerende spray (DEET). Slaap met gesloten ramen of klamboe.' },
     ],
   },

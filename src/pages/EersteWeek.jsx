@@ -74,13 +74,11 @@ const NUMMERS = [
   { label: 'Verkeersongeval (Forensys)', nummer: '9223', toelichting: 'Inspecteurs in rode T-shirts. Verplaats de auto NIET.' },
   { label: 'Forensys WhatsApp', nummer: '+599 9 461-3282' },
   { label: 'Wegenwacht', nummer: '9247' },
-  { label: 'Wielklem verwijderen', nummer: '+599 9 461-956' },
   { label: 'Dierenbescherming', nummer: '+599 9 465-4300' },
   { label: 'Ziekenhuis CMC (algemeen)', nummer: '+599 9 745-0000', toelichting: 'Otrobanda' },
   { label: 'Ziekenhuis CMC (eerste hulp)', nummer: '+599 9 745-0026' },
   { label: 'Huisarts Nederlandstalig (Centro Medico)', nummer: '+599 9 737-0522', toelichting: 'SBN Doormanweg 47' },
   { label: 'MedPoint', nummer: 'zie medpoint.cw', toelichting: 'Open 7 dagen. Ook huisbezoek en teleconsultatie.' },
-  { label: 'Rijbewijsbureau SDKK', nummer: '+599 9 461-2811', toelichting: 'Alleen relevant bij verblijf >6 mnd' },
 ]
 
 const EERSTE_WEEK_TIPS = [
