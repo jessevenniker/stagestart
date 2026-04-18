@@ -10,14 +10,14 @@ const TOPICS = [
     color: '#D4522A',
     title: 'Wat moet je regelen voor vertrek?',
     desc: 'Volgens Immigratiedienst: VOG, geboorteakte, KvK-uittreksel, polisblad. In de juiste volgorde, met deadlines.',
-    img: '/img/paspoort-en-reisdocumenten.jpg',
+    img: '/img/home-voor-vertrek.svg',
   },
   {
     to: '/vergunning',
     color: '#1A7EC5',
     title: 'Vergunning — wat zegt de officiële bron?',
     desc: 'De Immigratiedienst publiceert twee aparte informatiestromen (studie/stage en Verklaring van Rechtswege). Voor jou kunnen beide relevant zijn — controleer het altijd zelf.',
-    img: '/img/paspoort-en-reisdocumenten.jpg',
+    img: '/img/home-vergunning.svg',
   },
   {
     to: '/kosten',
