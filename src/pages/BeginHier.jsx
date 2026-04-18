@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
+import ClaimLabel from '../components/ClaimLabel'
+import LastChecked from '../components/LastChecked'
 
 const STEPS = [
   {
@@ -83,6 +85,12 @@ export default function BeginHier() {
         {/* Steps */}
         <section className="mb-16">
           <p className="section-label">De zes stappen</p>
+          <div className="mb-4">
+            <ClaimLabel kind="richtlijn" />
+            <p className="text-xs text-gray-500 leading-relaxed mt-2 max-w-2xl">
+              Deze volgorde is een praktische richtlijn — geen officieel voorschrift. Voor harde eisen rond vergunning, documenten en verzekering gelden de officiële bronnen op de betreffende dieptepagina's.
+            </p>
+          </div>
           <div className="flex flex-col gap-4">
             {STEPS.map((s) => (
               <div key={s.step} className="flex gap-5 card">
@@ -109,6 +117,12 @@ export default function BeginHier() {
         {/* Quick answers */}
         <section className="mb-16">
           <p className="section-label">Snelle antwoorden</p>
+          <div className="mb-4">
+            <ClaimLabel kind="richtlijn" />
+            <p className="text-xs text-gray-500 leading-relaxed mt-2 max-w-2xl">
+              Korte antwoorden voor oriëntatie. Dieptepagina's (Vergunning, Kosten, Auto) staan boven deze samenvatting.
+            </p>
+          </div>
           <div className="flex flex-col gap-0 border border-gray-100 rounded-xl overflow-hidden">
             {QUICK.map((q, i) => (
               <div key={i} className="flex gap-4 px-5 py-4 border-b border-gray-100 last:border-0 hover:bg-gray-50 transition-colors">
@@ -127,6 +141,12 @@ export default function BeginHier() {
           </div>
           <Link to="/startgids" className="btn-terra shrink-0">Download gratis →</Link>
         </div>
+
+        <LastChecked
+          date="2026-04-18"
+          bron="Eigen redactie — overzichtspagina"
+          gevoeligheid="middel"
+        />
       </div>
     </>
   )

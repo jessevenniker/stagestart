@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
+import ClaimLabel from '../components/ClaimLabel'
 import LastChecked from '../components/LastChecked'
 
 const DAGEN = [
@@ -110,6 +111,12 @@ export default function EersteWeek() {
         {/* Dag-voor-dag */}
         <section className="mb-14">
           <p className="section-label">Eerste weekplanning</p>
+          <div className="mb-4">
+            <ClaimLabel kind="richtlijn" />
+            <p className="text-xs text-gray-500 leading-relaxed mt-2 max-w-2xl">
+              Dit is een praktische richtlijn op basis van ervaringen van eerdere stagiairs, geen officieel voorschrift. Pas aan op je eigen aankomst, woning en stageplek.
+            </p>
+          </div>
           <div className="flex flex-col gap-4">
             {DAGEN.map((dag) => (
               <div key={dag.dag} className="card overflow-hidden">
@@ -154,6 +161,9 @@ export default function EersteWeek() {
         {/* Handige nummers */}
         <section className="mb-14">
           <p className="section-label">Handige nummers — sla op in je telefoon</p>
+          <div className="mb-4">
+            <ClaimLabel kind="officieel" bron="Politie Curaçao / Forensys / ziekenhuizen" />
+          </div>
           <div className="border border-gray-100 rounded-xl overflow-hidden">
             {NUMMERS.map((n, i) => (
               <div key={i} className="flex items-center justify-between px-5 py-3.5 border-b border-gray-100 last:border-0">
@@ -177,6 +187,9 @@ export default function EersteWeek() {
         {/* Tips */}
         <section className="mb-14">
           <p className="section-label">Eerste week tips</p>
+          <div className="mb-4">
+            <ClaimLabel kind="ervaring" />
+          </div>
           <div className="grid sm:grid-cols-2 gap-3">
             {EERSTE_WEEK_TIPS.map((tip, i) => (
               <div key={i} className="card flex gap-3">
@@ -190,6 +203,9 @@ export default function EersteWeek() {
         {/* Wasserettes */}
         <section className="mb-14">
           <p className="section-label">Wassen — waar regel je dat?</p>
+          <div className="mb-4">
+            <ClaimLabel kind="ervaring" />
+          </div>
           <p className="text-sm text-gray-500 leading-relaxed mb-5 max-w-2xl">
             Niet elk studentenhuis heeft een eigen wasmachine. Twee wasserettes die stagiairs vaak gebruiken:
           </p>
