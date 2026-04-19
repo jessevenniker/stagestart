@@ -72,7 +72,7 @@ export default function Leven() {
 
         {/* Stranden */}
         <section className="mb-14">
-          <p className="section-label">Stranden voor stagiairs</p>
+          <h2 className="section-label">Stranden voor stagiairs</h2>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3">
             {STRANDEN.map(s => (
               <div key={s.naam} className="card">
@@ -90,7 +90,7 @@ export default function Leven() {
 
         {/* Eten */}
         <section className="mb-14">
-          <p className="section-label">Eten — lokaal, betaalbaar, eerlijk</p>
+          <h2 className="section-label">Eten — lokaal, betaalbaar, eerlijk</h2>
           <div className="flex flex-col gap-8">
             {ETEN.map(cat => (
               <div key={cat.type}>
@@ -113,7 +113,7 @@ export default function Leven() {
 
         {/* Praktisch */}
         <section className="mb-14">
-          <p className="section-label">Praktische dingen om te weten</p>
+          <h2 className="section-label">Praktische dingen om te weten</h2>
           <div className="grid sm:grid-cols-2 gap-4">
             {PRAKTISCH.map(p => (
               <div key={p.titel} className="card">
@@ -126,7 +126,7 @@ export default function Leven() {
 
         {/* Papiaments */}
         <section className="mb-14">
-          <p className="section-label">Paar woorden Papiaments — wordt gewaardeerd</p>
+          <h2 className="section-label">Paar woorden Papiaments — wordt gewaardeerd</h2>
           <div className="border border-gray-100 rounded-xl overflow-hidden">
             {[
               ['Bon dia', 'Goedemorgen'],
@@ -160,7 +160,7 @@ export default function Leven() {
 
         {/* Gezondheid */}
         <section className="mb-14">
-          <p className="section-label">Gezondheid — wat je vooraf moet weten</p>
+          <h2 className="section-label">Gezondheid — wat je vooraf moet weten</h2>
           <div className="grid sm:grid-cols-2 gap-3">
             {GEZONDHEID.map(g => (
               <div key={g.titel} className="card">
@@ -174,7 +174,7 @@ export default function Leven() {
 
         {/* Mentaal & emotioneel */}
         <section className="mb-14">
-          <p className="section-label">Het mentale deel — dat niemand je vertelt</p>
+          <h2 className="section-label">Het mentale deel — dat niemand je vertelt</h2>
           <p className="text-sm text-gray-600 leading-relaxed mb-6">
             Curaçao ziet er makkelijk uit op foto{"'"}s. In werkelijkheid kan de eerste maand zwaarder zijn dan verwacht. Niet omdat er iets mis is, maar omdat aanpassen aan een nieuwe omgeving altijd energie kost.
           </p>
@@ -212,7 +212,7 @@ export default function Leven() {
 
         {/* Lokale gerechten */}
         <section className="mb-14">
-          <p className="section-label">Lokale gerechten die je moet proberen</p>
+          <h2 className="section-label">Lokale gerechten die je moet proberen</h2>
           <div className="card">
             <ul className="space-y-2">
               <li className="text-xs text-gray-500 leading-relaxed"><span className="font-medium text-dark">Keshi Yena:</span> gevulde kaas, iconisch Curaçaos gerecht</li>

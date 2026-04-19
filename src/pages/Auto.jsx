@@ -121,7 +121,7 @@ export default function Auto() {
 
         {/* Decision tree */}
         <section className="mb-14">
-          <p className="section-label">Beslisboom</p>
+          <h2 className="section-label">Beslisboom</h2>
 
           {/* Breadcrumb */}
           {path.length > 1 && (
@@ -185,7 +185,7 @@ export default function Auto() {
 
         {/* Verzekering — kern van wat stagiairs onderschatten */}
         <section className="mb-14">
-          <p className="section-label">Verzekering — grootste financiële risico</p>
+          <h2 className="section-label">Verzekering — grootste financiële risico</h2>
           <ClaimLabel kind="richtlijn" />
           <p className="text-sm text-gray-600 leading-relaxed mb-5 max-w-2xl">
             Curaçao-auto's hebben vrijwel altijd al wat schade. Hoe je verzekering geregeld is, bepaalt of één deuk je €500 of €0 kost. Controleer dit expliciet bij het tekenen van het huurcontract.
@@ -225,7 +225,7 @@ export default function Auto() {
 
         {/* Ophalen — schade-inspectie */}
         <section className="mb-14">
-          <p className="section-label">Bij het ophalen — schade-inspectie</p>
+          <h2 className="section-label">Bij het ophalen — schade-inspectie</h2>
           <ClaimLabel kind="ervaring" />
           <p className="text-sm text-gray-600 leading-relaxed mb-5 max-w-2xl">
             Op Curaçao hebben auto's vaak al bestaande schade. Als die niet genoteerd staat bij het ophalen, kun je die bij inlevering zelf moeten betalen. Een half uurtje extra kost je een hoop geld later.
@@ -246,7 +246,7 @@ export default function Auto() {
 
         {/* Tanken op Curaçao */}
         <section className="mb-14">
-          <p className="section-label">Tanken — werkt anders dan in Nederland</p>
+          <h2 className="section-label">Tanken — werkt anders dan in Nederland</h2>
           <ClaimLabel kind="richtlijn" />
           <div className="card">
             <p className="text-sm text-gray-600 leading-relaxed mb-3">
@@ -264,7 +264,7 @@ export default function Auto() {
 
         {/* Ongeval — Forensys */}
         <section className="mb-14">
-          <p className="section-label">Bij schade of een ongeluk</p>
+          <h2 className="section-label">Bij schade of een ongeluk</h2>
           <ClaimLabel kind="officieel" bron="Curaçaose hulpdiensten" />
           <div className="card border-l-4" style={{ borderLeftColor: '#D4522A' }}>
             <p className="text-sm font-medium text-dark mb-2">Bel Forensys: 9223</p>
@@ -287,7 +287,7 @@ export default function Auto() {
 
         {/* Auto delen tussen huisgenoten */}
         <section className="mb-14">
-          <p className="section-label">Auto delen met huisgenoten</p>
+          <h2 className="section-label">Auto delen met huisgenoten</h2>
           <ClaimLabel kind="ervaring" />
           <div className="card">
             <p className="text-sm text-gray-600 leading-relaxed mb-3">
@@ -309,7 +309,7 @@ export default function Auto() {
 
         {/* Taxi, bus, navigatie */}
         <section className="mb-14">
-          <p className="section-label">Taxi's, bussen en navigatie</p>
+          <h2 className="section-label">Taxi's, bussen en navigatie</h2>
           <ClaimLabel kind="richtlijn" />
           <div className="grid sm:grid-cols-2 gap-3 mb-3">
             <div className="card">
@@ -346,7 +346,7 @@ export default function Auto() {
 
         {/* Alternatieven */}
         <section className="mb-14">
-          <p className="section-label">Alternatieven voor een auto</p>
+          <h2 className="section-label">Alternatieven voor een auto</h2>
           <div className="grid sm:grid-cols-3 gap-4">
             {[
               { title: 'Scooter', color: '#F2B517', prijs: '±€ 150–250/mnd', desc: 'Goedkoper, handig voor kortere ritten. Minder comfortabel in de warmte. Kijk goed naar de verzekering.' },

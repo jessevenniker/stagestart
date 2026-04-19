@@ -407,7 +407,7 @@ export default function Stranden() {
 
         {/* Tips */}
         <section className="mt-14 mb-14">
-          <p className="section-label">Strandtips</p>
+          <h2 className="section-label">Strandtips</h2>
           <div className="grid sm:grid-cols-2 gap-3">
             <div className="card border-l-4" style={{ borderLeftColor: '#D4522A' }}>
               <p className="text-xs font-medium text-dark mb-1">Zonnebrand meenemen</p>

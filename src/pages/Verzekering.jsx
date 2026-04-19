@@ -19,7 +19,7 @@ export default function Verzekering() {
 
         {/* 1. Wat je officieel moet weten */}
         <section className="mb-14">
-          <p className="section-label">1. Wat je officieel moet weten</p>
+          <h2 className="section-label">1. Wat je officieel moet weten</h2>
 
           <div className="card mb-4">
             <ClaimLabel kind="officieel" bron="Rijksoverheid" link="https://www.rijksoverheid.nl" />
@@ -53,7 +53,7 @@ export default function Verzekering() {
 
         {/* 2. Wat dit in de praktijk betekent */}
         <section className="mb-14">
-          <p className="section-label">2. Wat dit in de praktijk betekent</p>
+          <h2 className="section-label">2. Wat dit in de praktijk betekent</h2>
 
           <div className="grid sm:grid-cols-2 gap-3">
             <div className="card">
@@ -89,7 +89,7 @@ export default function Verzekering() {
 
         {/* 3. Wat dekking wel en niet doet */}
         <section className="mb-14">
-          <p className="section-label">Wat dekking dekt — en wat níét</p>
+          <h2 className="section-label">Wat dekking dekt — en wat níét</h2>
           <ClaimLabel kind="richtlijn" />
           <p className="text-sm text-gray-600 leading-relaxed mb-5 max-w-2xl">
             Per aanbieder verschillend, maar deze elementen komen bij elke goede aanvullende verzekering ter sprake. Check ze één voor één in je polis vóór je tekent.
@@ -128,7 +128,7 @@ export default function Verzekering() {
 
         {/* 4. Medisch op Curaçao */}
         <section className="mb-14">
-          <p className="section-label">Medisch op Curaçao</p>
+          <h2 className="section-label">Medisch op Curaçao</h2>
           <ClaimLabel kind="richtlijn" />
 
           <div className="grid sm:grid-cols-2 gap-3 mb-4">
@@ -185,7 +185,7 @@ export default function Verzekering() {
 
         {/* 5. Gezondheidsrisico's specifiek Curaçao */}
         <section className="mb-14">
-          <p className="section-label">Gezondheidsrisico's die stagiairs onderschatten</p>
+          <h2 className="section-label">Gezondheidsrisico's die stagiairs onderschatten</h2>
           <ClaimLabel kind="ervaring" />
           <div className="grid sm:grid-cols-2 gap-3">
             <div className="card">
@@ -217,7 +217,7 @@ export default function Verzekering() {
 
         {/* 6. Wat jij nu moet doen */}
         <section className="mb-14">
-          <p className="section-label">Wat jij nu moet doen</p>
+          <h2 className="section-label">Wat jij nu moet doen</h2>
           <div className="card border-l-4" style={{ borderLeftColor: '#3EAD6E' }}>
             <ol className="flex flex-col gap-2 text-sm text-gray-600 list-decimal pl-5">
               <li>Controleer of je ingeschreven blijft in Nederland en schrijf je niet uit bij de gemeente.</li>

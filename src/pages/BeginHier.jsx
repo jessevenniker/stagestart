@@ -86,7 +86,7 @@ export default function BeginHier() {
 
         {/* Steps */}
         <section className="mb-16">
-          <p className="section-label">De zes stappen</p>
+          <h2 className="section-label">De zes stappen</h2>
           <div className="mb-4">
             <ClaimLabel kind="richtlijn" />
             <p className="text-xs text-gray-500 leading-relaxed mt-2 max-w-2xl">
@@ -118,7 +118,7 @@ export default function BeginHier() {
 
         {/* Quick answers */}
         <section className="mb-16">
-          <p className="section-label">Snelle antwoorden</p>
+          <h2 className="section-label">Snelle antwoorden</h2>
           <div className="mb-4">
             <ClaimLabel kind="richtlijn" />
             <p className="text-xs text-gray-500 leading-relaxed mt-2 max-w-2xl">

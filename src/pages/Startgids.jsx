@@ -47,7 +47,7 @@ export default function Startgids() {
 
           {/* Left: wat zit erin */}
           <div>
-            <p className="section-label">Wat zit er in de gids?</p>
+            <h2 className="section-label">Wat zit er in de gids?</h2>
             <div className="flex flex-col gap-3 mb-8">
               {INHOUD.map(item => (
                 <div key={item.n} className="flex gap-4 card">
@@ -84,7 +84,7 @@ export default function Startgids() {
 
           {/* Right: form */}
           <div>
-            <p className="section-label">Ontvang de gids gratis</p>
+            <h2 className="section-label">Ontvang de gids gratis</h2>
 
             {submitted ? (
               <div className="card text-center py-10">

@@ -19,7 +19,7 @@ export default function NotFound() {
 
       <div className="max-w-3xl mx-auto px-5 pb-16">
         <section className="mb-10">
-          <p className="section-label">Begin hier</p>
+          <h2 className="section-label">Begin hier</h2>
           <div className="grid sm:grid-cols-2 gap-3">
             <Link to="/" className="card hover:shadow-sm transition-shadow">
               <p className="text-sm font-medium text-dark mb-1">Homepagina</p>
@@ -33,7 +33,7 @@ export default function NotFound() {
         </section>
 
         <section className="mb-10">
-          <p className="section-label">Kernpagina's</p>
+          <h2 className="section-label">Kernpagina's</h2>
           <div className="grid sm:grid-cols-2 gap-3">
             <Link to="/voor-vertrek" className="card hover:shadow-sm transition-shadow">
               <p className="text-sm font-medium text-dark mb-1">Voor vertrek</p>
@@ -55,7 +55,7 @@ export default function NotFound() {
         </section>
 
         <section className="mb-10">
-          <p className="section-label">Iets niet kunnen vinden?</p>
+          <h2 className="section-label">Iets niet kunnen vinden?</h2>
           <div className="card border-l-4" style={{ borderLeftColor: '#1A7EC5' }}>
             <p className="text-sm text-gray-600 leading-relaxed mb-3">
               Probeer de <Link to="/faq" className="text-sky underline">veelgestelde vragen</Link> of stuur ons een bericht via <Link to="/contact" className="text-sky underline">contact</Link>. We reageren doorgaans binnen 2 tot 4 werkdagen.

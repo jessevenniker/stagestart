@@ -238,7 +238,7 @@ export default function VoorVertrek() {
 
         {/* Tijdlijn generator */}
         <section className="mb-14">
-          <p className="section-label">Wanneer moet je wat doen?</p>
+          <h2 className="section-label">Wanneer moet je wat doen?</h2>
           <div className="card mb-4">
             <div className="flex flex-col sm:flex-row gap-3 items-end">
               <div className="flex-1">
@@ -292,7 +292,7 @@ export default function VoorVertrek() {
 
         {/* Stappenplan */}
         <section className="mb-14">
-          <p className="section-label">Stappenplan vergunning & vertrek</p>
+          <h2 className="section-label">Stappenplan vergunning & vertrek</h2>
           <ClaimLabel kind="officieel" bron="Immigratiedienst Curaçao" link="https://immigrationcur.org/dep/studie-stage/" />
           <div className="flex flex-col gap-3">
             {STAPPEN.map((s) => {
@@ -362,7 +362,7 @@ export default function VoorVertrek() {
 
         {/* Belangrijke info */}
         <section className="mb-14">
-          <p className="section-label">Belangrijk om te weten</p>
+          <h2 className="section-label">Belangrijk om te weten</h2>
           <div className="grid sm:grid-cols-2 gap-4">
             <div className="card border-l-4" style={{ borderLeftColor: '#D4522A' }}>
               <p className="text-xs font-medium text-dark mb-2">Geboorteakte vereist (max 1 jaar oud)</p>
@@ -394,7 +394,7 @@ export default function VoorVertrek() {
 
         {/* Kostenovererzicht vergunning */}
         <section className="mb-14">
-          <p className="section-label">Kosten vergunningsaanvraag</p>
+          <h2 className="section-label">Kosten vergunningsaanvraag</h2>
           <ClaimLabel kind="officieel" bron="Immigratiedienst Curaçao + Justis" />
           <div className="card">
             <div className="flex flex-col gap-3">
@@ -420,7 +420,7 @@ export default function VoorVertrek() {
 
         {/* Inpaklijst */}
         <section className="mb-14">
-          <p className="section-label">Inpaklijst</p>
+          <h2 className="section-label">Inpaklijst</h2>
           <div className="grid sm:grid-cols-2 gap-4">
             {INPAKKEN.map((cat) => (
               <div key={cat.cat} className="card">

@@ -149,7 +149,7 @@ export default function HappyHours() {
 
         {/* Dag selector */}
         <section className="mb-14">
-          <p className="section-label">Kies een dag</p>
+          <h2 className="section-label">Kies een dag</h2>
           <div className="flex gap-2 mb-6 flex-wrap">
             {DAGEN.map((d) => (
               <button
@@ -210,7 +210,7 @@ export default function HappyHours() {
 
         {/* Clubs */}
         <section className="mb-14">
-          <p className="section-label">Clubs voor later op de avond</p>
+          <h2 className="section-label">Clubs voor later op de avond</h2>
           <div className="grid sm:grid-cols-3 gap-3">
             {CLUBS.map((c, i) => (
               <div key={c.title} className="card">
@@ -224,7 +224,7 @@ export default function HappyHours() {
 
         {/* Praktische tips */}
         <section className="mb-14">
-          <p className="section-label">Praktische tips</p>
+          <h2 className="section-label">Praktische tips</h2>
           <div className="card">
             <ul className="flex flex-col gap-2">
               {PRAKTISCH.map((t, i) => (

@@ -110,7 +110,7 @@ export default function EersteWeek() {
 
         {/* Dag-voor-dag */}
         <section className="mb-14">
-          <p className="section-label">Eerste weekplanning</p>
+          <h2 className="section-label">Eerste weekplanning</h2>
           <div className="mb-4">
             <ClaimLabel kind="richtlijn" />
             <p className="text-xs text-gray-500 leading-relaxed mt-2 max-w-2xl">
@@ -160,7 +160,7 @@ export default function EersteWeek() {
 
         {/* Handige nummers */}
         <section className="mb-14">
-          <p className="section-label">Handige nummers — sla op in je telefoon</p>
+          <h2 className="section-label">Handige nummers — sla op in je telefoon</h2>
           <div className="mb-4">
             <ClaimLabel kind="officieel" bron="Politie Curaçao / Forensys / ziekenhuizen" />
           </div>
@@ -186,7 +186,7 @@ export default function EersteWeek() {
 
         {/* Tips */}
         <section className="mb-14">
-          <p className="section-label">Eerste week tips</p>
+          <h2 className="section-label">Eerste week tips</h2>
           <div className="mb-4">
             <ClaimLabel kind="ervaring" />
           </div>
@@ -202,7 +202,7 @@ export default function EersteWeek() {
 
         {/* Wasserettes */}
         <section className="mb-14">
-          <p className="section-label">Wassen — waar regel je dat?</p>
+          <h2 className="section-label">Wassen — waar regel je dat?</h2>
           <div className="mb-4">
             <ClaimLabel kind="ervaring" />
           </div>

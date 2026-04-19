@@ -27,7 +27,7 @@ export default function Vergunning() {
 
         {/* BLOK 1 — Wat je officieel moet weten */}
         <section className="mb-14">
-          <p className="section-label">1. Wat je officieel moet weten</p>
+          <h2 className="section-label">1. Wat je officieel moet weten</h2>
 
           <div className="card mb-4">
             <ClaimLabel
@@ -68,7 +68,7 @@ export default function Vergunning() {
 
         {/* BLOK 2 — Wat dit in de praktijk betekent */}
         <section className="mb-14">
-          <p className="section-label">2. Wat dit in de praktijk betekent</p>
+          <h2 className="section-label">2. Wat dit in de praktijk betekent</h2>
           <div className="card">
             <ClaimLabel kind="richtlijn" />
             <p className="text-sm text-gray-600 leading-relaxed mb-3">
@@ -88,7 +88,7 @@ export default function Vergunning() {
 
         {/* BLOK 3 — Wat vaak wordt onderschat */}
         <section className="mb-14">
-          <p className="section-label">3. Wat vaak wordt onderschat</p>
+          <h2 className="section-label">3. Wat vaak wordt onderschat</h2>
           <div className="grid sm:grid-cols-2 gap-3">
             <div className="card">
               <ClaimLabel kind="ervaring" />
@@ -123,7 +123,7 @@ export default function Vergunning() {
 
         {/* BLOK 4 — Wat jij nu moet doen */}
         <section className="mb-14">
-          <p className="section-label">4. Wat jij nu moet doen</p>
+          <h2 className="section-label">4. Wat jij nu moet doen</h2>
           <div className="card border-l-4" style={{ borderLeftColor: '#1A7EC5' }}>
             <ol className="flex flex-col gap-2 text-sm text-gray-600 list-decimal pl-5">
               <li>Lees beide officiële Immigratiedienst-pagina's: <a href="https://immigrationcur.org/dep/studie-stage/" target="_blank" rel="noopener noreferrer" className="text-sky underline">Studie/Stage</a> en <a href="https://immigrationcur.org/dep/van-rechtswege/" target="_blank" rel="noopener noreferrer" className="text-sky underline">Verklaring van Rechtswege</a>.</li>

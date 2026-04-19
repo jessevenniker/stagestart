@@ -99,7 +99,7 @@ export default function FAQ() {
         {/* FAQ Accordion */}
         {gefilterd.map((cat) => (
           <section key={cat.categorie} className="mb-10">
-            <p className="section-label">{cat.categorie}</p>
+            <h2 className="section-label">{cat.categorie}</h2>
             <div className="flex flex-col gap-2">
               {cat.vragen.map((v) => {
                 const key = v.q

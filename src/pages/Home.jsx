@@ -151,6 +151,7 @@ export default function Home() {
             alt="Kleurrijke gevels Handelskade Willemstad Curaçao"
             className="w-full h-[200px] md:h-[320px] object-cover"
             loading="eager"
+            fetchpriority="high"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
           <p className="absolute bottom-4 left-5 text-white/80 text-xs font-medium">
@@ -161,7 +162,7 @@ export default function Home() {
 
       {/* ── TOPICS GRID — kern stage-gids ── */}
       <section className="max-w-5xl mx-auto px-5 py-10 border-t border-gray-100">
-        <p className="section-label">De kern — wat je moet weten als stagiair</p>
+        <h2 className="section-label">De kern — wat je moet weten als stagiair</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
           {TOPICS.map((t) => (
             <Link
@@ -170,7 +171,7 @@ export default function Home() {
               className="group card hover:shadow-md transition-shadow relative overflow-hidden no-underline p-0"
             >
               <div className="relative h-[130px] overflow-hidden">
-                <img src={t.img} alt="" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                <img src={t.img} alt={t.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
                 <div className="absolute bottom-0 left-0 right-0 h-[3px]" style={{ background: t.color }} />
               </div>
               <div className="p-4">
@@ -187,7 +188,7 @@ export default function Home() {
 
       {/* ── SECONDARY — naast je stage ── */}
       <section className="max-w-5xl mx-auto px-5 py-10 border-t border-gray-100">
-        <p className="section-label">Naast je stage</p>
+        <h2 className="section-label">Naast je stage</h2>
         <p className="text-sm text-gray-500 leading-relaxed mb-5 max-w-2xl">
           Ondersteunende informatie over werken, leven en het eiland zelf. Niet de kern, wel handig om te weten.
         </p>
@@ -209,7 +210,7 @@ export default function Home() {
 
       {/* ── BUDGET CALCULATOR ── */}
       <section className="max-w-5xl mx-auto px-5 py-10 border-t border-gray-100">
-        <p className="section-label">Budgetcalculator</p>
+        <h2 className="section-label">Budgetcalculator</h2>
         <div className="grid md:grid-cols-2 gap-8 items-start">
           <div>
             <h2 className="font-serif text-2xl font-normal text-dark mb-2">
@@ -296,7 +297,7 @@ export default function Home() {
 
       {/* ── WHAT INTERNS UNDERESTIMATE ── */}
       <section className="max-w-5xl mx-auto px-5 py-10 border-t border-gray-100">
-        <p className="section-label">Wat stagiairs onderschatten</p>
+        <h2 className="section-label">Wat stagiairs onderschatten</h2>
         <div className="flex flex-col gap-3">
           {UNDERESTIMATE.map((item) => (
             <div key={item.num} className="flex gap-4 card">
@@ -317,7 +318,7 @@ export default function Home() {
 
       {/* ── BUREAU VS GUIDE ── */}
       <section className="max-w-5xl mx-auto px-5 py-10 border-t border-gray-100">
-        <p className="section-label">Bureau vs. gids — wat is het verschil?</p>
+        <h2 className="section-label">Bureau vs. gids — wat is het verschil?</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="card">
             <p className="text-[10px] font-medium tracking-widest uppercase text-gray-400 mb-4">Het bureau</p>

@@ -95,7 +95,7 @@ export default function WeekendTrips() {
         </div>
 
         <section className="mb-14">
-          <p className="section-label">Uitstapjes</p>
+          <h2 className="section-label">Uitstapjes</h2>
           <div className="grid sm:grid-cols-2 gap-3">
             {TRIPS.map((t, i) => (
               <div key={t.naam} className="card">

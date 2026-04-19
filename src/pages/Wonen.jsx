@@ -86,7 +86,7 @@ export default function Wonen() {
 
         {/* Wijk selector */}
         <section className="mb-10">
-          <p className="section-label">Kies een wijk</p>
+          <h2 className="section-label">Kies een wijk</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
             {WIJKEN.map((w, i) => (
               <button
@@ -154,7 +154,7 @@ export default function Wonen() {
 
         {/* Vergelijkingstabel */}
         <section className="mb-14">
-          <p className="section-label">Overzichtstabel</p>
+          <h2 className="section-label">Overzichtstabel</h2>
           <div className="overflow-x-auto">
             <table className="w-full text-sm border border-gray-100 rounded-xl overflow-hidden">
               <thead>
@@ -186,7 +186,7 @@ export default function Wonen() {
 
         {/* Welke wijk past bij jouw situatie */}
         <section className="mb-10">
-          <p className="section-label">Welke wijk past bij jouw situatie?</p>
+          <h2 className="section-label">Welke wijk past bij jouw situatie?</h2>
           <ClaimLabel kind="richtlijn" />
           <p className="text-sm text-gray-500 leading-relaxed mb-5 max-w-2xl">
             De pros en cons hierboven zijn neutraal. Hieronder concrete adviezen op basis van jouw situatie. Eén kant op gaat altijd ten koste van een ander — kies wat het zwaarst weegt.
@@ -227,7 +227,7 @@ export default function Wonen() {
 
         {/* Woonfraude */}
         <section className="mb-10">
-          <p className="section-label">Pas op voor woonfraude</p>
+          <h2 className="section-label">Pas op voor woonfraude</h2>
           <ClaimLabel kind="ervaring" />
           <div className="card border-l-4" style={{ borderLeftColor: '#D4522A' }}>
             <p className="text-sm text-gray-600 leading-relaxed mb-4">
@@ -254,7 +254,7 @@ export default function Wonen() {
 
         {/* Waar zoeken */}
         <section className="mb-10">
-          <p className="section-label">Waar zoek je een woning?</p>
+          <h2 className="section-label">Waar zoek je een woning?</h2>
           <ClaimLabel kind="ervaring" />
           <p className="text-sm text-gray-600 leading-relaxed mb-5 max-w-2xl">
             Er bestaat geen centraal platform zoals Funda. Stagiairs vinden woningen via een mix van kanalen — kies er liever twee serieuze dan tien oppervlakkige.
@@ -289,7 +289,7 @@ export default function Wonen() {
 
         {/* Huurcontract checklist */}
         <section className="mb-10">
-          <p className="section-label">Wat controleer je in het huurcontract?</p>
+          <h2 className="section-label">Wat controleer je in het huurcontract?</h2>
           <ClaimLabel kind="richtlijn" />
           <p className="text-sm text-gray-600 leading-relaxed mb-5 max-w-2xl">
             Op Curaçao zijn huurcontracten minder standaard dan in Nederland. Lees het contract woord-voor-woord door voor je tekent en vraag alles wat onduidelijk is expliciet na.
@@ -312,7 +312,7 @@ export default function Wonen() {
 
         {/* Bezichtiging checklist */}
         <section className="mb-10">
-          <p className="section-label">Bezichtiging — wat kijk je aan?</p>
+          <h2 className="section-label">Bezichtiging — wat kijk je aan?</h2>
           <ClaimLabel kind="ervaring" />
           <p className="text-sm text-gray-600 leading-relaxed mb-5 max-w-2xl">
             Als je fysiek kunt bezichtigen (of iemand voor je): loop de kamer en het hele huis door met deze checklist. Maak foto's van alles.
@@ -385,7 +385,7 @@ export default function Wonen() {
 
         {/* Pagatinu — prepaid stroom */}
         <section className="mb-10">
-          <p className="section-label">Pagatinu — prepaid stroom</p>
+          <h2 className="section-label">Pagatinu — prepaid stroom</h2>
           <ClaimLabel kind="richtlijn" />
           <div className="card">
             <p className="text-sm text-gray-600 leading-relaxed mb-3">

@@ -83,7 +83,7 @@ export default function Contact() {
 
         {/* Wie zit hierachter */}
         <section className="mb-10">
-          <p className="section-label">Wie zit hierachter?</p>
+          <h2 className="section-label">Wie zit hierachter?</h2>
           <div className="card">
             <p className="text-sm text-gray-600 leading-relaxed">
               StageStart Curaçao is een onafhankelijk initiatief vanuit Jesco Innovation B.V. Geen bureau, geen bemiddeling, geen commissies. De site draait op eigen onderzoek, officiële bronnen en ervaringen van eerdere stagiairs. Je bereikt de redactie rechtstreeks via onderstaand formulier of per e-mail.
@@ -93,7 +93,7 @@ export default function Contact() {
 
         {/* Contactformulier */}
         <section className="mb-10">
-          <p className="section-label">Stuur een bericht</p>
+          <h2 className="section-label">Stuur een bericht</h2>
           <div className="card border-l-4" style={{ borderLeftColor: '#1A7EC5' }}>
 
             {status === 'sent' ? (
@@ -211,7 +211,7 @@ export default function Contact() {
 
         {/* Directe e-mail fallback */}
         <section className="mb-10">
-          <p className="section-label">Liever direct mailen?</p>
+          <h2 className="section-label">Liever direct mailen?</h2>
           <div className="card">
             <p className="text-xs text-gray-400 mb-1 uppercase tracking-wider">E-mailadres</p>
             <a
@@ -228,7 +228,7 @@ export default function Contact() {
 
         {/* Waar wel en niet voor */}
         <section className="mb-10">
-          <p className="section-label">Waarvoor kun je ons mailen?</p>
+          <h2 className="section-label">Waarvoor kun je ons mailen?</h2>
           <div className="grid sm:grid-cols-2 gap-3">
             <div className="card">
               <p className="text-sm font-medium text-dark mb-3">Wel</p>
@@ -257,7 +257,7 @@ export default function Contact() {
 
         {/* Partnerships */}
         <section className="mb-10">
-          <p className="section-label">Samenwerkingen en partnerships</p>
+          <h2 className="section-label">Samenwerkingen en partnerships</h2>
           <div className="card">
             <p className="text-sm text-gray-600 leading-relaxed mb-3">
               StageStart Curaçao staat open voor samenwerking met partijen die onze redactionele regels respecteren. Dat betekent: transparantie over de bron, geen commerciële framing in de hoofdtekst en geen vermeldingen die de onafhankelijkheid van de gids ondermijnen.
@@ -283,7 +283,7 @@ export default function Contact() {
 
         {/* Wat StageStart niet is */}
         <section className="mb-10">
-          <p className="section-label">Wat StageStart niet is</p>
+          <h2 className="section-label">Wat StageStart niet is</h2>
           <div className="card border-l-4" style={{ borderLeftColor: '#D4522A' }}>
             <p className="text-sm text-gray-600 leading-relaxed">
               StageStart Curaçao is een informatieve gids. De site is geen stagebureau, geen verhuurplatform, geen juridisch advieskantoor en geen verzekeringsadviseur. We bemiddelen niet tussen stagiairs en bedrijven, verhuren geen woningen en geven geen persoonlijk juridisch of financieel advies. Voor officiële en actuele vereisten zijn instanties als de Immigratiedienst Curaçao, Justis, DUO en de Rijksoverheid altijd leidend.
@@ -293,7 +293,7 @@ export default function Contact() {
 
         {/* Gerelateerde pagina's */}
         <section className="mb-10">
-          <p className="section-label">Gerelateerd</p>
+          <h2 className="section-label">Gerelateerd</h2>
           <div className="grid sm:grid-cols-3 gap-3">
             <Link to="/disclaimer" className="card hover:shadow-sm transition-shadow">
               <p className="text-sm font-medium text-dark mb-1">Disclaimer</p>

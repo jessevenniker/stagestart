@@ -75,7 +75,7 @@ export default function Werken() {
 
         {/* Werkcultuur */}
         <section className="mb-14">
-          <p className="section-label">Werkcultuur</p>
+          <h2 className="section-label">Werkcultuur</h2>
           <div className="grid sm:grid-cols-2 gap-3">
             {CULTUUR.map((c) => (
               <div key={c.title} className="card">
@@ -89,7 +89,7 @@ export default function Werken() {
 
         {/* Stageverslag */}
         <section className="mb-14">
-          <p className="section-label">Je stageverslag en school</p>
+          <h2 className="section-label">Je stageverslag en school</h2>
           <div className="card border-l-4" style={{ borderLeftColor: '#3B8FB5' }}>
             <p className="text-sm font-medium text-dark mb-2">Vergeet je school niet</p>
             <p className="text-sm text-gray-600 leading-relaxed">
@@ -100,7 +100,7 @@ export default function Werken() {
 
         {/* Netwerken */}
         <section className="mb-14">
-          <p className="section-label">Netwerken op een klein eiland</p>
+          <h2 className="section-label">Netwerken op een klein eiland</h2>
           <div className="grid sm:grid-cols-3 gap-3">
             {NETWERK.map((n, i) => {
               const colors = ['#C0522A', '#E2A832', '#5A9E7A']

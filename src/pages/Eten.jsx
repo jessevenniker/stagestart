@@ -44,7 +44,7 @@ export default function Eten() {
 
         {/* Truk'i Pan */}
         <section className="mb-14">
-          <p className="section-label">Truk’i Pan — de nachtelijke keuken</p>
+          <h2 className="section-label">Truk’i Pan — de nachtelijke keuken</h2>
           <div className="card mb-4">
             <p className="text-sm text-gray-600 leading-relaxed mb-3">
               Truk’i Pans zijn foodtrucks die pas na 21:00 opengaan en tot 03:00 ’s nachts open zijn. Het is de nachtelijke keuken van Curaçao. Locals, strandgangers en nachtbrakers staan er in de rij. Porties zijn groot, prijzen zijn laag, sauzen zijn legendarisch.
@@ -73,7 +73,7 @@ export default function Eten() {
 
         {/* Snek & Pastechi */}
         <section className="mb-14">
-          <p className="section-label">Snek & Pastechi — ochtend & lunch</p>
+          <h2 className="section-label">Snek & Pastechi — ochtend & lunch</h2>
           <div className="card">
             <p className="text-sm text-gray-600 leading-relaxed">
               Overdag vind je langs de weg kleine sneks. De pastechi is het lokale ontbijt: een gebakken bladerdeegbroodje gevuld met kaas, tonijn, rund of kip. Goedkoop, overal, en de perfecte start van je dag.
@@ -83,7 +83,7 @@ export default function Eten() {
 
         {/* Plasa Bieu */}
         <section className="mb-14">
-          <p className="section-label">Plasa Bieu — dé lunchtip</p>
+          <h2 className="section-label">Plasa Bieu — dé lunchtip</h2>
           <div className="card border-l-4" style={{ borderLeftColor: '#3EAD6E' }}>
             <p className="text-sm font-medium text-dark mb-2">Marshe Bieu: overdekte markthal</p>
             <p className="text-sm text-gray-600 leading-relaxed">
@@ -94,7 +94,7 @@ export default function Eten() {
 
         {/* Batido */}
         <section className="mb-14">
-          <p className="section-label">Batido — verse fruitshake</p>
+          <h2 className="section-label">Batido — verse fruitshake</h2>
           <div className="card">
             <p className="text-sm text-gray-600 leading-relaxed">
               Overal langs de weg vind je Truk di Batido — verse smoothies van tropisch fruit. Met of zonder suiker, met of zonder melk. Mango batido op een hete middag is onmisbaar.
@@ -104,7 +104,7 @@ export default function Eten() {
 
         {/* Supermarkt vergelijker */}
         <section className="mb-14">
-          <p className="section-label">Supermarkten vergeleken</p>
+          <h2 className="section-label">Supermarkten vergeleken</h2>
           <div className="border border-gray-100 rounded-xl overflow-hidden mb-3">
             {SUPERMARKTEN.map((s, i) => (
               <div key={s.naam} className="px-5 py-4 border-b border-gray-100 last:border-0">
@@ -135,7 +135,7 @@ export default function Eten() {
 
         {/* Drank & slijterijen */}
         <section className="mb-14">
-          <p className="section-label">Drank & slijterijen</p>
+          <h2 className="section-label">Drank & slijterijen</h2>
           <div className="card">
             <p className="text-sm text-gray-600 leading-relaxed mb-3">
               Voor een bredere of betere selectie wijn en spirits:

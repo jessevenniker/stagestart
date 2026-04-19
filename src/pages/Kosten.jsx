@@ -62,7 +62,7 @@ export default function Kosten() {
 
         {/* Eenmalige kosten */}
         <section className="mb-14">
-          <p className="section-label">Eenmalige kosten voor vertrek</p>
+          <h2 className="section-label">Eenmalige kosten voor vertrek</h2>
           <ClaimLabel kind="officieel" bron="Immigratiedienst + Justis" link="https://immigrationcur.org/dep/studie-stage/" />
           <div className="border border-gray-100 rounded-xl overflow-hidden">
             {EENMALIG.map((r, i) => (
@@ -82,7 +82,7 @@ export default function Kosten() {
 
         {/* Maandelijkse kosten */}
         <section className="mb-14">
-          <p className="section-label">Maandelijkse kosten</p>
+          <h2 className="section-label">Maandelijkse kosten</h2>
           <ClaimLabel kind="richtlijn" />
           <div className="border border-gray-100 rounded-xl overflow-hidden mb-3">
             {MAANDELIJKS.map((r, i) => (
@@ -99,7 +99,7 @@ export default function Kosten() {
 
         {/* Inkomsten */}
         <section className="mb-14">
-          <p className="section-label">Inkomsten & vergoedingen</p>
+          <h2 className="section-label">Inkomsten & vergoedingen</h2>
           <ClaimLabel kind="officieel" bron="DUO" link="https://duo.nl" />
           <div className="border border-gray-100 rounded-xl overflow-hidden">
             {INKOMSTEN.map((r, i) => (
@@ -116,7 +116,7 @@ export default function Kosten() {
 
         {/* Verborgen kosten */}
         <section className="mb-14">
-          <p className="section-label">Verborgen kosten die bureaus niet noemen</p>
+          <h2 className="section-label">Verborgen kosten die bureaus niet noemen</h2>
           <ClaimLabel kind="ervaring" />
           <div className="grid sm:grid-cols-2 gap-4">
             {[
@@ -148,7 +148,7 @@ export default function Kosten() {
 
         {/* Calculator */}
         <section className="mb-14">
-          <p className="section-label">Persoonlijke budgetcalculator</p>
+          <h2 className="section-label">Persoonlijke budgetcalculator</h2>
           <div className="grid md:grid-cols-2 gap-8 items-start">
             <div className="card">
               <p className="text-sm font-medium text-dark mb-5">Pas aan op jouw situatie</p>

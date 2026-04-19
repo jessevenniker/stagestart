@@ -59,7 +59,7 @@ export default function Veiligheid() {
 
         {/* Gedragstips per situatie */}
         <section className="mb-14">
-          <p className="section-label">Gedrag op locatie</p>
+          <h2 className="section-label">Gedrag op locatie</h2>
           <ClaimLabel kind="ervaring" />
           <div className="grid sm:grid-cols-2 gap-3">
             {TIPS.map((tip, i) => {
@@ -77,7 +77,7 @@ export default function Veiligheid() {
 
         {/* Rijden */}
         <section className="mb-14">
-          <p className="section-label">Rijden op Curaçao</p>
+          <h2 className="section-label">Rijden op Curaçao</h2>
           <ClaimLabel kind="richtlijn" />
           <div className="card">
             <ul className="flex flex-col gap-2">
@@ -98,7 +98,7 @@ export default function Veiligheid() {
 
         {/* Noodnummers */}
         <section className="mb-14">
-          <p className="section-label">Noodnummers</p>
+          <h2 className="section-label">Noodnummers</h2>
           <ClaimLabel kind="officieel" bron="Curaçaose hulpdiensten" />
           <div className="border border-gray-100 rounded-xl overflow-hidden">
             {NUMMERS.map((n, i) => (
@@ -112,7 +112,7 @@ export default function Veiligheid() {
 
         {/* Algemene context — minder sensationeel */}
         <section className="mb-14">
-          <p className="section-label">Context</p>
+          <h2 className="section-label">Context</h2>
           <ClaimLabel kind="ervaring" />
           <div className="card">
             <p className="text-sm text-gray-600 leading-relaxed">

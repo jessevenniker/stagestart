@@ -54,7 +54,7 @@ export default function Bronnen() {
 
         {/* Redactionele besluitregel */}
         <section className="mb-10">
-          <p className="section-label">Onze redactionele besluitregel</p>
+          <h2 className="section-label">Onze redactionele besluitregel</h2>
           <div className="card border-l-4" style={{ borderLeftColor: '#1A7EC5' }}>
             <p className="text-sm font-medium text-dark mb-2">{REDACTIONELE_REGEL.titel}</p>
             <p className="text-sm text-gray-600 leading-relaxed mb-2">{REDACTIONELE_REGEL.uitleg}</p>
@@ -64,7 +64,7 @@ export default function Bronnen() {
 
         {/* Updatebeleid */}
         <section className="mb-10">
-          <p className="section-label">Ons updatebeleid</p>
+          <h2 className="section-label">Ons updatebeleid</h2>
           <div className="card">
             <p className="text-sm text-gray-600 leading-relaxed mb-3">
               Een betrouwbare gids is alleen betrouwbaar als de informatie niet verouderd raakt. Wij werken met een vast controleritme per gevoeligheidsniveau:
@@ -94,7 +94,7 @@ export default function Bronnen() {
 
         {/* Legenda */}
         <section className="mb-10">
-          <p className="section-label">Hoe we claims labelen</p>
+          <h2 className="section-label">Hoe we claims labelen</h2>
           <div className="grid sm:grid-cols-3 gap-3">
             {Object.entries(BRONSOORTEN).map(([key, cfg]) => (
               <div key={key} className="card">
@@ -144,7 +144,7 @@ export default function Bronnen() {
 
         {/* Bronnenlijst per pagina */}
         <section className="mb-10">
-          <p className="section-label">Claims per pagina ({gefilterd.length} totaal)</p>
+          <h2 className="section-label">Claims per pagina ({gefilterd.length} totaal)</h2>
           {Object.entries(gegroepeerd).map(([pagina, items]) => (
             <div key={pagina} className="mb-8">
               <h3 className="font-serif text-lg font-normal text-dark mb-3">
@@ -197,7 +197,7 @@ export default function Bronnen() {
 
         {/* Verklaring */}
         <section className="mb-10">
-          <p className="section-label">Wat we niet publiceren</p>
+          <h2 className="section-label">Wat we niet publiceren</h2>
           <div className="card border-l-4" style={{ borderLeftColor: '#D4522A' }}>
             <p className="text-sm text-gray-600 leading-relaxed mb-3">
               Volgens ons framework publiceren we bewust geen:
