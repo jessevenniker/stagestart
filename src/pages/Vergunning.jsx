@@ -3,7 +3,14 @@ import PageHero from '../components/PageHero'
 import SEO from '../components/SEO'
 import ClaimLabel from '../components/ClaimLabel'
 import LastChecked from '../components/LastChecked'
+import RelatedPages from '../components/RelatedPages'
 import { articleSchema } from '../utils/schema'
+
+const RELATED = [
+  { to: '/voor-vertrek', label: 'Voor vertrek', desc: 'Documenten en stappen in de juiste volgorde.' },
+  { to: '/verzekering', label: 'Verzekering', desc: 'Polisblad met dekking voor Curaçao is onderdeel van de aanvraag.' },
+  { to: '/bronnen', label: 'Bronnen', desc: 'Elke claim met bron en datum, voor controle.' },
+]
 
 const SCHEMA = articleSchema({
   headline: 'Stagevergunning Curaçao: studie/stage en Verklaring van Rechtswege',
@@ -160,6 +167,8 @@ export default function Vergunning() {
           </div>
           <Link to="/voor-vertrek" className="btn-terra shrink-0">Naar Voor vertrek →</Link>
         </div>
+
+        <RelatedPages items={RELATED} />
 
         <LastChecked
           date="2026-04-16"

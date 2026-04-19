@@ -4,7 +4,14 @@ import SEO from '../components/SEO'
 import { Link } from 'react-router-dom'
 import ClaimLabel from '../components/ClaimLabel'
 import LastChecked from '../components/LastChecked'
+import RelatedPages from '../components/RelatedPages'
 import { articleSchema } from '../utils/schema'
+
+const RELATED = [
+  { to: '/auto', label: 'Auto', desc: 'Wijk en stage-locatie bepalen of je een auto nodig hebt.' },
+  { to: '/kosten', label: 'Kosten', desc: 'Huur als grootste maandlast in je budget.' },
+  { to: '/eerste-week', label: 'Eerste week', desc: 'Wat je in je woning moet checken bij aankomst.' },
+]
 
 const SCHEMA = articleSchema({
   headline: 'Wonen op Curaçao als stagiair: wijken en huur',
@@ -441,6 +448,10 @@ export default function Wonen() {
             <p className="text-sm text-gray-600">Gebruik de beslisboom om te bepalen of je echt een auto nodig hebt.</p>
           </div>
           <Link to="/auto" className="btn-terra shrink-0">Naar auto-beslisboom →</Link>
+        </div>
+
+        <div className="mt-10">
+          <RelatedPages items={RELATED} />
         </div>
 
         <LastChecked

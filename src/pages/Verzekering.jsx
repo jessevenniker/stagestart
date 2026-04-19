@@ -3,7 +3,14 @@ import PageHero from '../components/PageHero'
 import SEO from '../components/SEO'
 import ClaimLabel from '../components/ClaimLabel'
 import LastChecked from '../components/LastChecked'
+import RelatedPages from '../components/RelatedPages'
 import { articleSchema } from '../utils/schema'
+
+const RELATED = [
+  { to: '/voor-vertrek', label: 'Voor vertrek', desc: 'Polisblad als verplicht document voor de aanvraag.' },
+  { to: '/vergunning', label: 'Vergunning', desc: 'Studie/stage en Verklaring van Rechtswege.' },
+  { to: '/auto', label: 'Auto', desc: 'Autoverzekering en eigen risico op Curaçao.' },
+]
 
 const SCHEMA = articleSchema({
   headline: 'Verzekering stage Curaçao: drie lagen uitgelegd',
@@ -246,6 +253,10 @@ export default function Verzekering() {
             <p className="text-sm text-gray-600">Het polisblad is een van de verplichte documenten voor de stagevergunning.</p>
           </div>
           <Link to="/voor-vertrek" className="btn-terra shrink-0">Naar Voor vertrek →</Link>
+        </div>
+
+        <div className="mt-10">
+          <RelatedPages items={RELATED} />
         </div>
 
         <LastChecked

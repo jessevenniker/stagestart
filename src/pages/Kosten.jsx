@@ -4,7 +4,14 @@ import PageHero from '../components/PageHero'
 import SEO from '../components/SEO'
 import LastChecked from '../components/LastChecked'
 import ClaimLabel from '../components/ClaimLabel'
+import RelatedPages from '../components/RelatedPages'
 import { articleSchema } from '../utils/schema'
+
+const RELATED = [
+  { to: '/wonen', label: 'Wonen', desc: 'Wijken vergeleken op huurprijs en bereik.' },
+  { to: '/auto', label: 'Auto', desc: 'Beslisboom: wel of geen auto nodig.' },
+  { to: '/voor-vertrek', label: 'Voor vertrek', desc: 'Eenmalige kosten in het stappenplan.' },
+]
 
 const SCHEMA = articleSchema({
   headline: 'Kosten stage Curaçao: realistisch overzicht',
@@ -249,6 +256,10 @@ export default function Kosten() {
             <p className="text-sm text-gray-600">Download de gratis checklist met alle kosten, vergunningsstappen en tips voor vertrek.</p>
           </div>
           <Link to="/startgids" className="btn-terra shrink-0">Download gratis →</Link>
+        </div>
+
+        <div className="mt-10">
+          <RelatedPages items={RELATED} />
         </div>
 
         <LastChecked

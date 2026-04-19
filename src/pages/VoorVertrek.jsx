@@ -4,7 +4,14 @@ import PageHero from '../components/PageHero'
 import SEO from '../components/SEO'
 import LastChecked from '../components/LastChecked'
 import ClaimLabel from '../components/ClaimLabel'
+import RelatedPages from '../components/RelatedPages'
 import { howToSchema } from '../utils/schema'
+
+const RELATED = [
+  { to: '/vergunning', label: 'Vergunning', desc: 'Studie/stage en Verklaring van Rechtswege uitgelegd.' },
+  { to: '/kosten', label: 'Kosten', desc: 'Wat alles bij elkaar realistisch kost.' },
+  { to: '/eerste-week', label: 'Eerste week', desc: 'Wat je doet zodra je geland bent.' },
+]
 
 const STAPPEN = [
   {
@@ -451,6 +458,10 @@ export default function VoorVertrek() {
             <p className="text-sm text-gray-600">Alle stappen, in de juiste volgorde, in één overzicht.</p>
           </div>
           <Link to="/startgids" className="btn-terra shrink-0">Download gratis →</Link>
+        </div>
+
+        <div className="mt-10">
+          <RelatedPages items={RELATED} />
         </div>
 
         <LastChecked

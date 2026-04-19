@@ -4,7 +4,14 @@ import PageHero from '../components/PageHero'
 import SEO from '../components/SEO'
 import ClaimLabel from '../components/ClaimLabel'
 import LastChecked from '../components/LastChecked'
+import RelatedPages from '../components/RelatedPages'
 import { articleSchema } from '../utils/schema'
+
+const RELATED = [
+  { to: '/wonen', label: 'Wonen', desc: 'Wijk bepaalt of een auto strikt nodig is.' },
+  { to: '/eerste-week', label: 'Eerste week', desc: 'Eerste autorit, route en tanken.' },
+  { to: '/kosten', label: 'Kosten', desc: 'Auto als grootste flexibele post in je budget.' },
+]
 
 const SCHEMA = articleSchema({
   headline: 'Auto op Curaçao: heb je er echt een nodig?',
@@ -377,6 +384,10 @@ export default function Auto() {
             <p className="text-sm text-gray-600">Bekijk de wijkenvergelijking en zie hoe locatie de auto-vraag bepaalt.</p>
           </div>
           <Link to="/wonen" className="btn-terra shrink-0">Wijken vergelijken →</Link>
+        </div>
+
+        <div className="mt-10">
+          <RelatedPages items={RELATED} />
         </div>
 
         <LastChecked

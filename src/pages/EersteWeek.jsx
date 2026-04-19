@@ -4,7 +4,14 @@ import PageHero from '../components/PageHero'
 import SEO from '../components/SEO'
 import ClaimLabel from '../components/ClaimLabel'
 import LastChecked from '../components/LastChecked'
+import RelatedPages from '../components/RelatedPages'
 import { howToSchema } from '../utils/schema'
+
+const RELATED = [
+  { to: '/leven', label: 'Leven op Curaçao', desc: 'Stranden, eten en het sociale weekritme.' },
+  { to: '/veiligheid', label: 'Veiligheid', desc: 'Praktische gedragstips per situatie.' },
+  { to: '/auto', label: 'Auto', desc: 'Eerste autorit, route en wat te doen bij een ongeval.' },
+]
 
 const DAGEN = [
   {
@@ -247,6 +254,10 @@ export default function EersteWeek() {
             <p className="text-sm text-gray-600">Plekken, eten, strand en uitgaan als lokale, niet als toerist.</p>
           </div>
           <Link to="/leven" className="btn-terra shrink-0">Leven op Curaçao →</Link>
+        </div>
+
+        <div className="mt-10">
+          <RelatedPages items={RELATED} />
         </div>
 
         <LastChecked
