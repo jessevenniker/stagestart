@@ -9,8 +9,11 @@ import { SEO_CONFIG, SITE } from '../utils/seoConfig'
  *
  * Pass noindex=true to add a robots meta tag that prevents indexing.
  * Useful for the 404 page since SPA routes always return HTTP 200.
+ *
+ * Pass schema (object or array) to inject one or more JSON-LD blocks for
+ * structured data (schema.org). Generators staan in src/utils/schema.js.
  */
-export default function SEO({ title, description, image, type, noindex }) {
+export default function SEO({ title, description, image, type, noindex, schema }) {
   const { pathname } = useLocation()
   const config = SEO_CONFIG[pathname] || {}
 
@@ -20,6 +23,8 @@ export default function SEO({ title, description, image, type, noindex }) {
   const finalImage = image || config.image || SITE.defaultImage
   const canonical = `${SITE.baseUrl}${pathname === '/' ? '' : pathname}`
   const imageUrl = finalImage.startsWith('http') ? finalImage : `${SITE.baseUrl}${finalImage}`
+
+  const schemas = schema ? (Array.isArray(schema) ? schema : [schema]) : []
 
   return (
     <Helmet>
@@ -42,6 +47,13 @@ export default function SEO({ title, description, image, type, noindex }) {
       <meta name="twitter:title" content={finalTitle} />
       <meta name="twitter:description" content={finalDescription} />
       <meta name="twitter:image" content={imageUrl} />
+
+      {/* Structured data (schema.org) JSON-LD */}
+      {schemas.map((s, i) => (
+        <script key={i} type="application/ld+json">
+          {JSON.stringify(s)}
+        </script>
+      ))}
     </Helmet>
   )
 }
