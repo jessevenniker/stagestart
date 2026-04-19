@@ -36,3 +36,6 @@ lerna-debug.log*
 
 # OS
 Thumbs.db
+
+# Image optimization backup (lokaal, niet in repo)
+public/img/_backup_pre_optimize/
