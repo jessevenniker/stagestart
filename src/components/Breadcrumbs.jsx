@@ -26,6 +26,7 @@ const BREADCRUMB_LABELS = {
   '/faq': 'Veelgestelde vragen',
   '/bronnen': 'Bronnen',
   '/contact': 'Contact',
+  '/over': 'Over StageStart',
   '/startgids': 'Startgids',
   '/disclaimer': 'Disclaimer',
   '/privacy': 'Privacy',

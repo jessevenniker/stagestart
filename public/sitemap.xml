@@ -129,12 +129,18 @@
     <priority>0.5</priority>
   </url>
 
-  <!-- Contact -->
+  <!-- Contact + Over -->
   <url>
     <loc>https://stagestartcuracao.nl/contact</loc>
     <lastmod>2026-04-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://stagestartcuracao.nl/over</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
   </url>
 
   <!-- Juridisch -->
