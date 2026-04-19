@@ -12,17 +12,29 @@ export default function WeatherWidget() {
   const [weather, setWeather] = useState(null)
 
   useEffect(() => {
-    fetch('https://api.open-meteo.com/v1/forecast?latitude=12.17&longitude=-68.98&current=temperature_2m,weather_code&timezone=America/Curacao')
-      .then(r => r.json())
-      .then(data => {
-        if (data.current) {
-          setWeather({
-            temp: Math.round(data.current.temperature_2m),
-            desc: WEATHER_CODES[data.current.weather_code] || 'Onbekend',
-          })
-        }
-      })
-      .catch(() => {})
+    // Stel de fetch uit tot na de eerste paint, zodat hij geen rol speelt
+    // in LCP/FCP meetingen. Het weer is een nice-to-have, geen kerninhoud.
+    const schedule = window.requestIdleCallback || ((cb) => setTimeout(cb, 1500))
+    const handle = schedule(() => {
+      fetch('https://api.open-meteo.com/v1/forecast?latitude=12.17&longitude=-68.98&current=temperature_2m,weather_code&timezone=America/Curacao')
+        .then(r => r.json())
+        .then(data => {
+          if (data.current) {
+            setWeather({
+              temp: Math.round(data.current.temperature_2m),
+              desc: WEATHER_CODES[data.current.weather_code] || 'Onbekend',
+            })
+          }
+        })
+        .catch(() => {})
+    })
+    return () => {
+      if (window.cancelIdleCallback && typeof handle === 'number') {
+        window.cancelIdleCallback(handle)
+      } else {
+        clearTimeout(handle)
+      }
+    }
   }, [])
 
   if (!weather) return null
