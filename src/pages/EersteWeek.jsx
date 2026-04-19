@@ -135,6 +135,7 @@ export default function EersteWeek() {
                       <button
                         key={key}
                         onClick={() => toggle(key)}
+                        aria-pressed={done}
                         className={`text-left flex gap-3 transition-opacity ${done ? 'opacity-50' : ''}`}
                       >
                         <div

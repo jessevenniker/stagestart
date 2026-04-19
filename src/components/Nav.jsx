@@ -78,6 +78,8 @@ export default function Nav() {
           <div className="relative">
             <button
               onClick={() => setMeer(!meer)}
+              aria-expanded={meer}
+              aria-haspopup="true"
               className={`text-[13px] transition-colors flex items-center gap-1 ${meer ? 'text-terra font-medium' : 'text-gray-500 hover:text-dark'}`}
             >
               Meer
@@ -119,7 +121,8 @@ export default function Nav() {
           <button
             className="md:hidden p-1"
             onClick={() => setOpen(!open)}
-            aria-label="Menu openen"
+            aria-label={open ? 'Menu sluiten' : 'Menu openen'}
+            aria-expanded={open}
           >
             <span className={`block w-5 h-0.5 bg-dark mb-1 transition-all ${open ? 'rotate-45 translate-y-1.5' : ''}`} />
             <span className={`block w-5 h-0.5 bg-dark mb-1 transition-all ${open ? 'opacity-0' : ''}`} />
