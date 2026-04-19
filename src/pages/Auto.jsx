@@ -4,6 +4,14 @@ import PageHero from '../components/PageHero'
 import SEO from '../components/SEO'
 import ClaimLabel from '../components/ClaimLabel'
 import LastChecked from '../components/LastChecked'
+import { articleSchema } from '../utils/schema'
+
+const SCHEMA = articleSchema({
+  headline: 'Auto op Curaçao: heb je er echt een nodig?',
+  description: 'Beslisboom op basis van wonen, stage-locatie en budget. Huur, verzekering, taxi en Forensys bij een ongeval.',
+  path: '/auto',
+  dateModified: '2026-04-16',
+})
 
 const TREE = [
   {
@@ -107,7 +115,7 @@ export default function Auto() {
 
   return (
     <>
-      <SEO />
+      <SEO schema={SCHEMA} />
       <PageHero
         eyebrow="Heb je een auto nodig?"
         title="Eerlijk antwoord — hangt af van jouw situatie."

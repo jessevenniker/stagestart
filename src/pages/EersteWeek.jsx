@@ -4,6 +4,7 @@ import PageHero from '../components/PageHero'
 import SEO from '../components/SEO'
 import ClaimLabel from '../components/ClaimLabel'
 import LastChecked from '../components/LastChecked'
+import { howToSchema } from '../utils/schema'
 
 const DAGEN = [
   {
@@ -94,9 +95,21 @@ export default function EersteWeek() {
   const [checked, setChecked] = useState({})
   function toggle(id) { setChecked(p => ({ ...p, [id]: !p[id] })) }
 
+  const schema = howToSchema({
+    name: 'Eerste week op Curaçao: dag-voor-dag plan voor stagiairs',
+    description: 'Wat regel je wanneer in je eerste week na aankomst op Curaçao. Aankomst, bank, pinpas, SIM, auto en eerste strand.',
+    totalTime: 'P7D',
+    steps: DAGEN.flatMap((dag) =>
+      dag.taken.map((t) => ({
+        name: `${dag.dag}: ${t.taak}`,
+        text: t.detail,
+      }))
+    ),
+  })
+
   return (
     <>
-      <SEO />
+      <SEO schema={schema} />
       <PageHero
         eyebrow="Je eerste week"
         title="Dag voor dag — wat doe je wanneer."

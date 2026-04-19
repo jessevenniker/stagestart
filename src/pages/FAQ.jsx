@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
 import SEO from '../components/SEO'
 import LastChecked from '../components/LastChecked'
+import { faqSchema } from '../utils/schema'
 
 const FAQ_DATA = [
   {
@@ -66,7 +67,7 @@ export default function FAQ() {
 
   return (
     <>
-      <SEO />
+      <SEO schema={faqSchema(FAQ_DATA.flatMap(cat => cat.vragen).map(v => ({ question: v.q, answer: v.a })))} />
       <PageHero
         eyebrow="Veelgestelde vragen"
         title="Alles wat je nog wilt weten — op één plek."

@@ -3,11 +3,19 @@ import PageHero from '../components/PageHero'
 import SEO from '../components/SEO'
 import ClaimLabel from '../components/ClaimLabel'
 import LastChecked from '../components/LastChecked'
+import { articleSchema } from '../utils/schema'
+
+const SCHEMA = articleSchema({
+  headline: 'Verzekering stage Curaçao: drie lagen uitgelegd',
+  description: 'Zorgverzekering, reisverzekering en autoverzekering. Waar zit dekking, waar zitten gaten, wat regelt je stagebedrijf.',
+  path: '/verzekering',
+  dateModified: '2026-04-16',
+})
 
 export default function Verzekering() {
   return (
     <>
-      <SEO />
+      <SEO schema={SCHEMA} />
       <PageHero
         eyebrow="Verzekering & gezondheid"
         title="Wat dekt wat, en wat regel je zelf?"

@@ -3,11 +3,19 @@ import PageHero from '../components/PageHero'
 import SEO from '../components/SEO'
 import ClaimLabel from '../components/ClaimLabel'
 import LastChecked from '../components/LastChecked'
+import { articleSchema } from '../utils/schema'
+
+const SCHEMA = articleSchema({
+  headline: 'Stagevergunning Curaçao: studie/stage en Verklaring van Rechtswege',
+  description: 'Studie/stage en Verklaring van Rechtswege uitgelegd volgens de officiële Immigratiedienst Curaçao. Twee aparte informatiestromen, geen verwarring.',
+  path: '/vergunning',
+  dateModified: '2026-04-16',
+})
 
 export default function Vergunning() {
   return (
     <>
-      <SEO />
+      <SEO schema={SCHEMA} />
       <PageHero
         eyebrow="Vergunning — hoe zit het volgens de officiële bron?"
         title="Studie/stage en Verklaring van Rechtswege — twee informatiestromen."

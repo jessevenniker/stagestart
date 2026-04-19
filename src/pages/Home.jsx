@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import WeatherWidget from '../components/WeatherWidget'
 import SEO from '../components/SEO'
+import { websiteSchema, organizationSchema } from '../utils/schema'
 
 // TOPICS = kern stage-gids (P1) — wat de stagiair direct nodig heeft
 const TOPICS = [
@@ -113,7 +114,7 @@ export default function Home() {
 
   return (
     <>
-      <SEO />
+      <SEO schema={[websiteSchema(), organizationSchema()]} />
       {/* ── HERO ── */}
       <section className="max-w-5xl mx-auto px-5 pt-16 pb-12">
         <div className="flex items-center gap-3 mb-6">

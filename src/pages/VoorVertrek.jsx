@@ -4,6 +4,7 @@ import PageHero from '../components/PageHero'
 import SEO from '../components/SEO'
 import LastChecked from '../components/LastChecked'
 import ClaimLabel from '../components/ClaimLabel'
+import { howToSchema } from '../utils/schema'
 
 const STAPPEN = [
   {
@@ -207,9 +208,16 @@ export default function VoorVertrek() {
   const total = STAPPEN.length
   const done = Object.values(checked).filter(Boolean).length
 
+  const schema = howToSchema({
+    name: 'Voor vertrek: checklist voor stage Curaçao',
+    description: 'Stap voor stap checklist met documenten, VOG, vergunning, verzekering en vlucht. Wat je 8 weken vooraf moet regelen.',
+    totalTime: 'PT8W',
+    steps: STAPPEN.map((s) => ({ name: s.title, text: s.desc })),
+  })
+
   return (
     <>
-      <SEO />
+      <SEO schema={schema} />
       <PageHero
         eyebrow="Voor vertrek"
         title="Wat je moet regelen — en in welke volgorde."

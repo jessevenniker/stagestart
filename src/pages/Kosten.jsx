@@ -4,6 +4,14 @@ import PageHero from '../components/PageHero'
 import SEO from '../components/SEO'
 import LastChecked from '../components/LastChecked'
 import ClaimLabel from '../components/ClaimLabel'
+import { articleSchema } from '../utils/schema'
+
+const SCHEMA = articleSchema({
+  headline: 'Kosten stage Curaçao: realistisch overzicht',
+  description: 'XCG 525 leges, DUO 2026 bedragen, maandlasten en verborgen kosten. Officieel, richtlijn en ervaring apart gelabeld.',
+  path: '/kosten',
+  dateModified: '2026-04-16',
+})
 
 function fmt(n) {
   return '€\u00a0' + Math.round(n).toLocaleString('nl-NL')
@@ -48,7 +56,7 @@ export default function Kosten() {
 
   return (
     <>
-      <SEO />
+      <SEO schema={SCHEMA} />
       <PageHero
         eyebrow="Wat kost een stage op Curaçao?"
         title="Eerlijk kostenoverzicht — zonder verborgen posten."

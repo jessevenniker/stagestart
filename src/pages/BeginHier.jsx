@@ -3,6 +3,7 @@ import PageHero from '../components/PageHero'
 import SEO from '../components/SEO'
 import ClaimLabel from '../components/ClaimLabel'
 import LastChecked from '../components/LastChecked'
+import { howToSchema } from '../utils/schema'
 
 const STEPS = [
   {
@@ -70,9 +71,16 @@ const QUICK = [
 ]
 
 export default function BeginHier() {
+  const schema = howToSchema({
+    name: 'Je stage Curaçao in 6 stappen',
+    description: 'De juiste volgorde voor voorbereiding, vergunning, kosten, wonen, auto en eerste week op Curaçao.',
+    totalTime: 'PT8W',
+    steps: STEPS.map((s) => ({ name: s.title, text: s.desc })),
+  })
+
   return (
     <>
-      <SEO />
+      <SEO schema={schema} />
       <PageHero
         eyebrow="Begin hier"
         title="Je eerste stappen, in de juiste volgorde."

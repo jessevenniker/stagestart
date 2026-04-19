@@ -4,6 +4,14 @@ import SEO from '../components/SEO'
 import { Link } from 'react-router-dom'
 import ClaimLabel from '../components/ClaimLabel'
 import LastChecked from '../components/LastChecked'
+import { articleSchema } from '../utils/schema'
+
+const SCHEMA = articleSchema({
+  headline: 'Wonen op Curaçao als stagiair: wijken en huur',
+  description: 'Vijf wijken vergeleken: Pietermaai, Jan Thiel, Piscadera, Salinja en Bapor Kibra. Keuzehulp in plaats van listings.',
+  path: '/wonen',
+  dateModified: '2026-04-16',
+})
 
 const WIJKEN = [
   {
@@ -74,7 +82,7 @@ export default function Wonen() {
 
   return (
     <>
-      <SEO />
+      <SEO schema={SCHEMA} />
       <PageHero
         eyebrow="Wonen op Curaçao"
         title="Welke wijk past bij jou?"
