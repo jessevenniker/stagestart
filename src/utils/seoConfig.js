@@ -98,6 +98,11 @@ export const SEO_CONFIG = {
     description: 'Wie staat er achter StageStart Curaçao? Onafhankelijk, geen commissies. Lees hoe wij content maken, controleren en bijwerken.',
     type: 'website',
   },
+  '/partner-worden': {
+    title: 'Partner worden van StageStart Curaçao',
+    description: 'Informatie voor bedrijven die als partner vermeld willen worden. Voorwaarden, werkwijze en intakeformulier.',
+    type: 'website',
+  },
   '*': {
     title: 'Pagina niet gevonden | StageStart Curaçao',
     description: 'Deze pagina bestaat niet of is verplaatst. Vind via het menu of de kernpagina\'s wat je zoekt.',

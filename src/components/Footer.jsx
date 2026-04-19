@@ -33,12 +33,13 @@ const COL2 = [
 ]
 
 const COL3 = [
-  { to: '/over',       label: 'Over StageStart' },
-  { to: '/contact',    label: 'Contact' },
-  { to: '/bronnen',    label: 'Bronnen & verantwoording' },
-  { to: '/disclaimer', label: 'Disclaimer / Voorwaarden' },
-  { to: '/privacy',    label: 'Privacyverklaring' },
-  { to: '/cookies',    label: 'Cookieverklaring' },
+  { to: '/over',           label: 'Over StageStart' },
+  { to: '/contact',        label: 'Contact' },
+  { to: '/partner-worden', label: 'Partner worden' },
+  { to: '/bronnen',        label: 'Bronnen & verantwoording' },
+  { to: '/disclaimer',     label: 'Disclaimer / Voorwaarden' },
+  { to: '/privacy',        label: 'Privacyverklaring' },
+  { to: '/cookies',        label: 'Cookieverklaring' },
 ]
 
 export default function Footer() {

@@ -27,6 +27,7 @@ const BREADCRUMB_LABELS = {
   '/bronnen': 'Bronnen',
   '/contact': 'Contact',
   '/over': 'Over StageStart',
+  '/partner-worden': 'Partner worden',
   '/startgids': 'Startgids',
   '/disclaimer': 'Disclaimer',
   '/privacy': 'Privacy',
