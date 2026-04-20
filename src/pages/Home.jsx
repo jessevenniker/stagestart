@@ -373,14 +373,14 @@ export default function Home() {
                 Gratis startgids + vertrekchecklist
               </h3>
               <p className="text-sm text-white/70">
-                Alles wat je moet regelen voor vertrek, in de juiste volgorde. PDF, direct beschikbaar.
+                Alles wat je moet regelen voor vertrek, in de juiste volgorde. Direct leesbaar op één pagina, opslaan als PDF met één klik.
               </p>
             </div>
             <Link
               to="/startgids"
               className="shrink-0 bg-white text-terra text-sm font-medium px-5 py-2.5 rounded-md hover:bg-cream transition-colors"
             >
-              Download gratis →
+              Open de startgids →
             </Link>
           </div>
         </div>

@@ -149,7 +149,7 @@ export default function BeginHier() {
             <p className="font-serif text-xl font-normal text-dark mb-1">Klaar om te beginnen?</p>
             <p className="text-sm text-gray-600">Download de gratis startgids met volledige checklist.</p>
           </div>
-          <Link to="/startgids" className="btn-terra shrink-0">Download gratis →</Link>
+          <Link to="/startgids" className="btn-terra shrink-0">Open de startgids →</Link>
         </div>
 
         <LastChecked

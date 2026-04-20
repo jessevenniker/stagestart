@@ -115,7 +115,7 @@ export default function Nav() {
 
         <div className="flex items-center gap-3">
           <Link to="/startgids" className="hidden md:block btn-terra text-xs py-2 px-4">
-            Gratis checklist
+            Gratis startgids
           </Link>
           {/* Hamburger */}
           <button
@@ -147,7 +147,7 @@ export default function Nav() {
             </NavLink>
           ))}
           <Link to="/startgids" onClick={() => setOpen(false)} className="btn-terra text-center mt-2">
-            Gratis checklist downloaden
+            Open de gratis startgids
           </Link>
         </div>
       )}
