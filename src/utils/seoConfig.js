@@ -110,7 +110,7 @@ export const SEO_CONFIG = {
   },
   '/startgids': {
     title: 'Gratis startgids voor stage op Curaçao',
-    description: 'Download de checklist die je vóór vertrek, tijdens voorbereiding en in je eerste week nodig hebt.',
+    description: 'De complete startgids op één pagina: vertrekchecklist, vergunning, budget, inpaklijst, eerste week en noodnummers. Opslaan als PDF met één klik.',
   },
   '/disclaimer': {
     title: 'Disclaimer en gebruiksvoorwaarden',
