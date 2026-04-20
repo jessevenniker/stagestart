@@ -8,6 +8,52 @@ import { articleSchema } from '../utils/schema'
 import NotFound from './NotFound'
 
 /**
+ * Parser voor inline markdown-style links binnen verhaal-paragrafen:
+ *   "tekst met [label](/path) erin" → array van strings + {label, to}
+ *
+ * Hiermee kunnen schrijvers binnen verhalen.js natuurlijk linken naar
+ * kernpagina's zoals /wonen, /auto, /werken zonder JSX in de data.
+ */
+function parseInlineLinks(text) {
+  const parts = []
+  const regex = /\[([^\]]+)\]\(([^)]+)\)/g
+  let lastIndex = 0
+  let match
+  while ((match = regex.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      parts.push(text.slice(lastIndex, match.index))
+    }
+    parts.push({ label: match[1], to: match[2] })
+    lastIndex = regex.lastIndex
+  }
+  if (lastIndex < text.length) {
+    parts.push(text.slice(lastIndex))
+  }
+  return parts
+}
+
+function ParagraphWithLinks({ text }) {
+  const parts = parseInlineLinks(text)
+  return (
+    <>
+      {parts.map((part, i) =>
+        typeof part === 'string' ? (
+          <span key={i}>{part}</span>
+        ) : (
+          <Link
+            key={i}
+            to={part.to}
+            className="text-sky underline decoration-gray-200 underline-offset-2 hover:decoration-sky transition-colors"
+          >
+            {part.label}
+          </Link>
+        )
+      )}
+    </>
+  )
+}
+
+/**
  * Pull-quote component, magazine-stijl.
  * Groot serif, accent-kleur streep links, veel lucht eromheen.
  */
@@ -230,10 +276,12 @@ export default function VerhaalDetail() {
         {/* Q&A */}
         <section className="mb-10">
           <h2 className="section-label">Vragen en antwoorden</h2>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-5">
             {verhaal.qa.map((item, i) => (
               <div key={i} className="card" style={{ borderLeft: `3px solid ${verhaal.accent}` }}>
-                <p className="text-sm font-medium text-dark mb-2">{item.vraag}</p>
+                <p className="font-serif text-lg md:text-xl text-dark mb-3 leading-snug">
+                  {item.vraag}
+                </p>
                 <p className="text-sm text-gray-600 leading-relaxed">{item.antwoord}</p>
               </div>
             ))}
@@ -252,7 +300,7 @@ export default function VerhaalDetail() {
             {verhaal.eigen_verhaal.map((paragraaf, i) => (
               <div key={i}>
                 <p className="text-base text-gray-700 leading-relaxed mb-6">
-                  {paragraaf}
+                  <ParagraphWithLinks text={paragraaf} />
                 </p>
                 {pullQuotes[i] && (
                   <PullQuote text={pullQuotes[i]} accent={verhaal.accent} />

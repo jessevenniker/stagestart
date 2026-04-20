@@ -59,7 +59,6 @@ export const VERHALEN = [
     pull_quotes: [
       'Het eiland oogt klein, maar is toch nog best groot.',
       'Accepteer dat alles wat langzamer gaat. Het is heerlijk.',
-      'Onwijs aardige mensen. Vrolijk, sociaal, oprecht.',
     ],
     gallery: [
       {
@@ -105,9 +104,9 @@ export const VERHALEN = [
       },
     ],
     eigen_verhaal: [
-      'Ik liep van februari tot juli 2026 stage op Curaçao bij een HR-consultancybedrijf. Wat ik vooraf wist is dat een auto handig zou zijn. Wat ik niet wist is hoe ongelooflijk handig. Samen met mijn vriendin hebben we er een gehuurd en binnen een week was duidelijk dat we zonder vastgelopen waren. Het eiland oogt klein op een kaartje, maar lopen langs de wegen is te gevaarlijk en te warm om serieus mee te tellen als optie.',
-      'Mijn woning regelde ik via een stagebureau. Iets duurder, maar na alles wat ik had gezien over oplichting via Facebook was ik blij met de zekerheid. Ik woonde in Salinja, centraal genoeg om naar werk te komen en dicht bij de stranden en happy hours die het weekend maakten. De werkweek was vier dagen stage plus één dag online les. Een normaal ritme, maar met een heel ander soort vrije uren dan ik in Nederland had.',
-      'De grootste verrassing zat niet in het klimaat of het eten, maar in de mensen. Vrolijk, sociaal, oprecht geïnteresseerd. En in het tempo. Waar ik in Nederland gewend was aan strakke agenda\'s en "effe snel checken", liep hier alles net wat ademender. In het begin voelde dat onwennig. Eind eerste maand snapte ik waarom het werkt. Het blijft een eigen land, dus verwacht geen tropisch Nederland, maar als je meegaat in het ritme krijg je er een stage voor terug waar ik nu nog dagelijks aan denk.',
+      'Wat ik vooraf niet had verwacht: hoe snel een ander tempo iets met je doet. Niet de zon, niet het strand, niet de [happy hours](/happy-hours), hoe goed die ook waren. Het was iets in het ritme. Hier kun je niet snel even iets afhandelen op weg naar ergens anders. Of beter: het kan wel, het werkt alleen niet. Je leert in de eerste week dat "effe" geen Curaçaose categorie is.',
+      'De mensen waren mijn tweede grote verrassing. Vrolijk, sociaal, oprecht geïnteresseerd in wie je bent en wat je komt doen. Maar het meest raakte me dat het meer is dan een vakantiestemming. Mensen werken hard, dragen hun eigen geschiedenis, hebben hun eigen problemen. Curaçao is geen tropisch Nederland. Het is [een eigen land](/leven) met een eigen taal, eigen humor en een eigen manier van met elkaar omgaan. Hoe sneller je dat ziet, hoe meer je eruit haalt.',
+      'Achteraf zou ik niet veel anders doen. Wel iets meer met [lokale collega\'s](/werken) optrekken in plaats van alleen met andere stagiairs. Het verschil tussen die twee werelden is groter dan je denkt, en juist in de eerste weken kies je vanzelf voor wie naast je staat. Wat ik nog steeds bij me heb is iets simpels: dat "effe" geen universeel woord is. Soms is het beter om gewoon te wachten tot iets klaar is.',
     ],
     tip: 'Accepteer dat alles hier wat langzamer gaat. Het is heerlijk, maar dan moet je het wel laten.',
     voorbeeld: false,
