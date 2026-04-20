@@ -10,7 +10,7 @@ const FAQ_DATA = [
     categorie: 'Vergunning & papieren',
     vragen: [
       { q: 'Heb ik een visum nodig?', a: 'Als Nederlander heb je geen visum nodig voor verblijf tot 90 dagen. Voor stage langer dan 90 dagen geldt de aanvraagprocedure op de Studie/Stage-pagina van de Immigratiedienst. Zie onze Vergunning-pagina voor details.' },
-      { q: 'Hoe lang duurt de vergunningsaanvraag?', a: 'De Toelatingsorganisatie heeft volgens de officiële Studie/Stage-pagina maximaal 4 maanden om te beslissen. Dit is een beslistermijn — soms sneller, maar reken er niet op. Plan vooruit.' },
+      { q: 'Hoe lang duurt de vergunningsaanvraag?', a: 'De Toelatingsorganisatie heeft volgens de officiële Studie/Stage-pagina maximaal 4 maanden om te beslissen. Dit is een beslistermijn, soms sneller, maar reken er niet op. Plan vooruit.' },
       { q: 'Heb ik een geboorteakte nodig?', a: 'Ja. Volgens de officiële Immigratiedienst-pagina is een geboorteakte vereist, niet ouder dan 1 jaar bij indiening. Vraag hem op tijd aan bij je gemeente.' },
       { q: 'Wat is het verschil tussen stagevergunning en Verklaring van Rechtswege?', a: 'De Immigratiedienst publiceert hier twee aparte officiële pagina\'s voor: Studie/Stage en Verklaring van Rechtswege. Dit zijn twee informatiestromen die allebei relevant kunnen zijn voor Nederlandse stagiairs. Controleer altijd zelf welke officiële route in jouw situatie geldt. Zie onze Vergunning-pagina voor uitleg.' },
       { q: 'Wat is een DI Card?', a: 'Verplichte Digital Immigration Card. Gratis invullen via dicardcuracao.com binnen 7 dagen voor vertrek. Betaal nooit via derde-partij sites.' },
@@ -70,7 +70,7 @@ export default function FAQ() {
       <SEO schema={faqSchema(FAQ_DATA.flatMap(cat => cat.vragen).map(v => ({ question: v.q, answer: v.a })))} />
       <PageHero
         eyebrow="Veelgestelde vragen"
-        title="Alles wat je nog wilt weten — op één plek."
+        title="Alles wat je nog wilt weten, op één plek."
         subtitle="Van vergunning tot zonnebrand. De antwoorden die je nodig hebt."
         accentColor="#1A7EC5"
         image="/img/hero-faq.jpg"
@@ -82,7 +82,7 @@ export default function FAQ() {
         {/* Anti-drift marker */}
         <div className="mb-8 border-l-2 border-gray-200 pl-4 py-1">
           <p className="text-xs text-gray-500 leading-relaxed max-w-2xl">
-            Onderdeel van de stagegids StageStart Curaçao. Korte antwoorden voor oriëntatie — voor harde eisen rond vergunning, kosten en verblijf zijn de dieptepagina's leidend. Officiële bronnen winnen altijd bij conflict.
+            Onderdeel van de stagegids StageStart Curaçao. Korte antwoorden voor oriëntatie, voor harde eisen rond vergunning, kosten en verblijf zijn de dieptepagina's leidend. Officiële bronnen winnen altijd bij conflict.
           </p>
         </div>
 

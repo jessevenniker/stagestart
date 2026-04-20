@@ -66,7 +66,7 @@ export default function Kosten() {
       <SEO schema={SCHEMA} />
       <PageHero
         eyebrow="Wat kost een stage op Curaçao?"
-        title="Eerlijk kostenoverzicht — zonder verborgen posten."
+        title="Eerlijk kostenoverzicht, zonder verborgen posten."
         subtitle="De meeste bureaus noemen €1.500–2.000 per maand. Dat klopt, maar de details maken het verschil. Hier zie je precies waar je geld naartoe gaat."
         accentColor="#F2B517"
         image="/img/hero-kosten.jpg"
@@ -199,7 +199,7 @@ export default function Kosten() {
 
                 <label className="flex items-center gap-2 text-xs text-gray-500 mb-2 cursor-pointer">
                   <input type="checkbox" checked={duo} onChange={e => setDuo(e.target.checked)} className="rounded" />
-                  OV-vergoeding DUO (€110,95/mnd in 2026) — zorg dat je dit aanvraagt
+                  OV-vergoeding DUO (€110,95/mnd in 2026), zorg dat je dit aanvraagt
                 </label>
 
                 <div className="flex gap-3">
@@ -234,11 +234,11 @@ export default function Kosten() {
               <div className="card">
                 <p className="text-xs font-medium text-dark mb-3">Bespaartips</p>
                 {[
-                  'Kies een groter studentenhuis — goedkoper per persoon en socialer',
+                  'Kies een groter studentenhuis, goedkoper per persoon en socialer',
                   'Deel een auto met medestudenten: scheelt €200–300 per maand per persoon',
-                  'Kook zoveel mogelijk zelf — zuivel en vlees importproducten zijn duur',
+                  'Kook zoveel mogelijk zelf, zuivel en vlees importproducten zijn duur',
                   'Neem zonnebrand, shampoo en medicijnen mee vanuit Nederland',
-                  'Stop je OV-kaart — €110,95/mnd (2026) die je anders laat liggen',
+                  'Stop je OV-kaart, €110,95/mnd (2026) die je anders laat liggen',
                 ].map((t, i) => (
                   <div key={i} className="flex gap-2 items-start py-2 border-b border-gray-100 last:border-0">
                     <span className="text-sage text-xs mt-0.5 shrink-0">✓</span>

@@ -8,7 +8,7 @@ import { articleSchema } from '../utils/schema'
 import NotFound from './NotFound'
 
 /**
- * Pull-quote component — magazine-stijl.
+ * Pull-quote component, magazine-stijl.
  * Groot serif, accent-kleur streep links, veel lucht eromheen.
  */
 function PullQuote({ text, accent }) {

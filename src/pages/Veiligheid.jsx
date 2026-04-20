@@ -28,7 +28,7 @@ const RIJDEN = [
   'Je rijdt rechts. Verkeer haalt links in. Op wegen met meerdere rijstroken mag je ook rechts inhalen.',
   'Snelheidslimiet: 40 km/u in bebouwde kom, 60 km/u buiten de stad.',
   'Na regen zijn wegen spekglad. Rijd langzamer.',
-  'Doorgaand verkeer heeft bij T-splitsingen voorrang — anders dan in Nederland.',
+  'Doorgaand verkeer heeft bij T-splitsingen voorrang, anders dan in Nederland.',
   'Veel getoeter is normaal en vriendelijk bedoeld, niet agressief.',
   'GPS (Google Maps) werkt goed. Wegwijzers zijn in het Nederlands.',
   'Controleer bij ophalen van de auto altijd of er een reserveband aanwezig is.',
@@ -42,7 +42,7 @@ export default function Veiligheid() {
       <PageHero
         eyebrow="Veiligheid op Curaçao"
         title="Praktisch gedrag, niet sensationeel."
-        subtitle="Veiligheid op Curaçao gaat vooral over alertheid en gezond verstand. Hieronder concrete gedragstips per situatie. Geen wijkranglijsten — die geven vaak een vals gevoel van zekerheid."
+        subtitle="Veiligheid op Curaçao gaat vooral over alertheid en gezond verstand. Hieronder concrete gedragstips per situatie. Geen wijkranglijsten, die geven vaak een vals gevoel van zekerheid."
         accentColor="#D4522A"
         image="/img/hero-veiligheid.jpg"
         imageAlt="Rustige straat in Willemstad bij daglicht, dagelijks straatbeeld op Curaçao"
@@ -53,7 +53,7 @@ export default function Veiligheid() {
         {/* Anti-drift marker */}
         <div className="mb-8 border-l-2 border-gray-200 pl-4 py-1">
           <p className="text-xs text-gray-500 leading-relaxed max-w-2xl">
-            Onderdeel van de stagegids StageStart Curaçao. Deze pagina is ondersteunend — voor harde vereisten rond vergunning, kosten en verblijf gelden de officiële bronnen op de kernpagina's.
+            Onderdeel van de stagegids StageStart Curaçao. Deze pagina is ondersteunend, voor harde vereisten rond vergunning, kosten en verblijf gelden de officiële bronnen op de kernpagina's.
           </p>
         </div>
 
@@ -110,16 +110,16 @@ export default function Veiligheid() {
           </div>
         </section>
 
-        {/* Algemene context — minder sensationeel */}
+        {/* Algemene context, minder sensationeel */}
         <section className="mb-14">
           <h2 className="section-label">Context</h2>
           <ClaimLabel kind="ervaring" />
           <div className="card">
             <p className="text-sm text-gray-600 leading-relaxed">
-              Curaçao staat op Level 1 van de Amerikaanse reisadvisory: normale voorzichtigheid. Toeristische gebieden worden over het algemeen als veilig beschouwd. De meest voorkomende incidenten gaan over diefstal of opportunistische zakkenrollerij — meestal voorkomen door alertheid en het wegleggen van waardevolle spullen.
+              Curaçao staat op Level 1 van de Amerikaanse reisadvisory: normale voorzichtigheid. Toeristische gebieden worden over het algemeen als veilig beschouwd. De meest voorkomende incidenten gaan over diefstal of opportunistische zakkenrollerij, meestal voorkomen door alertheid en het wegleggen van waardevolle spullen.
             </p>
             <p className="text-sm text-gray-600 leading-relaxed mt-3">
-              Wij publiceren bewust geen wijkranglijsten of harde buurtclaims. Veiligheid hangt af van tijdstip, gezelschap, gedrag en context — niet alleen van de plek. Stem je route en vervoer af op je situatie en raadpleeg lokale contacten of je stagebegeleider voor actuele advies over specifieke locaties.
+              Wij publiceren bewust geen wijkranglijsten of harde buurtclaims. Veiligheid hangt af van tijdstip, gezelschap, gedrag en context, niet alleen van de plek. Stem je route en vervoer af op je situatie en raadpleeg lokale contacten of je stagebegeleider voor actuele advies over specifieke locaties.
             </p>
           </div>
         </section>

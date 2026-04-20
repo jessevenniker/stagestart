@@ -33,7 +33,7 @@ const STAPPEN = [
     detail: [
       'Zorg dat alle drie de handtekeningen erop staan voordat je de vergunning aanvraagt.',
       'Staat er geen handtekening van je school op? Dan heb je een bewijs van inschrijving nodig.',
-      'De stageovereenkomst geldt ook als bewijs van voldoende middelen — je hebt geen apart bankafschrift nodig.',
+      'De stageovereenkomst geldt ook als bewijs van voldoende middelen, je hebt geen apart bankafschrift nodig.',
     ],
   },
   {
@@ -43,7 +43,7 @@ const STAPPEN = [
     detail: [
       'Maak een duidelijke kopie van de fotopagina.',
       'Staat je handtekening op een andere pagina? Kopieer die ook.',
-      'Is je paspoort bijna verlopen? Begin dan direct met verlengen — dat duurt minimaal 5 werkdagen.',
+      'Is je paspoort bijna verlopen? Begin dan direct met verlengen, dat duurt minimaal 5 werkdagen.',
     ],
   },
   {
@@ -52,10 +52,10 @@ const STAPPEN = [
     desc: 'Je hebt een reisverzekering nodig die de volledige duur van je verblijf dekt. Het polisblad is een verplicht document bij de vergunningsaanvraag.',
     detail: [
       'Sluit een reisverzekering af voor de hele stageperiode (ongevallen, repatriëring, baggage).',
-      'Bewaar het polisblad — dit moet je meesturen met de vergunningsaanvraag.',
+      'Bewaar het polisblad, dit moet je meesturen met de vergunningsaanvraag.',
       'Check of je Nederlandse zorgverzekering ook Curaçao dekt. Zo niet, sluit een aanvullende zorgverzekering af.',
       'Veelgebruikte aanbieders: OOM, JoHo Special ISIS, Insure to Study.',
-      'Houd je basisverzekering in Nederland actief — niet opzeggen.',
+      'Houd je basisverzekering in Nederland actief, niet opzeggen.',
     ],
   },
   {
@@ -71,7 +71,7 @@ const STAPPEN = [
   },
   {
     n: '6', bronType: 'officieel', color: '#D4522A', tijd: '6 weken voor vertrek',
-    title: 'Legeskosten betalen — XCG 525',
+    title: 'Legeskosten betalen, XCG 525',
     desc: 'Volgens Immigratiedienst Curaçao kost de aanvraag XCG 525,00. Je moet dit betaald hebben vóór je de aanvraag indient.',
     detail: [
       'Bedrag: XCG 525,00 (Caribische gulden). Maak niet over in euro\'s.',
@@ -123,7 +123,7 @@ const STAPPEN = [
     detail: [
       'Stop je studentenreisproduct minimaal 2 maanden voor vertrek via Mijn DUO.',
       'Je ontvangt €110,95 per maand als OV-vergoeding (bedrag 2026).',
-      'Over 5 maanden is dat ±€555 — vergeet dit niet aan te vragen.',
+      'Over 5 maanden is dat ±€555, vergeet dit niet aan te vragen.',
       'De uitwonende basisbeurs (HBO/WO) van €324,52/mnd (2026) loopt gewoon door tijdens je stage.',
     ],
   },
@@ -132,12 +132,12 @@ const STAPPEN = [
     title: 'Digital Immigration Card (DI Card) invullen',
     desc: 'Verplicht voor alle bezoekers van Curaçao. Invullen via dicardcuracao.com. Gratis en duurt 5 minuten.',
     detail: [
-      'Vul de DI Card in via dicardcuracao.com — dit is gratis.',
+      'Vul de DI Card in via dicardcuracao.com, dit is gratis.',
       'Er circuleren derde-partij websites die hiervoor betaling vragen. Betaal nooit.',
       'Je hebt je paspoort en vluchtinformatie nodig.',
       'Print het formulier of sla het op als screenshot op je telefoon.',
       'Staat je accommodatie niet in de keuzelijst? Typ de naam of het adres handmatig in.',
-      'Niet alle Airbnbs staan erin — kies dan een nabijgelegen hotel als noodoplossing.',
+      'Niet alle Airbnbs staan erin, kies dan een nabijgelegen hotel als noodoplossing.',
     ],
   },
   {
@@ -149,7 +149,7 @@ const STAPPEN = [
       'Piekperiodes (duurder): december, januari, schoolvakanties.',
       'Tip: boek op dinsdagen, 1 maand van tevoren bij Corendon/TUI, eerder bij KLM.',
       'Zorg dat je huurcontract getekend is en de borg betaald voordat je vertrekt.',
-      'Zet je Nederlandse pinpas "op wereld" via je bank-app of klantenservice — anders wordt hij op Curaçao geblokkeerd.',
+      'Zet je Nederlandse pinpas "op wereld" via je bank-app of klantenservice, anders wordt hij op Curaçao geblokkeerd.',
       'Meld bij je bank dat je langere tijd op Curaçao zit. Voorkomt fraudeblokkades.',
     ],
   },
@@ -165,7 +165,7 @@ const STAPPEN = [
       '• Ingevuld aanvraagformulier',
       '• Voorlopig bewijs van aanvraag (ontvangen na indiening)',
       '• Polisblad verzekering',
-      'Neem ook mee: zonnebrand (SPF50), medicijnen, tandpasta, shampoo — allemaal duurder op Curaçao.',
+      'Neem ook mee: zonnebrand (SPF50), medicijnen, tandpasta, shampoo, allemaal duurder op Curaçao.',
     ],
   },
   {
@@ -185,16 +185,16 @@ const TIJDLIJN_ITEMS = [
   { weken: 52, kleur: '#E2A832', taak: 'Bespreek je plannen met je opleiding / stagecoördinator' },
   { weken: 24, kleur: '#E2A832', taak: 'Begin met zoeken naar een stageplek' },
   { weken: 16, kleur: '#C0522A', taak: 'Controleer geldigheid paspoort (minimaal 6 maanden na terugkeer geldig)' },
-  { weken: 12, kleur: '#C0522A', taak: 'Start zoeken naar woonruimte — begin vroeg, goed aanbod raakt op' },
-  { weken: 10, kleur: '#C0522A', taak: 'VOG aanvragen via Justis.nl — duurt 4–6 weken' },
+  { weken: 12, kleur: '#C0522A', taak: 'Start zoeken naar woonruimte, begin vroeg, goed aanbod raakt op' },
+  { weken: 10, kleur: '#C0522A', taak: 'VOG aanvragen via Justis.nl, duurt 4–6 weken' },
   { weken: 8,  kleur: '#C0522A', taak: 'Stagevergunning aanvragen bij Toelatingsorganisatie Curaçao: legeskosten XCG 525 (± €263)' },
   { weken: 8,  kleur: '#E2A832', taak: 'Verzekering afsluiten (reis + zorg + WA)' },
-  { weken: 8,  kleur: '#3B8FB5', taak: 'DUO: studentenreisproduct stopzetten — levert €115/mnd op' },
+  { weken: 8,  kleur: '#3B8FB5', taak: 'DUO: studentenreisproduct stopzetten, levert €115/mnd op' },
   { weken: 6,  kleur: '#C0522A', taak: 'Stagecontract ondertekend en goedgekeurd door school' },
-  { weken: 4,  kleur: '#E2A832', taak: 'Vliegticket boeken (retour — verplicht bij aankomst)' },
+  { weken: 4,  kleur: '#E2A832', taak: 'Vliegticket boeken (retour, verplicht bij aankomst)' },
   { weken: 4,  kleur: '#3B8FB5', taak: 'Wooncontract tekenen en borg betalen' },
   { weken: 2,  kleur: '#5A9E7A', taak: 'Inpakken: zonnebrand, medicijnen, adapter, documenten' },
-  { weken: 1,  kleur: '#5A9E7A', taak: 'DI Card invullen via dicardcuracao.com — gratis, duurt 5 minuten' },
+  { weken: 1,  kleur: '#5A9E7A', taak: 'DI Card invullen via dicardcuracao.com, gratis, duurt 5 minuten' },
   { weken: 0,  kleur: '#5A9E7A', taak: 'Vertrek! Neem alle originele documenten mee in handbagage' },
 ]
 
@@ -227,7 +227,7 @@ export default function VoorVertrek() {
       <SEO schema={schema} />
       <PageHero
         eyebrow="Voor vertrek"
-        title="Wat je moet regelen — en in welke volgorde."
+        title="Wat je moet regelen, en in welke volgorde."
         subtitle="Volgens Immigratiedienst Curaçao heeft de Toelatingsorganisatie officieel 4 maanden de tijd om een beslissing te nemen. Begin minimaal 8 weken voor vertrek met de aanvraag, niet 3."
         accentColor="#D4522A"
         image="/img/paspoort-en-reisdocumenten.jpg"
@@ -290,7 +290,7 @@ export default function VoorVertrek() {
                       <div className="flex-1">
                         <div className="flex items-center gap-2 mb-0.5">
                           <span className="text-xs font-medium text-dark">{formatted}</span>
-                          {isPast && <span className="text-[10px] text-terra italic">Let op — deze datum is al gepasseerd</span>}
+                          {isPast && <span className="text-[10px] text-terra italic">Let op, deze datum is al gepasseerd</span>}
                         </div>
                         <p className="text-xs text-gray-500 leading-relaxed">{item.taak}</p>
                       </div>

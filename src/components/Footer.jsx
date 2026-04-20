@@ -64,7 +64,7 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Col 1 — Stagekern */}
+          {/* Col 1, Stagekern */}
           <div>
             <p className="text-[10px] font-medium tracking-widest uppercase text-gray-400 mb-3">Stagekern</p>
             <ul className="flex flex-col gap-2">
@@ -78,7 +78,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Col 2 — Naast je stage */}
+          {/* Col 2, Naast je stage */}
           <div>
             <p className="text-[10px] font-medium tracking-widest uppercase text-gray-400 mb-3">Naast je stage</p>
             <ul className="flex flex-col gap-2">
@@ -92,7 +92,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Col 3 — Juridisch */}
+          {/* Col 3, Juridisch */}
           <div>
             <p className="text-[10px] font-medium tracking-widest uppercase text-gray-400 mb-3">Juridisch</p>
             <ul className="flex flex-col gap-2">
@@ -109,7 +109,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-100 mt-10 pt-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-3">
           <p className="text-xs text-gray-400">
-            © {new Date().getFullYear()} StageStart Curaçao — stagestartcuracao.nl
+            © {new Date().getFullYear()} StageStart Curaçao, stagestartcuracao.nl
           </p>
           <p className="text-xs text-gray-400">
             Geen bureau. Geen pakket. Geen verborgen belangen.

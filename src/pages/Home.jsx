@@ -5,7 +5,7 @@ import SEO from '../components/SEO'
 import { websiteSchema, organizationSchema } from '../utils/schema'
 import { VERHALEN } from '../data/verhalen'
 
-// TOPICS = kern stage-gids (P1) — wat de stagiair direct nodig heeft
+// TOPICS = kern stage-gids (P1), wat de stagiair direct nodig heeft
 const TOPICS = [
   {
     to: '/voor-vertrek',
@@ -17,7 +17,7 @@ const TOPICS = [
   {
     to: '/vergunning',
     color: '#1A7EC5',
-    title: 'Vergunning — wat zegt de officiële bron?',
+    title: 'Vergunning, wat zegt de officiële bron?',
     desc: 'De Immigratiedienst publiceert twee aparte informatiestromen (studie/stage en Verklaring van Rechtswege). Voor jou kunnen beide relevant zijn. Controleer dat altijd zelf.',
     img: '/img/home-vergunning.jpg',
   },
@@ -51,7 +51,7 @@ const TOPICS = [
   },
 ]
 
-// SECONDARY = "Naast je stage" — ondersteunende life-content
+// SECONDARY = "Naast je stage", ondersteunende life-content
 const SECONDARY_TOPICS = [
   { to: '/werken', label: 'Werken op Curaçao', desc: 'Werkcultuur en hiërarchie' },
   { to: '/leven', label: 'Leven als stagiair', desc: 'Praktisch eilandleven' },
@@ -73,7 +73,7 @@ const UNDERESTIMATE = [
   {
     num: '02',
     color: '#F2B517',
-    title: 'De OV-vergoeding van DUO — bijna niemand vraagt hem aan',
+    title: 'De OV-vergoeding van DUO, bijna niemand vraagt hem aan',
     desc: 'Stop je studentenreisproduct tijdig en je krijgt €110,95 per maand terug (2026). Over 5 maanden is dat ±€555 die je anders laat liggen.',
   },
   {
@@ -91,7 +91,7 @@ const UNDERESTIMATE = [
   {
     num: '05',
     color: '#E8507A',
-    title: 'Zonder auto woon je praktisch vast — afhankelijk van je locatie',
+    title: 'Zonder auto woon je praktisch vast, afhankelijk van je locatie',
     desc: 'Openbaar vervoer is er nauwelijks. Of je een auto nodig hebt, hangt volledig af van waar je woont én werkt.',
   },
 ]
@@ -162,9 +162,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── TOPICS GRID — kern stage-gids ── */}
+      {/* ── TOPICS GRID, kern stage-gids ── */}
       <section className="max-w-5xl mx-auto px-5 py-10 border-t border-gray-100">
-        <h2 className="section-label">De kern — wat je moet weten als stagiair</h2>
+        <h2 className="section-label">De kern, wat je moet weten als stagiair</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
           {TOPICS.map((t) => (
             <Link
@@ -188,7 +188,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── SECONDARY — naast je stage ── */}
+      {/* ── SECONDARY, naast je stage ── */}
       <section className="max-w-5xl mx-auto px-5 py-10 border-t border-gray-100">
         <h2 className="section-label">Naast je stage</h2>
         <p className="text-sm text-gray-500 leading-relaxed mb-5 max-w-2xl">
@@ -256,7 +256,7 @@ export default function Home() {
               </div>
               <div className="flex justify-between items-center py-3 border-b border-gray-200">
                 <span className="text-sm text-gray-600">Auto</span>
-                <span className="text-sm font-medium">{v.car === 0 ? '—' : fmt(v.car)}</span>
+                <span className="text-sm font-medium">{v.car === 0 ? ', ' : fmt(v.car)}</span>
               </div>
               <div className="flex justify-between items-center py-3 border-b border-gray-200">
                 <span className="text-sm text-gray-600">Eten & boodschappen</span>
@@ -364,7 +364,7 @@ export default function Home() {
 
       {/* ── BUREAU VS GUIDE ── */}
       <section className="max-w-5xl mx-auto px-5 py-10 border-t border-gray-100">
-        <h2 className="section-label">Bureau vs. gids — wat is het verschil?</h2>
+        <h2 className="section-label">Bureau vs. gids, wat is het verschil?</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="card">
             <p className="text-[10px] font-medium tracking-widest uppercase text-gray-400 mb-4">Het bureau</p>

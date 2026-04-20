@@ -1,4 +1,4 @@
-// Masterbron-bestand — single source of truth voor alle harde claims.
+// Masterbron-bestand, single source of truth voor alle harde claims.
 // Volgens het Reliability Framework: elke claim met invloed op geld, documenten,
 // gezondheid, verzekering of verblijfsstatus moet hier staan met primaire bron.
 
@@ -8,7 +8,7 @@
 // Praktijkervaring mag alleen terugkomen als aparte vertaling onder een
 // ervarings- of praktijklabel.
 //
-// Voorbeeld: VRW vs stagevergunning — de Immigratiedienst publiceert hier
+// Voorbeeld: VRW vs stagevergunning, de Immigratiedienst publiceert hier
 // twee aparte informatiestromen voor. Op de site beschrijven we ze daarom
 // ook apart, met de praktijk-interpretatie als gelabeld extra blok.
 
@@ -26,7 +26,7 @@ export const BRONSOORTEN = {
   },
   richtlijn: {
     label: 'Praktische richtlijn',
-    omschrijving: 'Indicatie of vuistregel — geen wet.',
+    omschrijving: 'Indicatie of vuistregel, geen wet.',
     kleur: '#F2B517',
   },
   ervaring: {
@@ -48,7 +48,7 @@ export const PRIMAIRE_BRONNEN = {
     url: 'https://immigrationcur.org/dep/studie-stage/',
   },
   vanRechtswege: {
-    naam: 'Immigratiedienst — Verklaring van Rechtswege',
+    naam: 'Immigratiedienst, Verklaring van Rechtswege',
     url: 'https://immigrationcur.org/dep/van-rechtswege/',
   },
   rijksoverheid: {
@@ -174,7 +174,7 @@ export const BRONNEN = [
     notitie: 'Officiële maximale beslistermijn van Toelatingsorganisatie.',
   },
 
-  // ─────── VERGUNNING — terminologie ───────
+  // ─────── VERGUNNING, terminologie ───────
   {
     pagina: 'vergunning',
     claim: 'Studie/stage informatiestroom (officieel)',
@@ -200,7 +200,7 @@ export const BRONNEN = [
   {
     pagina: 'vergunning',
     claim: 'Praktische relevantie voor Nederlandse stagiairs',
-    waarde: 'Beide informatiestromen kunnen relevant zijn — controleer welke route op jouw situatie van toepassing is',
+    waarde: 'Beide informatiestromen kunnen relevant zijn, controleer welke route op jouw situatie van toepassing is',
     bronsoort: 'richtlijn',
     laatsteCheck: '2026-04-16',
     gevoeligheid: 'hoog',
@@ -286,7 +286,7 @@ export const BRONNEN = [
   {
     pagina: 'eerste-week',
     claim: 'Nederlands rijbewijs in Curaçao',
-    waarde: 'Geldig — geen omzetting nodig voor stage',
+    waarde: 'Geldig, geen omzetting nodig voor stage',
     bron: PRIMAIRE_BRONNEN.rijksoverheid,
     bronsoort: 'officieel',
     laatsteCheck: '2026-04-16',
@@ -295,7 +295,7 @@ export const BRONNEN = [
     notitie: 'NL rijbewijs is geldig in Curaçao. Omzetten alleen relevant bij langdurig verblijf (>6 mnd) of registratie eigen voertuig.',
   },
 
-  // ─────── KOSTEN — eenmalig + opstart ───────
+  // ─────── KOSTEN, eenmalig + opstart ───────
   {
     pagina: 'kosten',
     claim: 'Retourticket Amsterdam-Curaçao',
@@ -337,7 +337,7 @@ export const BRONNEN = [
     notitie: 'Sinds 31 maart 2025 gebruikt Curaçao de Caribbean Guilder, gekoppeld aan de USD. Controleer dagkoers via je bank.',
   },
 
-  // ─────── EERSTE WEEK — rijbewijs ───────
+  // ─────── EERSTE WEEK, rijbewijs ───────
   {
     pagina: 'eerste-week',
     claim: 'DI Card (Digital Immigration Card)',

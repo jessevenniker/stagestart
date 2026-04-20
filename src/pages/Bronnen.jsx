@@ -83,11 +83,11 @@ export default function Bronnen() {
             <ul className="flex flex-col gap-1.5 text-sm text-gray-600 mb-3">
               <li>· Elke claim heeft een <strong className="text-dark">laatste-check-datum</strong> die zichtbaar onderaan elke pagina staat.</li>
               <li>· Bij officiële wijzigingen (Immigratiedienst, DUO, Justis) passen we de tekst én de datum direct aan.</li>
-              <li>· Minimaal één keer per kwartaal lopen we alle kritieke claims na tegen hun bron — ook als er geen aanleiding voor lijkt.</li>
+              <li>· Minimaal één keer per kwartaal lopen we alle kritieke claims na tegen hun bron, ook als er geen aanleiding voor lijkt.</li>
               <li>· Claims zonder recente check verhuizen naar "richtlijn" of worden verwijderd.</li>
             </ul>
             <p className="text-xs text-gray-400 leading-relaxed">
-              Signaleer je verouderde of onjuiste informatie? Laat het weten — de site leeft van die feedback.
+              Signaleer je verouderde of onjuiste informatie? Laat het weten, de site leeft van die feedback.
             </p>
           </div>
         </section>

@@ -74,7 +74,7 @@ const STRANDEN = [
     type: 'zand', entree: 'betaald', snorkelen: true, sfeer: 'gezellig',
     desc: 'Beroemd om de gezonken sleepboot op ~5m diepte. Toegankelijk voor snorkelaars en duikers. Tropische vissen, kans op octopus, zeepaard of kreeft. Strandbar van gerecycled materiaal.',
     faciliteiten: 'Strandbar, parkeerplaats',
-    snorkelNote: 'De gezonken sleepboot is de highlight — perfect voor onderwaterfotografie.',
+    snorkelNote: 'De gezonken sleepboot is de highlight, perfect voor onderwaterfotografie.',
     coords: [12.0692, -68.8617],
   },
   {
@@ -314,7 +314,7 @@ export default function Stranden() {
       <SEO />
       <PageHero
         eyebrow="Stranden van Curaçao"
-        title="35+ stranden — van populair tot geheim."
+        title="35+ stranden, van populair tot geheim."
         subtitle={`Van gezellige beachclubs tot verlaten baaien. Filter op wat bij je past.`}
         accentColor="#1A7EC5"
         image="/img/hero-stranden.jpg"
@@ -326,7 +326,7 @@ export default function Stranden() {
         {/* Anti-drift marker */}
         <div className="mb-8 border-l-2 border-gray-200 pl-4 py-1">
           <p className="text-xs text-gray-500 leading-relaxed max-w-2xl">
-            Onderdeel van de stagegids StageStart Curaçao. Deze pagina is ondersteunend — voor harde vereisten rond vergunning, kosten en verblijf gelden de officiële bronnen op de kernpagina's.
+            Onderdeel van de stagegids StageStart Curaçao. Deze pagina is ondersteunend, voor harde vereisten rond vergunning, kosten en verblijf gelden de officiële bronnen op de kernpagina's.
           </p>
         </div>
 
@@ -439,7 +439,7 @@ export default function Stranden() {
 
         <LastChecked
           date="2026-04-18"
-          bron="Eigen redactie — ervaringsinzicht"
+          bron="Eigen redactie, ervaringsinzicht"
           gevoeligheid="laag"
         />
       </div>

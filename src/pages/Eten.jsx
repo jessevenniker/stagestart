@@ -26,7 +26,7 @@ export default function Eten() {
       <SEO />
       <PageHero
         eyebrow="Eten op Curaçao"
-        title="Lokaal eten — goedkoop, lekker, en totaal anders dan je gewend bent."
+        title="Lokaal eten, goedkoop, lekker, en totaal anders dan je gewend bent."
         subtitle="Wat de bureaus niet vertellen: je kunt goed eten op Curaçao zonder veel geld. Je moet alleen weten waar."
         accentColor="#3EAD6E"
         image="/img/hero-eten.jpg"
@@ -38,13 +38,13 @@ export default function Eten() {
         {/* Anti-drift marker */}
         <div className="mb-8 border-l-2 border-gray-200 pl-4 py-1">
           <p className="text-xs text-gray-500 leading-relaxed max-w-2xl">
-            Onderdeel van de stagegids StageStart Curaçao. Deze pagina is ondersteunend — voor harde vereisten rond vergunning, kosten en verblijf gelden de officiële bronnen op de kernpagina's.
+            Onderdeel van de stagegids StageStart Curaçao. Deze pagina is ondersteunend, voor harde vereisten rond vergunning, kosten en verblijf gelden de officiële bronnen op de kernpagina's.
           </p>
         </div>
 
         {/* Truk'i Pan */}
         <section className="mb-14">
-          <h2 className="section-label">Truk’i Pan — de nachtelijke keuken</h2>
+          <h2 className="section-label">Truk’i Pan, de nachtelijke keuken</h2>
           <div className="card mb-4">
             <p className="text-sm text-gray-600 leading-relaxed mb-3">
               Truk’i Pans zijn foodtrucks die pas na 21:00 opengaan en tot 03:00 ’s nachts open zijn. Het is de nachtelijke keuken van Curaçao. Locals, strandgangers en nachtbrakers staan er in de rij. Porties zijn groot, prijzen zijn laag, sauzen zijn legendarisch.
@@ -53,7 +53,7 @@ export default function Eten() {
               <strong className="text-dark">Hoe werkt het:</strong> je rijdt naar een vaste locatie (parkeerterrein of open veld), bestelt aan het luikje, wacht op je naam en eet aan een eenvoudig tafeltje of op je motorkap.
             </p>
             <p className="text-sm text-gray-600 leading-relaxed">
-              <strong className="text-dark">Wat bestel je:</strong> kip, ribs, biefstuk of vis met friet of brood. Voeg veel saus toe: pinda, knoflook, pikant. De ui-salsa is lokaal en typisch — mild-pittig.
+              <strong className="text-dark">Wat bestel je:</strong> kip, ribs, biefstuk of vis met friet of brood. Voeg veel saus toe: pinda, knoflook, pikant. De ui-salsa is lokaal en typisch, mild-pittig.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 gap-3">
@@ -73,7 +73,7 @@ export default function Eten() {
 
         {/* Snek & Pastechi */}
         <section className="mb-14">
-          <h2 className="section-label">Snek & Pastechi — ochtend & lunch</h2>
+          <h2 className="section-label">Snek & Pastechi, ochtend & lunch</h2>
           <div className="card">
             <p className="text-sm text-gray-600 leading-relaxed">
               Overdag vind je langs de weg kleine sneks. De pastechi is het lokale ontbijt: een gebakken bladerdeegbroodje gevuld met kaas, tonijn, rund of kip. Goedkoop, overal, en de perfecte start van je dag.
@@ -83,21 +83,21 @@ export default function Eten() {
 
         {/* Plasa Bieu */}
         <section className="mb-14">
-          <h2 className="section-label">Plasa Bieu — dé lunchtip</h2>
+          <h2 className="section-label">Plasa Bieu, dé lunchtip</h2>
           <div className="card border-l-4" style={{ borderLeftColor: '#3EAD6E' }}>
             <p className="text-sm font-medium text-dark mb-2">Marshe Bieu: overdekte markthal</p>
             <p className="text-sm text-gray-600 leading-relaxed">
-              Plasa Bieu (ook: Marshe Bieu) is de overdekte markthal in het centrum van Willemstad. Hier komen Curaçaoënaars massaal naartoe voor een lokale lunch. Stoba, keshi yena, funchi — echte Curaçaose keuken voor een paar gulden.
+              Plasa Bieu (ook: Marshe Bieu) is de overdekte markthal in het centrum van Willemstad. Hier komen Curaçaoënaars massaal naartoe voor een lokale lunch. Stoba, keshi yena, funchi, echte Curaçaose keuken voor een paar gulden.
             </p>
           </div>
         </section>
 
         {/* Batido */}
         <section className="mb-14">
-          <h2 className="section-label">Batido — verse fruitshake</h2>
+          <h2 className="section-label">Batido, verse fruitshake</h2>
           <div className="card">
             <p className="text-sm text-gray-600 leading-relaxed">
-              Overal langs de weg vind je Truk di Batido — verse smoothies van tropisch fruit. Met of zonder suiker, met of zonder melk. Mango batido op een hete middag is onmisbaar.
+              Overal langs de weg vind je Truk di Batido, verse smoothies van tropisch fruit. Met of zonder suiker, met of zonder melk. Mango batido op een hete middag is onmisbaar.
             </p>
           </div>
         </section>
@@ -141,9 +141,9 @@ export default function Eten() {
               Voor een bredere of betere selectie wijn en spirits:
             </p>
             <ul className="flex flex-col gap-1.5">
-              <li className="text-sm text-gray-600"><span className="text-sage">·</span> Bottles — Caracasbaaiweg S121</li>
-              <li className="text-sm text-gray-600"><span className="text-sage">·</span> Servir Frais — Caracasbaaiweg 158c</li>
-              <li className="text-sm text-gray-600"><span className="text-sage">·</span> The Wine Factory — Caracasbaaiweg</li>
+              <li className="text-sm text-gray-600"><span className="text-sage">·</span> Bottles, Caracasbaaiweg S121</li>
+              <li className="text-sm text-gray-600"><span className="text-sage">·</span> Servir Frais, Caracasbaaiweg 158c</li>
+              <li className="text-sm text-gray-600"><span className="text-sage">·</span> The Wine Factory, Caracasbaaiweg</li>
             </ul>
           </div>
         </section>
@@ -159,7 +159,7 @@ export default function Eten() {
 
         <LastChecked
           date="2026-04-18"
-          bron="Eigen redactie — ervaringsinzicht"
+          bron="Eigen redactie, ervaringsinzicht"
           gevoeligheid="laag"
         />
       </div>

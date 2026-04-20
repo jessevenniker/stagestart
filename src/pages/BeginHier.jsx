@@ -57,7 +57,7 @@ const STEPS = [
 
 const QUICK = [
   { label: 'Stagevergunning nodig?',    ans: 'Ja, altijd. Je mag niet werken zonder. Kost ~€300 en duurt weken.' },
-  { label: 'Heb je een visum nodig?',   ans: 'Nee — als Nederlander niet voor verblijf tot 90 dagen. Langer = vergunning.' },
+  { label: 'Heb je een visum nodig?',   ans: 'Nee, als Nederlander niet voor verblijf tot 90 dagen. Langer = vergunning.' },
   { label: 'Krijg ik stagevergoeding?', ans: 'Niet verplicht. Gemiddeld €200–400/mnd. Vraag het voor je tekent.' },
   { label: 'Hoe warm is het?',          ans: 'Gemiddeld 30°C het hele jaar. Weinig regen, altijd zon. Wel altijd factor 50.' },
   { label: 'Welke taal wordt gesproken?', ans: 'Papiaments onderling, Nederlands op kantoor, Engels op straat. Je redt je prima.' },
@@ -84,7 +84,7 @@ export default function BeginHier() {
       <PageHero
         eyebrow="Begin hier"
         title="Je eerste stappen, in de juiste volgorde."
-        subtitle="Of je nu net besloten hebt naar Curaçao te gaan of al een stageplek hebt — hier begin je. Geen overbodige informatie, alleen wat je nu nodig hebt."
+        subtitle="Of je nu net besloten hebt naar Curaçao te gaan of al een stageplek hebt, hier begin je. Geen overbodige informatie, alleen wat je nu nodig hebt."
         accentColor="#D4522A"
         image="/img/hero-begin-hier.jpg"
         imageAlt="Student op stage op Curaçao met uitzicht op de kust"
@@ -98,7 +98,7 @@ export default function BeginHier() {
           <div className="mb-4">
             <ClaimLabel kind="richtlijn" />
             <p className="text-xs text-gray-500 leading-relaxed mt-2 max-w-2xl">
-              Deze volgorde is een praktische richtlijn — geen officieel voorschrift. Voor harde eisen rond vergunning, documenten en verzekering gelden de officiële bronnen op de betreffende dieptepagina's.
+              Deze volgorde is een praktische richtlijn, geen officieel voorschrift. Voor harde eisen rond vergunning, documenten en verzekering gelden de officiële bronnen op de betreffende dieptepagina's.
             </p>
           </div>
           <div className="flex flex-col gap-4">
@@ -154,7 +154,7 @@ export default function BeginHier() {
 
         <LastChecked
           date="2026-04-18"
-          bron="Eigen redactie — overzichtspagina"
+          bron="Eigen redactie, overzichtspagina"
           gevoeligheid="middel"
         />
       </div>

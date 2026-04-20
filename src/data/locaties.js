@@ -4,7 +4,7 @@
 import { WIJK_COORDS, findCoordsForLocation } from './wijkCoords'
 
 // ─────────────────────────────────────────
-// STRANDEN (35) — exacte coördinaten
+// STRANDEN (35), exacte coördinaten
 // ─────────────────────────────────────────
 export const STRANDEN_LOCATIES = [
   { naam: 'Playa Grote Knip', coords: [12.3526, -69.1515], desc: 'Meest gefotografeerde strand. Wit zand, turquoise water.' },
@@ -46,7 +46,7 @@ export const STRANDEN_LOCATIES = [
 ].map(s => ({ ...s, type: 'strand', categorie: 'Stranden', kleur: '#3EAD6E', link: '/stranden' }))
 
 // ─────────────────────────────────────────
-// HAPPY HOURS — exacte coördinaten waar bekend
+// HAPPY HOURS, exacte coördinaten waar bekend
 // ─────────────────────────────────────────
 const HAPPY_HOURS_RAW = [
   { naam: 'Bario Food Yard', coords: [12.10952, -68.93483], dag: 'Vr', tijd: '17:00–19:00', desc: 'Friday kick-off in Otrobanda.' },
@@ -94,7 +94,7 @@ export const HAPPYHOUR_LOCATIES = HAPPY_HOURS_RAW.map(h => ({
 }))
 
 // ─────────────────────────────────────────
-// ETEN — geocoded op basis van wijk
+// ETEN, geocoded op basis van wijk
 // ─────────────────────────────────────────
 export const ETEN_LOCATIES = [
   // Truk'i Pan
@@ -125,7 +125,7 @@ export const WIJKEN_LOCATIES = [
 ].map(w => ({ ...w, type: 'wijk', categorie: 'Wijken', kleur: '#1A7EC5', link: '/wonen' }))
 
 // ─────────────────────────────────────────
-// VEILIGHEID — wijken met status
+// VEILIGHEID, wijken met status
 // ─────────────────────────────────────────
 export const VEILIGHEID_LOCATIES = [
   // Vermijden (rood)

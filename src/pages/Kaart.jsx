@@ -78,7 +78,7 @@ export default function Kaart() {
       <PageHero
         eyebrow="Interactieve kaart"
         title="Alles op Curaçao op één kaart."
-        subtitle="Stranden, happy hours, supermarkten, weekendtrips, wijken en veiligheidsinfo — op de plek waar het is."
+        subtitle="Stranden, happy hours, supermarkten, weekendtrips, wijken en veiligheidsinfo, op de plek waar het is."
         accentColor="#1A7EC5"
       />
 
@@ -87,7 +87,7 @@ export default function Kaart() {
         {/* Anti-drift marker */}
         <div className="mb-8 border-l-2 border-gray-200 pl-4 py-1">
           <p className="text-xs text-gray-500 leading-relaxed max-w-2xl">
-            Onderdeel van de stagegids StageStart Curaçao. Deze kaart is ondersteunend — voor harde vereisten rond vergunning, kosten en verblijf gelden de officiële bronnen op de kernpagina's.
+            Onderdeel van de stagegids StageStart Curaçao. Deze kaart is ondersteunend, voor harde vereisten rond vergunning, kosten en verblijf gelden de officiële bronnen op de kernpagina's.
           </p>
         </div>
 
@@ -196,21 +196,21 @@ export default function Kaart() {
               <li>· Klik op een marker voor naam, beschrijving en link.</li>
               <li>· Filter categorieën aan/uit met de knoppen bovenaan.</li>
               <li>· Scroll om in/uit te zoomen, sleep om te bewegen.</li>
-              <li>· Werkt ook op mobiel — pinch om te zoomen.</li>
+              <li>· Werkt ook op mobiel, pinch om te zoomen.</li>
             </ul>
           </div>
           <div className="card">
             <p className="text-xs font-medium text-dark mb-2">Disclaimer</p>
             <p className="text-xs text-gray-500 leading-relaxed">
               Coördinaten zijn benaderd voor sommige locaties zonder exacte GPS. Gebruik Google Maps voor navigatie.
-              Veiligheidsindicaties zijn algemeen — vertrouw altijd je eigen oordeel.
+              Veiligheidsindicaties zijn algemeen, vertrouw altijd je eigen oordeel.
             </p>
           </div>
         </div>
 
         <LastChecked
           date="2026-04-18"
-          bron="Eigen redactie — locatie-overzicht"
+          bron="Eigen redactie, locatie-overzicht"
           gevoeligheid="laag"
         />
       </div>

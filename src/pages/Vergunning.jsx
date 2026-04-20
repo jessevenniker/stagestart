@@ -24,15 +24,15 @@ export default function Vergunning() {
     <>
       <SEO schema={SCHEMA} />
       <PageHero
-        eyebrow="Vergunning — hoe zit het volgens de officiële bron?"
-        title="Studie/stage en Verklaring van Rechtswege — twee informatiestromen."
-        subtitle="De Immigratiedienst Curaçao publiceert hier twee aparte officiële pagina's voor. Voor Nederlandse stagiairs kunnen ze allebei relevant zijn. Hieronder leggen we uit wat elke stroom volgens de officiële bron behandelt — en wat dat in de praktijk betekent."
+        eyebrow="Vergunning, hoe zit het volgens de officiële bron?"
+        title="Studie/stage en Verklaring van Rechtswege, twee informatiestromen."
+        subtitle="De Immigratiedienst Curaçao publiceert hier twee aparte officiële pagina's voor. Voor Nederlandse stagiairs kunnen ze allebei relevant zijn. Hieronder leggen we uit wat elke stroom volgens de officiële bron behandelt, en wat dat in de praktijk betekent."
         accentColor="#1A7EC5"
       />
 
       <div className="max-w-5xl mx-auto px-5 pb-16">
 
-        {/* Autoriteitssignaal — deze pagina is geen vervanging voor de officiële bron */}
+        {/* Autoriteitssignaal, deze pagina is geen vervanging voor de officiële bron */}
         <div className="card border-l-4 mb-10" style={{ borderLeftColor: '#1A7EC5' }}>
           <p className="text-xs font-medium text-dark mb-2">Deze pagina is geen vervanging voor de officiële bron</p>
           <p className="text-xs text-gray-500 leading-relaxed">
@@ -40,14 +40,14 @@ export default function Vergunning() {
           </p>
         </div>
 
-        {/* BLOK 1 — Wat je officieel moet weten */}
+        {/* BLOK 1, Wat je officieel moet weten */}
         <section className="mb-14">
           <h2 className="section-label">1. Wat je officieel moet weten</h2>
 
           <div className="card mb-4">
             <ClaimLabel
               kind="officieel"
-              bron="Immigratiedienst — Studie/Stage"
+              bron="Immigratiedienst, Studie/Stage"
               link="https://immigrationcur.org/dep/studie-stage/"
             />
             <h3 className="font-serif text-xl font-normal text-dark mb-2">Studie/Stage-pagina (Immigratiedienst)</h3>
@@ -65,7 +65,7 @@ export default function Vergunning() {
           <div className="card">
             <ClaimLabel
               kind="officieel"
-              bron="Immigratiedienst — Verklaring van Rechtswege"
+              bron="Immigratiedienst, Verklaring van Rechtswege"
               link="https://immigrationcur.org/dep/van-rechtswege/"
             />
             <h3 className="font-serif text-xl font-normal text-dark mb-2">Verklaring van Rechtswege-pagina (Immigratiedienst)</h3>
@@ -81,7 +81,7 @@ export default function Vergunning() {
           </div>
         </section>
 
-        {/* BLOK 2 — Wat dit in de praktijk betekent */}
+        {/* BLOK 2, Wat dit in de praktijk betekent */}
         <section className="mb-14">
           <h2 className="section-label">2. Wat dit in de praktijk betekent</h2>
           <div className="card">
@@ -94,14 +94,14 @@ export default function Vergunning() {
             </p>
             <ul className="flex flex-col gap-2 text-sm text-gray-600 list-disc pl-5">
               <li>De studie/stage-pagina beschrijft de aanvraagprocedure die je doorloopt vóór of bij aankomst.</li>
-              <li>De Verklaring van Rechtswege regelt voor Nederlanders het verblijfsrecht zelf — niet de stage-aanvraag.</li>
+              <li>De Verklaring van Rechtswege regelt voor Nederlanders het verblijfsrecht zelf, niet de stage-aanvraag.</li>
               <li>In hoeverre beide stromen in jouw situatie tegelijk van toepassing zijn, hangt af van duur, doel van verblijf en je nationaliteit. Officiële bronnen blijven hier leidend.</li>
               <li>Stagebureaus en blogs gebruiken de termen vaak door elkaar. Volg de officiële Immigratiedienst-pagina's voor de actuele eisen.</li>
             </ul>
           </div>
         </section>
 
-        {/* BLOK 3 — Wat vaak wordt onderschat */}
+        {/* BLOK 3, Wat vaak wordt onderschat */}
         <section className="mb-14">
           <h2 className="section-label">3. Wat vaak wordt onderschat</h2>
           <div className="grid sm:grid-cols-2 gap-3">
@@ -130,22 +130,22 @@ export default function Vergunning() {
               <ClaimLabel kind="ervaring" />
               <p className="text-sm font-medium text-dark mb-2">4 maanden is een maximum</p>
               <p className="text-xs text-gray-500 leading-relaxed">
-                De Toelatingsorganisatie heeft volgens de officiële pagina 4 maanden om te beslissen. Dit is een maximum termijn — soms gaat het sneller, maar reken er niet op. Plan vooruit.
+                De Toelatingsorganisatie heeft volgens de officiële pagina 4 maanden om te beslissen. Dit is een maximum termijn, soms gaat het sneller, maar reken er niet op. Plan vooruit.
               </p>
             </div>
           </div>
         </section>
 
-        {/* BLOK 4 — Wat jij nu moet doen */}
+        {/* BLOK 4, Wat jij nu moet doen */}
         <section className="mb-14">
           <h2 className="section-label">4. Wat jij nu moet doen</h2>
           <div className="card border-l-4" style={{ borderLeftColor: '#1A7EC5' }}>
             <ol className="flex flex-col gap-2 text-sm text-gray-600 list-decimal pl-5">
               <li>Lees beide officiële Immigratiedienst-pagina's: <a href="https://immigrationcur.org/dep/studie-stage/" target="_blank" rel="noopener noreferrer" className="text-sky underline">Studie/Stage</a> en <a href="https://immigrationcur.org/dep/van-rechtswege/" target="_blank" rel="noopener noreferrer" className="text-sky underline">Verklaring van Rechtswege</a>.</li>
               <li>Bepaal welke route(s) op jouw situatie van toepassing zijn. Bij twijfel: contact opnemen met Immigratiedienst.</li>
-              <li>Verzamel de vereiste documenten — zie het volledige stappenplan op <Link to="/voor-vertrek" className="text-sky underline">Voor vertrek</Link>.</li>
+              <li>Verzamel de vereiste documenten, zie het volledige stappenplan op <Link to="/voor-vertrek" className="text-sky underline">Voor vertrek</Link>.</li>
               <li>Vraag je geboorteakte op bij de gemeente (max 1 jaar oud bij indiening).</li>
-              <li>Vraag je VOG aan via Justis — duurt 4-6 weken.</li>
+              <li>Vraag je VOG aan via Justis, duurt 4-6 weken.</li>
               <li>Betaal de legeskosten volgens de officiële Studie/Stage-pagina.</li>
               <li>Dien in volgens de procedure die op die pagina staat beschreven.</li>
             </ol>

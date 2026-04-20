@@ -9,7 +9,7 @@
  *     - Full-width foto:  [slug]-1.jpg          (portret of landscape, < 250 KB)
  *     - Half-width foto:  [slug]-2.jpg          (idealiter vierkant, < 150 KB)
  *     - Half-width foto:  [slug]-3.jpg          (idealiter vierkant, < 150 KB)
- *     (Als foto's van iPhone komen zijn ze vaak HEIC — converteer eerst met
+ *     (Als foto's van iPhone komen zijn ze vaak HEIC; converteer eerst met
  *      `sips -s format jpeg -s formatOptions 85 bron.heic --out doel.jpg`
  *      of via de sharp-pipeline die we voor Jesse gebruikten.)
  *
@@ -51,7 +51,7 @@ export const VERHALEN = [
     foto: '/img/verhalen/jesse.jpg',
     quote: 'Accepteer dat alles hier wat langzamer gaat. Het is heerlijk.',
     persoonlijk: {
-      favoriete_spot: 'Spritz — vaste happy hour',
+      favoriete_spot: 'Spritz, vaste happy hour',
       grootste_les: 'Afstanden onderschat je snel, ook op een "klein" eiland',
       eerste_aankoop: 'Zonnebrand en muggenspray',
       moest_wennen: 'Het poko poko-tempo op het werk',
@@ -59,7 +59,7 @@ export const VERHALEN = [
     pull_quotes: [
       'Het eiland oogt klein, maar is toch nog best groot.',
       'Accepteer dat alles wat langzamer gaat. Het is heerlijk.',
-      'Onwijs aardige mensen — vrolijk, sociaal, oprecht.',
+      'Onwijs aardige mensen. Vrolijk, sociaal, oprecht.',
     ],
     gallery: [
       {
@@ -81,7 +81,7 @@ export const VERHALEN = [
     qa: [
       {
         vraag: 'Had je een auto, en zou je die keuze weer zo maken?',
-        antwoord: 'Ja, een auto is hier bijna noodzakelijk. Ik heb er samen met mijn vriendin één gehuurd. Ik zou aanraden om er één te huren en eventueel te delen met huisgenoten — dat drukt de kosten aanzienlijk.',
+        antwoord: 'Ja, een auto is hier bijna noodzakelijk. Ik heb er samen met mijn vriendin één gehuurd. Ik zou aanraden om er één te huren en eventueel te delen met huisgenoten. Dat drukt de kosten aanzienlijk.',
       },
       {
         vraag: 'Hoe vond je je woning?',
@@ -93,7 +93,7 @@ export const VERHALEN = [
       },
       {
         vraag: 'Wat wou je dat iemand je vóór vertrek had verteld?',
-        antwoord: 'Ik wist dat ik een auto nodig had, maar ik wist niet dat het echt zo hard nodig was om dingen op het eiland te doen. Het eiland oogt "klein" maar is toch nog best groot — en lopen langs de wegen is gevaarlijk en warm.',
+        antwoord: 'Ik wist dat ik een auto nodig had, maar ik wist niet dat het echt zo hard nodig was om dingen op het eiland te doen. Het eiland oogt "klein" maar is toch nog best groot, en lopen langs de wegen is gevaarlijk en warm.',
       },
       {
         vraag: 'Wat heeft je het meest verrast?',
@@ -106,10 +106,10 @@ export const VERHALEN = [
     ],
     eigen_verhaal: [
       'Ik liep van februari tot juli 2026 stage op Curaçao bij een HR-consultancybedrijf. Wat ik vooraf wist is dat een auto handig zou zijn. Wat ik niet wist is hoe ongelooflijk handig. Samen met mijn vriendin hebben we er een gehuurd en binnen een week was duidelijk dat we zonder vastgelopen waren. Het eiland oogt klein op een kaartje, maar lopen langs de wegen is te gevaarlijk en te warm om serieus mee te tellen als optie.',
-      'Mijn woning regelde ik via een stagebureau — iets duurder, maar na alles wat ik had gezien over oplichting via Facebook was ik blij met de zekerheid. Ik woonde in Salinja, centraal genoeg om naar werk te komen en dicht bij de stranden en happy hours die het weekend maakten. De werkweek was vier dagen stage plus één dag online les. Een normaal ritme, maar met een heel ander soort vrije uren dan ik in Nederland had.',
+      'Mijn woning regelde ik via een stagebureau. Iets duurder, maar na alles wat ik had gezien over oplichting via Facebook was ik blij met de zekerheid. Ik woonde in Salinja, centraal genoeg om naar werk te komen en dicht bij de stranden en happy hours die het weekend maakten. De werkweek was vier dagen stage plus één dag online les. Een normaal ritme, maar met een heel ander soort vrije uren dan ik in Nederland had.',
       'De grootste verrassing zat niet in het klimaat of het eten, maar in de mensen. Vrolijk, sociaal, oprecht geïnteresseerd. En in het tempo. Waar ik in Nederland gewend was aan strakke agenda\'s en "effe snel checken", liep hier alles net wat ademender. In het begin voelde dat onwennig. Eind eerste maand snapte ik waarom het werkt. Het blijft een eigen land, dus verwacht geen tropisch Nederland, maar als je meegaat in het ritme krijg je er een stage voor terug waar ik nu nog dagelijks aan denk.',
     ],
-    tip: 'Accepteer dat alles hier wat langzamer gaat. Het is heerlijk — maar dan moet je het wel laten.',
+    tip: 'Accepteer dat alles hier wat langzamer gaat. Het is heerlijk, maar dan moet je het wel laten.',
     voorbeeld: false,
     laatste_update: '2026-04-20',
   },

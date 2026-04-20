@@ -39,7 +39,7 @@ const TRIPS = [
     meenemen: ['Comfortabele schoenen'],
   },
   {
-    naam: 'Westpunt — hele dag',
+    naam: 'Westpunt, hele dag',
     duur: 'Hele dag',
     kosten: 'Brandstof + eten',
     moeilijkheid: 'makkelijk',
@@ -78,7 +78,7 @@ export default function WeekendTrips() {
       <SEO />
       <PageHero
         eyebrow="Weekend trips"
-        title="Het eiland verkennen — de beste uitstapjes."
+        title="Het eiland verkennen, de beste uitstapjes."
         subtitle="Je vrije weekenden zijn kostbaar. Dit zijn de plekken die het waard zijn."
         accentColor="#E8507A"
         image="/img/hero-weekend-trips.jpg"
@@ -90,7 +90,7 @@ export default function WeekendTrips() {
         {/* Anti-drift marker */}
         <div className="mb-8 border-l-2 border-gray-200 pl-4 py-1">
           <p className="text-xs text-gray-500 leading-relaxed max-w-2xl">
-            Onderdeel van de stagegids StageStart Curaçao. Deze pagina is ondersteunend — voor harde vereisten rond vergunning, kosten en verblijf gelden de officiële bronnen op de kernpagina's.
+            Onderdeel van de stagegids StageStart Curaçao. Deze pagina is ondersteunend, voor harde vereisten rond vergunning, kosten en verblijf gelden de officiële bronnen op de kernpagina's.
           </p>
         </div>
 
@@ -139,7 +139,7 @@ export default function WeekendTrips() {
 
         <LastChecked
           date="2026-04-18"
-          bron="Eigen redactie — ervaringsinzicht"
+          bron="Eigen redactie, ervaringsinzicht"
           gevoeligheid="laag"
         />
       </div>

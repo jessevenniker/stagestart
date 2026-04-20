@@ -59,7 +59,7 @@ const UITKOMSTEN = {
     titel: 'Ja, je hebt waarschijnlijk een auto nodig.',
     body: 'Op basis van je woon- en werklocatie is een auto vrijwel noodzakelijk. Openbaar vervoer op Curaçao is minimaal en onregelmatig. Overweeg een auto te delen met medestudenten. Dat scheelt €200–300 per persoon per maand.',
     tips: [
-      'Regel een auto al voor je vertrekt — aanbod raakt op',
+      'Regel een auto al voor je vertrekt, aanbod raakt op',
       'Deel met medestudenten via studentenhuisgroepen',
       'Kijk of je stagebedrijf een vergoeding geeft',
       'Huurprijzen: ±€400–475 per maand voor een kleine auto (ANG 800–950)',
@@ -71,16 +71,16 @@ const UITKOMSTEN = {
     titel: 'Nee, je hebt waarschijnlijk geen auto nodig.',
     body: 'Gefeliciteerd, je bent in de minderheid. Vanuit centrum of Pietermaai kun je op loopafstand werken en de meeste boodschappen doen. Overweeg wel een scooter of fiets voor wat meer vrijheid.',
     tips: [
-      'Een scooter kost ±€200/mnd — stuk goedkoper dan een auto',
+      'Een scooter kost ±€200/mnd, stuk goedkoper dan een auto',
       'Taxi\'s zijn relatief betaalbaar voor incidenteel gebruik',
-      'Fietsen kan — maar de warmte maakt het lastig overdag',
+      'Fietsen kan, maar de warmte maakt het lastig overdag',
       'Zorg dat je stageplek inderdaad goed bereikbaar is te voet',
     ],
   },
   auto_misschien: {
     color: '#1A7EC5',
     icon: '🤔',
-    titel: 'Hangt er van af — nader onderzoek nodig.',
+    titel: 'Hangt er van af, nader onderzoek nodig.',
     body: 'Je situatie is niet zwart-wit. Check eerst of je stageplek goed bereikbaar is vanuit je woning. Vraag ook of je stagebedrijf vervoer regelt of een vergoeding geeft. Begin eventueel zonder auto en schaf er één aan als het echt nodig blijkt.',
     tips: [
       'Vraag je stagegever: "Is er goed openbaar vervoer?"',
@@ -125,7 +125,7 @@ export default function Auto() {
       <SEO schema={SCHEMA} />
       <PageHero
         eyebrow="Heb je een auto nodig?"
-        title="Eerlijk antwoord — hangt af van jouw situatie."
+        title="Eerlijk antwoord, hangt af van jouw situatie."
         subtitle="Bureaus zeggen bijna altijd 'ja, je hebt een auto nodig'. Dat klopt niet altijd. Het hangt volledig af van waar je woont en werkt. Gebruik de beslisboom."
         accentColor="#1A7EC5"
         image="/img/hero-auto.jpg"
@@ -198,9 +198,9 @@ export default function Auto() {
           )}
         </section>
 
-        {/* Verzekering — kern van wat stagiairs onderschatten */}
+        {/* Verzekering, kern van wat stagiairs onderschatten */}
         <section className="mb-14">
-          <h2 className="section-label">Verzekering — grootste financiële risico</h2>
+          <h2 className="section-label">Verzekering, grootste financiële risico</h2>
           <ClaimLabel kind="richtlijn" />
           <p className="text-sm text-gray-600 leading-relaxed mb-5 max-w-2xl">
             Curaçao-auto's hebben vrijwel altijd al wat schade. Hoe je verzekering geregeld is, bepaalt of één deuk je €500 of €0 kost. Controleer dit expliciet bij het tekenen van het huurcontract.
@@ -218,7 +218,7 @@ export default function Auto() {
             <div className="card border-l-4" style={{ borderLeftColor: '#3EAD6E' }}>
               <p className="text-xs font-medium text-dark mb-2 uppercase tracking-wider">All-risk / CDW</p>
               <p className="text-sm text-gray-600 leading-relaxed mb-2">
-                Ook schade aan de huurauto gedekt — met een eigen risico van meestal €500 tot €1.500.
+                Ook schade aan de huurauto gedekt, met een eigen risico van meestal €500 tot €1.500.
               </p>
               <p className="text-xs text-gray-500 leading-relaxed">
                 Duurder per maand, maar een deuk kost je dan alleen het eigen risico, niet duizenden euro's.
@@ -233,14 +233,14 @@ export default function Auto() {
               <li className="flex gap-2"><span className="text-sky shrink-0">·</span>Geldt de verzekering ook bij onverharde wegen?</li>
               <li className="flex gap-2"><span className="text-sky shrink-0">·</span>Wordt de borg volledig ingehouden bij schade, of alleen het eigen risico?</li>
               <li className="flex gap-2"><span className="text-sky shrink-0">·</span>Mag een ander in je huisgenotengroep ook rijden? (bijverzekering)</li>
-              <li className="flex gap-2"><span className="text-sky shrink-0">·</span>Ben je jonger dan 23? Controleer of de verzekering óók geldt voor bestuurders onder de 23 — dit is geen standaard.</li>
+              <li className="flex gap-2"><span className="text-sky shrink-0">·</span>Ben je jonger dan 23? Controleer of de verzekering óók geldt voor bestuurders onder de 23, dit is geen standaard.</li>
             </ul>
           </div>
         </section>
 
-        {/* Ophalen — schade-inspectie */}
+        {/* Ophalen, schade-inspectie */}
         <section className="mb-14">
-          <h2 className="section-label">Bij het ophalen — schade-inspectie</h2>
+          <h2 className="section-label">Bij het ophalen, schade-inspectie</h2>
           <ClaimLabel kind="ervaring" />
           <p className="text-sm text-gray-600 leading-relaxed mb-5 max-w-2xl">
             Op Curaçao hebben auto's vaak al bestaande schade. Als die niet genoteerd staat bij het ophalen, kun je die bij inlevering zelf moeten betalen. Een half uurtje extra kost je een hoop geld later.
@@ -249,11 +249,11 @@ export default function Auto() {
             <p className="text-xs font-medium text-dark mb-3 uppercase tracking-wider">Checklist voor je wegrijdt</p>
             <ul className="flex flex-col gap-2 text-sm text-gray-600">
               <li className="flex gap-2"><span className="text-sage shrink-0">✓</span>Loop rondom de auto. Maak foto's van elke bestaande kras, deuk of schade.</li>
-              <li className="flex gap-2"><span className="text-sage shrink-0">✓</span>Laat alle bestaande schade vastleggen in het contract — ook kleine.</li>
+              <li className="flex gap-2"><span className="text-sage shrink-0">✓</span>Laat alle bestaande schade vastleggen in het contract, ook kleine.</li>
               <li className="flex gap-2"><span className="text-sage shrink-0">✓</span>Check of een reserveband aanwezig is (niet vanzelfsprekend op Curaçao).</li>
               <li className="flex gap-2"><span className="text-sage shrink-0">✓</span>Check bandenspanning en bandenprofiel.</li>
               <li className="flex gap-2"><span className="text-sage shrink-0">✓</span>Start de auto, check airco, ruitenwissers, lichten.</li>
-              <li className="flex gap-2"><span className="text-sage shrink-0">✓</span>Vraag naar de tankprocedure: vol inleveren of leeg — wat is de afspraak?</li>
+              <li className="flex gap-2"><span className="text-sage shrink-0">✓</span>Vraag naar de tankprocedure: vol inleveren of leeg, wat is de afspraak?</li>
               <li className="flex gap-2"><span className="text-sage shrink-0">✓</span>Bewaar foto's en contract-copy digitaal in je cloud.</li>
             </ul>
           </div>
@@ -261,7 +261,7 @@ export default function Auto() {
 
         {/* Tanken op Curaçao */}
         <section className="mb-14">
-          <h2 className="section-label">Tanken — werkt anders dan in Nederland</h2>
+          <h2 className="section-label">Tanken, werkt anders dan in Nederland</h2>
           <ClaimLabel kind="richtlijn" />
           <div className="card">
             <p className="text-sm text-gray-600 leading-relaxed mb-3">
@@ -272,27 +272,27 @@ export default function Auto() {
               <li className="flex gap-2"><span className="text-gold shrink-0">·</span>Gele slang = benzine. Zwarte slang = diesel.</li>
               <li className="flex gap-2"><span className="text-gold shrink-0">·</span>Kwam de pomp niet tot je ingevoerde bedrag? Terug naar de kassa voor wisselgeld.</li>
               <li className="flex gap-2"><span className="text-gold shrink-0">·</span>Prijs per liter is op heel Curaçao gelijk en wordt op de 3e van elke maand vastgesteld.</li>
-              <li className="flex gap-2"><span className="text-gold shrink-0">·</span>Cash werkt altijd. Pin niet overal — houd cash bij je.</li>
+              <li className="flex gap-2"><span className="text-gold shrink-0">·</span>Cash werkt altijd. Pin niet overal, houd cash bij je.</li>
             </ul>
           </div>
         </section>
 
-        {/* Ongeval — Forensys */}
+        {/* Ongeval, Forensys */}
         <section className="mb-14">
           <h2 className="section-label">Bij schade of een ongeluk</h2>
           <ClaimLabel kind="officieel" bron="Curaçaose hulpdiensten" />
           <div className="card border-l-4" style={{ borderLeftColor: '#D4522A' }}>
             <p className="text-sm font-medium text-dark mb-2">Bel Forensys: 9223</p>
             <p className="text-sm text-gray-600 leading-relaxed mb-3">
-              Bij elk ongeval — hoe klein ook — bel je Forensys. Dat zijn verkeersinspecteurs in rode T-shirts. Ze komen ter plaatse, spreken Engels en maken een rapport op.
+              Bij elk ongeval, hoe klein ook, bel je Forensys. Dat zijn verkeersinspecteurs in rode T-shirts. Ze komen ter plaatse, spreken Engels en maken een rapport op.
             </p>
             <ul className="flex flex-col gap-2 text-sm text-gray-600 mb-3">
-              <li className="flex gap-2"><span className="text-terra shrink-0">·</span><strong className="text-dark">Verplaats de auto niet</strong> tot Forensys er is — ook niet als je verkeer blokkeert.</li>
+              <li className="flex gap-2"><span className="text-terra shrink-0">·</span><strong className="text-dark">Verplaats de auto niet</strong> tot Forensys er is, ook niet als je verkeer blokkeert.</li>
               <li className="flex gap-2"><span className="text-terra shrink-0">·</span>Maak foto's van beide auto's, het hele wegdek, eventuele verkeersborden.</li>
               <li className="flex gap-2"><span className="text-terra shrink-0">·</span>Wissel geen geld uit met de andere partij. Laat Forensys het regelen.</li>
               <li className="flex gap-2"><span className="text-terra shrink-0">·</span>Bel direct ook je verhuurder om de procedure af te stemmen.</li>
-              <li className="flex gap-2"><span className="text-terra shrink-0">·</span>Bewaar het Forensys-rapportnummer — je verzekering en verhuurder hebben dit nodig.</li>
-              <li className="flex gap-2"><span className="text-terra shrink-0">·</span>Reken op circa een uur — neem water mee.</li>
+              <li className="flex gap-2"><span className="text-terra shrink-0">·</span>Bewaar het Forensys-rapportnummer, je verzekering en verhuurder hebben dit nodig.</li>
+              <li className="flex gap-2"><span className="text-terra shrink-0">·</span>Reken op circa een uur, neem water mee.</li>
             </ul>
             <p className="text-xs text-gray-500 leading-relaxed">
               Alternatief voor Forensys: WhatsApp +599 9 461-3282. Bij gewonden eerst 911 bellen.
@@ -306,18 +306,18 @@ export default function Auto() {
           <ClaimLabel kind="ervaring" />
           <div className="card">
             <p className="text-sm text-gray-600 leading-relaxed mb-3">
-              Delen is de goedkoopste optie — €200-300 per persoon per maand. Maar de afspraken moeten kloppen, anders gaat het misschien mis.
+              Delen is de goedkoopste optie, €200-300 per persoon per maand. Maar de afspraken moeten kloppen, anders gaat het misschien mis.
             </p>
             <p className="text-xs font-medium text-dark mb-2 uppercase tracking-wider">Vooraf afspreken</p>
             <ul className="flex flex-col gap-2 text-sm text-gray-600 mb-4">
               <li className="flex gap-2"><span className="text-sage shrink-0">·</span>Wie staat er op het huurcontract? Die persoon draagt de juridische verantwoordelijkheid.</li>
               <li className="flex gap-2"><span className="text-sage shrink-0">·</span>Mogen alle huisgenoten rijden? Vraag of bijrijder-dekking standaard is of extra kost.</li>
               <li className="flex gap-2"><span className="text-sage shrink-0">·</span>Hoe verdeel je de huur en benzine? (gelijk, of naar gebruik?)</li>
-              <li className="flex gap-2"><span className="text-sage shrink-0">·</span>Wie betaalt als er schade is — de rijder, de contractant, of gedeeld?</li>
+              <li className="flex gap-2"><span className="text-sage shrink-0">·</span>Wie betaalt als er schade is, de rijder, de contractant, of gedeeld?</li>
               <li className="flex gap-2"><span className="text-sage shrink-0">·</span>Hoe plan je de auto? (gedeelde agenda, WhatsApp-groep, eerst aanvraagt eerst krijgt?)</li>
             </ul>
             <p className="text-xs text-gray-500 leading-relaxed italic">
-              Zet afspraken op papier — ook als het met vrienden is. Schade, verkeersboetes en rechtszaken gaan altijd via de persoon op het contract, ongeacht wie er reed.
+              Zet afspraken op papier, ook als het met vrienden is. Schade, verkeersboetes en rechtszaken gaan altijd via de persoon op het contract, ongeacht wie er reed.
             </p>
           </div>
         </section>
@@ -330,7 +330,7 @@ export default function Auto() {
             <div className="card">
               <p className="text-sm font-medium text-dark mb-2">Taxi: check het nummerbord</p>
               <p className="text-xs text-gray-500 leading-relaxed mb-2">
-                <strong className="text-dark">Legale taxi's op Curaçao hebben een nummerbord dat begint met "TX".</strong> Taxi's zonder TX-nummerbord zijn niet officieel — stap daar niet in, ook niet als het goedkoper lijkt.
+                <strong className="text-dark">Legale taxi's op Curaçao hebben een nummerbord dat begint met "TX".</strong> Taxi's zonder TX-nummerbord zijn niet officieel, stap daar niet in, ook niet als het goedkoper lijkt.
               </p>
               <p className="text-xs text-gray-500 leading-relaxed">
                 Populaire apps: 24-7 TAXI (bestellen via app, cash of pin). Als alternatief nummer: Taxi Tiger +599 9 515-2141.
@@ -351,8 +351,8 @@ export default function Auto() {
             <div className="card">
               <p className="text-sm font-medium text-dark mb-2">Praktisch</p>
               <ul className="flex flex-col gap-1.5 text-xs text-gray-500">
-                <li>· Spreek vóór instappen af wat de rit kost — niet alle taxi's hebben een meter.</li>
-                <li>· Cash bij de hand — pin werkt niet altijd.</li>
+                <li>· Spreek vóór instappen af wat de rit kost, niet alle taxi's hebben een meter.</li>
+                <li>· Cash bij de hand, pin werkt niet altijd.</li>
                 <li>· 's Nachts alleen met iemand reizen, niet solo in een taxi.</li>
               </ul>
             </div>

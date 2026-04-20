@@ -26,7 +26,7 @@ const CULTUUR = [
   },
   {
     color: '#C96F6A',
-    title: 'Curaçao is klein — iedereen kent iedereen',
+    title: 'Curaçao is klein, iedereen kent iedereen',
     desc: 'Op een eiland van 150.000 mensen loopt je reputatie je voor. Hoe je je buiten werktijd gedraagt, hoort je leidinggevende vroeg of laat. Dat is geen bedreiging maar een kans: een goede indruk heeft hier meer bereik dan op de Amsterdamse Zuidas.',
   },
   {
@@ -69,7 +69,7 @@ export default function Werken() {
         {/* Anti-drift marker */}
         <div className="mb-8 border-l-2 border-gray-200 pl-4 py-1">
           <p className="text-xs text-gray-500 leading-relaxed max-w-2xl">
-            Onderdeel van de stagegids StageStart Curaçao. Deze pagina is ondersteunend — voor harde vereisten rond vergunning, kosten en verblijf gelden de officiële bronnen op de kernpagina's.
+            Onderdeel van de stagegids StageStart Curaçao. Deze pagina is ondersteunend, voor harde vereisten rond vergunning, kosten en verblijf gelden de officiële bronnen op de kernpagina's.
           </p>
         </div>
 
@@ -93,7 +93,7 @@ export default function Werken() {
           <div className="card border-l-4" style={{ borderLeftColor: '#3B8FB5' }}>
             <p className="text-sm font-medium text-dark mb-2">Vergeet je school niet</p>
             <p className="text-sm text-gray-600 leading-relaxed">
-              De meeste opleidingen verwachten een stageverslag of portfolio. Maak foto{"'"}s en notities vanaf dag 1 — de eerste week vergeet je razendsnel. Vraag je begeleider om een tussentijdse evaluatie na 4–6 weken, niet alleen aan het einde. Schrijf minstens één alinea per week in een notitieapp. Dat bespaart je maanden stress bij het schrijven van je verslag.
+              De meeste opleidingen verwachten een stageverslag of portfolio. Maak foto{"'"}s en notities vanaf dag 1, de eerste week vergeet je razendsnel. Vraag je begeleider om een tussentijdse evaluatie na 4–6 weken, niet alleen aan het einde. Schrijf minstens één alinea per week in een notitieapp. Dat bespaart je maanden stress bij het schrijven van je verslag.
             </p>
           </div>
         </section>
@@ -138,7 +138,7 @@ export default function Werken() {
 
         <LastChecked
           date="2026-04-18"
-          bron="Eigen redactie — ervaringsinzicht"
+          bron="Eigen redactie, ervaringsinzicht"
           gevoeligheid="laag"
         />
       </div>

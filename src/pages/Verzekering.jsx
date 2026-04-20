@@ -59,9 +59,9 @@ export default function Verzekering() {
             <ClaimLabel kind="richtlijn" />
             <h3 className="font-serif text-xl font-normal text-dark mb-2">Drie lagen verzekering voor stagiairs</h3>
             <ul className="flex flex-col gap-2 text-sm text-gray-600">
-              <li className="flex gap-2"><span className="text-sage shrink-0">1.</span><strong className="text-dark">Nederlandse basiszorgverzekering</strong> — aanhouden, niet opzeggen. Dekt spoedzorg wereldwijd tot Nederlands tarief.</li>
-              <li className="flex gap-2"><span className="text-sage shrink-0">2.</span><strong className="text-dark">Aanvullende internationale (reis)verzekering</strong> — dekt het verschil met lokale tarieven, repatriëring, bagage, aansprakelijkheid. Verplicht voor vergunning.</li>
-              <li className="flex gap-2"><span className="text-sage shrink-0">3.</span><strong className="text-dark">Eventueel stage-aansprakelijkheid</strong> — sommige scholen eisen een specifieke stage-aansprakelijkheidsverzekering voor schade die je op het werk veroorzaakt.</li>
+              <li className="flex gap-2"><span className="text-sage shrink-0">1.</span><strong className="text-dark">Nederlandse basiszorgverzekering</strong>, aanhouden, niet opzeggen. Dekt spoedzorg wereldwijd tot Nederlands tarief.</li>
+              <li className="flex gap-2"><span className="text-sage shrink-0">2.</span><strong className="text-dark">Aanvullende internationale (reis)verzekering</strong>, dekt het verschil met lokale tarieven, repatriëring, bagage, aansprakelijkheid. Verplicht voor vergunning.</li>
+              <li className="flex gap-2"><span className="text-sage shrink-0">3.</span><strong className="text-dark">Eventueel stage-aansprakelijkheid</strong>, sommige scholen eisen een specifieke stage-aansprakelijkheidsverzekering voor schade die je op het werk veroorzaakt.</li>
             </ul>
           </div>
         </section>
@@ -104,7 +104,7 @@ export default function Verzekering() {
 
         {/* 3. Wat dekking wel en niet doet */}
         <section className="mb-14">
-          <h2 className="section-label">Wat dekking dekt — en wat níét</h2>
+          <h2 className="section-label">Wat dekking dekt, en wat níét</h2>
           <ClaimLabel kind="richtlijn" />
           <p className="text-sm text-gray-600 leading-relaxed mb-5 max-w-2xl">
             Per aanbieder verschillend, maar deze elementen komen bij elke goede aanvullende verzekering ter sprake. Check ze één voor één in je polis vóór je tekent.
@@ -127,7 +127,7 @@ export default function Verzekering() {
                 <li className="flex gap-2"><span className="text-terra shrink-0">·</span>Tandarts (vaak alleen spoed, beperkt bedrag)</li>
                 <li className="flex gap-2"><span className="text-terra shrink-0">·</span>Bestaande chronische aandoeningen (check altijd na)</li>
                 <li className="flex gap-2"><span className="text-terra shrink-0">·</span>Duikongevallen (aparte dekking vereist voor PADI)</li>
-                <li className="flex gap-2"><span className="text-terra shrink-0">·</span>Risicosporten (kitesurf, klimmen — check je polis)</li>
+                <li className="flex gap-2"><span className="text-terra shrink-0">·</span>Risicosporten (kitesurf, klimmen, check je polis)</li>
                 <li className="flex gap-2"><span className="text-terra shrink-0">·</span>Schade onder invloed van alcohol of drugs</li>
                 <li className="flex gap-2"><span className="text-terra shrink-0">·</span>Schade aan gehuurde auto (dat is auto-verzekering)</li>
               </ul>
@@ -188,10 +188,10 @@ export default function Verzekering() {
           <div className="card border-l-4" style={{ borderLeftColor: '#F2B517' }}>
             <p className="text-xs font-medium text-dark mb-2 uppercase tracking-wider">Neem mee uit Nederland</p>
             <ul className="flex flex-col gap-1.5 text-sm text-gray-600">
-              <li className="flex gap-2"><span className="text-gold shrink-0">·</span>Voorgeschreven medicijnen — voor de hele stageperiode, plus een kopie van het recept</li>
+              <li className="flex gap-2"><span className="text-gold shrink-0">·</span>Voorgeschreven medicijnen, voor de hele stageperiode, plus een kopie van het recept</li>
               <li className="flex gap-2"><span className="text-gold shrink-0">·</span>Eigen pijnstillers en maagtabletten (vaak goedkoper dan op Curaçao)</li>
               <li className="flex gap-2"><span className="text-gold shrink-0">·</span>Anticonceptie voor de hele periode</li>
-              <li className="flex gap-2"><span className="text-gold shrink-0">·</span>Zonnebrand SPF 50+ — op Curaçao soms dubbel zo duur</li>
+              <li className="flex gap-2"><span className="text-gold shrink-0">·</span>Zonnebrand SPF 50+, op Curaçao soms dubbel zo duur</li>
               <li className="flex gap-2"><span className="text-gold shrink-0">·</span>Insectenwerend spray (DEET 30%+ voor Dengue-seizoen)</li>
               <li className="flex gap-2"><span className="text-gold shrink-0">·</span>EHBO-basis (pleisters, desinfectans, koortsthermometer)</li>
             </ul>

@@ -34,16 +34,16 @@ const PRAKTISCH = [
   { titel: 'Geld & pinnen', tekst: 'PIN werkt prima bij de meeste supermarkten en winkels. ATM\'s zijn er bij Maduro bank en MCB. Creditcard wordt overal geaccepteerd. Wisselkoers: €1 ≈ ANG 2,00–2,10.' },
   { titel: 'Uitrijden naar Klein Curaçao', tekst: 'Onbewoond eiland, ± 1,5 uur per boot. Absoluut doen. Boek via Miss Ann Boat Trips of Mermaid Boat Trips. ±€50–70 pp inclusief lunch. Plan het voor een rustige dag.' },
   { titel: 'Duiken & snorkelen', tekst: 'Curaçao heeft een van de beste huisriffen ter wereld. Ocean Encounters op Mambo is betrouwbaar. Een duikbrevet halen kan al voor ±€350. Snorkelen is overal goedkoop mogelijk.' },
-  { titel: 'Nachtleven', tekst: "Mambo Beach Boulevard voor een casual avond. Wet & Wild voor feesten op zaterdag. Happy hours zijn populair — begin vroeg. Neem altijd iemand mee voor taxi's 's avonds." },
+  { titel: 'Nachtleven', tekst: "Mambo Beach Boulevard voor een casual avond. Wet & Wild voor feesten op zaterdag. Happy hours zijn populair, begin vroeg. Neem altijd iemand mee voor taxi's 's avonds." },
   { titel: 'Zondagsregels', tekst: 'Veel winkels zijn gesloten of sluiten vroeg op zondag. Plan je boodschappen op zaterdag. Strand en restaurants zijn open. Rustigste dag van de week.' },
-  { titel: 'Mobiel & internet', tekst: 'Prepaid bundels bij Digicel of Flow. ±ANG 40 voor een maandbundel met 10GB. WhatsApp werkt op wifi — meeste studenten houden hun NL-nummer actief.' },
+  { titel: 'Mobiel & internet', tekst: 'Prepaid bundels bij Digicel of Flow. ±ANG 40 voor een maandbundel met 10GB. WhatsApp werkt op wifi, meeste studenten houden hun NL-nummer actief.' },
 ]
 
 const GEZONDHEID = [
   { titel: 'Zon onderschatten is het meest gemaakte fout', tekst: 'De passaatwinden geven een gevoel van verkoeling, maar die beschermen je niet tegen verbranden. Tussen 10:00 en 15:00 is de zon het gevaarlijkst. Draag altijd SPF 50, een hoed en lichte kleding. Zonnesteek uit zich als duizeligheid, koorts en misselijkheid.', kleur: '#D4522A' },
   { titel: 'Apotheek = botika', tekst: 'Standaard medicijnen kun je zonder afspraak halen bij een botika. Sommige zijn gesloten tussen 12:00 en 14:00. Een aantal is 24 uur open.', kleur: '#F2B517' },
   { titel: 'Huisarts die Nederlands spreekt', tekst: 'Centro Medico Aesculapius, SBN Doormanweg 47. Bereikbaar op +599 9 737-0522. Ochtend: open spreekuur. Middag: op afspraak. Bewaar je bon. De Nederlandse zorgverzekering vergoedt spoedeisende zorg vaak tot het Nederlandse tarief.', kleur: '#3EAD6E' },
-  { titel: 'Zorgverzekering — niet opzeggen', tekst: 'Je blijft officieel ingeschreven in Nederland, dus je houdt je Nederlandse basisverzekering. Neem je zorgpas mee. De basisverzekering dekt spoedeisende zorg wereldwijd tot het Nederlandse tarief. Medische evacuatie naar Nederland kan $15.000–$25.000 kosten — zorg dat je aanvullend verzekerd bent.', kleur: '#1A7EC5' },
+  { titel: 'Zorgverzekering, niet opzeggen', tekst: 'Je blijft officieel ingeschreven in Nederland, dus je houdt je Nederlandse basisverzekering. Neem je zorgpas mee. De basisverzekering dekt spoedeisende zorg wereldwijd tot het Nederlandse tarief. Medische evacuatie naar Nederland kan $15.000–$25.000 kosten, zorg dat je aanvullend verzekerd bent.', kleur: '#1A7EC5' },
   { titel: 'Muggen', tekst: 'Actief in het regenseizoen (juni–november) en \'s avonds. Gebruik insectenwerende spray. Slaap met gesloten ramen of een klamboe.', kleur: '#E8507A' },
   { titel: 'Lichamelijke aanpassing duurt langer dan je denkt', tekst: 'De warmte, luchtvochtigheid en tijdverschil zijn een aanslag op je lichaam de eerste week. Drink meer water dan je denkt nodig te hebben. Kom bij voorkeur een week voor je eerste stagedag aan om te acclimatiseren.', kleur: '#D4522A' },
 ]
@@ -54,8 +54,8 @@ export default function Leven() {
       <SEO />
       <PageHero
         eyebrow="Leven op Curaçao"
-        title="Het eiland als lokale — niet als toerist."
-        subtitle="Stranden, eten, praktische tips en wat je echt moet meemaken. Geen glossy reisgids — gewoon wat werkt voor stagiairs."
+        title="Het eiland als lokale, niet als toerist."
+        subtitle="Stranden, eten, praktische tips en wat je echt moet meemaken. Geen glossy reisgids, gewoon wat werkt voor stagiairs."
         accentColor="#F2B517"
         image="/img/hero-leven.jpg"
         imageAlt="Strand op Curaçao met helder turquoise zeewater en wit zand"
@@ -66,7 +66,7 @@ export default function Leven() {
         {/* Anti-drift marker */}
         <div className="mb-8 border-l-2 border-gray-200 pl-4 py-1">
           <p className="text-xs text-gray-500 leading-relaxed max-w-2xl">
-            Onderdeel van de stagegids StageStart Curaçao. Deze pagina is ondersteunend — voor harde vereisten rond vergunning, kosten en verblijf gelden de officiële bronnen op de kernpagina's.
+            Onderdeel van de stagegids StageStart Curaçao. Deze pagina is ondersteunend, voor harde vereisten rond vergunning, kosten en verblijf gelden de officiële bronnen op de kernpagina's.
           </p>
         </div>
 
@@ -84,13 +84,13 @@ export default function Leven() {
             ))}
           </div>
           <p className="text-xs text-gray-400 mt-4">
-            Tip: Download Maps.me of gebruik Google Maps offline — data is duur als je de weg kwijtraakt.
+            Tip: Download Maps.me of gebruik Google Maps offline, data is duur als je de weg kwijtraakt.
           </p>
         </section>
 
         {/* Eten */}
         <section className="mb-14">
-          <h2 className="section-label">Eten — lokaal, betaalbaar, eerlijk</h2>
+          <h2 className="section-label">Eten, lokaal, betaalbaar, eerlijk</h2>
           <div className="flex flex-col gap-8">
             {ETEN.map(cat => (
               <div key={cat.type}>
@@ -126,7 +126,7 @@ export default function Leven() {
 
         {/* Papiaments */}
         <section className="mb-14">
-          <h2 className="section-label">Paar woorden Papiaments — wordt gewaardeerd</h2>
+          <h2 className="section-label">Paar woorden Papiaments, wordt gewaardeerd</h2>
           <div className="border border-gray-100 rounded-xl overflow-hidden">
             {[
               ['Bon dia', 'Goedemorgen'],
@@ -145,22 +145,22 @@ export default function Leven() {
             ))}
           </div>
           <p className="text-xs text-gray-400 mt-3">
-            Je hoeft geen vloeiend Papiaments te spreken. Een paar basiswoorden laten zien dat je moeite doet — en dat wordt erg gewaardeerd.
+            Je hoeft geen vloeiend Papiaments te spreken. Een paar basiswoorden laten zien dat je moeite doet, en dat wordt erg gewaardeerd.
           </p>
           <div className="mt-5 border-l-4 rounded-xl card" style={{ borderColor: '#3EAD6E' }}>
             <p className="font-medium text-sm text-dark mb-2">Culturele taalnotitie</p>
             <p className="text-xs text-gray-500 leading-relaxed mb-3">
-              Papiaments is een mengeling van Portugees, Spaans, Nederlands en Afrikaanse talen. 'Dushi' is het meest gebruikte woord op het eiland — het betekent zoet, lief, geweldig, briljant. Iedereen gebruikt het, alle leeftijden, alleen in positieve zin.
+              Papiaments is een mengeling van Portugees, Spaans, Nederlands en Afrikaanse talen. 'Dushi' is het meest gebruikte woord op het eiland, het betekent zoet, lief, geweldig, briljant. Iedereen gebruikt het, alle leeftijden, alleen in positieve zin.
             </p>
             <p className="text-xs text-gray-500 leading-relaxed">
-              Op het eiland groet men iedereen — ook vreemden in een winkel of op straat. Oogcontact + een kort 'Bon dia' gaat een lange weg. Doe je dat niet, val je op als onbeleefd.
+              Op het eiland groet men iedereen, ook vreemden in een winkel of op straat. Oogcontact + een kort 'Bon dia' gaat een lange weg. Doe je dat niet, val je op als onbeleefd.
             </p>
           </div>
         </section>
 
         {/* Gezondheid */}
         <section className="mb-14">
-          <h2 className="section-label">Gezondheid — wat je vooraf moet weten</h2>
+          <h2 className="section-label">Gezondheid, wat je vooraf moet weten</h2>
           <div className="grid sm:grid-cols-2 gap-3">
             {GEZONDHEID.map(g => (
               <div key={g.titel} className="card">
@@ -174,7 +174,7 @@ export default function Leven() {
 
         {/* Mentaal & emotioneel */}
         <section className="mb-14">
-          <h2 className="section-label">Het mentale deel — dat niemand je vertelt</h2>
+          <h2 className="section-label">Het mentale deel, dat niemand je vertelt</h2>
           <p className="text-sm text-gray-600 leading-relaxed mb-6">
             Curaçao ziet er makkelijk uit op foto{"'"}s. In werkelijkheid kan de eerste maand zwaarder zijn dan verwacht. Niet omdat er iets mis is, maar omdat aanpassen aan een nieuwe omgeving altijd energie kost.
           </p>
@@ -190,21 +190,21 @@ export default function Leven() {
               <div className="h-[3px] rounded-sm mb-3" style={{ background: '#E2A832' }} />
               <p className="text-sm font-medium text-dark mb-2">Curaçao is misleidend dichtbij</p>
               <p className="text-xs text-gray-500 leading-relaxed">
-                Het eiland voelt vertrouwd — Nederlands, koninkrijksband, winkels die je kent. Toch is het fundamenteel anders: tempo, sociale codes, armoede naast toerisme, kleinschaligheid. Die combinatie maakt het soms moeilijker te benoemen dan een "echt buitenland". Geef jezelf toestemming om het toch moeilijk te vinden.
+                Het eiland voelt vertrouwd, Nederlands, koninkrijksband, winkels die je kent. Toch is het fundamenteel anders: tempo, sociale codes, armoede naast toerisme, kleinschaligheid. Die combinatie maakt het soms moeilijker te benoemen dan een "echt buitenland". Geef jezelf toestemming om het toch moeilijk te vinden.
               </p>
             </div>
             <div className="card">
               <div className="h-[3px] rounded-sm mb-3" style={{ background: '#5A9E7A' }} />
               <p className="text-sm font-medium text-dark mb-2">Wat concreet helpt</p>
               <p className="text-xs text-gray-500 leading-relaxed">
-                Maak contact buiten je eigen studentengroep. Houd een vaste routine aan (slaap, eten, beweging). Bel thuis op vaste momenten — maar niet elke dag. Schrijf op hoe je je voelt. Ga naar buiten ook als je geen zin hebt. Een strand is goedkoper dan therapie en heeft vergelijkbaar effect.
+                Maak contact buiten je eigen studentengroep. Houd een vaste routine aan (slaap, eten, beweging). Bel thuis op vaste momenten, maar niet elke dag. Schrijf op hoe je je voelt. Ga naar buiten ook als je geen zin hebt. Een strand is goedkoper dan therapie en heeft vergelijkbaar effect.
               </p>
             </div>
             <div className="card">
               <div className="h-[3px] rounded-sm mb-3" style={{ background: '#3B8FB5' }} />
               <p className="text-sm font-medium text-dark mb-2">Als het niet weggaat</p>
               <p className="text-xs text-gray-500 leading-relaxed">
-                Eenzaamheid die aanhoudt na week 6, slaapproblemen, verlies van motivatie voor je stage — dit zijn signalen dat je hulp mag zoeken. Praat met je begeleider op stage of op school. Je school in Nederland heeft vaak een studentenpsycholoog of vertrouwenspersoon die ook op afstand beschikbaar is. Dat is geen mislukking, dat is slim.
+                Eenzaamheid die aanhoudt na week 6, slaapproblemen, verlies van motivatie voor je stage, dit zijn signalen dat je hulp mag zoeken. Praat met je begeleider op stage of op school. Je school in Nederland heeft vaak een studentenpsycholoog of vertrouwenspersoon die ook op afstand beschikbaar is. Dat is geen mislukking, dat is slim.
               </p>
             </div>
           </div>
@@ -234,7 +234,7 @@ export default function Leven() {
 
         <LastChecked
           date="2026-04-18"
-          bron="Eigen redactie — ervaringsinzicht"
+          bron="Eigen redactie, ervaringsinzicht"
           gevoeligheid="laag"
         />
       </div>

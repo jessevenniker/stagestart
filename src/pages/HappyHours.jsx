@@ -25,7 +25,7 @@ const HAPPY_HOURS = [
   { naam: "BijBlauw", dag: ["ma","di","wo","do","vr","za","zo"], van: "15:00", tot: "17:00", omschrijving: "Vroegste happy hour op het eiland. Drankjes mét gratis snacks. Populair voor zonsondergang.", locatie: "BijBlauw Oceanfront Restaurant, Pietermaai" },
   { naam: "Boho6 Terrace Café", dag: ["ma","di","wo","do","vr","za","zo"], van: "18:00", tot: null, omschrijving: "Terras in Punda. People-watching, gemakkelijk begin van de avond.", locatie: "Gomez Plein, Punda" },
   // MAANDAG
-  { naam: "Netto Bar", dag: ["ma"], van: "18:00", tot: "19:00", omschrijving: "Oudste bar van Curaçao (1954). Enige plek voor Rom-Berde — de lokale groene rum. Klassiek.", locatie: "Otrobanda" },
+  { naam: "Netto Bar", dag: ["ma"], van: "18:00", tot: "19:00", omschrijving: "Oudste bar van Curaçao (1954). Enige plek voor Rom-Berde, de lokale groene rum. Klassiek.", locatie: "Otrobanda" },
   { naam: "Oyster Monday – Lamunchi", dag: ["ma"], van: "18:00", tot: "19:00", omschrijving: "Versgevilde oesters + halve prijs cava van 18–19u. Dinner menu beschikbaar.", locatie: "Lamunchi, Pietermaai" },
   { naam: "Sushi & Cocktails – Saint Tropez", dag: ["ma"], van: "18:00", tot: "22:00", omschrijving: "Twee sushi-chefs erbij op maandag. Japans menu met oceaanzicht.", locatie: "Saint Tropez Ocean Club" },
   // DINSDAG
@@ -96,9 +96,9 @@ const CLUBS = [
 
 const PRAKTISCH = [
   'Bij de meeste happy hours is het 2-voor-1 op bier, wijn of mixdrankjes.',
-  'Lokaal bier: Polar, Bright of Brasa — niet Heineken, dat is duurder.',
+  'Lokaal bier: Polar, Bright of Brasa, niet Heineken, dat is duurder.',
   'Geen rijden na drinken. Bob-systeem werkt goed in de meeste studentenhuizen.',
-  'Ga nooit alleen naar een taxi na middernacht — altijd met iemand.',
+  'Ga nooit alleen naar een taxi na middernacht, altijd met iemand.',
   'Ga op vrijdag vroeg naar Mambo (17:00) en werk je weg langs de bars tot Wet & Wild.',
 ]
 
@@ -113,7 +113,7 @@ export default function HappyHours() {
       <SEO />
       <PageHero
         eyebrow="Happy hours & uitgaan"
-        title="Het sociale ritme van Curaçao — dag voor dag."
+        title="Het sociale ritme van Curaçao, dag voor dag."
         subtitle="Stagiairs delen dit schema onderling maar het staat nergens goed op één plek. Tot nu."
         accentColor="#F2B517"
         image="/img/hero-happy-hours.jpg"
@@ -125,7 +125,7 @@ export default function HappyHours() {
         {/* Anti-drift marker */}
         <div className="mb-8 border-l-2 border-gray-200 pl-4 py-1">
           <p className="text-xs text-gray-500 leading-relaxed max-w-2xl">
-            Onderdeel van de stagegids StageStart Curaçao. Deze pagina is ondersteunend — voor harde vereisten rond vergunning, kosten en verblijf gelden de officiële bronnen op de kernpagina's.
+            Onderdeel van de stagegids StageStart Curaçao. Deze pagina is ondersteunend, voor harde vereisten rond vergunning, kosten en verblijf gelden de officiële bronnen op de kernpagina's.
           </p>
         </div>
 
@@ -247,7 +247,7 @@ export default function HappyHours() {
 
         <LastChecked
           date="2026-04-18"
-          bron="Eigen redactie — happy hour-overzicht"
+          bron="Eigen redactie, happy hour-overzicht"
           gevoeligheid="middel"
         />
       </div>

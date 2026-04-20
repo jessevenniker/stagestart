@@ -23,7 +23,7 @@ export default function LastChecked({ date, bron, bronUrl, gevoeligheid = 'midde
           <span>{formatted}</span>
           {bron && (
             <>
-              <span className="text-gray-400"> — hoofdbron: </span>
+              <span className="text-gray-400">, hoofdbron: </span>
               {bronUrl ? (
                 <a
                   href={bronUrl}
