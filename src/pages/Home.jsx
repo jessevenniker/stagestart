@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import WeatherWidget from '../components/WeatherWidget'
 import SEO from '../components/SEO'
 import { websiteSchema, organizationSchema } from '../utils/schema'
+import { VERHALEN } from '../data/verhalen'
 
 // TOPICS = kern stage-gids (P1) — wat de stagiair direct nodig heeft
 const TOPICS = [
@@ -313,6 +314,50 @@ export default function Home() {
                 <p className="text-xs text-gray-500 leading-relaxed">{item.desc}</p>
               </div>
             </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ── VERHALEN VAN STAGIAIRS ── */}
+      <section className="max-w-5xl mx-auto px-5 py-10 border-t border-gray-100">
+        <div className="flex items-baseline justify-between gap-4 mb-6 flex-wrap">
+          <div>
+            <h2 className="section-label mb-1">Verhalen van stagiairs</h2>
+            <p className="text-sm text-gray-500 leading-relaxed max-w-xl">
+              Ervaringen van mensen die jou voorgingen. Geen reclame, geen bureaus, alleen wat ze zelf meemaakten.
+            </p>
+          </div>
+          <Link to="/verhalen" className="text-sm text-terra hover:underline shrink-0">
+            Alle verhalen →
+          </Link>
+        </div>
+        <div className="grid md:grid-cols-3 gap-4">
+          {VERHALEN.slice(0, 3).map((v) => (
+            <Link
+              key={v.slug}
+              to={`/verhalen/${v.slug}`}
+              className="group flex flex-col rounded-xl border border-gray-100 overflow-hidden hover:shadow-md transition-shadow"
+            >
+              <div className="aspect-square overflow-hidden bg-gray-50">
+                <img
+                  src={v.foto}
+                  alt={`Portret van ${v.voornaam}`}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                />
+              </div>
+              <div className="p-4 flex-1 flex flex-col">
+                <div className="h-1 rounded-sm mb-3" style={{ background: v.accent }} />
+                <p className="font-serif text-lg text-dark mb-0.5">{v.voornaam}</p>
+                <p className="text-[11px] text-gray-400 mb-3">{v.opleiding} · {v.wijk}</p>
+                <blockquote
+                  className="text-xs text-gray-600 leading-relaxed italic flex-1"
+                  style={{ borderLeft: `3px solid ${v.accent}`, paddingLeft: '10px' }}
+                >
+                  "{v.quote}"
+                </blockquote>
+              </div>
+            </Link>
           ))}
         </div>
       </section>
