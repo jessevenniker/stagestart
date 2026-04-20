@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import ClaimLabel from '../components/ClaimLabel'
 import LastChecked from '../components/LastChecked'
 import RelatedPages from '../components/RelatedPages'
-import { articleSchema } from '../utils/schema'
+import { articleSchema, faqSchema } from '../utils/schema'
 
 const RELATED = [
   { to: '/auto', label: 'Auto', desc: 'Wijk en stage-locatie bepalen of je een auto nodig hebt.' },
@@ -13,12 +13,93 @@ const RELATED = [
   { to: '/eerste-week', label: 'Eerste week', desc: 'Wat je in je woning moet checken bij aankomst.' },
 ]
 
-const SCHEMA = articleSchema({
-  headline: 'Wonen op Curaçao als stagiair: wijken en huur',
-  description: 'Vijf wijken vergeleken: Pietermaai, Jan Thiel, Piscadera, Salinja en Bapor Kibra. Keuzehulp in plaats van listings.',
+/**
+ * Vier woonvormen die stagiairs op Curaçao daadwerkelijk tegenkomen.
+ * Prijzen gebaseerd op de prijsranges uit WIJKEN plus vergelijkbare
+ * marktinformatie voor studio/appartement (eigen redactie + ervaringen).
+ */
+const WOONVORMEN = [
+  {
+    naam: 'Studentenhuis',
+    prijs: '€300 tot €500 p.p. per maand',
+    typisch: 'Kamer in een gedeeld huis met 10 tot 30 stagiairs, gedeelde keuken en wifi, vaak een gemeenschappelijke auto of pool-fiets.',
+    voor: 'Eerste keer buitenlandstage, sociaal voorkeur, beperkt budget.',
+    accent: '#D4522A',
+  },
+  {
+    naam: 'Kamer in gedeeld huis',
+    prijs: '€350 tot €450 per maand',
+    typisch: 'Kamer met 2 tot 5 huisgenoten, vaak bij een lokale verhuurder. Minder hectiek en meer privacy dan een studentenhuis.',
+    voor: 'Liever rustiger, beetje meer eigen ruimte, nog steeds betaalbaar.',
+    accent: '#F2B517',
+  },
+  {
+    naam: 'Eigen appartement',
+    prijs: '€700 tot €1.100 per maand',
+    typisch: 'Studio of eenkamerappartement voor jezelf. Vooral in Pietermaai en Punda, goedkoper in Salinja of Otrobanda.',
+    voor: 'Komt met partner, werkt veel thuis, of budget laat het toe.',
+    accent: '#3EAD6E',
+  },
+  {
+    naam: 'Short-stay eerste weken',
+    prijs: '€30 tot €60 per nacht',
+    typisch: 'Airbnb of guesthouse waar je de eerste 1 tot 2 weken verblijft terwijl je ter plaatse definitief zoekt.',
+    voor: 'Wilt eerst kijken voor je commit, flexibele start, zoekt een kamer die je fysiek wilt bezichtigen.',
+    accent: '#1A7EC5',
+  },
+]
+
+const SCHEMA_ARTICLE = articleSchema({
+  headline: 'Stagehuis op Curaçao: wijken, huisvesting en huurprijzen',
+  description: 'Studentenhuis, appartement of kamer in Willemstad. Vergelijk huisvesting en vijf wijken voordat je commit.',
   path: '/wonen',
-  dateModified: '2026-04-16',
+  dateModified: '2026-04-20',
 })
+
+/**
+ * FAQPage schema voor de long-tail housing-queries die op /wonen landen
+ * (Search Console: stagehuis curacao, kamer huren willemstad stage,
+ * huisvesting stage curacao, studentenhuis curacao stage, etc.).
+ */
+const SCHEMA_FAQ = faqSchema([
+  {
+    question: 'Wat kost een stagehuis op Curaçao?',
+    answer:
+      'Prijzen variëren per woonvorm en wijk. Een kamer in een gedeeld studentenhuis kost €300 tot €500 per persoon per maand. Een kamer in een kleiner gedeeld huis (2 tot 5 huisgenoten) ligt tussen €350 en €450. Een eigen studio of eenkamerappartement kost €700 tot €1.100. Short-stay Airbnb ligt rond €30 tot €60 per nacht.',
+  },
+  {
+    question: 'Kan ik een kamer huren in Willemstad als stagiair?',
+    answer:
+      'Ja. Willemstad bestaat uit vier wijken: Punda, Otrobanda, Pietermaai en Scharloo. Stagiairs wonen vooral in Pietermaai (trendy, veel horeca) of Otrobanda (goedkoper, authentieker). Punda is vooral commercieel, Scharloo heeft beperkt aanbod. Buiten Willemstad zijn Jan Thiel (strand) en Piscadera (universiteit) de populaire opties.',
+  },
+  {
+    question: 'Studentenhuis of appartement: wat past beter bij een stagiair?',
+    answer:
+      'Studentenhuis is goedkoper (€300 tot €500 per persoon), socialer en maakt het delen van een auto mogelijk. Minder privacy. Een eigen appartement (€700 tot €1.100) is rustiger en geschikt als je met partner komt of veel thuiswerkt, maar vergt ongeveer het dubbele budget. Voor de meeste stagiairs die voor het eerst buitenland-stage lopen is een studentenhuis praktischer.',
+  },
+  {
+    question: 'Hoe lang van tevoren moet ik mijn huisvesting regelen?',
+    answer:
+      'Minimaal 6 tot 8 weken voor aankomst. Piekperiodes (februari tot mei en augustus tot december) zijn druk. Begin oriënteren zodra je stageplek bekend is. Voor studentenhuizen via stage-bureaus is vroeg boeken verstandig; voor een eigen appartement werkt het soms beter om de eerste weken short-stay te boeken en ter plaatse verder te zoeken.',
+  },
+  {
+    question: 'Is huisvesting inclusief stroom en water?',
+    answer:
+      'Vaak niet volledig. Wat wel of niet inbegrepen is verschilt per verhuurder. Check expliciet: stroom (bij Pagatinu-huizen werkt stroom prepaid, je betaalt zelf), water, gas, internet. Vraag dit schriftelijk voordat je tekent. OB-belasting van 6 tot 7 procent komt vaak bovenop de prijs en wordt niet altijd duidelijk gecommuniceerd.',
+  },
+  {
+    question: 'Waar vind ik betrouwbare studentenhuizen op Curaçao?',
+    answer:
+      'Via stage-bureaus zoals Bo Curaçao, Een Stage op Curaçao en Wereldstap. Deze zijn zeker niet frauduleus. Facebook-groepen ("Stagiairs op Curaçao", "Huisvesting Curaçao") hebben meer aanbod maar ook oplichters. Via je stagebedrijf of school is vaak de meest vertrouwde route, omdat zij terugkerende contacten hebben met verhuurders.',
+  },
+  {
+    question: 'Kan ik een kamer huren zonder eerst te bezichtigen?',
+    answer:
+      'Het kan, maar is risicovol. Beter alternatief: boek de eerste 1 tot 2 weken short-stay (Airbnb of guesthouse) en bezichtig vanaf het eiland. Lukt dat niet, huur dan alleen via bekende stage-bureaus of via contact van je school of stagebedrijf. Boek nooit via onbekende Facebook-accounts die vooruitbetaling willen zonder bezichtiging.',
+  },
+])
+
+const SCHEMA = [SCHEMA_ARTICLE, SCHEMA_FAQ]
 
 const WIJKEN = [
   {
@@ -93,14 +174,48 @@ export default function Wonen() {
       <PageHero
         eyebrow="Wonen op Curaçao"
         title="Welke wijk past bij jou?"
-        subtitle="Woonlocatie bepaalt of je een auto nodig hebt, hoe ver je van je stageplek zit en hoe je sociale leven eruitziet. Vergelijk de wijken voordat je iets boekt."
+        subtitle="Huisvesting tijdens je stage op Curaçao bepaalt meer dan alleen waar je slaapt. Studentenhuis, kamer of appartement: hier vergelijk je woonvormen, huurprijzen en de vijf populairste wijken voordat je iets boekt."
         accentColor="#3EAD6E"
       />
 
       <div className="max-w-5xl mx-auto px-5 pb-16">
 
-        {/* Wijk selector */}
+        {/* Woonvormen introductie: vangt long-tail zoektermen als
+            'stagehuis curacao', 'appartement curacao stage', 'studentenhuis',
+            'huisvesting stage'. Geeft tegelijk kader vóór de wijk-selector. */}
         <section className="mb-10">
+          <h2 className="section-label">Stagehuis op Curaçao: welke vormen bestaan er?</h2>
+          <ClaimLabel kind="richtlijn" />
+          <p className="text-sm text-gray-600 leading-relaxed mb-5 max-w-2xl">
+            Voordat je kiest in welke wijk je gaat wonen, is de vraag welke vorm van huisvesting bij je past. De meeste stagiairs op Curaçao kiezen uit vier opties. Prijs, privacy en sociale dynamiek verschillen sterk.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {WOONVORMEN.map((w) => (
+              <div
+                key={w.naam}
+                className="card"
+                style={{ borderLeft: `3px solid ${w.accent}` }}
+              >
+                <div className="flex items-baseline justify-between gap-3 mb-2">
+                  <p className="text-sm font-medium text-dark">{w.naam}</p>
+                  <p className="text-xs font-medium shrink-0" style={{ color: w.accent }}>
+                    {w.prijs}
+                  </p>
+                </div>
+                <p className="text-xs text-gray-600 leading-relaxed mb-3">{w.typisch}</p>
+                <p className="text-xs text-gray-400 leading-relaxed">
+                  <span className="font-medium text-gray-500">Geschikt voor:</span> {w.voor}
+                </p>
+              </div>
+            ))}
+          </div>
+          <p className="text-xs text-gray-400 leading-relaxed mt-4 max-w-2xl">
+            Prijzen zijn indicaties per maand. Het exacte bedrag hangt af van de wijk en of stroom, water en internet zijn inbegrepen. Zie de wijkvergelijking hieronder voor het verschil tussen Pietermaai, Jan Thiel, Piscadera, Salinja en Bapor Kibra.
+          </p>
+        </section>
+
+        {/* Wijk selector */}
+        <section id="wijk-selector" className="mb-10 scroll-mt-20">
           <h2 className="section-label">Kies een wijk</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
             {WIJKEN.map((w, i) => (
@@ -237,6 +352,48 @@ export default function Wonen() {
               <p className="text-sm font-medium text-sky mb-2">→ Salinja / Otrobanda</p>
               <p className="text-xs text-gray-500 leading-relaxed">Laagste huur (€300-400). Let op vervoersimpact als stage of strand verder weg ligt.</p>
             </div>
+          </div>
+        </section>
+
+        {/* Gerichte long-tail sectie: 'kamer huren willemstad stage' en
+            'huisvesting stage willemstad' landen op positie 50+ in GSC maar
+            de pagina adresseert Willemstad niet expliciet. Hier wel. */}
+        <section className="mb-10">
+          <h2 className="section-label">Kamer huren in Willemstad als stagiair</h2>
+          <ClaimLabel kind="ervaring" />
+          <div className="card">
+            <p className="text-sm text-gray-600 leading-relaxed mb-4">
+              Willemstad is niet één wijk maar een gebied dat bestaat uit vier historische districten: Punda, Otrobanda, Pietermaai en Scharloo. Niet elk district heeft veel aanbod voor stagiairs. Hieronder welk deel voor welke stagiair typisch het best werkt.
+            </p>
+            <div className="grid sm:grid-cols-2 gap-3">
+              <div className="card" style={{ borderLeft: '3px solid #3EAD6E' }}>
+                <p className="text-sm font-medium text-dark mb-1">Pietermaai</p>
+                <p className="text-xs text-gray-500 leading-relaxed">
+                  Zuidelijk van Punda, kleurrijke koloniale gevels en veel horeca. Populairste keuze bij stagiairs die op loopafstand willen wonen van het centrum. Huur €425 tot €550. Zie <Link to="#" onClick={(e) => { e.preventDefault(); setActive(2) }} className="text-sage underline">de wijk-kaart hierboven</Link>.
+                </p>
+              </div>
+              <div className="card" style={{ borderLeft: '3px solid #1A7EC5' }}>
+                <p className="text-sm font-medium text-dark mb-1">Otrobanda</p>
+                <p className="text-xs text-gray-500 leading-relaxed">
+                  Aan de westkant van de Annabaai, via de Koningin Emma-brug verbonden met Punda. Authentieker en goedkoper (€300 tot €400), maar minder levendig dan Pietermaai. Vaak onderdeel van de wijk Salinja/Otrobanda op deze pagina.
+                </p>
+              </div>
+              <div className="card" style={{ borderLeft: '3px solid #F2B517' }}>
+                <p className="text-sm font-medium text-dark mb-1">Punda</p>
+                <p className="text-xs text-gray-500 leading-relaxed">
+                  Historisch centrum, UNESCO-werelderfgoed, vooral commercieel (winkels, kantoren, toeristen). Weinig studentenhuizen. Wel enkele appartementen boven winkels, maar meestal duurder.
+                </p>
+              </div>
+              <div className="card" style={{ borderLeft: '3px solid #E8507A' }}>
+                <p className="text-sm font-medium text-dark mb-1">Scharloo</p>
+                <p className="text-xs text-gray-500 leading-relaxed">
+                  Noordelijk van Punda, historisch residentieel met oude handelshuizen. Beperkt aanbod voor stagiairs. Rustig. Geen beachclubs of uitgaansleven, wel dichtbij centrum.
+                </p>
+              </div>
+            </div>
+            <p className="text-xs text-gray-500 leading-relaxed mt-4">
+              Let op: Piscadera en Jan Thiel vallen niet onder Willemstad. Dat zijn aparte wijken op 10 tot 20 minuten rijden. Zie de <a href="#wijk-selector" className="text-sage underline">wijkvergelijking</a> voor die keuzes.
+            </p>
           </div>
         </section>
 
@@ -441,6 +598,30 @@ export default function Wonen() {
             De mooiste studentenhuizen zitten in Jan Thiel en Piscadera. Wil je het echte Curaçao meemaken? Kies Pietermaai.
           </p>
         </div>
+
+        {/* FAQ — koppelt aan FAQPage JSON-LD in SCHEMA_FAQ hierboven,
+            zodat Google eventueel FAQ-snippets kan tonen in de resultaten. */}
+        <section className="mb-10">
+          <h2 className="section-label">Veelgestelde vragen over huisvesting</h2>
+          <ClaimLabel kind="richtlijn" />
+          <div className="flex flex-col gap-3">
+            {SCHEMA_FAQ.mainEntity.map((item, i) => (
+              <details
+                key={i}
+                className="card group"
+                style={{ borderLeft: '3px solid #3EAD6E' }}
+              >
+                <summary className="text-sm font-medium text-dark cursor-pointer marker:hidden list-none flex items-start justify-between gap-3">
+                  <span>{item.name}</span>
+                  <span className="text-gray-400 group-open:rotate-180 transition-transform shrink-0">▾</span>
+                </summary>
+                <p className="text-sm text-gray-600 leading-relaxed mt-3">
+                  {item.acceptedAnswer.text}
+                </p>
+              </details>
+            ))}
+          </div>
+        </section>
 
         <div className="bg-cream rounded-2xl p-8 flex flex-col md:flex-row gap-5 items-start md:items-center justify-between">
           <div>

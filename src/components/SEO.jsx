@@ -17,7 +17,14 @@ export default function SEO({ title, description, image, type, noindex, schema }
   const { pathname } = useLocation()
   const config = SEO_CONFIG[pathname] || {}
 
-  const finalTitle = title || config.title || SITE.siteName
+  // Titel-suffix ` | StageStart` consistent toevoegen, tenzij de title
+  // 'm al bevat (bv. bij een homepage-title die expliciet de volledige
+  // merknaam zet). Google gebruikt het pipe-teken dan in de SERP in
+  // plaats van zelf een hyphen-suffix te plakken.
+  const rawTitle = title || config.title || SITE.siteName
+  const finalTitle = rawTitle.endsWith(SITE.titleSuffix) || rawTitle.endsWith(SITE.siteName)
+    ? rawTitle
+    : `${rawTitle}${SITE.titleSuffix}`
   const finalDescription = description || config.description || ''
   const finalType = type || config.type || 'article'
   const finalImage = image || config.image || SITE.defaultImage
