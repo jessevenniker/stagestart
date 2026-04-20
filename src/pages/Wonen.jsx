@@ -497,7 +497,7 @@ export default function Wonen() {
               <ul className="flex flex-col gap-1.5 text-xs text-gray-500">
                 <li>· Zet de airco aan, koelt hij snel?</li>
                 <li>· Hoe oud ziet de airco eruit? Oud = duur stroom.</li>
-                <li>· Check stopcontacten (220V Europees of 110V Amerikaans, of beide?)</li>
+                <li>· Check stopcontacten: standaard op Curaçao is 127V/Amerikaans (Type A/B). NL-apparaten van 220V hebben vaak een transformator nodig. Vraag of er ook 220V-stopcontacten aanwezig zijn.</li>
                 <li>· Zijn er veel lampen of ledverlichting?</li>
               </ul>
             </div>

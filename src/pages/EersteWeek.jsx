@@ -25,7 +25,7 @@ const DAGEN = [
       { taak: 'Even bijkomen', detail: 'Vlucht duurt ±10 uur. Eerste nacht is voor oriëntatie, niet voor acties. Slaap, acclimatiseer.' },
       { taak: 'Bar 22 in de aankomsthal', detail: 'Direct rechts als je door de aankomstdeuren loopt staat een kleine bar. Wachten op je ophaalservice? Neem hier een drankje.' },
       { taak: 'SIM-kaart kopen', detail: 'In de aankomsthal worden SIM-kaarten verkocht. DennisMobile is een eSIM-optie waarmee je je Nederlandse nummer behoudt.' },
-      { taak: 'Taxi: altijd prijs afspreken vóór instappen', detail: 'Downtown Willemstad ±15 min, Jan Thiel ±30 min, Westpunt ±35 min.' },
+      { taak: 'Taxi: altijd prijs afspreken vóór instappen', detail: 'Downtown Willemstad ±15 min, Jan Thiel ±30 min, Westpunt ±45-50 min. Vraag altijd de prijs voordat je instapt, niet alle taxi\'s hebben een meter.' },
       { taak: 'Autoverhuur rechts in de aankomsthal', detail: 'Check altijd of er een reserveband in de auto zit voordat je wegrijdt.' },
     ],
   },
@@ -44,7 +44,7 @@ const DAGEN = [
     color: '#3EAD6E',
     title: 'Bank & wifi',
     taken: [
-      { taak: 'Geen rijbewijs omzetten nodig', detail: 'Je Nederlandse rijbewijs is geldig in Curaçao. Je kunt direct een auto huren of besturen. Omzetten naar Curaçaos rijbewijs is alleen relevant bij langdurig verblijf (>6 maanden) of registratie van een eigen voertuig.' },
+      { taak: 'Rijbewijs: NL-rijbewijs is geldig (geen actie nodig)', detail: 'Je Nederlandse rijbewijs is geldig op Curaçao en je kunt direct huren of rijden. Omzetten naar Curaçaos rijbewijs wordt pas relevant bij langer verblijf (vanaf 6 maanden) of als je een eigen voertuig wilt registreren. Voor een doorsnee stage van 3-6 maanden hoef je niets te doen.' },
       { taak: 'Pinpas testen bij een geldautomaat', detail: 'Controleer of je NL-pinpas werkt, je hebt hem vóór vertrek "op wereld" gezet. Bij een V-pay pinpas (vooral ING) moet je bij afrekenen aangeven dat het in dollars wordt verrekend, niet in euro\'s.' },
       { taak: 'Bankrekening openen (optioneel)', detail: 'MCB of Maduro & Curiel\'s Bank. Niet altijd nodig als je betalingen via NL regelt. Wel handig voor huurbetalingen lokaal. Verwacht 2-4 maanden doorlooptijd.' },
       { taak: 'Internet & wifi checken', detail: 'Is de wifi op je woning snel genoeg? Zo niet: dataplan upgraden of een hotspot regelen.' },
@@ -58,7 +58,7 @@ const DAGEN = [
     taken: [
       { taak: 'Eerste dag op stage', detail: 'Kom op tijd. Vraag naar je werkplek, verwachtingen en je dagelijkse rooster. Stel vragen, dit is de enige keer dat het normaal is om alles te vragen.' },
       { taak: 'Route oefenen', detail: 'Rij de route een keer door voor je eerste echte dag zodat je de reistijd weet.' },
-      { taak: 'Contacten opslaan', detail: 'Sla het nummer van je huisbaas, stagebegeleider en medestudenten op. Zorg dat je 112 kent (werkt ook op Curaçao).' },
+      { taak: 'Contacten opslaan', detail: 'Sla het nummer van je huisbaas, stagebegeleider en medestudenten op. Belangrijkste noodnummer op Curaçao: 911 (politie, brandweer, ambulance). Voor verkeersongeval: Forensys 9223. NL-nummer 112 werkt hier niet, gebruik 911.' },
     ],
   },
   {

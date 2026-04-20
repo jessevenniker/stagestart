@@ -4,10 +4,10 @@ import SEO from '../components/SEO'
 import LastChecked from '../components/LastChecked'
 
 const STRANDEN = [
-  { naam: 'Knip (Playa Kenepa)', afstand: '45 min', tip: 'Spectaculaire baai. Ga vroeg, want vol na 11u. Betaald parkeren (±ANG 10). Een van de mooiste van het eiland.', kleur: '#1A7EC5' },
+  { naam: 'Knip (Playa Kenepa Grandi)', afstand: '45 min', tip: 'Spectaculaire baai. Ga vroeg, want vol na 11u. Lokale jongens helpen vaak met parkeren voor een fooi (1-2 ANG), geen formele heffing. Een van de mooiste van het eiland.', kleur: '#1A7EC5' },
   { naam: 'Cas Abao', afstand: '30 min', tip: 'Privébeheer, betaald (ANG 15–20). Goed rif, goede faciliteiten. Populair bij expats.', kleur: '#3EAD6E' },
   { naam: 'Playa Lagun', afstand: '40 min', tip: 'Klein, rustig, geweldig snorkelen direct vanaf het strand. Schildpadden. Gratis.', kleur: '#D4522A' },
-  { naam: 'Mambo Beach', afstand: '10–20 min', tip: 'Betaald (ANG 10). Goed voor een doordeweekse avond. Boulevard met eten, bars en winkels.', kleur: '#F2B517' },
+  { naam: 'Mambo Beach', afstand: '10–20 min', tip: 'Strand zelf vrij toegankelijk; ligbedden, parasols en eten kosten geld. Boulevard met restaurants, bars en winkels. Goed voor een doordeweekse avond.', kleur: '#F2B517' },
   { naam: 'Porto Marie', afstand: '25 min', tip: 'Kunstmatig koraalrif in zee. Goed snorkelen, kalm water. Betaald (ANG 10). Rustig en mooi.', kleur: '#E8507A' },
   { naam: 'Kleine Knip', afstand: '40 min', tip: 'Kleiner dan Grote Knip, minder bekend. Gratis. Mooie kleuren, goed snorkelen.', kleur: '#1A7EC5' },
 ]
@@ -21,7 +21,7 @@ const ETEN = [
   { type: 'Supermarkten', items: [
     { naam: 'Van den Tweel', buurt: 'meerdere filialen', desc: 'Nederlandse producten, bekende merken. Duurder dan in NL maar vertrouwd. Vind je AH-products hier.' },
     { naam: 'Pricesmart', buurt: 'Salinja', desc: 'Bulkinkopen, goedkoper per eenheid. Ideaal als je met meerdere huisgenoten boodschappen doet.' },
-    { naam: 'MCD (lokale supers)', buurt: 'overal', desc: 'Lokale supermarktketens zijn goedkoper voor basisproducten. Minder NL-merken, prima voor alledaags.' },
+    { naam: 'Lokale supermarkten', buurt: 'overal', desc: 'Kleine lokale buurtsupers (Centrum, Vreugdenhil en kleinere zelfstandigen) zijn goedkoper voor basisproducten. Minder NL-merken, prima voor alledaagse boodschappen en verse producten.' },
   ]},
   { type: 'Uiteten (betaalbaar)', items: [
     { naam: 'Jaanchie\'s', buurt: 'Westpunt', desc: 'Lokale legende. Iguanastoofpot en andere eilandspecialiteiten. Ver maar de moeite waard voor één keer.' },
@@ -33,7 +33,7 @@ const ETEN = [
 const PRAKTISCH = [
   { titel: 'Geld & pinnen', tekst: 'PIN werkt prima bij de meeste supermarkten en winkels. ATM\'s zijn er bij Maduro bank en MCB. Creditcard wordt overal geaccepteerd. Wisselkoers: €1 ≈ ANG 2,00–2,10.' },
   { titel: 'Uitrijden naar Klein Curaçao', tekst: 'Onbewoond eiland, ± 1,5 uur per boot. Absoluut doen. Boek via Miss Ann Boat Trips of Mermaid Boat Trips. ±€50–70 pp inclusief lunch. Plan het voor een rustige dag.' },
-  { titel: 'Duiken & snorkelen', tekst: 'Curaçao heeft een van de beste huisriffen ter wereld. Ocean Encounters op Mambo is betrouwbaar. Een duikbrevet halen kan al voor ±€350. Snorkelen is overal goedkoop mogelijk.' },
+  { titel: 'Duiken & snorkelen', tekst: 'Curaçao staat bekend om zijn toegankelijke huisrif: vanaf veel plekken duik je direct vanaf de kust het rif in. Ocean Encounters op Mambo is een bekende, ervaren duikschool. Een duikbrevet halen kan al voor ±€350. Snorkelen is overal goedkoop mogelijk; bij Playa Lagun en Cas Abao zit het rif al vlak bij de kust.' },
   { titel: 'Nachtleven', tekst: "Mambo Beach Boulevard voor een casual avond. Wet & Wild voor feesten op zaterdag. Happy hours zijn populair, begin vroeg. Neem altijd iemand mee voor taxi's 's avonds." },
   { titel: 'Zondagsregels', tekst: 'Veel winkels zijn gesloten of sluiten vroeg op zondag. Plan je boodschappen op zaterdag. Strand en restaurants zijn open. Rustigste dag van de week.' },
   { titel: 'Mobiel & internet', tekst: 'Prepaid bundels bij Digicel of Flow. ±ANG 40 voor een maandbundel met 10GB. WhatsApp werkt op wifi, meeste studenten houden hun NL-nummer actief.' },
@@ -44,7 +44,7 @@ const GEZONDHEID = [
   { titel: 'Apotheek = botika', tekst: 'Standaard medicijnen kun je zonder afspraak halen bij een botika. Sommige zijn gesloten tussen 12:00 en 14:00. Een aantal is 24 uur open.', kleur: '#F2B517' },
   { titel: 'Huisarts die Nederlands spreekt', tekst: 'Centro Medico Aesculapius, SBN Doormanweg 47. Bereikbaar op +599 9 737-0522. Ochtend: open spreekuur. Middag: op afspraak. Bewaar je bon. De Nederlandse zorgverzekering vergoedt spoedeisende zorg vaak tot het Nederlandse tarief.', kleur: '#3EAD6E' },
   { titel: 'Zorgverzekering, niet opzeggen', tekst: 'Je blijft officieel ingeschreven in Nederland, dus je houdt je Nederlandse basisverzekering. Neem je zorgpas mee. De basisverzekering dekt spoedeisende zorg wereldwijd tot het Nederlandse tarief. Medische evacuatie naar Nederland kan $15.000–$25.000 kosten, zorg dat je aanvullend verzekerd bent.', kleur: '#1A7EC5' },
-  { titel: 'Muggen', tekst: 'Actief in het regenseizoen (juni–november) en \'s avonds. Gebruik insectenwerende spray. Slaap met gesloten ramen of een klamboe.', kleur: '#E8507A' },
+  { titel: 'Muggen', tekst: 'Het regenseizoen op Curaçao loopt grofweg van oktober tot januari, dan zijn muggen het meest actief. Ook in de droge maanden zitten ze er in de avond. Gebruik DEET-spray, slaap met gesloten ramen of een klamboe. Dengue komt voor op het eiland, dus muggen zijn niet alleen vervelend.', kleur: '#E8507A' },
   { titel: 'Lichamelijke aanpassing duurt langer dan je denkt', tekst: 'De warmte, luchtvochtigheid en tijdverschil zijn een aanslag op je lichaam de eerste week. Drink meer water dan je denkt nodig te hebben. Kom bij voorkeur een week voor je eerste stagedag aan om te acclimatiseren.', kleur: '#D4522A' },
 ]
 
