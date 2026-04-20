@@ -69,12 +69,13 @@ const UITKOMSTEN = {
     color: '#3EAD6E',
     icon: '🚶',
     titel: 'Nee, je hebt waarschijnlijk geen auto nodig.',
-    body: 'Gefeliciteerd, je bent in de minderheid. Vanuit centrum of Pietermaai kun je op loopafstand werken en de meeste boodschappen doen. Overweeg wel een scooter of fiets voor wat meer vrijheid.',
+    body: 'Vanuit centrum of Pietermaai kun je op loopafstand werken en de meeste boodschappen doen. Voor uitstapjes naar stranden of de noordwestkust hou je geld over voor incidentele taxi-ritten of een dag-huurauto in het weekend.',
     tips: [
-      'Een scooter kost ±€200/mnd, stuk goedkoper dan een auto',
-      'Taxi\'s zijn relatief betaalbaar voor incidenteel gebruik',
-      'Fietsen kan, maar de warmte maakt het lastig overdag',
-      'Zorg dat je stageplek inderdaad goed bereikbaar is te voet',
+      'Boodschappen doe je lopend bij de Centrumarena, of neem een keer per week een Bolt/taxi terug naar huis met grote inkopen',
+      'Voor strand- of weekendtrips: huur een dag of weekend een auto (±€40-60 per dag), goedkoper dan een hele maand',
+      'Carpoolen met huisgenoten die wel een auto hebben, deelt benzine en kosten',
+      'Check vóór je commit: hoe ver is je stageplek écht? Loop of fiets de route eerst (in de ochtend, niet \'s middags warmst)',
+      'Scooters worden vaak afgeraden: het verkeer op Curaçao is agressief, wegen zijn slecht en ongelukken komen vaak voor',
     ],
   },
   auto_misschien: {
@@ -86,7 +87,7 @@ const UITKOMSTEN = {
       'Vraag je stagegever: "Is er goed openbaar vervoer?"',
       'Check Google Maps: hoe lang doet een taxi erover?',
       'Begin zonder auto en evalueer na 2 weken',
-      'Deel een auto met een housegenoot als het toch nodig is',
+      'Deel een auto met een huisgenoot als het toch nodig blijkt',
     ],
   },
   auto_wacht: {
@@ -337,9 +338,9 @@ export default function Auto() {
               </p>
             </div>
             <div className="card">
-              <p className="text-sm font-medium text-dark mb-2">Bus / openbaar vervoer</p>
+              <p className="text-sm font-medium text-dark mb-2">Bus en konvoi: niet voor je dagelijkse stage</p>
               <p className="text-xs text-gray-500 leading-relaxed">
-                Er rijdt wel degelijk openbaar vervoer op Curaçao, al is het beperkt. De app <strong className="text-dark">ABC Curaçao</strong> toont dienstregelingen en bushalte-informatie. Niet altijd betrouwbaar, wel goedkoop.
+                Er rijden bussen (Autobusbedrijf Curaçao) en konvoi-busjes, maar de routes en tijden zijn beperkt en vaak onregelmatig. Voor incidentele ritten in en rond Willemstad is het bruikbaar en goedkoop. Als <strong className="text-dark">vaste stage-vervoer reken er niet op</strong>: een gemiste bus betekent te laat op stage en geen alternatief.
               </p>
             </div>
             <div className="card">
@@ -359,22 +360,46 @@ export default function Auto() {
           </div>
         </section>
 
-        {/* Alternatieven */}
+        {/* Alternatieven, eerlijk over wat wel en niet werkt op Curaçao */}
         <section className="mb-14">
-          <h2 className="section-label">Alternatieven voor een auto</h2>
-          <div className="grid sm:grid-cols-3 gap-4">
-            {[
-              { title: 'Scooter', color: '#F2B517', prijs: '±€ 150–250/mnd', desc: 'Goedkoper, handig voor kortere ritten. Minder comfortabel in de warmte. Kijk goed naar de verzekering.' },
-              { title: 'Auto delen', color: '#3EAD6E', prijs: '±€ 150–250/mnd/pp', desc: 'Deel een auto met 2–3 huisgenoten. Goedkoopste optie als de planning werkt.' },
-              { title: 'Taxi (incidenteel)', color: '#1A7EC5', prijs: '€ 10–20 per rit', desc: 'Voor avonden en uitstapjes. Als je echt vlak bij je werk woont kan dit genoeg zijn.' },
-            ].map(a => (
-              <div key={a.title} className="card">
-                <div className="h-1 rounded-sm mb-3" style={{ background: a.color }} />
-                <p className="font-medium text-sm text-dark mb-1">{a.title}</p>
-                <p className="text-xs text-gray-400 mb-2">{a.prijs}</p>
-                <p className="text-xs text-gray-500 leading-relaxed">{a.desc}</p>
-              </div>
-            ))}
+          <h2 className="section-label">Wat werkt en wat niet als alternatief</h2>
+          <ClaimLabel kind="ervaring" />
+          <p className="text-sm text-gray-600 leading-relaxed mb-5 max-w-2xl">
+            Veel adviezen op andere sites passen bij een Europese stad maar niet bij Curaçao. Hieronder eerlijk welke alternatieven hier echt werken.
+          </p>
+          <div className="grid sm:grid-cols-2 gap-4">
+            <div className="card border-l-4" style={{ borderLeftColor: '#3EAD6E' }}>
+              <p className="text-xs font-medium uppercase tracking-wider mb-2" style={{ color: '#3EAD6E' }}>Werkt wel</p>
+              <p className="font-medium text-sm text-dark mb-1">Auto delen met huisgenoten</p>
+              <p className="text-xs text-gray-400 mb-2">±€150-250/mnd per persoon</p>
+              <p className="text-xs text-gray-500 leading-relaxed">
+                Eén auto huren, de kosten met 2 tot 3 huisgenoten splitsen. Goedkoopste optie als je de planning vooraf goed afstemt. Wel: één persoon op het contract = juridisch verantwoordelijk voor alles.
+              </p>
+            </div>
+            <div className="card border-l-4" style={{ borderLeftColor: '#3EAD6E' }}>
+              <p className="text-xs font-medium uppercase tracking-wider mb-2" style={{ color: '#3EAD6E' }}>Werkt wel</p>
+              <p className="font-medium text-sm text-dark mb-1">Taxi voor incidentele ritten</p>
+              <p className="text-xs text-gray-400 mb-2">€10-20 per rit (TX-nummerbord)</p>
+              <p className="text-xs text-gray-500 leading-relaxed">
+                Voor avonden, uitstapjes en boodschappen-reis. Werkt prima als je dagelijks lopend naar stage kunt. Reken niet op standaard tarieven, vraag vooraf de prijs.
+              </p>
+            </div>
+            <div className="card border-l-4" style={{ borderLeftColor: '#3EAD6E' }}>
+              <p className="text-xs font-medium uppercase tracking-wider mb-2" style={{ color: '#3EAD6E' }}>Werkt wel</p>
+              <p className="font-medium text-sm text-dark mb-1">Weekend- of dag-huur</p>
+              <p className="text-xs text-gray-400 mb-2">±€40-60 per dag</p>
+              <p className="text-xs text-gray-500 leading-relaxed">
+                Geen auto door de week, wel voor strand- of weekendtrips. Lokale verhuurders bieden korte huurperiodes. Voor wie centraal woont en alleen het weekend mobiel wil zijn.
+              </p>
+            </div>
+            <div className="card border-l-4" style={{ borderLeftColor: '#D4522A' }}>
+              <p className="text-xs font-medium uppercase tracking-wider mb-2" style={{ color: '#D4522A' }}>Werkt vaak niet</p>
+              <p className="font-medium text-sm text-dark mb-1">Scooter of fiets</p>
+              <p className="text-xs text-gray-400 mb-2">Op papier goedkoop, in praktijk risicovol</p>
+              <p className="text-xs text-gray-500 leading-relaxed">
+                Veel Europese stagiairs denken aan een scooter omdat het goedkoop lijkt. Het verkeer op Curaçao is agressief, wegen hebben gaten en geen scheiding voor tweewielers, en ongelukken zijn frequent. Stagiairs en lokale ouders raden het breed af. Hetzelfde geldt voor fietsen op de doorgaande wegen.
+              </p>
+            </div>
           </div>
         </section>
 

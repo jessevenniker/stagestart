@@ -38,7 +38,7 @@ const MAANDELIJKS = [
   { label: 'Huur (kamer/studio/appartement)', range: '€ 375 – 1.000', tip: 'Kamer in studentenhuis: ANG 750–900 (€375–450). Studio: vanaf ANG 850 (€425). Appartement: vanaf ANG 950 (€475+). Utilities (gas/water/elektra) ±€50 extra.' },
   { label: 'Auto huren', range: '€ 400 – 475', tip: 'Circa ANG 800–950/mnd inclusief WA-verzekering. Deel met medestudenten om kosten te halveren.' },
   { label: 'Benzine', range: '€ 50 – 75', tip: 'Circa ANG 2 per liter (≈€1). Goedkoper dan in Nederland.' },
-  { label: 'Boodschappen', range: '€ 125 – 200', tip: 'Circa ANG 250–400/mnd. Kook zoveel mogelijk zelf. Zuivel en vlees zijn importproducten en duurder.' },
+  { label: 'Boodschappen', range: '€ 125 – 200', tip: 'Circa ANG 250-400/mnd. Veel producten zijn duurder dan in Nederland door belastingen en de kleine markt. Lokale opties (lokaal vlees, lokale zuivel zoals CMC, vers fruit) zijn vaak goedkoper dan geïmporteerde merken.' },
   { label: 'Uit eten', range: '€ 80 – 200', tip: 'Budget maaltijd: ±ANG 20 (€10). Regulier restaurant: ±ANG 35 (€17,50). Lokale plekken zijn betaalbaar.' },
   { label: 'Uitgaan & vrije tijd', range: '€ 100 – 300', tip: 'Bier happy hour: ANG 4,50 (€2,25). Entree clubs: gratis tot ANG 10 (€5). Strandtoegang: gratis tot ANG 20 (€10).' },
   { label: 'Verzekering (reis + zorg + WA)', range: '€ 60 – 120', tip: 'Houd je Nederlandse basisverzekering actief. Sluit een reisverzekering af voor de hele periode.' },
@@ -238,7 +238,7 @@ export default function Kosten() {
                 {[
                   'Kies een groter studentenhuis, goedkoper per persoon en socialer',
                   'Deel een auto met medestudenten: scheelt €200–300 per maand per persoon',
-                  'Kook zoveel mogelijk zelf, zuivel en vlees importproducten zijn duur',
+                  'Kook zelf en kies lokale producten waar mogelijk: geïmporteerde merken zijn duurder',
                   'Neem zonnebrand, shampoo en medicijnen mee vanuit Nederland',
                   'Stop je OV-kaart, €110,95/mnd (2026) die je anders laat liggen',
                 ].map((t, i) => (
