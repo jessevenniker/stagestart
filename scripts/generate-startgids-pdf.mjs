@@ -11,6 +11,7 @@
  * inhoudsopgave, foto's op relevante hoofdstukken, nette pagina-breaks.
  */
 import puppeteer from 'puppeteer'
+import sharp from 'sharp'
 import { readFile, writeFile, mkdir, stat } from 'node:fs/promises'
 import { fileURLToPath } from 'node:url'
 import { dirname, join } from 'node:path'
@@ -20,11 +21,19 @@ const ROOT = join(__dirname, '..')
 const IMG = join(ROOT, 'public', 'img')
 const OUT = join(ROOT, 'public', 'downloads', 'stagestart-startgids.pdf')
 
-async function imgToDataUri(filename) {
-  const buf = await readFile(join(IMG, filename))
-  const ext = filename.split('.').pop().toLowerCase()
-  const mime = ext === 'jpg' || ext === 'jpeg' ? 'image/jpeg' : ext === 'png' ? 'image/png' : 'application/octet-stream'
-  return `data:${mime};base64,${buf.toString('base64')}`
+/**
+ * Laadt een foto, schaalt hem naar maximaal 900px breed (voldoende voor A4-print
+ * op 150 DPI), hercomprimeert agressief, en geeft als base64 data-URI terug.
+ * Dit verkleint de PDF-grootte drastisch zonder zichtbaar kwaliteitsverlies bij
+ * de relatief kleine weergave op A4.
+ */
+async function imgToDataUri(filename, { maxWidth = 900, quality = 72 } = {}) {
+  const buf = await sharp(join(IMG, filename))
+    .rotate()
+    .resize({ width: maxWidth, withoutEnlargement: true })
+    .jpeg({ quality, mozjpeg: true, progressive: true })
+    .toBuffer()
+  return `data:image/jpeg;base64,${buf.toString('base64')}`
 }
 
 const HOOFDSTUKKEN = [
@@ -469,13 +478,14 @@ function buildHtml(coverData, hoofdstukkenMetFotos) {
 async function main() {
   await mkdir(dirname(OUT), { recursive: true })
 
-  // Laad alle foto's als base64 data-URIs
-  console.log('Foto\'s inladen als base64...')
-  const coverData = await imgToDataUri('cta-sunset.jpg')
+  // Laad foto's geoptimaliseerd als base64: kleinere afmeting + agressieve JPEG compressie
+  // zodat de PDF snel opent in de browser zonder zichtbaar kwaliteitsverlies.
+  console.log('Foto\'s inladen en comprimeren...')
+  const coverData = await imgToDataUri('cta-sunset.jpg', { maxWidth: 1200, quality: 72 })
   const hoofdstukkenMetFotos = await Promise.all(
     HOOFDSTUKKEN.map(async (h) => ({
       ...h,
-      fotoData: h.foto ? await imgToDataUri(h.foto) : null,
+      fotoData: h.foto ? await imgToDataUri(h.foto, { maxWidth: 900, quality: 68 }) : null,
     }))
   )
 
