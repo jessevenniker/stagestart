@@ -5,8 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "node scripts/sitemap-build.mjs && vite build",
+    "preview": "vite preview",
+    "sitemap:build": "node scripts/sitemap-build.mjs",
+    "verhaal:new": "node scripts/verhaal-new.mjs",
+    "verhaal:photos": "node scripts/verhaal-photos.mjs"
   },
   "dependencies": {
     "leaflet": "^1.9.4",

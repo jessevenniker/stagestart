@@ -134,13 +134,17 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- BEGIN_VERHALEN_AUTO -->
   <url>
     <loc>https://stagestartcuracao.nl/verhalen/jesse</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
-  <!-- Voeg per echt verhaal een url-entry toe (alleen bij voorbeeld: false). -->
+  <!-- END_VERHALEN_AUTO -->
+  <!-- De verhaal-url's hierboven worden automatisch gegenereerd op basis
+       van src/data/verhalen.js door `npm run sitemap:build` (alleen entries
+       met voorbeeld: false). Handmatig aanpassen heeft geen zin. -->
 
 
   <!-- Contact + Over -->
