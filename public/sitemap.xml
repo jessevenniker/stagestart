@@ -134,8 +134,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  <!-- Losse verhaal-pagina's: niet in sitemap zolang het voorbeelden zijn.
-       Voeg toe zodra echt verhaal gepubliceerd wordt. -->
+  <url>
+    <loc>https://stagestartcuracao.nl/verhalen/jesse</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <!-- Voeg per echt verhaal een url-entry toe (alleen bij voorbeeld: false). -->
 
 
   <!-- Contact + Over -->

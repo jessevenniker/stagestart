@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
-  <rect width="600" height="600" fill="#DEE9E1"/>
-  <circle cx="300" cy="245" r="90" fill="#3EAD6E" opacity="0.25"/>
-  <text x="300" y="270" text-anchor="middle" font-family="Georgia,serif" font-size="80" fill="#3EAD6E" font-weight="400">L</text>
-  <text x="300" y="400" text-anchor="middle" font-family="Inter,sans-serif" font-size="16" fill="#5A8F6F" letter-spacing="2">VOORBEELD</text>
-  <text x="300" y="425" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" fill="#7AA58E">Vervang door foto van Lotte</text>
-  <text x="300" y="450" text-anchor="middle" font-family="monospace" font-size="11" fill="#9BB9A7">/img/verhalen/lotte.jpg</text>
-</svg>

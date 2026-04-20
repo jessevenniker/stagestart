@@ -15,6 +15,7 @@ export default {
       fontFamily: {
         serif: ['Georgia', 'Cambria', 'Times New Roman', 'serif'],
         sans:  ['Inter', 'system-ui', 'sans-serif'],
+        hand:  ['Caveat', 'Bradley Hand', 'cursive'],
       },
     },
   },

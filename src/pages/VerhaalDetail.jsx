@@ -7,6 +7,56 @@ import { getVerhaal, VERHALEN } from '../data/verhalen'
 import { articleSchema } from '../utils/schema'
 import NotFound from './NotFound'
 
+/**
+ * Pull-quote component — magazine-stijl.
+ * Groot serif, accent-kleur streep links, veel lucht eromheen.
+ */
+function PullQuote({ text, accent }) {
+  return (
+    <figure className="my-10 md:my-12 pl-5 md:pl-6" style={{ borderLeft: `3px solid ${accent}` }}>
+      <blockquote className="font-serif text-2xl md:text-3xl leading-snug text-dark tracking-tight">
+        {text}
+      </blockquote>
+    </figure>
+  )
+}
+
+/**
+ * Polaroid-achtige foto met handgeschreven caption.
+ * Lichte rotatie, witte rand, subtiele schaduw.
+ * Rotatie is deterministisch per index: even = links, oneven = rechts.
+ */
+function PolaroidPhoto({ img, index = 0, full = false }) {
+  const rotate = index % 2 === 0 ? '-rotate-1' : 'rotate-1'
+  // Full = groter, maar breedte begrensd zodat portrait-foto's niet reusachtig worden.
+  // Half = kleiner, vierkante crop.
+  const widthClass = full ? 'w-full max-w-[480px]' : 'w-full max-w-[340px]'
+  return (
+    <figure className={`my-10 md:my-12 flex flex-col items-center`}>
+      <div className={`${rotate} bg-white p-3 shadow-[0_8px_24px_rgba(0,0,0,0.10)] ${widthClass}`}>
+        <img
+          src={img.src}
+          alt={img.caption}
+          loading="lazy"
+          className={
+            full
+              // Full: behoud natuurlijke aspect van de foto (portret of landscape),
+              // met max-hoogte zodat portretten niet onevenredig lang worden.
+              ? 'block w-full max-h-[640px] object-contain bg-gray-50'
+              // Half: strakke vierkante crop voor consistentie in de scrapbook.
+              : 'block w-full aspect-square object-cover bg-gray-50'
+          }
+        />
+        {img.caption && (
+          <figcaption className="font-hand text-xl text-gray-600 text-center pt-3 pb-1 leading-tight">
+            {img.caption}
+          </figcaption>
+        )}
+      </div>
+    </figure>
+  )
+}
+
 export default function VerhaalDetail() {
   const { slug } = useParams()
   const verhaal = getVerhaal(slug)
@@ -22,6 +72,14 @@ export default function VerhaalDetail() {
 
   // Andere verhalen voor de "Meer verhalen" sectie
   const anderen = VERHALEN.filter((v) => v.slug !== verhaal.slug).slice(0, 3)
+
+  // Splits gallery in full-width (visuele intro) en half-width (interleaved)
+  const gallery = verhaal.gallery || []
+  const galleryFull = gallery.find((g) => g.layout === 'full')
+  const galleryHalf = gallery.filter((g) => g.layout !== 'full')
+
+  const pullQuotes = verhaal.pull_quotes || []
+  const persoonlijk = verhaal.persoonlijk || {}
 
   return (
     <>
@@ -73,10 +131,67 @@ export default function VerhaalDetail() {
           </div>
         )}
 
-        {/* Feitelijke data */}
+        {/* Persoonlijk paspoort: boven de scheidingslijn de warme feitjes,
+            onder de lijn de formele data. */}
         <section className="mb-10">
-          <h2 className="section-label">Over {verhaal.voornaam}</h2>
-          <div className="card">
+          <h2 className="section-label">Paspoort van {verhaal.voornaam}</h2>
+          <div className="card" style={{ borderLeft: `3px solid ${verhaal.accent}` }}>
+            {/* Persoonlijke kleur */}
+            {Object.keys(persoonlijk).length > 0 && (
+              <dl className="grid sm:grid-cols-2 gap-x-6 gap-y-4 text-sm">
+                {persoonlijk.favoriete_spot && (
+                  <div>
+                    <dt
+                      className="text-[10px] uppercase tracking-widest mb-1 font-medium"
+                      style={{ color: verhaal.accent }}
+                    >
+                      Favoriete spot
+                    </dt>
+                    <dd className="text-dark">{persoonlijk.favoriete_spot}</dd>
+                  </div>
+                )}
+                {persoonlijk.grootste_les && (
+                  <div>
+                    <dt
+                      className="text-[10px] uppercase tracking-widest mb-1 font-medium"
+                      style={{ color: verhaal.accent }}
+                    >
+                      Grootste les
+                    </dt>
+                    <dd className="text-dark">{persoonlijk.grootste_les}</dd>
+                  </div>
+                )}
+                {persoonlijk.eerste_aankoop && (
+                  <div>
+                    <dt
+                      className="text-[10px] uppercase tracking-widest mb-1 font-medium"
+                      style={{ color: verhaal.accent }}
+                    >
+                      Eerste aankoop
+                    </dt>
+                    <dd className="text-dark">{persoonlijk.eerste_aankoop}</dd>
+                  </div>
+                )}
+                {persoonlijk.moest_wennen && (
+                  <div>
+                    <dt
+                      className="text-[10px] uppercase tracking-widest mb-1 font-medium"
+                      style={{ color: verhaal.accent }}
+                    >
+                      Moest wennen aan
+                    </dt>
+                    <dd className="text-dark">{persoonlijk.moest_wennen}</dd>
+                  </div>
+                )}
+              </dl>
+            )}
+
+            {/* Scheidingslijntje tussen persoonlijk en formeel */}
+            {Object.keys(persoonlijk).length > 0 && (
+              <hr className="my-5 border-t border-gray-100" />
+            )}
+
+            {/* Formele data */}
             <dl className="grid sm:grid-cols-2 gap-x-6 gap-y-4 text-sm">
               <div>
                 <dt className="text-xs text-gray-400 uppercase tracking-wider mb-1">Opleiding</dt>
@@ -125,17 +240,27 @@ export default function VerhaalDetail() {
           </div>
         </section>
 
-        {/* Eigen verhaal */}
+        {/* Visuele intro voor het eigen verhaal: full-width polaroid */}
+        {galleryFull && (
+          <PolaroidPhoto img={galleryFull} index={0} full={true} />
+        )}
+
+        {/* Eigen verhaal met pull-quotes en half-width polaroids interleaved */}
         <section className="mb-10">
           <h2 className="section-label">In eigen woorden</h2>
-          <div className="card">
+          <div>
             {verhaal.eigen_verhaal.map((paragraaf, i) => (
-              <p
-                key={i}
-                className="text-sm text-gray-600 leading-relaxed mb-4 last:mb-0"
-              >
-                {paragraaf}
-              </p>
+              <div key={i}>
+                <p className="text-base text-gray-700 leading-relaxed mb-6">
+                  {paragraaf}
+                </p>
+                {pullQuotes[i] && (
+                  <PullQuote text={pullQuotes[i]} accent={verhaal.accent} />
+                )}
+                {galleryHalf[i] && (
+                  <PolaroidPhoto img={galleryHalf[i]} index={i + 1} full={false} />
+                )}
+              </div>
             ))}
           </div>
         </section>
