@@ -101,10 +101,6 @@ export default function Startgids() {
   const [status, setStatus] = useState('idle')
   const [errorMsg, setErrorMsg] = useState('')
 
-  function handlePrint() {
-    window.print()
-  }
-
   function update(field) {
     return (e) => setForm((prev) => ({ ...prev, [field]: e.target.value }))
   }
@@ -168,12 +164,13 @@ export default function Startgids() {
         {/* Acties bovenaan */}
         <section className="mb-10 print:hidden">
           <div className="flex flex-col sm:flex-row gap-3">
-            <button
-              onClick={handlePrint}
+            <a
+              href="/downloads/stagestart-startgids.pdf"
+              download="stagestart-startgids.pdf"
               className="btn-terra inline-flex items-center justify-center gap-2"
             >
-              Opslaan als PDF of printen
-            </button>
+              Download de gids als PDF
+            </a>
             <a
               href="#updates"
               className="inline-flex items-center justify-center gap-2 text-sm px-5 py-2.5 rounded-md border border-gray-200 text-gray-600 hover:text-dark hover:border-gray-400 transition-colors"
@@ -182,7 +179,7 @@ export default function Startgids() {
             </a>
           </div>
           <p className="text-xs text-gray-400 leading-relaxed mt-3 max-w-xl">
-            Klik op "Opslaan als PDF" om de gids als bestand op je apparaat te bewaren. Gebruik in het printvenster de optie "Opslaan als PDF" als doelprinter.
+            De PDF is klaar en wordt meteen gedownload. 11 pagina's, met cover, inhoudsopgave en foto's per hoofdstuk. Je kunt de tekst hieronder ook direct op deze pagina lezen.
           </p>
         </section>
 
