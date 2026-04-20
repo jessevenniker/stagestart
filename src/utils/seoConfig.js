@@ -84,6 +84,10 @@ export const SEO_CONFIG = {
     title: 'Veelgestelde vragen over stage op Curaçao',
     description: 'Meer dan 20 antwoorden over vergunning, kosten, wonen, vervoer en gezondheid. Volgens de officiële bron.',
   },
+  '/verhalen': {
+    title: 'Verhalen van stagiairs op Curaçao',
+    description: 'Echte ervaringen van stagiairs die jij binnenkort bent. Geen reclame, geen bureau-verhalen. Wat ze zelf hebben meegemaakt, met tips uit eerste hand.',
+  },
   '/bronnen': {
     title: 'Bronnen en verantwoording van StageStart',
     description: 'Elke claim met bron, datum en gevoeligheid. Het reliability framework volledig transparant.',

@@ -20,6 +20,7 @@ const COL1 = [
 ]
 
 const COL2 = [
+  { to: '/verhalen',      label: 'Verhalen van stagiairs' },
   { to: '/werken',        label: 'Werken op Curaçao' },
   { to: '/leven',         label: 'Leven op Curaçao' },
   { to: '/veiligheid',    label: 'Veiligheid' },

@@ -36,6 +36,8 @@ const Verzekering = lazy(() => import('./pages/Verzekering'))
 const Contact = lazy(() => import('./pages/Contact'))
 const Over = lazy(() => import('./pages/Over'))
 const PartnerWorden = lazy(() => import('./pages/PartnerWorden'))
+const Verhalen = lazy(() => import('./pages/Verhalen'))
+const VerhaalDetail = lazy(() => import('./pages/VerhaalDetail'))
 const NotFound = lazy(() => import('./pages/NotFound'))
 
 function PageLoader() {
@@ -85,6 +87,8 @@ export default function App() {
             <Route path="/contact"       element={<Contact />} />
             <Route path="/over"          element={<Over />} />
             <Route path="/partner-worden" element={<PartnerWorden />} />
+            <Route path="/verhalen"      element={<Verhalen />} />
+            <Route path="/verhalen/:slug" element={<VerhaalDetail />} />
             <Route path="*"              element={<NotFound />} />
           </Routes>
         </Suspense>

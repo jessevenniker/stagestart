@@ -1,6 +1,7 @@
 import { Link, useLocation } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import { breadcrumbSchema } from '../utils/schema'
+import { getVerhaal } from '../data/verhalen'
 
 /**
  * Per-route breadcrumb labels. De Home (/) krijgt geen breadcrumb getoond.
@@ -28,6 +29,7 @@ const BREADCRUMB_LABELS = {
   '/contact': 'Contact',
   '/over': 'Over StageStart',
   '/partner-worden': 'Partner worden',
+  '/verhalen': 'Verhalen van stagiairs',
   '/startgids': 'Startgids',
   '/disclaimer': 'Disclaimer',
   '/privacy': 'Privacy',
@@ -40,15 +42,28 @@ export default function Breadcrumbs() {
   // Geen breadcrumbs op homepage
   if (pathname === '/') return null
 
-  const label = BREADCRUMB_LABELS[pathname]
+  // Eerst direct label opzoeken
+  let items = null
+  const directLabel = BREADCRUMB_LABELS[pathname]
+  if (directLabel) {
+    items = [
+      { label: 'Home', path: '/' },
+      { label: directLabel, path: pathname },
+    ]
+  } else if (pathname.startsWith('/verhalen/')) {
+    // Detailpagina van een verhaal: Home > Verhalen > [naam]
+    const slug = pathname.split('/')[2]
+    const verhaal = getVerhaal(slug)
+    if (verhaal) {
+      items = [
+        { label: 'Home', path: '/' },
+        { label: 'Verhalen van stagiairs', path: '/verhalen' },
+        { label: verhaal.voornaam, path: pathname },
+      ]
+    }
+  }
 
-  // Onbekende route: geen breadcrumb (404 etc.)
-  if (!label) return null
-
-  const items = [
-    { label: 'Home', path: '/' },
-    { label, path: pathname },
-  ]
+  if (!items) return null
 
   return (
     <>
@@ -59,15 +74,27 @@ export default function Breadcrumbs() {
       </Helmet>
       <nav aria-label="Kruimelpad" className="max-w-5xl mx-auto px-5 pt-4">
         <ol className="flex items-center gap-2 text-xs text-gray-400 flex-wrap">
-          <li>
-            <Link to="/" className="hover:text-dark transition-colors">
-              Home
-            </Link>
-          </li>
-          <li aria-hidden="true" className="text-gray-300">/</li>
-          <li className="text-gray-600" aria-current="page">
-            {label}
-          </li>
+          {items.flatMap((item, idx) => {
+            const isLast = idx === items.length - 1
+            const parts = []
+            if (idx > 0) {
+              parts.push(
+                <li key={`sep-${idx}`} aria-hidden="true" className="text-gray-300">/</li>
+              )
+            }
+            parts.push(
+              <li key={item.path}>
+                {isLast ? (
+                  <span className="text-gray-600" aria-current="page">{item.label}</span>
+                ) : (
+                  <Link to={item.path} className="hover:text-dark transition-colors">
+                    {item.label}
+                  </Link>
+                )}
+              </li>
+            )
+            return parts
+          })}
         </ol>
       </nav>
     </>
