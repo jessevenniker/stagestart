@@ -5,6 +5,7 @@ import Footer from './components/Footer'
 import Breadcrumbs from './components/Breadcrumbs'
 import ScrollToTop from './components/ScrollToTop'
 import BackToTop from './components/BackToTop'
+import ChunkErrorBoundary from './components/ChunkErrorBoundary'
 
 // Home eager laden: eerste pagina, moet meteen zichtbaar zijn.
 import Home from './pages/Home'
@@ -59,8 +60,9 @@ export default function App() {
       <ScrollToTop />
       <Breadcrumbs />
       <main className="flex-1">
-        <Suspense fallback={<PageLoader />}>
-          <Routes>
+        <ChunkErrorBoundary>
+          <Suspense fallback={<PageLoader />}>
+            <Routes>
             <Route path="/"              element={<Home />} />
             <Route path="/begin-hier"    element={<BeginHier />} />
             <Route path="/kosten"        element={<Kosten />} />
@@ -90,8 +92,9 @@ export default function App() {
             <Route path="/verhalen"      element={<Verhalen />} />
             <Route path="/verhalen/:slug" element={<VerhaalDetail />} />
             <Route path="*"              element={<NotFound />} />
-          </Routes>
-        </Suspense>
+            </Routes>
+          </Suspense>
+        </ChunkErrorBoundary>
       </main>
       <Footer />
       <BackToTop />
