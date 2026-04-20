@@ -1,6 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./index.html', './src/**/*.{js,jsx}'],
+  // hover: classes alleen toepassen op devices met een echte pointer.
+  // Voorkomt sticky-hover op iOS waar een tap eerst :hover firet en
+  // het effect blijft "plakken" tot een volgende tap.
+  future: {
+    hoverOnlyWhenSupported: true,
+  },
   theme: {
     extend: {
       colors: {

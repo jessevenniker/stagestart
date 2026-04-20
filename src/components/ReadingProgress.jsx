@@ -42,8 +42,11 @@ export default function ReadingProgress({ color = '#D4522A' }) {
   }, [])
 
   return (
+    // Positie 60px = direct onder de Nav (4px stripe + 56px hoofdbalk h-14).
+    // z-40 = onder de Nav (z-50) zodat hij visueel als "extra streep onder
+    // de navigatie" ervaren wordt, niet over de Handelskade-stripe heen.
     <div
-      className="fixed top-0 left-0 right-0 h-[3px] z-50 pointer-events-none"
+      className="fixed top-[60px] left-0 right-0 h-[3px] z-40 pointer-events-none"
       role="presentation"
       aria-hidden="true"
     >
