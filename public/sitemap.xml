@@ -136,6 +136,12 @@
   </url>
   <!-- BEGIN_VERHALEN_AUTO -->
   <url>
+    <loc>https://stagestartcuracao.nl/verhalen/jayden</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://stagestartcuracao.nl/verhalen/jesse</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>yearly</changefreq>

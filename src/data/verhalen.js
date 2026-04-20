@@ -48,7 +48,7 @@ export const VERHALEN = [
     auto: false,
     budget: '±€500 per maand',
     accent: '#3EAD6E',
-    foto: '/img/verhalen/jayden.svg',
+    foto: '/img/verhalen/jayden.jpg',
     quote: 'Het mooiste wat ik bewaar is het gezicht van mijn familie.',
     persoonlijk: {
       grootste_les: 'Een auto is wel echt handig om te hebben',
@@ -57,7 +57,13 @@ export const VERHALEN = [
     pull_quotes: [
       'Het gezicht van mijn familie. Dat is wat ik bewaar.',
     ],
-    gallery: [],
+    gallery: [
+      {
+        src: '/img/verhalen/jayden-1.jpg',
+        caption: 'Een schildpad-moment in een vrij weekend',
+        layout: 'full',
+      },
+    ],
     qa: [
       {
         vraag: 'Had je een auto, en zou je die keuze weer zo maken?',
@@ -89,7 +95,7 @@ export const VERHALEN = [
       'De stage zelf voelde als normaal werk. De grootste verrassing zat in iets anders. Hoe snel de tijd gaat. Voor je het weet zit je weer in het vliegtuig. Wat ik bewaar is niet één strand of één moment, maar het gezicht van mijn familie op de momenten dat we samen waren. Dat is iets wat een hotel of toeristische plek je niet kan geven.',
     ],
     tip: 'Kijk goed naar vervoer voordat je gaat. Een auto is wel echt handig om te hebben, helemaal als je niet bij familie of in het centrum verblijft.',
-    voorbeeld: true,
+    voorbeeld: false,
     laatste_update: '2026-04-20',
   },
   {
