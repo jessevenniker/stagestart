@@ -457,7 +457,7 @@ export default function VoorVertrek() {
             <p className="font-serif text-xl font-normal text-dark mb-1">Download de volledige checklist als PDF</p>
             <p className="text-sm text-gray-600">Alle stappen, in de juiste volgorde, in één overzicht.</p>
           </div>
-          <Link to="/startgids" className="btn-terra shrink-0">Open de startgids →</Link>
+          <a href="/downloads/stagestart-startgids.pdf" download="stagestart-startgids.pdf" className="btn-terra shrink-0">Download gratis →</a>
         </div>
 
         <div className="mt-10">

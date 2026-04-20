@@ -376,12 +376,13 @@ export default function Home() {
                 Alles wat je moet regelen voor vertrek, in de juiste volgorde. Direct leesbaar op één pagina, opslaan als PDF met één klik.
               </p>
             </div>
-            <Link
-              to="/startgids"
+            <a
+              href="/downloads/stagestart-startgids.pdf"
+              download="stagestart-startgids.pdf"
               className="shrink-0 bg-white text-terra text-sm font-medium px-5 py-2.5 rounded-md hover:bg-cream transition-colors"
             >
-              Open de startgids →
-            </Link>
+              Download gratis →
+            </a>
           </div>
         </div>
       </section>

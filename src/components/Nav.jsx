@@ -114,9 +114,13 @@ export default function Nav() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <Link to="/startgids" className="hidden md:block btn-terra text-xs py-2 px-4">
+          <a
+            href="/downloads/stagestart-startgids.pdf"
+            download="stagestart-startgids.pdf"
+            className="hidden md:block btn-terra text-xs py-2 px-4"
+          >
             Gratis startgids
-          </Link>
+          </a>
           {/* Hamburger */}
           <button
             className="md:hidden p-1"
@@ -146,9 +150,14 @@ export default function Nav() {
               {l.label}
             </NavLink>
           ))}
-          <Link to="/startgids" onClick={() => setOpen(false)} className="btn-terra text-center mt-2">
-            Open de gratis startgids
-          </Link>
+          <a
+            href="/downloads/stagestart-startgids.pdf"
+            download="stagestart-startgids.pdf"
+            onClick={() => setOpen(false)}
+            className="btn-terra text-center mt-2"
+          >
+            Download gratis startgids
+          </a>
         </div>
       )}
     </header>
