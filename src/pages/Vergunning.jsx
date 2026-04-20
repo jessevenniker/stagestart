@@ -4,6 +4,7 @@ import SEO from '../components/SEO'
 import ClaimLabel from '../components/ClaimLabel'
 import LastChecked from '../components/LastChecked'
 import RelatedPages from '../components/RelatedPages'
+import ReadingProgress from '../components/ReadingProgress'
 import { articleSchema } from '../utils/schema'
 
 const RELATED = [
@@ -22,6 +23,7 @@ const SCHEMA = articleSchema({
 export default function Vergunning() {
   return (
     <>
+      <ReadingProgress />
       <SEO schema={SCHEMA} />
       <PageHero
         eyebrow="Vergunning, hoe zit het volgens de officiële bron?"

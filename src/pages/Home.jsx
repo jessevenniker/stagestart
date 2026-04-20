@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import WeatherWidget from '../components/WeatherWidget'
 import SEO from '../components/SEO'
+import Reveal from '../components/Reveal'
 import { websiteSchema, organizationSchema } from '../utils/schema'
 import { VERHALEN } from '../data/verhalen'
 
@@ -189,6 +190,7 @@ export default function Home() {
       </section>
 
       {/* ── VERHALEN VAN STAGIAIRS ── */}
+      <Reveal>
       <section className="max-w-5xl mx-auto px-5 py-10 border-t border-gray-100">
         <div className="flex items-baseline justify-between gap-4 mb-6 flex-wrap">
           <div>
@@ -231,8 +233,10 @@ export default function Home() {
           ))}
         </div>
       </section>
+      </Reveal>
 
       {/* ── SECONDARY, naast je stage ── */}
+      <Reveal>
       <section className="max-w-5xl mx-auto px-5 py-10 border-t border-gray-100">
         <h2 className="section-label">Naast je stage</h2>
         <p className="text-sm text-gray-500 leading-relaxed mb-5 max-w-2xl">
@@ -253,8 +257,10 @@ export default function Home() {
           ))}
         </div>
       </section>
+      </Reveal>
 
       {/* ── BUDGET CALCULATOR ── */}
+      <Reveal>
       <section className="max-w-5xl mx-auto px-5 py-10 border-t border-gray-100">
         <h2 className="section-label">Budgetcalculator</h2>
         <div className="grid md:grid-cols-2 gap-8 items-start">
@@ -340,8 +346,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+      </Reveal>
 
       {/* ── WHAT INTERNS UNDERESTIMATE ── */}
+      <Reveal>
       <section className="max-w-5xl mx-auto px-5 py-10 border-t border-gray-100">
         <h2 className="section-label">Wat stagiairs onderschatten</h2>
         <div className="flex flex-col gap-3">
@@ -361,8 +369,10 @@ export default function Home() {
           ))}
         </div>
       </section>
+      </Reveal>
 
       {/* ── BUREAU VS GUIDE ── */}
+      <Reveal>
       <section className="max-w-5xl mx-auto px-5 py-10 border-t border-gray-100">
         <h2 className="section-label">Bureau vs. gids, wat is het verschil?</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -401,8 +411,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+      </Reveal>
 
       {/* ── CTA BANNER ── */}
+      <Reveal>
       <section className="max-w-5xl mx-auto px-5 pb-16">
         <div className="rounded-2xl overflow-hidden relative">
           <img
@@ -431,6 +443,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      </Reveal>
     </>
   )
 }

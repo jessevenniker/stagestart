@@ -9,12 +9,39 @@
 }
 
 @layer components {
-  .btn-primary   { @apply bg-dark text-white text-sm font-medium px-5 py-2.5 rounded-md hover:bg-terra transition-colors duration-150; }
-  .btn-outline   { @apply border border-gray-200 text-dark text-sm font-medium px-5 py-2.5 rounded-md hover:border-gray-400 transition-colors duration-150 bg-white; }
-  .btn-terra     { @apply bg-terra text-white text-sm font-medium px-5 py-2.5 rounded-md hover:bg-orange-800 transition-colors duration-150; }
+  .btn-primary   { @apply bg-dark text-white text-sm font-medium px-5 py-2.5 rounded-md hover:bg-terra hover:-translate-y-px hover:shadow-md transition-all duration-150; }
+  .btn-outline   { @apply border border-gray-200 text-dark text-sm font-medium px-5 py-2.5 rounded-md hover:border-gray-400 hover:-translate-y-px hover:shadow-sm transition-all duration-150 bg-white; }
+  .btn-terra     { @apply bg-terra text-white text-sm font-medium px-5 py-2.5 rounded-md hover:bg-orange-800 hover:-translate-y-px hover:shadow-md transition-all duration-150; }
   .section-label { @apply text-[10px] font-medium tracking-widest uppercase text-gray-400 mb-4; }
   .card          { @apply bg-white border border-gray-100 rounded-xl p-5; }
   .page-wrap     { @apply max-w-3xl mx-auto px-5; }
+}
+
+/*
+ * Card hover-lift, alleen voor cards binnen een interactieve parent
+ * (a/button) of cards met expliciete .card-interactive modifier. Zo
+ * krijgen alleen klikbare cards de lift, data-cards blijven statisch
+ * (anders verkeerd UX-signaal).
+ */
+.card {
+  transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+}
+a:hover > .card,
+button:hover > .card,
+.card-interactive:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+  border-color: #e5e7eb;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card,
+  .btn-primary,
+  .btn-outline,
+  .btn-terra {
+    transition: none !important;
+    transform: none !important;
+  }
 }
 
 /* Handel stripe animation */

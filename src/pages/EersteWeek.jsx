@@ -5,6 +5,7 @@ import SEO from '../components/SEO'
 import ClaimLabel from '../components/ClaimLabel'
 import LastChecked from '../components/LastChecked'
 import RelatedPages from '../components/RelatedPages'
+import ReadingProgress from '../components/ReadingProgress'
 import { howToSchema } from '../utils/schema'
 
 const RELATED = [
@@ -116,6 +117,7 @@ export default function EersteWeek() {
 
   return (
     <>
+      <ReadingProgress />
       <SEO schema={schema} />
       <PageHero
         eyebrow="Je eerste week"

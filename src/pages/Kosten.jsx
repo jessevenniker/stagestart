@@ -5,6 +5,7 @@ import SEO from '../components/SEO'
 import LastChecked from '../components/LastChecked'
 import ClaimLabel from '../components/ClaimLabel'
 import RelatedPages from '../components/RelatedPages'
+import ReadingProgress from '../components/ReadingProgress'
 import { articleSchema } from '../utils/schema'
 
 const RELATED = [
@@ -63,6 +64,7 @@ export default function Kosten() {
 
   return (
     <>
+      <ReadingProgress />
       <SEO schema={SCHEMA} />
       <PageHero
         eyebrow="Wat kost een stage op Curaçao?"

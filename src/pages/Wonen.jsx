@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import ClaimLabel from '../components/ClaimLabel'
 import LastChecked from '../components/LastChecked'
 import RelatedPages from '../components/RelatedPages'
+import ReadingProgress from '../components/ReadingProgress'
 import { articleSchema, faqSchema } from '../utils/schema'
 
 const RELATED = [
@@ -170,6 +171,7 @@ export default function Wonen() {
 
   return (
     <>
+      <ReadingProgress />
       <SEO schema={SCHEMA} />
       <PageHero
         eyebrow="Wonen op Curaçao"
