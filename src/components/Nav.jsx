@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { Fragment, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
 const STRIPE = [
@@ -21,8 +21,13 @@ const PRIMARY_LINKS = [
   { to: '/eerste-week',  label: 'Eerste week' },
 ]
 
-// MORE = ondersteunende life-content + werken (Tier 2)
+// MORE = ondersteunende life-content + werken (Tier 2).
+// Verhalen staat bewust bovenaan en met `divider: true` zodat het visueel
+// gescheiden is van de overige supporting-pagina's. Het hoort niet bij de
+// kernpagina's in PRIMARY (te druk + niet feitelijk-kern), maar het is wel
+// iets specialer dan een willekeurige Tier-2 onderwerpenpagina.
 const MORE_LINKS = [
+  { to: '/verhalen',      label: 'Verhalen van stagiairs', divider: true },
   { to: '/werken',        label: 'Werken op Curaçao' },
   { to: '/leven',         label: 'Leven op Curaçao' },
   { to: '/veiligheid',    label: 'Veiligheid' },
@@ -95,18 +100,20 @@ export default function Nav() {
             </button>
 
             {meer && (
-              <div className="absolute top-full right-0 mt-2 bg-white border border-gray-200 rounded-lg shadow-md py-2 min-w-[180px] z-50">
+              <div className="absolute top-full right-0 mt-2 bg-white border border-gray-200 rounded-lg shadow-md py-2 min-w-[210px] z-50">
                 {MORE_LINKS.map(l => (
-                  <NavLink
-                    key={l.to}
-                    to={l.to}
-                    onClick={() => setMeer(false)}
-                    className={({ isActive }) =>
-                      `block px-4 py-2 text-[13px] transition-colors ${isActive ? 'text-terra font-medium bg-gray-50' : 'text-gray-500 hover:text-dark hover:bg-gray-50'}`
-                    }
-                  >
-                    {l.label}
-                  </NavLink>
+                  <Fragment key={l.to}>
+                    <NavLink
+                      to={l.to}
+                      onClick={() => setMeer(false)}
+                      className={({ isActive }) =>
+                        `block px-4 py-2 text-[13px] transition-colors ${isActive ? 'text-terra font-medium bg-gray-50' : 'text-gray-500 hover:text-dark hover:bg-gray-50'}`
+                      }
+                    >
+                      {l.label}
+                    </NavLink>
+                    {l.divider && <div className="my-1 border-t border-gray-100" aria-hidden="true" />}
+                  </Fragment>
                 ))}
               </div>
             )}
@@ -139,16 +146,18 @@ export default function Nav() {
       {open && (
         <div className="md:hidden border-t border-gray-100 bg-white px-5 py-4 flex flex-col gap-3">
           {ALL_LINKS.map(l => (
-            <NavLink
-              key={l.to}
-              to={l.to}
-              onClick={() => setOpen(false)}
-              className={({ isActive }) =>
-                `text-[14px] py-1 ${isActive ? 'text-terra font-medium' : 'text-gray-600'}`
-              }
-            >
-              {l.label}
-            </NavLink>
+            <Fragment key={l.to}>
+              <NavLink
+                to={l.to}
+                onClick={() => setOpen(false)}
+                className={({ isActive }) =>
+                  `text-[14px] py-1 ${isActive ? 'text-terra font-medium' : 'text-gray-600'}`
+                }
+              >
+                {l.label}
+              </NavLink>
+              {l.divider && <div className="my-1 border-t border-gray-100" aria-hidden="true" />}
+            </Fragment>
           ))}
           <a
             href="/downloads/stagestart-startgids.pdf"
