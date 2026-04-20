@@ -38,6 +38,61 @@
 
 export const VERHALEN = [
   {
+    slug: 'jayden',
+    voornaam: 'Jayden',
+    opleiding: 'MBO4 Mediavormgeving',
+    periode: 'februari tot juli 2026',
+    sector: 'Mediavormgeving',
+    bedrijf: 'Een stichting op Curaçao',
+    wijk: 'Banda Bou',
+    auto: false,
+    budget: '±€500 per maand',
+    accent: '#3EAD6E',
+    foto: '/img/verhalen/jayden.svg',
+    quote: 'Het mooiste wat ik bewaar is het gezicht van mijn familie.',
+    persoonlijk: {
+      grootste_les: 'Een auto is wel echt handig om te hebben',
+      moest_wennen: 'Hoe snel de tijd voorbij gaat',
+    },
+    pull_quotes: [
+      'Het gezicht van mijn familie. Dat is wat ik bewaar.',
+    ],
+    gallery: [],
+    qa: [
+      {
+        vraag: 'Had je een auto, en zou je die keuze weer zo maken?',
+        antwoord: 'Ik had geen auto. Met de wetenschap van nu zou ik er wel een hebben, het is op Curaçao echt handig.',
+      },
+      {
+        vraag: 'Hoe vond je je woning?',
+        antwoord: 'Ik verbleef bij familie in Banda Bou. Dat werkte goed: geen huurkosten, geen woninggedoe vooraf te regelen, en een vertrouwde plek om naar terug te keren na elke werkdag.',
+      },
+      {
+        vraag: 'Hoe zag een normale week eruit?',
+        antwoord: 'Voor mij voelde de stage als normaal werk.',
+      },
+      {
+        vraag: 'Wat wou je dat iemand je vóór vertrek had verteld?',
+        antwoord: 'Dat een auto wel echt handig is om te hebben.',
+      },
+      {
+        vraag: 'Wat heeft je het meest verrast?',
+        antwoord: 'Hoe snel de tijd gaat. Voor je het weet zit je weer in het vliegtuig naar Nederland.',
+      },
+      {
+        vraag: 'Wat is je mooiste herinnering?',
+        antwoord: 'Het gezicht van mijn familie, op de momenten dat we samen waren.',
+      },
+    ],
+    eigen_verhaal: [
+      'Ik liep van februari tot juli 2026 stage in mediavormgeving bij een stichting op Curaçao. Anders dan veel stagiairs verbleef ik bij familie, in Banda Bou aan de westkant van het eiland. Geen huurkosten, geen studentenhuis, geen auto. Wel een vertrouwde plek om elke werkdag naar terug te keren.',
+      'De stage zelf voelde als normaal werk. De grootste verrassing zat in iets anders. Hoe snel de tijd gaat. Voor je het weet zit je weer in het vliegtuig. Wat ik bewaar is niet één strand of één moment, maar het gezicht van mijn familie op de momenten dat we samen waren. Dat is iets wat een hotel of toeristische plek je niet kan geven.',
+    ],
+    tip: 'Kijk goed naar vervoer voordat je gaat. Een auto is wel echt handig om te hebben, helemaal als je niet bij familie of in het centrum verblijft.',
+    voorbeeld: true,
+    laatste_update: '2026-04-20',
+  },
+  {
     slug: 'jesse',
     voornaam: 'Jesse',
     opleiding: 'HBO Toegepaste Psychologie',

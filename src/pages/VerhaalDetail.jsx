@@ -167,12 +167,14 @@ export default function VerhaalDetail() {
 
       <div className="max-w-3xl mx-auto px-5 pb-16">
 
-        {/* Voorbeeld-waarschuwing als dit een fictief voorbeeld is */}
+        {/* Concept-waarschuwing als dit verhaal nog niet definitief is.
+            Voorbeeld kan zowel een fictief design-voorbeeld zijn als een
+            echt verhaal dat nog op definitieve goedkeuring of foto's wacht. */}
         {verhaal.voorbeeld && (
           <div className="card border-l-4 mb-10" style={{ borderLeftColor: '#D4522A' }}>
-            <p className="text-xs font-medium text-dark mb-2">Voorbeeld-verhaal</p>
+            <p className="text-xs font-medium text-dark mb-2">Concept-verhaal</p>
             <p className="text-xs text-gray-500 leading-relaxed">
-              Dit is een fictief voorbeeld om het ontwerp te tonen. Echt verhaal volgt zodra we hebben gesproken met stagiairs die hun ervaring willen delen.
+              Dit verhaal is nog in concept en niet definitief goedgekeurd door de stagiair. De pagina is daarom nog niet openbaar geïndexeerd. Bedragen, citaten en details kunnen nog wijzigen.
             </p>
           </div>
         )}
