@@ -12,41 +12,41 @@ export const SITE = {
 // eslint-disable-next-line no-unused-vars
 export const SEO_CONFIG = {
   '/': {
-    title: 'StageStart Curaçao: bronvaste gids voor stagiairs',
-    description: 'Onafhankelijke gids voor Nederlandse stagiairs op Curaçao. Vergunning, kosten, wonen en eerste week volgens officiële bron.',
+    title: 'Stage Curaçao: onafhankelijke gids voor stagiairs',
+    description: 'Alles wat je écht moet weten voor je stage op Curaçao. Vergunning, kosten, wonen en eerste week. Geen bureau, geen commissie, officiële bronnen leidend.',
     type: 'website',
   },
   '/begin-hier': {
-    title: 'Begin hier: je stage Curaçao in 6 stappen',
-    description: 'De juiste volgorde voor voorbereiding, vergunning, kosten, wonen, auto en eerste week. Praktisch en zonder overbodige informatie.',
+    title: 'Stage op Curaçao: 6 stappen in de juiste volgorde',
+    description: 'Van vergunning tot eerste week: de logische volgorde zodat je niets vergeet. Voor iedereen die net besloten heeft of een stageplek heeft gevonden.',
   },
   '/voor-vertrek': {
-    title: 'Voor vertrek: checklist voor stage Curaçao',
-    description: 'Stap voor stap checklist: documenten, VOG, vergunning, verzekering en vlucht. Wat je 8 weken vooraf moet regelen.',
+    title: 'Stage Curaçao checklist: wat regel je vóór vertrek?',
+    description: 'VOG, stagevergunning, geboorteakte, verzekering, vlucht en DI Card. Met tijdlijn: begin 8 weken voor vertrek, anders loop je in de problemen.',
   },
   '/vergunning': {
-    title: 'Stagevergunning Curaçao: hoe zit het?',
-    description: 'Studie/stage en Verklaring van Rechtswege uitgelegd volgens de officiële Immigratiedienst. Geen verwarring, wel nuance.',
+    title: 'Stagevergunning Curaçao 2026: kosten, documenten, tijdlijn',
+    description: 'Studie/stage vergunning versus Verklaring van Rechtswege: twee informatiestromen uitgelegd. Legeskosten XCG 525 (±€263), verwerkingstijd 4 maanden.',
   },
   '/kosten': {
-    title: 'Kosten stage Curaçao: realistisch overzicht',
-    description: 'XCG 525 leges, DUO 2026 bedragen, maandlasten en verborgen kosten. Officieel, richtlijn en ervaring apart gelabeld.',
+    title: 'Stage Curaçao kosten: wat betaal je echt per maand?',
+    description: 'Reken op €1.100-1.500 per maand plus ±€320 voor de vergunning. Plus wat je vaak vergeet: borgen, inrichting en stroom. Met DUO-inkomsten 2026.',
   },
   '/wonen': {
-    title: 'Wonen op Curaçao als stagiair: wijken en huur',
-    description: 'Vijf wijken vergeleken: Pietermaai, Jan Thiel, Piscadera, Salinja en Bapor Kibra. Keuzehulp in plaats van listings.',
+    title: 'Stagehuis Curaçao: wijken, huurprijzen en studentenhuizen',
+    description: 'Vijf wijken waar stagiairs meestal terechtkomen: Pietermaai, Jan Thiel, Piscadera, Salinja en Bapor Kibra. Huurprijzen, bereikbaarheid en fraudewaarschuwingen.',
   },
   '/auto': {
-    title: 'Auto op Curaçao: heb je er echt een nodig?',
-    description: 'Beslisboom op basis van wonen, stage-locatie en budget. Huur, verzekering, taxi en Forensys bij een ongeval.',
+    title: 'Auto huren Curaçao voor je stage: heb je er echt een nodig?',
+    description: 'Beslisboom op basis van waar je woont en werkt. Openbaar vervoer is minimaal. Reken op €400-600 per maand voor huur plus benzine.',
   },
   '/verzekering': {
-    title: 'Verzekering stage Curaçao: drie lagen uitgelegd',
-    description: 'Zorgverzekering, reisverzekering en autoverzekering. Waar zit je dekking, waar zitten gaten, wat regelt je stagebedrijf?',
+    title: 'Zorgverzekering stage Curaçao: wat dekt NL en wat niet?',
+    description: 'Je basisverzekering dekt spoedzorg tot NL-tarief. Voor de vergunning heb je extra internationale dekking nodig. Wat je wel en niet moet regelen.',
   },
   '/eerste-week': {
-    title: 'Eerste week Curaçao: wat regel je wanneer?',
-    description: 'Dag voor dag plan voor aankomst, bank, pinpas, SIM, auto en eerste strand. Zodat niets je verrast.',
+    title: 'Eerste week op Curaçao: dag-voor-dag plan voor stagiairs',
+    description: 'Aankomst, SIM-kaart, boodschappen, pinpas testen, stagedag 1. Plus belangrijke nummers om meteen op te slaan, zoals Forensys 9223.',
   },
   '/leven': {
     title: 'Leven op Curaçao als stagiair',
