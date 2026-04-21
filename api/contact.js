@@ -19,6 +19,51 @@ const FROM_DEFAULT = 'onboarding@resend.dev'
 const MAX_FIELD_LENGTH = 5000
 const MIN_MESSAGE_LENGTH = 10
 
+// Rate limiting: max 5 inzendingen per IP per uur.
+// In-memory Map die persisteert binnen één warm Lambda-instance. Bij cold
+// start reset de teller, dus dit is een pragmatische eerste lijn die de
+// meest voorkomende abuse (bot die formulier hammert) blokkeert. Voor
+// hardere garanties bij groei: vervangen door @upstash/ratelimit met een
+// Redis-store (UPSTASH_REDIS_REST_URL + TOKEN als env vars).
+const RATE_LIMIT_WINDOW_MS = 60 * 60 * 1000
+const RATE_LIMIT_MAX = 5
+const requestLog = new Map()
+
+function getClientIp(req) {
+  const forwarded = req.headers['x-forwarded-for']
+  if (typeof forwarded === 'string' && forwarded.length > 0) {
+    return forwarded.split(',')[0].trim()
+  }
+  return req.socket?.remoteAddress || req.connection?.remoteAddress || 'unknown'
+}
+
+function checkRateLimit(ip) {
+  const now = Date.now()
+  const previousTimestamps = requestLog.get(ip) || []
+  const recentTimestamps = previousTimestamps.filter((t) => now - t < RATE_LIMIT_WINDOW_MS)
+
+  if (recentTimestamps.length >= RATE_LIMIT_MAX) {
+    const oldestRecent = recentTimestamps[0]
+    const retryAfterMs = RATE_LIMIT_WINDOW_MS - (now - oldestRecent)
+    return { allowed: false, retryAfterSeconds: Math.ceil(retryAfterMs / 1000) }
+  }
+
+  recentTimestamps.push(now)
+  requestLog.set(ip, recentTimestamps)
+
+  // Memory-leak preventie: opschonen als de Map te veel IPs verzamelt.
+  // Verwijdert IPs waarvan alle timestamps buiten het window vallen.
+  if (requestLog.size > 1000) {
+    for (const [key, timestamps] of requestLog.entries()) {
+      const fresh = timestamps.filter((t) => now - t < RATE_LIMIT_WINDOW_MS)
+      if (fresh.length === 0) requestLog.delete(key)
+      else requestLog.set(key, fresh)
+    }
+  }
+
+  return { allowed: true }
+}
+
 function isValidEmail(value) {
   if (typeof value !== 'string') return false
   const trimmed = value.trim()
@@ -44,6 +89,16 @@ export default async function handler(req, res) {
   if (req.method !== 'POST') {
     res.setHeader('Allow', 'POST')
     return res.status(405).json({ error: 'Method not allowed' })
+  }
+
+  // Rate limit: blokkeer als deze IP al 5x heeft ingestuurd in het laatste uur.
+  const clientIp = getClientIp(req)
+  const rateCheck = checkRateLimit(clientIp)
+  if (!rateCheck.allowed) {
+    res.setHeader('Retry-After', String(rateCheck.retryAfterSeconds))
+    return res.status(429).json({
+      error: `Te veel pogingen. Probeer het over ${Math.ceil(rateCheck.retryAfterSeconds / 60)} minuten opnieuw.`,
+    })
   }
 
   const apiKey = process.env.RESEND_API_KEY

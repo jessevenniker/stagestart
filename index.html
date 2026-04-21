@@ -14,6 +14,12 @@
     <!-- Google Search Console verificatie. Vervang content met de waarde uit Search Console. -->
     <!-- <meta name="google-site-verification" content="VERVANG_DOOR_JOUW_GSC_TOKEN" /> -->
 
+    <!-- Plausible Analytics: cookieless, GDPR-vriendelijk, geen cookie-banner nodig.
+         Track: pageviews + outbound links + file downloads (PDF startgids etc).
+         Werkt out-of-the-box met React Router via History API-detection.
+         Setup vereist: stagestartcuracao.nl toegevoegd op plausible.io account. -->
+    <script defer data-domain="stagestartcuracao.nl" src="https://plausible.io/js/script.outbound-links.file-downloads.js"></script>
+
     <!-- Fallback Open Graph voor crawlers die geen JS draaien (WhatsApp, LinkedIn). -->
     <!-- Per-pagina worden deze overschreven door react-helmet-async. -->
     <meta property="og:type" content="website" />
