@@ -22,11 +22,13 @@ const PRIMARY_LINKS = [
 ]
 
 // MORE = ondersteunende life-content + werken (Tier 2).
-// Verhalen staat bewust bovenaan en met `divider: true` zodat het visueel
-// gescheiden is van de overige supporting-pagina's. Het hoort niet bij de
-// kernpagina's in PRIMARY (te druk + niet feitelijk-kern), maar het is wel
-// iets specialer dan een willekeurige Tier-2 onderwerpenpagina.
+// Tussenjaar en Verhalen staan bewust bovenaan, elk met `divider: true`,
+// zodat ze visueel gescheiden zijn van de overige supporting-pagina's.
+// Geen primary-positie (te druk in de nav, en het is geen feitelijke kern
+// van de stagiair-funnel), maar wel als spotlight-items boven werken,
+// leven, veiligheid etc.
 const MORE_LINKS = [
+  { to: '/tussenjaar',    label: 'Tussenjaar werken', divider: true },
   { to: '/verhalen',      label: 'Verhalen van stagiairs', divider: true },
   { to: '/werken',        label: 'Werken op Curaçao' },
   { to: '/leven',         label: 'Leven op Curaçao' },

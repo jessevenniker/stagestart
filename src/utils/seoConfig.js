@@ -90,6 +90,10 @@ export const SEO_CONFIG = {
     title: 'Verhalen van stagiairs op Curaçao',
     description: 'Echte ervaringen van stagiairs die jij binnenkort bent. Geen reclame, geen bureau-verhalen. Wat ze zelf hebben meegemaakt, met tips uit eerste hand.',
   },
+  '/tussenjaar': {
+    title: 'Tussenjaar werken op Curaçao',
+    description: 'Tussenjaar werken op Curaçao: wat is anders dan stage, hoe zit het met verblijfsstatus, en waar vind je werk in horeca, hotels of duiken?',
+  },
   '/bronnen': {
     title: 'Bronnen en verantwoording',
     description: 'Elke claim met bron, datum en gevoeligheid. Het reliability framework volledig transparant.',

@@ -39,6 +39,7 @@ const Over = lazy(() => import('./pages/Over'))
 const PartnerWorden = lazy(() => import('./pages/PartnerWorden'))
 const Verhalen = lazy(() => import('./pages/Verhalen'))
 const VerhaalDetail = lazy(() => import('./pages/VerhaalDetail'))
+const Tussenjaar = lazy(() => import('./pages/Tussenjaar'))
 const NotFound = lazy(() => import('./pages/NotFound'))
 
 function PageLoader() {
@@ -91,6 +92,7 @@ export default function App() {
             <Route path="/partner-worden" element={<PartnerWorden />} />
             <Route path="/verhalen"      element={<Verhalen />} />
             <Route path="/verhalen/:slug" element={<VerhaalDetail />} />
+            <Route path="/tussenjaar"    element={<Tussenjaar />} />
             <Route path="*"              element={<NotFound />} />
             </Routes>
           </Suspense>
