@@ -288,7 +288,7 @@ export default function Auto() {
               Bij elk ongeval, hoe klein ook, bel je Forensys. Dat zijn verkeersinspecteurs in rode T-shirts. Ze komen ter plaatse, spreken Engels en maken een rapport op.
             </p>
             <ul className="flex flex-col gap-2 text-sm text-gray-600 mb-3">
-              <li className="flex gap-2"><span className="text-terra shrink-0">·</span><strong className="text-dark">Verplaats de auto niet</strong> tot Forensys er is, ook niet als je verkeer blokkeert.</li>
+              <li className="flex gap-2"><span className="text-terra shrink-0">·</span><span><strong className="text-dark">Verplaats de auto niet</strong> tot Forensys er is, ook niet als je verkeer blokkeert.</span></li>
               <li className="flex gap-2"><span className="text-terra shrink-0">·</span>Maak foto's van beide auto's, het hele wegdek, eventuele verkeersborden.</li>
               <li className="flex gap-2"><span className="text-terra shrink-0">·</span>Wissel geen geld uit met de andere partij. Laat Forensys het regelen.</li>
               <li className="flex gap-2"><span className="text-terra shrink-0">·</span>Bel direct ook je verhuurder om de procedure af te stemmen.</li>

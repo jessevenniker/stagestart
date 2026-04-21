@@ -221,7 +221,7 @@ export default function Home() {
               <div className="p-4 flex-1 flex flex-col">
                 <div className="h-1 rounded-sm mb-3" style={{ background: v.accent }} />
                 <p className="font-serif text-lg text-dark mb-0.5">{v.voornaam}</p>
-                <p className="text-[11px] text-gray-400 mb-3">{v.opleiding} · {v.wijk}</p>
+                <p className="text-[11px] text-gray-400 mb-3">{v.type === 'tussenjaar' ? v.sector : v.opleiding} · {v.wijk}</p>
                 <blockquote
                   className="text-xs text-gray-600 leading-relaxed italic flex-1"
                   style={{ borderLeft: `3px solid ${v.accent}`, paddingLeft: '10px' }}

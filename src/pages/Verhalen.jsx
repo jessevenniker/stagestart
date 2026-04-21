@@ -27,7 +27,8 @@ function VerhaalCard({ v }) {
         <div className="h-1 rounded-sm mb-4" style={{ background: v.accent }} />
         <p className="font-serif text-xl text-dark mb-1">{v.voornaam}</p>
         <p className="text-xs text-gray-400 mb-3">
-          {v.opleiding} · {v.wijk}
+          {/* Stage toont opleiding, tussenjaar toont sector (geen lopende opleiding) */}
+          {v.type === 'tussenjaar' ? v.sector : v.opleiding} · {v.wijk}
         </p>
         <blockquote
           className="text-sm text-gray-600 leading-relaxed italic mb-4 flex-1"

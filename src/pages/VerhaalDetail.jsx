@@ -127,10 +127,21 @@ export default function VerhaalDetail() {
   const pullQuotes = verhaal.pull_quotes || []
   const persoonlijk = verhaal.persoonlijk || {}
 
+  // Terminologie per verhaal-type. Tussenjaar-werkers hebben geen stage,
+  // dus overal waar "stage" als generieke term stond maken we het variabel.
+  const isTussenjaar = verhaal.type === 'tussenjaar'
+  const ervaringLabel = isTussenjaar ? 'tussenjaar' : 'stage'
+  const eyebrowLabel = isTussenjaar ? 'Verhaal van een tussenjaar-werker' : 'Verhaal van een stagiair'
+  const h1Label = isTussenjaar
+    ? `${verhaal.voornaam}'s tussenjaar op Curaçao`
+    : `${verhaal.voornaam}'s stage op Curaçao`
+  const periodeLabel = isTussenjaar ? 'Periode' : 'Stageperiode'
+  const conceptAudience = isTussenjaar ? 'tussenjaar-werker' : 'stagiair'
+
   return (
     <>
       <SEO
-        title={`${verhaal.voornaam}: stage op Curaçao (${verhaal.sector})`}
+        title={`${verhaal.voornaam}: ${ervaringLabel} op Curaçao (${verhaal.sector})`}
         description={verhaal.quote}
         schema={schema}
         noindex={verhaal.voorbeeld}
@@ -142,12 +153,12 @@ export default function VerhaalDetail() {
           className="text-[10px] font-medium tracking-widest uppercase mb-4"
           style={{ color: verhaal.accent }}
         >
-          Verhaal van een stagiair
+          {eyebrowLabel}
         </p>
         <div className="grid md:grid-cols-[1fr_280px] gap-8 items-start">
           <div>
             <h1 className="font-serif text-4xl md:text-5xl font-normal leading-tight tracking-tight text-dark mb-4">
-              {verhaal.voornaam}'s stage op Curaçao
+              {h1Label}
             </h1>
             <p className="text-gray-500 text-base leading-relaxed max-w-xl mb-6">
               "{verhaal.quote}"
@@ -174,7 +185,7 @@ export default function VerhaalDetail() {
           <div className="card border-l-4 mb-10" style={{ borderLeftColor: '#D4522A' }}>
             <p className="text-xs font-medium text-dark mb-2">Concept-verhaal</p>
             <p className="text-xs text-gray-500 leading-relaxed">
-              Dit verhaal is nog in concept en niet definitief goedgekeurd door de stagiair. De pagina is daarom nog niet openbaar geïndexeerd. Bedragen, citaten en details kunnen nog wijzigen.
+              Dit verhaal is nog in concept en niet definitief goedgekeurd door de {conceptAudience}. De pagina is daarom nog niet openbaar geïndexeerd. Bedragen, citaten en details kunnen nog wijzigen.
             </p>
           </div>
         )}
@@ -241,12 +252,14 @@ export default function VerhaalDetail() {
 
             {/* Formele data */}
             <dl className="grid sm:grid-cols-2 gap-x-6 gap-y-4 text-sm">
+              {verhaal.opleiding && (
+                <div>
+                  <dt className="text-xs text-gray-400 uppercase tracking-wider mb-1">Opleiding</dt>
+                  <dd className="text-dark">{verhaal.opleiding}</dd>
+                </div>
+              )}
               <div>
-                <dt className="text-xs text-gray-400 uppercase tracking-wider mb-1">Opleiding</dt>
-                <dd className="text-dark">{verhaal.opleiding}</dd>
-              </div>
-              <div>
-                <dt className="text-xs text-gray-400 uppercase tracking-wider mb-1">Stageperiode</dt>
+                <dt className="text-xs text-gray-400 uppercase tracking-wider mb-1">{periodeLabel}</dt>
                 <dd className="text-dark">{verhaal.periode}</dd>
               </div>
               <div>
@@ -255,7 +268,7 @@ export default function VerhaalDetail() {
               </div>
               {verhaal.bedrijf && (
                 <div>
-                  <dt className="text-xs text-gray-400 uppercase tracking-wider mb-1">Stageplek</dt>
+                  <dt className="text-xs text-gray-400 uppercase tracking-wider mb-1">{isTussenjaar ? 'Werkplek' : 'Stageplek'}</dt>
                   <dd className="text-dark">{verhaal.bedrijf}</dd>
                 </div>
               )}
@@ -295,25 +308,48 @@ export default function VerhaalDetail() {
           <PolaroidPhoto img={galleryFull} index={0} full={true} />
         )}
 
-        {/* Eigen verhaal met pull-quotes en half-width polaroids interleaved */}
-        <section className="mb-10">
-          <h2 className="section-label">In eigen woorden</h2>
-          <div>
-            {verhaal.eigen_verhaal.map((paragraaf, i) => (
-              <div key={i}>
-                <p className="text-base text-gray-700 leading-relaxed mb-6">
-                  <ParagraphWithLinks text={paragraaf} />
-                </p>
-                {pullQuotes[i] && (
-                  <PullQuote text={pullQuotes[i]} accent={verhaal.accent} />
-                )}
-                {galleryHalf[i] && (
-                  <PolaroidPhoto img={galleryHalf[i]} index={i + 1} full={false} />
+        {/* Eigen verhaal met pull-quotes en half-width polaroids.
+            Bij weinig polaroids (tot en met aantal paragrafen): interleaved
+            zoals bij Jesse — één polaroid onder elke alinea. Bij meer
+            polaroids dan paragrafen: alle half-widths samen in een 2-koloms
+            scrapbook-grid onderaan het verhaal. Dat past bij een langere
+            foto-serie zonder de paragraaf-ritme te verstoren. */}
+        {(() => {
+          const useGrid = galleryHalf.length > verhaal.eigen_verhaal.length
+          return (
+            <section className="mb-10">
+              <h2 className="section-label">In eigen woorden</h2>
+              <div>
+                {verhaal.eigen_verhaal.map((paragraaf, i) => (
+                  <div key={i}>
+                    <p className="text-base text-gray-700 leading-relaxed mb-6">
+                      <ParagraphWithLinks text={paragraaf} />
+                    </p>
+                    {pullQuotes[i] && (
+                      <PullQuote text={pullQuotes[i]} accent={verhaal.accent} />
+                    )}
+                    {!useGrid && galleryHalf[i] && (
+                      <PolaroidPhoto img={galleryHalf[i]} index={i + 1} full={false} />
+                    )}
+                  </div>
+                ))}
+
+                {useGrid && (
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+                    {galleryHalf.map((img, i) => (
+                      <PolaroidPhoto
+                        key={`grid-${i}`}
+                        img={img}
+                        index={i + 1}
+                        full={false}
+                      />
+                    ))}
+                  </div>
                 )}
               </div>
-            ))}
-          </div>
-        </section>
+            </section>
+          )
+        })()}
 
         {/* Tip */}
         <section className="mb-10">

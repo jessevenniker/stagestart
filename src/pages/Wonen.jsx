@@ -471,15 +471,15 @@ export default function Wonen() {
           <div className="card">
             <p className="text-xs font-medium text-dark mb-3 uppercase tracking-wider">Kernpunten om te checken</p>
             <ul className="flex flex-col gap-2 text-sm text-gray-600">
-              <li className="flex gap-2"><span className="text-sky shrink-0">·</span><strong className="text-dark">Borg:</strong> hoeveel, wanneer terug, onder welke voorwaarden ingehouden (bv. schoonmaakkosten)</li>
-              <li className="flex gap-2"><span className="text-sky shrink-0">·</span><strong className="text-dark">Huurtermijn + opzegtermijn:</strong> kun je eerder opzeggen als je stage korter wordt? Welke termijn geldt?</li>
-              <li className="flex gap-2"><span className="text-sky shrink-0">·</span><strong className="text-dark">Wat is inbegrepen:</strong> stroom, water, gas, internet, meubels, keukengerei, linnengoed?</li>
-              <li className="flex gap-2"><span className="text-sky shrink-0">·</span><strong className="text-dark">OB-belasting (6-7%):</strong> komt die bovenop de prijs of is die inbegrepen? Dit staat niet altijd duidelijk.</li>
-              <li className="flex gap-2"><span className="text-sky shrink-0">·</span><strong className="text-dark">Stroomlimiet:</strong> is er een dagelijks of maandelijks verbruikslimiet? Boven de limiet zelf betalen?</li>
-              <li className="flex gap-2"><span className="text-sky shrink-0">·</span><strong className="text-dark">Service fee:</strong> eenmalige kosten voor schoonmaak, ontvangst, sleutels?</li>
-              <li className="flex gap-2"><span className="text-sky shrink-0">·</span><strong className="text-dark">Bezoekers:</strong> mag je logés ontvangen? Extra kosten?</li>
-              <li className="flex gap-2"><span className="text-sky shrink-0">·</span><strong className="text-dark">Huisregels:</strong> feesten, muziek, huisdieren, wat is wel/niet toegestaan?</li>
-              <li className="flex gap-2"><span className="text-sky shrink-0">·</span><strong className="text-dark">Betaling:</strong> hoe betaal je (NL-rekening, lokaal, cash)? Maandelijks of per kwartaal vooruit?</li>
+              <li className="flex gap-2"><span className="text-sky shrink-0">·</span><span><strong className="text-dark">Borg:</strong> hoeveel, wanneer terug, onder welke voorwaarden ingehouden (bv. schoonmaakkosten)</span></li>
+              <li className="flex gap-2"><span className="text-sky shrink-0">·</span><span><strong className="text-dark">Huurtermijn + opzegtermijn:</strong> kun je eerder opzeggen als je stage korter wordt? Welke termijn geldt?</span></li>
+              <li className="flex gap-2"><span className="text-sky shrink-0">·</span><span><strong className="text-dark">Wat is inbegrepen:</strong> stroom, water, gas, internet, meubels, keukengerei, linnengoed?</span></li>
+              <li className="flex gap-2"><span className="text-sky shrink-0">·</span><span><strong className="text-dark">OB-belasting (6-7%):</strong> komt die bovenop de prijs of is die inbegrepen? Dit staat niet altijd duidelijk.</span></li>
+              <li className="flex gap-2"><span className="text-sky shrink-0">·</span><span><strong className="text-dark">Stroomlimiet:</strong> is er een dagelijks of maandelijks verbruikslimiet? Boven de limiet zelf betalen?</span></li>
+              <li className="flex gap-2"><span className="text-sky shrink-0">·</span><span><strong className="text-dark">Service fee:</strong> eenmalige kosten voor schoonmaak, ontvangst, sleutels?</span></li>
+              <li className="flex gap-2"><span className="text-sky shrink-0">·</span><span><strong className="text-dark">Bezoekers:</strong> mag je logés ontvangen? Extra kosten?</span></li>
+              <li className="flex gap-2"><span className="text-sky shrink-0">·</span><span><strong className="text-dark">Huisregels:</strong> feesten, muziek, huisdieren, wat is wel/niet toegestaan?</span></li>
+              <li className="flex gap-2"><span className="text-sky shrink-0">·</span><span><strong className="text-dark">Betaling:</strong> hoe betaal je (NL-rekening, lokaal, cash)? Maandelijks of per kwartaal vooruit?</span></li>
             </ul>
           </div>
         </section>

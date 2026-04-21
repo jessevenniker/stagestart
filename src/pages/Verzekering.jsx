@@ -59,9 +59,9 @@ export default function Verzekering() {
             <ClaimLabel kind="richtlijn" />
             <h3 className="font-serif text-xl font-normal text-dark mb-2">Drie lagen verzekering voor stagiairs</h3>
             <ul className="flex flex-col gap-2 text-sm text-gray-600">
-              <li className="flex gap-2"><span className="text-sage shrink-0">1.</span><strong className="text-dark">Nederlandse basiszorgverzekering</strong>, aanhouden, niet opzeggen. Dekt spoedzorg wereldwijd tot Nederlands tarief.</li>
-              <li className="flex gap-2"><span className="text-sage shrink-0">2.</span><strong className="text-dark">Aanvullende internationale (reis)verzekering</strong>, dekt het verschil met lokale tarieven, repatriëring, bagage, aansprakelijkheid. Verplicht voor vergunning.</li>
-              <li className="flex gap-2"><span className="text-sage shrink-0">3.</span><strong className="text-dark">Eventueel stage-aansprakelijkheid</strong>, sommige scholen eisen een specifieke stage-aansprakelijkheidsverzekering voor schade die je op het werk veroorzaakt.</li>
+              <li className="flex gap-2"><span className="text-sage shrink-0">1.</span><span><strong className="text-dark">Nederlandse basiszorgverzekering</strong>, aanhouden, niet opzeggen. Dekt spoedzorg wereldwijd tot Nederlands tarief.</span></li>
+              <li className="flex gap-2"><span className="text-sage shrink-0">2.</span><span><strong className="text-dark">Aanvullende internationale (reis)verzekering</strong>, dekt het verschil met lokale tarieven, repatriëring, bagage, aansprakelijkheid. Verplicht voor vergunning.</span></li>
+              <li className="flex gap-2"><span className="text-sage shrink-0">3.</span><span><strong className="text-dark">Eventueel stage-aansprakelijkheid</strong>, sommige scholen eisen een specifieke stage-aansprakelijkheidsverzekering voor schade die je op het werk veroorzaakt.</span></li>
             </ul>
           </div>
         </section>
