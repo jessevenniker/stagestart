@@ -37,6 +37,7 @@ const Verzekering = lazy(() => import('./pages/Verzekering'))
 const Contact = lazy(() => import('./pages/Contact'))
 const Over = lazy(() => import('./pages/Over'))
 const PartnerWorden = lazy(() => import('./pages/PartnerWorden'))
+const Partners = lazy(() => import('./pages/Partners'))
 const Verhalen = lazy(() => import('./pages/Verhalen'))
 const VerhaalDetail = lazy(() => import('./pages/VerhaalDetail'))
 const Tussenjaar = lazy(() => import('./pages/Tussenjaar'))
@@ -90,6 +91,7 @@ export default function App() {
             <Route path="/contact"       element={<Contact />} />
             <Route path="/over"          element={<Over />} />
             <Route path="/partner-worden" element={<PartnerWorden />} />
+            <Route path="/partners"      element={<Partners />} />
             <Route path="/verhalen"      element={<Verhalen />} />
             <Route path="/verhalen/:slug" element={<VerhaalDetail />} />
             <Route path="/tussenjaar"    element={<Tussenjaar />} />
