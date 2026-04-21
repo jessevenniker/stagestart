@@ -126,8 +126,8 @@ export default function Tussenjaar() {
         title="Een jaar lang volwassen op het eiland."
         subtitle="Werken om je kosten te dekken, vrije dagen aan het rif, en alles ertussen. Voor wie een jaar wegloopt van Nederland zonder via een stage te gaan."
         accentColor="#E8507A"
-        image="/img/hero-tussenjaar.svg"
-        imageAlt="Curaçao bij zonsondergang met palmsilhouet en uitzicht over de zee, sfeerbeeld voor een tussenjaar"
+        image="/img/hero-tussenjaar.jpg"
+        imageAlt="Sfeerbeeld van een tussenjaar op Curaçao"
       />
 
       <div className="max-w-5xl mx-auto px-5 pb-16">
