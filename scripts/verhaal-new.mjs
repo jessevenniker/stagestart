@@ -24,6 +24,7 @@ function today() {
 function template(slug) {
   return `  {
     slug: '${slug}',
+    type: 'stage', // of 'tussenjaar' — bepaalt op welke sectie van /verhalen het verschijnt
     voornaam: 'TODO voornaam',
     opleiding: 'TODO opleiding (bv. HBO Toegepaste Psychologie)',
     periode: 'TODO periode (bv. februari tot juli 2026)',

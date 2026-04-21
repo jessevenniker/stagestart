@@ -1,5 +1,13 @@
 /**
- * Verhalen van stagiairs.
+ * Verhalen van stagiairs en tussenjaar-werkers.
+ *
+ * ─────────────────────────────────────────────────────────────
+ * TYPES
+ *
+ *  Elk verhaal heeft een `type`-veld dat bepaalt in welke sectie op
+ *  /verhalen het verschijnt:
+ *   - 'stage'      → "Verhalen van stagiairs"
+ *   - 'tussenjaar' → "Verhalen van tussenjaar-werkers"
  *
  * ─────────────────────────────────────────────────────────────
  * EEN NIEUW VERHAAL TOEVOEGEN (stappenplan):
@@ -15,6 +23,7 @@
  *
  *  2. Kopieer de Jesse-entry hieronder en pas aan:
  *     - slug, voornaam, opleiding, periode, sector, bedrijf, wijk, auto, budget
+ *     - type: 'stage' of 'tussenjaar'
  *     - accent: kies uit Handelskade (#D4522A terra, #F2B517 gold, #3EAD6E sage,
  *       #1A7EC5 sky, #E8507A blush)
  *     - foto: /img/verhalen/[slug].jpg
@@ -39,6 +48,7 @@
 export const VERHALEN = [
   {
     slug: 'jayden',
+    type: 'stage',
     voornaam: 'Jayden',
     opleiding: 'MBO4 Mediavormgeving',
     periode: 'februari tot juli 2026',
@@ -100,6 +110,7 @@ export const VERHALEN = [
   },
   {
     slug: 'jesse',
+    type: 'stage',
     voornaam: 'Jesse',
     opleiding: 'HBO Toegepaste Psychologie',
     periode: 'februari tot juli 2026',
@@ -177,4 +188,8 @@ export const VERHALEN = [
 
 export function getVerhaal(slug) {
   return VERHALEN.find((v) => v.slug === slug)
+}
+
+export function getVerhalenByType(type) {
+  return VERHALEN.filter((v) => v.type === type)
 }
