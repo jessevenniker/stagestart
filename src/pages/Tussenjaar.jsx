@@ -15,8 +15,8 @@ const RELATED = [
 ]
 
 const SCHEMA = articleSchema({
-  headline: 'Tussenjaar werken op Curaçao: hoe ziet het eruit?',
-  description: 'Informatieve gids voor jongeren die een tussenjaar willen werken op Curaçao. Combinaties, sectoren, verblijfsstatus, financiën en de eerlijke check of dit bij jou past.',
+  headline: 'Tussenjaar werken op Curaçao: wat moet je weten?',
+  description: 'Eerlijke beslispagina voor jongeren die een tussenjaar willen werken op Curaçao. Verblijfsstatus, sectoren, salaris en bufferlogica — wat blijft hetzelfde als een stage en wat moet je echt anders aanpakken.',
   path: '/tussenjaar',
   dateModified: '2026-04-20',
 })
@@ -123,8 +123,8 @@ export default function Tussenjaar() {
       <SEO schema={SCHEMA} />
       <PageHero
         eyebrow="Tussenjaar op Curaçao"
-        title="Een jaar lang volwassen op het eiland."
-        subtitle="Werken om je kosten te dekken, vrije dagen aan het rif, en alles ertussen. Voor wie een jaar wegloopt van Nederland zonder via een stage te gaan."
+        title="Tussenjaar werken op Curaçao: wat moet je weten?"
+        subtitle="Voor wie geen stage doet maar wel een jaar op het eiland wil werken. Andere route qua verblijf, andere financiële plaat. Een eerlijke check vooraf."
         accentColor="#E8507A"
         image="/img/hero-tussenjaar.jpg"
         imageAlt="Sfeerbeeld van een tussenjaar op Curaçao"
@@ -132,26 +132,113 @@ export default function Tussenjaar() {
 
       <div className="max-w-5xl mx-auto px-5 pb-16">
 
-        {/* Sectie 1: openings-scène, tweede persoon */}
-        <section className="mb-12">
-          <div className="border-l-4 pl-5 py-2" style={{ borderLeftColor: '#E8507A' }}>
-            <p className="font-serif text-xl md:text-2xl text-dark leading-snug mb-4">
-              Je werkt drie of vier dagen per week in een dive shop aan de zuidkust, of als bediening op Mambo Beach Boulevard.
+        {/* Sectie 1: TL;DR — scan-laag bovenaan */}
+        <section className="mb-14">
+          <div className="card" style={{ borderLeft: '3px solid #E8507A' }}>
+            <p className="text-[10px] font-medium tracking-widest uppercase mb-3" style={{ color: '#E8507A' }}>
+              Als je maar 30 seconden hebt
             </p>
-            <p className="text-base text-gray-600 leading-relaxed mb-3">
-              De rest van de week ben je vrij om te lezen, te snorkelen, met huisgenoten naar Knip te rijden of een lang weekend naar Bonaire te boeken. Geen tentamens, geen ouders die zich zorgen maken om je rooster.
+            <ul className="flex flex-col gap-2.5 text-sm text-gray-700 leading-relaxed">
+              <li className="flex gap-3">
+                <span className="shrink-0" style={{ color: '#E8507A' }}>·</span>
+                <span>Tussenjaar op Curaçao is meestal <strong className="text-dark">ervaring + rondkomen, niet sparen</strong>.</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="shrink-0" style={{ color: '#E8507A' }}>·</span>
+                <span>Werk vinden lukt vaak, maar <strong className="text-dark">zelden zonder eigen initiatief</strong>.</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="shrink-0" style={{ color: '#E8507A' }}>·</span>
+                <span>Verblijfsstatus en werkroute check je <strong className="text-dark">vooraf op de officiële bron</strong>.</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="shrink-0" style={{ color: '#E8507A' }}>·</span>
+                <span>Reken op een <strong className="text-dark">buffer van €1.500 – €3.000</strong> voor je vertrekt.</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        {/* Sectie 2: Past dit bij jou? (eerlijke filter, naar voren) */}
+        <section className="mb-14">
+          <h2 className="section-label">Past een tussenjaar op Curaçao bij jou?</h2>
+          <ClaimLabel kind="richtlijn" />
+          <p className="text-sm text-gray-600 leading-relaxed mb-6 max-w-2xl">
+            Voordat je verder leest: check of dit überhaupt bij je past. Een tussenjaar op Curaçao is geen vakantie met bijbaantje.
+          </p>
+          <div className="grid md:grid-cols-2 gap-4">
+            <div className="card border-l-4" style={{ borderLeftColor: '#3EAD6E' }}>
+              <p className="text-xs font-medium uppercase tracking-wider mb-3" style={{ color: '#3EAD6E' }}>Past vaak wel</p>
+              <ul className="flex flex-col gap-2">
+                {PAST_WEL.map((item) => (
+                  <li key={item} className="flex gap-2 text-sm text-gray-600">
+                    <span className="text-sage shrink-0">+</span>{item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="card border-l-4" style={{ borderLeftColor: '#D4522A' }}>
+              <p className="text-xs font-medium uppercase tracking-wider mb-3" style={{ color: '#D4522A' }}>Past vaak minder</p>
+              <ul className="flex flex-col gap-2">
+                {PAST_MINDER.map((item) => (
+                  <li key={item} className="flex gap-2 text-sm text-gray-600">
+                    <span className="text-terra shrink-0">−</span>{item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* Sectie 3: Verblijf en werken (verzacht, prominente disclaimer) */}
+        <section className="mb-14">
+          <h2 className="section-label">De regels: verblijf en werken</h2>
+          <ClaimLabel kind="officieel" bron="Toelatingsorganisatie / Immigratiedienst Curaçao" />
+          <div className="card mb-4">
+            <p className="text-sm text-gray-600 leading-relaxed mb-4">
+              Voor Nederlanders gelden andere regels dan voor stagiairs. Drie kernpunten om rekening mee te houden:
             </p>
-            <p className="text-base text-gray-600 leading-relaxed">
-              Je bent voor een jaar volwassen op een manier waarop het leven dat zelden toelaat. Geen stage, geen schoolverplichting, gewoon je eigen tijd op een eiland dat je een jaar lang vertrouwd gaat voelen.
+            <div className="flex flex-col gap-3">
+              <div className="flex gap-3">
+                <span className="text-sky shrink-0 font-medium">1.</span>
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  Als Nederlander mag je <span className="font-medium text-dark">tot zes maanden binnen een jaar</span> op Curaçao verblijven zonder verklaring vooraf. Dat dekt <strong className="text-dark">verblijf</strong>, niet automatisch <strong className="text-dark">werken</strong>.
+                </p>
+              </div>
+              <div className="flex gap-3">
+                <span className="text-sky shrink-0 font-medium">2.</span>
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  Voor betaald werk loopt de officiële route via een <span className="font-medium text-dark">verklaring van rechtswege</span> (categorie <em>"Werken / Eenmanszaak"</em>). Of die direct nodig is hangt af van je situatie — controleer dat vooraf bij de Immigratiedienst.
+                </p>
+              </div>
+              <div className="flex gap-3">
+                <span className="text-sky shrink-0 font-medium">3.</span>
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  Bij verblijf <span className="font-medium text-dark">langer dan zes maanden</span> is een verklaring sowieso verplicht. Beslistermijn vier maanden. Nederlanders en Amerikanen mogen op Curaçao wachten.
+                </p>
+              </div>
+            </div>
+            <div className="border-l-4 border-amber-400 bg-amber-50 px-4 py-3 rounded mt-5 text-sm text-gray-700 leading-relaxed">
+              <strong className="text-dark">Doe altijd je eigen check op de officiële bron.</strong>{' '}
+              StageStart is een informatiegids, geen juridisch advies. Jouw route hangt af van duur, soort werk en persoonlijke situatie. Check altijd de{' '}
+              <a href="https://immigrationcur.org/dep/van-rechtswege/" target="_blank" rel="noopener noreferrer" className="text-sky underline">Immigratiedienst Curaçao</a>
+              {' '}en Toelatingsorganisatie vóór vertrek.
+            </div>
+          </div>
+
+          <div className="card border-l-4" style={{ borderLeftColor: '#F2B517' }}>
+            <p className="text-sm font-medium text-dark mb-2">DI Card vóór elke aankomst</p>
+            <p className="text-sm text-gray-600 leading-relaxed">
+              Vlieg je naar Curaçao vanuit het buitenland, dan vul je vóór vertrek een Digital Immigration Card in via <a href="https://dicardcuracao.com" target="_blank" rel="noopener noreferrer" className="text-sky underline">dicardcuracao.com</a>. Gratis, binnen zeven dagen voor vertrek. Dit is een aankondiging van je aankomst, geen vergunning om te wonen of te werken.
             </p>
           </div>
         </section>
 
-        {/* Sectie 2: Combinaties (verleidelijk, NAAR VOREN) */}
+        {/* Sectie 4: Hoe ziet zo'n jaar eruit? (scenario's met nuchter kader) */}
         <section className="mb-14">
-          <h2 className="section-label">Hoe ziet zo'n jaar er uit?</h2>
+          <h2 className="section-label">Hoe ziet zo'n jaar eruit?</h2>
           <p className="text-sm text-gray-600 leading-relaxed mb-6 max-w-2xl">
-            Vier scenarios waarin tussenjaar-werkers zichzelf vaak terugvinden. Niemand doet precies één hiervan; meestal is het een combinatie die met de maanden vorm krijgt.
+            Vier voorbeelden van hoe een tussenjaar er in de praktijk uit kan zien. Geen standaardpaden: elk hiervan vraagt eigen netwerk, initiatief en een buffer om de eerste weken mee te overbruggen. De meeste tussenjaar-werkers landen uiteindelijk op een combinatie die met de maanden vorm krijgt — niet op iets dat ze vooraf hadden bedacht.
           </p>
           <div className="grid md:grid-cols-2 gap-4">
             {COMBINATIES.map((c) => (
@@ -166,19 +253,10 @@ export default function Tussenjaar() {
           </div>
         </section>
 
-        {/* Pull statement, midden in pagina */}
-        <section className="mb-14">
-          <figure className="my-8 pl-5" style={{ borderLeft: '3px solid #E8507A' }}>
-            <blockquote className="font-serif text-2xl md:text-3xl leading-snug text-dark tracking-tight max-w-3xl">
-              Een tussenjaar op Curaçao gaat niet over de zon. Het gaat over een jaar waarin niemand je vraagt waar je staat.
-            </blockquote>
-          </figure>
-        </section>
-
-        {/* Sectie 3: Welke soorten werk */}
+        {/* Sectie 5: Welk werk kun je doen? (sectoren) */}
         <section className="mb-14">
           <h2 className="section-label">Welk werk kun je doen?</h2>
-          <ClaimLabel kind="ervaring" />
+          <ClaimLabel kind="richtlijn" />
           <p className="text-sm text-gray-600 leading-relaxed mb-6 max-w-2xl">
             Zes sectoren waar tussenjaar-werkers vaak terechtkomen. Geen specifieke werkgevers genoemd; wij beschrijven wat er is, niet wat goed is.
           </p>
@@ -200,55 +278,7 @@ export default function Tussenjaar() {
           </div>
         </section>
 
-        {/* Sectie 4: Wat verdien je en wat kost het */}
-        <section className="mb-14">
-          <h2 className="section-label">Wat verdien je, wat kost het?</h2>
-          <ClaimLabel kind="ervaring" />
-          <p className="text-sm text-gray-600 leading-relaxed mb-5 max-w-2xl">
-            Voor de meeste tussenjaar-werkers: <strong className="text-dark">rondkomen plus ervaring, niet sparen</strong>. Lokale lonen liggen onder NL-minimumloon, maar lage uitgaven (gedeeld huis, geen NL-verplichtingen) maken het werkbaar.
-          </p>
-
-          <div className="card mb-4">
-            <p className="text-xs font-medium text-dark mb-3 uppercase tracking-wider">Indicatieve maandsalarissen</p>
-            <ul className="flex flex-col gap-2 text-sm text-gray-600">
-              <li className="flex justify-between gap-3 py-1 border-b border-gray-100"><span>Horeca</span> <span className="font-medium text-dark">ANG 1.200-1.500 + tips</span></li>
-              <li className="flex justify-between gap-3 py-1 border-b border-gray-100"><span>Hotel front desk / F&B</span> <span className="font-medium text-dark">ANG 1.500-2.000</span></li>
-              <li className="flex justify-between gap-3 py-1 border-b border-gray-100"><span>Divemaster</span> <span className="font-medium text-dark">ANG 1.500-2.200 + tips</span></li>
-              <li className="flex justify-between gap-3 py-1 border-b border-gray-100"><span>PADI Instructor</span> <span className="font-medium text-dark">ANG 2.500-3.500 + tips</span></li>
-              <li className="flex justify-between gap-3 py-1 border-b border-gray-100"><span>Au pair</span> <span className="font-medium text-dark">ANG 600-1.000 + kost en inwoning</span></li>
-              <li className="flex justify-between gap-3 py-1 border-b border-gray-100"><span>Vrijwilligerswerk</span> <span className="font-medium text-dark">ANG 0-300 + meestal kost en inwoning</span></li>
-              <li className="flex justify-between gap-3 py-1"><span>Marketing of creatief</span> <span className="font-medium text-dark">€600-1.500/mnd, project-basis</span></li>
-            </ul>
-            <p className="text-xs text-gray-400 italic mt-3">
-              ANG 1.000 is ongeveer €500. Bandbreedtes uit praktijkervaring, geen officieel loonboek. Check tijdens je sollicitatie wat de werkgever concreet biedt.
-            </p>
-          </div>
-
-          <p className="text-sm font-medium text-dark mb-3">Hoeveel buffer heb je nodig om mee te beginnen?</p>
-          <div className="grid sm:grid-cols-3 gap-3">
-            <div className="card border-l-4" style={{ borderLeftColor: '#3EAD6E' }}>
-              <p className="text-xs font-medium uppercase tracking-wider mb-2" style={{ color: '#3EAD6E' }}>Werk vooraf rond</p>
-              <p className="text-2xl font-serif text-dark mb-1">€1.500</p>
-              <p className="text-xs text-gray-500 leading-relaxed">Eerste maand huur, eten, opstart. Salaris komt 3-4 weken later binnen.</p>
-            </div>
-            <div className="card border-l-4" style={{ borderLeftColor: '#F2B517' }}>
-              <p className="text-xs font-medium uppercase tracking-wider mb-2" style={{ color: '#F2B517' }}>Werk nog niet rond</p>
-              <p className="text-2xl font-serif text-dark mb-1">€2.500-3.000</p>
-              <p className="text-xs text-gray-500 leading-relaxed">1-2 maanden zonder inkomen overbruggen tot je werk vindt.</p>
-            </div>
-            <div className="card border-l-4" style={{ borderLeftColor: '#1A7EC5' }}>
-              <p className="text-xs font-medium uppercase tracking-wider mb-2" style={{ color: '#1A7EC5' }}>Plus duik-traject</p>
-              <p className="text-2xl font-serif text-dark mb-1">+€1.500-3.000</p>
-              <p className="text-xs text-gray-500 leading-relaxed">Extra voor PADI-cursussen tot Instructor-niveau.</p>
-            </div>
-          </div>
-
-          <p className="text-xs text-gray-500 mt-4">
-            Maandkosten op het eiland zijn vergelijkbaar met die van stagiairs (€1.100-1.500/mnd). Zie <Link to="/kosten" className="text-sky underline">Kosten</Link> voor het volledige beeld.
-          </p>
-        </section>
-
-        {/* Sectie 5: Hoe vind je werk (praktisch) */}
+        {/* Sectie 6: Hoe vind je werk? */}
         <section className="mb-14">
           <h2 className="section-label">Hoe vind je werk?</h2>
           <ClaimLabel kind="ervaring" />
@@ -290,81 +320,61 @@ export default function Tussenjaar() {
           </div>
         </section>
 
-        {/* Sectie 6: Verblijfsstatus (compact, geen waarschuwingsmuur) */}
+        {/* Sectie 7: Wat verdien je, wat kost het (met sterkere disclaimer boven tabel) */}
         <section className="mb-14">
-          <h2 className="section-label">De regels: verblijf en werken</h2>
-          <ClaimLabel kind="officieel" bron="Toelatingsorganisatie / Immigratiedienst Curaçao" />
-          <div className="card mb-4">
-            <p className="text-sm text-gray-600 leading-relaxed mb-4">
-              Voor Nederlanders gelden andere regels dan voor stagiairs. Drie kernpunten waar je rekening mee houdt:
-            </p>
-            <div className="flex flex-col gap-3">
-              <div className="flex gap-3">
-                <span className="text-sky shrink-0 font-medium">1.</span>
-                <p className="text-sm text-gray-700 leading-relaxed">
-                  <span className="font-medium text-dark">Tot zes maanden binnen een jaar</span> mag je als Nederlander verblijven zonder dat er al een verklaring van rechtswege is afgegeven.
-                </p>
-              </div>
-              <div className="flex gap-3">
-                <span className="text-sky shrink-0 font-medium">2.</span>
-                <p className="text-sm text-gray-700 leading-relaxed">
-                  <span className="font-medium text-dark">Wie wil werken, doet vooraf een aparte check.</span> De vrije termijn dekt verblijf, maar voor werken loopt de route via "verklaring van rechtswege" met een eigen categorie <em>"Werken / Eenmanszaak"</em>. Reken er niet op dat toeristenstatus en betaald lokaal werk automatisch samengaan.
-                </p>
-              </div>
-              <div className="flex gap-3">
-                <span className="text-sky shrink-0 font-medium">3.</span>
-                <p className="text-sm text-gray-700 leading-relaxed">
-                  <span className="font-medium text-dark">Bij langer verblijf is een verklaring verplicht.</span> Aanvragen bij de Immigratiedienst, beslistermijn vier maanden. Nederlanders en Amerikanen mogen op het eiland wachten.
-                </p>
-              </div>
-            </div>
-            <p className="text-xs text-gray-500 italic mt-4 leading-relaxed">
-              <strong className="text-dark">Doe altijd je eigen check.</strong> Voor je definitieve route en actuele bedragen geldt de officiële site van de <a href="https://immigrationcur.org/dep/van-rechtswege/" target="_blank" rel="noopener noreferrer" className="text-sky underline">Immigratiedienst Curaçao</a>. Je individuele situatie (duur, soort werk, partner mee) bepaalt welke route precies geldt.
-            </p>
-          </div>
-
-          <div className="card border-l-4" style={{ borderLeftColor: '#F2B517' }}>
-            <p className="text-sm font-medium text-dark mb-2">DI Card vóór elke aankomst</p>
-            <p className="text-sm text-gray-600 leading-relaxed">
-              Vlieg je naar Curaçao vanuit het buitenland, dan vul je vóór vertrek een Digital Immigration Card in via <a href="https://dicardcuracao.com" target="_blank" rel="noopener noreferrer" className="text-sky underline">dicardcuracao.com</a>. Gratis, binnen zeven dagen voor vertrek. Dit is een aankondiging van je aankomst, geen vergunning om te wonen of te werken.
-            </p>
-          </div>
-        </section>
-
-        {/* Sectie 7: Is dit slim voor jou? (eerlijke check, naar achter) */}
-        <section className="mb-14">
-          <h2 className="section-label">Past een tussenjaar op Curaçao bij jou?</h2>
-          <ClaimLabel kind="richtlijn" />
-          <p className="text-sm text-gray-600 leading-relaxed mb-6 max-w-2xl">
-            Romantisch idee genoeg, maar in de praktijk een project waarin je veel zelf moet regelen. Even eerlijk:
+          <h2 className="section-label">Wat verdien je, wat kost het?</h2>
+          <ClaimLabel kind="ervaring" />
+          <p className="text-sm text-gray-600 leading-relaxed mb-5 max-w-2xl">
+            Voor de meeste tussenjaar-werkers: <strong className="text-dark">rondkomen plus ervaring, niet sparen</strong>. Lokale lonen liggen onder NL-minimumloon, maar lage uitgaven (gedeeld huis, geen NL-verplichtingen) maken het werkbaar.
           </p>
-          <div className="grid md:grid-cols-2 gap-4">
+
+          <div className="border-l-4 border-amber-400 bg-amber-50 px-4 py-3 rounded mb-4 text-sm text-gray-700 leading-relaxed">
+            Onderstaande bedragen zijn <strong className="text-dark">grove indicaties uit praktijkervaring</strong> en wisselen per seizoen, contractvorm, uren en fooien. Geen officieel loonboek — check tijdens je sollicitatie wat de werkgever concreet biedt.
+          </div>
+
+          <div className="card mb-4">
+            <p className="text-xs font-medium text-dark mb-3 uppercase tracking-wider">Indicatieve maandsalarissen</p>
+            <ul className="flex flex-col gap-2 text-sm text-gray-600">
+              <li className="flex justify-between gap-3 py-1 border-b border-gray-100"><span>Horeca</span> <span className="font-medium text-dark">ANG 1.200-1.500 + tips</span></li>
+              <li className="flex justify-between gap-3 py-1 border-b border-gray-100"><span>Hotel front desk / F&B</span> <span className="font-medium text-dark">ANG 1.500-2.000</span></li>
+              <li className="flex justify-between gap-3 py-1 border-b border-gray-100"><span>Divemaster</span> <span className="font-medium text-dark">ANG 1.500-2.200 + tips</span></li>
+              <li className="flex justify-between gap-3 py-1 border-b border-gray-100"><span>PADI Instructor</span> <span className="font-medium text-dark">ANG 2.500-3.500 + tips</span></li>
+              <li className="flex justify-between gap-3 py-1 border-b border-gray-100"><span>Au pair</span> <span className="font-medium text-dark">ANG 600-1.000 + kost en inwoning</span></li>
+              <li className="flex justify-between gap-3 py-1 border-b border-gray-100"><span>Vrijwilligerswerk</span> <span className="font-medium text-dark">ANG 0-300 + meestal kost en inwoning</span></li>
+              <li className="flex justify-between gap-3 py-1"><span>Marketing of creatief</span> <span className="font-medium text-dark">€600-1.500/mnd, project-basis</span></li>
+            </ul>
+            <p className="text-xs text-gray-400 mt-3">
+              ANG 1.000 is ongeveer €500.
+            </p>
+          </div>
+
+          <p className="text-sm font-medium text-dark mb-3">Hoeveel buffer heb je nodig om mee te beginnen?</p>
+          <div className="grid sm:grid-cols-3 gap-3">
             <div className="card border-l-4" style={{ borderLeftColor: '#3EAD6E' }}>
-              <p className="text-xs font-medium uppercase tracking-wider mb-3" style={{ color: '#3EAD6E' }}>Past vaak wel</p>
-              <ul className="flex flex-col gap-2">
-                {PAST_WEL.map((item) => (
-                  <li key={item} className="flex gap-2 text-sm text-gray-600">
-                    <span className="text-sage shrink-0">+</span>{item}
-                  </li>
-                ))}
-              </ul>
+              <p className="text-xs font-medium uppercase tracking-wider mb-2" style={{ color: '#3EAD6E' }}>Werk vooraf rond</p>
+              <p className="text-2xl font-serif text-dark mb-1">€1.500</p>
+              <p className="text-xs text-gray-500 leading-relaxed">Eerste maand huur, eten, opstart. Salaris komt 3-4 weken later binnen.</p>
             </div>
-            <div className="card border-l-4" style={{ borderLeftColor: '#D4522A' }}>
-              <p className="text-xs font-medium uppercase tracking-wider mb-3" style={{ color: '#D4522A' }}>Past vaak minder</p>
-              <ul className="flex flex-col gap-2">
-                {PAST_MINDER.map((item) => (
-                  <li key={item} className="flex gap-2 text-sm text-gray-600">
-                    <span className="text-terra shrink-0">−</span>{item}
-                  </li>
-                ))}
-              </ul>
+            <div className="card border-l-4" style={{ borderLeftColor: '#F2B517' }}>
+              <p className="text-xs font-medium uppercase tracking-wider mb-2" style={{ color: '#F2B517' }}>Werk nog niet rond</p>
+              <p className="text-2xl font-serif text-dark mb-1">€2.500-3.000</p>
+              <p className="text-xs text-gray-500 leading-relaxed">1-2 maanden zonder inkomen overbruggen tot je werk vindt.</p>
+            </div>
+            <div className="card border-l-4" style={{ borderLeftColor: '#1A7EC5' }}>
+              <p className="text-xs font-medium uppercase tracking-wider mb-2" style={{ color: '#1A7EC5' }}>Plus duik-traject</p>
+              <p className="text-2xl font-serif text-dark mb-1">+€1.500-3.000</p>
+              <p className="text-xs text-gray-500 leading-relaxed">Extra voor PADI-cursussen tot Instructor-niveau.</p>
             </div>
           </div>
+
+          <p className="text-xs text-gray-500 mt-4">
+            Maandkosten op het eiland zijn vergelijkbaar met die van stagiairs (€1.100-1.500/mnd). Zie <Link to="/kosten" className="text-sky underline">Kosten</Link> voor het volledige beeld.
+          </p>
         </section>
 
         {/* Sectie 8: Slot-advies */}
         <section className="mb-14">
-          <h2 className="section-label">Wat je voor vertrek écht regelt</h2>
+          <h2 className="section-label">Wat je vóór vertrek écht regelt</h2>
           <ClaimLabel kind="richtlijn" />
           <div className="flex flex-col gap-3">
             <div className="card border-l-4" style={{ borderLeftColor: '#D4522A' }}>
