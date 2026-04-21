@@ -98,6 +98,11 @@ const SCHEMA_FAQ = faqSchema([
     answer:
       'Het kan, maar is risicovol. Beter alternatief: boek de eerste 1 tot 2 weken short-stay (Airbnb of guesthouse) en bezichtig vanaf het eiland. Lukt dat niet, huur dan alleen via bekende stage-bureaus of via contact van je school of stagebedrijf. Boek nooit via onbekende Facebook-accounts die vooruitbetaling willen zonder bezichtiging.',
   },
+  {
+    question: 'Zijn er wijken op Curaçao die ik als stagiair beter kan vermijden?',
+    answer:
+      'De meeste stagiairs wonen in Jan Thiel, Pietermaai, Piscadera, Mahaai, Salinja/Otrobanda of Bapor Kibra. Wijken zoals Souax (vlakbij het vliegveld), Koraalspecht (ten noordoosten van Willemstad) en industriële gebieden (Parera, Suffisant-Zuid) worden zelden gekozen, vooral vanwege afstand tot stage-locaties en beperkte voorzieningen. Dit is geen veiligheidsoordeel, maar een praktische observatie. Vraag bij twijfel aan stagiairs die er al zijn geweest of aan je stagebedrijf.',
+  },
 ])
 
 const SCHEMA = [SCHEMA_ARTICLE, SCHEMA_FAQ]
@@ -126,6 +131,18 @@ const WIJKEN = [
     pros: ['Dichtbij UoC en ziekenhuis', 'Rustige omgeving', 'Relatief betaalbaar', 'Goed voor studenten zorg/onderwijs'],
     cons: ['Weinig te doen zonder auto', 'Geen uitgesproken sfeer', 'Beperkt winkelaanbod'],
     voor: 'Goed voor studenten met stage in de zorg, onderwijs of bij de universiteit.',
+  },
+  {
+    naam: 'Mahaai',
+    color: '#8B5E3C',
+    huur: '€ 325 – 425',
+    auto: 'Handig maar niet noodzakelijk',
+    sfeer: 'Residentieel, rustig, veel stagehuizen',
+    afstand: '10 min van Willemstad',
+    img: '/img/wijk-mahaai.svg',
+    pros: ['Veel stagehuizen in deze buurt', 'Centrale supermarkt (Centrum Supermarkt Mahaai) dichtbij', 'Rustige woonwijk, overzichtelijk', 'Centraal tussen Willemstad en de stranden'],
+    cons: ['Geen uitgesproken buurtleven of horeca', 'Minder lokaal karakter dan Pietermaai', 'Voor strand alsnog auto of rit nodig'],
+    voor: 'Stagiairs die centraal en rustig willen wonen, in een studentenhuis met medestagiairs, zonder direct in het uitgaansgebied te zitten.',
   },
   {
     naam: 'Pietermaai',
@@ -316,6 +333,39 @@ export default function Wonen() {
           </div>
         </section>
 
+        {/* Welke wijken wonen stagiairs zelden? — praktische reality-check,
+            vangt long-tail "goede en slechte wijken curacao" via FAQ + copy. */}
+        <section className="mb-10">
+          <h2 className="section-label">Welke wijken wonen stagiairs zelden?</h2>
+          <ClaimLabel kind="ervaring" />
+          <p className="text-sm text-gray-600 leading-relaxed mb-5 max-w-2xl">
+            Niet elke wijk is even geschikt als uitvalsbasis voor een stage. Sommige buurten worden door stagiairs gewoon zelden gekozen — om praktische redenen (afstand tot werk, beperkte voorzieningen) en in enkele gevallen door reputatie. Dit betekent niet dat deze wijken onveilig zijn om doorheen te rijden of te bezoeken; alleen dat ze als woonplek voor een half jaar meestal niet logisch zijn.
+          </p>
+          <div className="grid sm:grid-cols-3 gap-3">
+            <div className="card border-l-4 border-gray-200">
+              <p className="text-sm font-medium text-dark mb-1">Souax</p>
+              <p className="text-xs text-gray-500 leading-relaxed">
+                Vlakbij het vliegveld Hato. Geen studentenhuizen, weinig horeca en supermarkten op loopafstand. Vooral doorrij-gebied.
+              </p>
+            </div>
+            <div className="card border-l-4 border-gray-200">
+              <p className="text-sm font-medium text-dark mb-1">Koraalspecht</p>
+              <p className="text-xs text-gray-500 leading-relaxed">
+                Rustige buurt ten noordoosten van Willemstad, bekend om de gevangenis die er staat. Stagiairs wonen hier zelden — niet om veiligheid maar om praktische redenen (afstand, voorzieningen, reputatie in Facebook-groepen).
+              </p>
+            </div>
+            <div className="card border-l-4 border-gray-200">
+              <p className="text-sm font-medium text-dark mb-1">Industrieterreinen</p>
+              <p className="text-xs text-gray-500 leading-relaxed">
+                Parera en Suffisant-Zuid: geen residentieel karakter, veel magazijnen en bedrijfspanden. Airbnb- en kamerverhuur vrijwel nihil.
+              </p>
+            </div>
+          </div>
+          <p className="text-xs text-gray-400 leading-relaxed mt-4 max-w-2xl italic">
+            Dit is geen complete lijst en geen veiligheidsoordeel. Vraag bij twijfel altijd aan stagiairs die er al zijn geweest, of aan je stagebedrijf of school.
+          </p>
+        </section>
+
         {/* Welke wijk past bij jouw situatie */}
         <section className="mb-10">
           <h2 className="section-label">Welke wijk past bij jouw situatie?</h2>
@@ -331,8 +381,8 @@ export default function Wonen() {
             </div>
             <div className="card border-l-4" style={{ borderLeftColor: '#1A7EC5' }}>
               <p className="text-xs font-medium text-dark mb-1">Geen auto, wel actief</p>
-              <p className="text-sm font-medium text-sky mb-2">→ Pietermaai of Salinja/Otrobanda</p>
-              <p className="text-xs text-gray-500 leading-relaxed">Beide centraal en lopend bereikbaar. Salinja is goedkoper, Pietermaai gezelliger.</p>
+              <p className="text-sm font-medium text-sky mb-2">→ Pietermaai, Salinja/Otrobanda of Mahaai</p>
+              <p className="text-xs text-gray-500 leading-relaxed">Alle drie centraal en bereikbaar zonder auto. Salinja goedkoopst, Pietermaai gezelligst, Mahaai rustigst.</p>
             </div>
             <div className="card border-l-4" style={{ borderLeftColor: '#D4522A' }}>
               <p className="text-xs font-medium text-dark mb-1">Veel sport en strand</p>
@@ -394,7 +444,7 @@ export default function Wonen() {
               </div>
             </div>
             <p className="text-xs text-gray-500 leading-relaxed mt-4">
-              Let op: Piscadera en Jan Thiel vallen niet onder Willemstad. Dat zijn aparte wijken op 10 tot 20 minuten rijden. Zie de <a href="#wijk-selector" className="text-sage underline">wijkvergelijking</a> voor die keuzes.
+              Let op: Piscadera, Jan Thiel en Mahaai vallen niet onder Willemstad. Dat zijn aparte wijken op 10 tot 20 minuten rijden. Zie de <a href="#wijk-selector" className="text-sage underline">wijkvergelijking</a> voor die keuzes.
             </p>
           </div>
         </section>
