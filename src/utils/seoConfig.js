@@ -14,8 +14,8 @@ export const SITE = {
 // eslint-disable-next-line no-unused-vars
 export const SEO_CONFIG = {
   '/': {
-    title: 'Stage Curaçao: onafhankelijke gids',
-    description: 'Alles wat je écht moet weten voor je stage op Curaçao. Vergunning, kosten, wonen en eerste week. Geen bureau, geen commissie, officiële bronnen leidend.',
+    title: 'Stage Curaçao: checklist, kosten, vergunning',
+    description: 'Stage Curaçao regelen in 2026: vergunning (XCG 525, 4 maanden), kosten (€1.100-1.500/mnd), wonen en eerste week. Onafhankelijke gids, geen bureau, geen commissie.',
     type: 'website',
   },
   '/begin-hier': {
