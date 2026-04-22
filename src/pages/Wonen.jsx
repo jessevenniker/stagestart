@@ -193,7 +193,7 @@ export default function Wonen() {
       <PageHero
         eyebrow="Wonen op Curaçao"
         title="Welke wijk past bij jou?"
-        subtitle="Huisvesting tijdens je stage op Curaçao bepaalt meer dan alleen waar je slaapt. Studentenhuis, kamer of appartement: hier vergelijk je woonvormen, huurprijzen en de vijf populairste wijken voordat je iets boekt."
+        subtitle="Huisvesting tijdens je stage op Curaçao bepaalt meer dan alleen waar je slaapt. Studentenhuis, kamer of appartement: hier vergelijk je woonvormen, huurprijzen en de zes populairste wijken voordat je iets boekt."
         accentColor="#3EAD6E"
       />
 
@@ -229,7 +229,7 @@ export default function Wonen() {
             ))}
           </div>
           <p className="text-xs text-gray-400 leading-relaxed mt-4 max-w-2xl">
-            Prijzen zijn indicaties per maand. Het exacte bedrag hangt af van de wijk en of stroom, water en internet zijn inbegrepen. Zie de wijkvergelijking hieronder voor het verschil tussen Pietermaai, Jan Thiel, Piscadera, Salinja en Bapor Kibra.
+            Prijzen zijn indicaties per maand. Het exacte bedrag hangt af van de wijk en of stroom, water en internet zijn inbegrepen. Zie de wijkvergelijking hieronder voor het verschil tussen Jan Thiel, Piscadera, Mahaai, Pietermaai, Salinja en Bapor Kibra.
           </p>
         </section>
 
