@@ -317,7 +317,7 @@ export const VERHALEN = [
       },
       {
         vraag: 'Hoe vond je je woning?',
-        antwoord: 'Via Match, een stagebureau. Ik deel een studio met mijn huisgenoot. Aanrader alleen als je goed met elkaar opschiet — je zit 24/7 op elkaars lip en hebt weinig privacy. Wel gunstig: kosten gehalveerd. Ik zou het zo opnieuw doen.',
+        antwoord: 'Via een stagebureau. Ik deel een studio met mijn huisgenoot. Aanrader alleen als je goed met elkaar opschiet, je zit 24/7 op elkaars lip en hebt weinig privacy. Wel gunstig: kosten gehalveerd. Ik zou het zo opnieuw doen.',
       },
       {
         vraag: 'Hoe zag een normale week eruit?',
@@ -329,7 +329,7 @@ export const VERHALEN = [
       },
       {
         vraag: 'Wat heeft je het meest verrast?',
-        antwoord: 'Hoeveel ik met mijn huisgenoten zou doen. Ik kwam samen met iemand en dacht vooral met die persoon op te trekken, maar ik doe veel met de hele groep. En dat Curaçao niet zo crimineel is als iedereen zegt — overal in de wereld moet je op je spullen letten.',
+        antwoord: 'Hoeveel ik met mijn huisgenoten zou doen. Ik kwam samen met iemand en dacht vooral met die persoon op te trekken, maar ik doe veel met de hele groep. En dat Curaçao niet zo crimineel is als iedereen zegt. Overal in de wereld moet je op je spullen letten.',
       },
       {
         vraag: 'Wat is het ergste moment geweest en hoe loste je dat op?',
@@ -343,7 +343,7 @@ export const VERHALEN = [
     eigen_verhaal: [
       'Ik kwam samen met iemand naar Curaçao en dacht dat ik vooral met diegene zou optrekken. In de praktijk gebeurde iets anders. Het huis nam je op een manier op die ik niet had verwacht: niet door grote groepsdingen te organiseren, maar door simpelweg veel samen te zijn. Ophalen, doorrijden naar een strand, samen koken, een avond op de bank. Het bouwt zich op zonder dat je het door hebt.',
       'Het cliché dat Curaçao onveilig is, klopte voor mij niet. Je merkt dat mensen het van horen zeggen hebben en het doorgeven alsof het een feit is. Wat ik wel merkte: je let op je spullen, net als in elke stad. Dat is geen Curaçaose les, dat is een algemene les.',
-      'Achteraf is mijn belangrijkste advies dit: kies voor een kleiner studentenhuis. Acht huisgenoten klinkt als veel, maar in een huis met twintig of dertig zou ik nooit dezelfde band hebben opgebouwd. En neem een auto. Niet voor het gemak — voor de mogelijkheid om spontaan ja te zeggen tegen iets.',
+      'Achteraf is mijn belangrijkste advies dit: kies voor een kleiner studentenhuis. Acht huisgenoten klinkt als veel, maar in een huis met twintig of dertig zou ik nooit dezelfde band hebben opgebouwd. En neem een auto. Niet voor het gemak, maar voor de mogelijkheid om spontaan ja te zeggen tegen iets.',
     ],
     tip: 'Kies een kleiner studentenhuis (acht huisgenoten of minder), zo leer je iedereen echt kennen. En een auto is geen luxe maar een must.',
     voorbeeld: false,
@@ -362,15 +362,15 @@ export const VERHALEN = [
     budget: '±€1.200 per maand',
     accent: '#1A7EC5',
     foto: '/img/verhalen/emma.svg',
-    quote: 'Je wordt eigenlijk een soort van verplicht om vrienden te maken.',
+    quote: 'Mijn weken voelden lichter dan mijn weken thuis.',
     persoonlijk: {
       favoriete_spot: 'Zonsondergang aan zee met huisgenoot',
       grootste_les: 'Vooraf goed regelen scheelt heimwee',
-      eerste_aankoop: 'Lokale simkaart in plaats van e-sim',
+      eerste_aankoop: 'Lokale simkaart in plaats van eSIM',
       moest_wennen: 'Dat het sociale leven gewoon op je af komt',
     },
     pull_quotes: [
-      'Je wordt eigenlijk een soort van verplicht om vrienden te maken.',
+      'Mijn weken voelden lichter dan mijn weken thuis.',
       'De zonsondergangen zijn hier iedere dag anders.',
     ],
     gallery: [
@@ -393,11 +393,11 @@ export const VERHALEN = [
     qa: [
       {
         vraag: 'Had je een auto, en zou je die keuze weer zo maken?',
-        antwoord: 'Ja. Een auto heb je hier zeker nodig, anders kom je nergens. Het openbaar vervoer is lastig en met een fiets is het niet te doen — er zijn geen fietspaden. Een scooter zou kunnen, maar een auto is veiliger.',
+        antwoord: 'Ja. Een auto heb je hier zeker nodig, anders kom je nergens. Het openbaar vervoer is lastig en met een fiets is het niet te doen, er zijn geen fietspaden. Een scooter zou kunnen, maar een auto is veiliger.',
       },
       {
         vraag: 'Hoe vond je je woning?',
-        antwoord: 'Via Match Curaçao, een stagebureau. Ik had een studio die ik deelde met een vriendin. Dat ging prima, ik zou het zo weer doen.',
+        antwoord: 'Via een stagebureau. Ik had een studio die ik deelde met een vriendin. Dat ging prima, ik zou het zo weer doen.',
       },
       {
         vraag: 'Hoe zag een normale week eruit?',
@@ -409,23 +409,23 @@ export const VERHALEN = [
       },
       {
         vraag: 'Wat heeft je het meest verrast?',
-        antwoord: 'Hoe snel je hier mensen leert kennen. Je wordt eigenlijk een soort van verplicht om vrienden te maken — dat komt door het studentenhuis. Aan de ene kant is dat fijn, want je hebt altijd mensen om iets mee te doen of om mee te praten als het moeilijk is.',
+        antwoord: 'Hoe snel je hier mensen leert kennen. Je wordt eigenlijk een soort van verplicht om vrienden te maken, dat komt door het studentenhuis. Aan de ene kant is dat fijn, want je hebt altijd mensen om iets mee te doen of om mee te praten als het moeilijk is.',
       },
       {
         vraag: 'Wat is het ergste moment geweest en hoe loste je dat op?',
-        antwoord: 'Een keer wilde de auto niet starten. We hadden alleen een e-sim, dus konden niet bellen. We stuurden de autoverhuur een WhatsApp en zij belden de wegenwacht. Een e-sim is dus minder handig — de wegenwacht neemt geen WhatsApp aan. En heimwee in de eerste paar weken; toen hielp het mij om juist niet veel met thuis te bellen en afleiding te zoeken bij vrienden.',
+        antwoord: 'Een keer wilde de auto niet starten. We hadden alleen een eSIM, dus konden niet bellen. We stuurden de autoverhuur een WhatsApp en zij belden de wegenwacht. Een eSIM is dus minder handig. De wegenwacht neemt geen WhatsApp aan. En heimwee in de eerste paar weken. Toen hielp het mij om juist niet veel met thuis te bellen en afleiding te zoeken bij vrienden.',
       },
       {
         vraag: 'Wat is je mooiste herinnering?',
-        antwoord: 'Zonsondergang bekijken met mijn huisgenoot aan zee. Lekker met een spelletje of een frietje kijken hoe de zon in de zee zakt. De zonsondergangen zijn hier iedere dag anders, dat zie je in Nederland niet vaak. Het gaf mij een rustgevend gevoel — even aan niks denken.',
+        antwoord: 'Zonsondergang bekijken met mijn huisgenoot aan zee. Lekker met een spelletje of een frietje kijken hoe de zon in de zee zakt. De zonsondergangen zijn hier iedere dag anders, dat zie je in Nederland niet vaak. Het gaf mij een rustgevend gevoel, even aan niks denken.',
       },
     ],
     eigen_verhaal: [
       'Mijn weken voelden lichter dan mijn weken thuis. Niet omdat de stage minder was, maar omdat het ritme eromheen anders is. Een dag werk en daarna iets met huisgenoten. Geen agenda vol verplichtingen die door anderen voor je is ingevuld. Dat klinkt als vakantie, maar het is meer dan dat: het is werken en leven door elkaar laten lopen op een manier waarop het in Nederland zelden lukt.',
       'Wat ik onderschat heb is de papierwinkel vooraf. Vergunningen, VOG, afspraken met je stagebedrijf. Ik regelde het zelf en liep tegen onduidelijkheden aan die je liever niet eerst op het eiland ontdekt. Volgende keer zou ik er een bedrijf voor inschakelen of veel meer tijd vooraf nemen. Niet omdat het dan minder werk is, maar omdat je dan met een gerust hoofd kunt vertrekken.',
-      'En over heimwee: het is er. Vooral de eerste weken. Wat hielp was iets dat tegen-intuïtief klinkt — minder met thuis bellen. Hoe meer je hangt aan het oude, hoe langer het duurt voordat het nieuwe ruimte krijgt. Het sociale leven hier komt vanzelf op je af; je moet het alleen toelaten.',
+      'En over heimwee: het is er. Vooral de eerste weken. Wat hielp was iets dat onlogisch klinkt: minder met thuis bellen. Hoe meer je hangt aan het oude, hoe langer het duurt voordat het nieuwe ruimte krijgt. Het sociale leven hier komt vanzelf op je af, je moet het alleen toelaten.',
     ],
-    tip: 'Regel je vergunningen, VOG en afspraken met je stagebedrijf goed vooraf — dat scheelt verrassingen op het eiland. En blijf niet op je kamer zitten: bezoek strandjes, restaurants, feestjes, doe dingen.',
+    tip: 'Regel je vergunningen, VOG en afspraken met je stagebedrijf goed vooraf, dat scheelt verrassingen op het eiland. En blijf niet op je kamer zitten: bezoek strandjes, restaurants, feestjes, doe dingen.',
     voorbeeld: false,
     laatste_update: '2026-04-22',
   },
