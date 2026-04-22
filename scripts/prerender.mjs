@@ -19,7 +19,35 @@ import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { createServer } from 'node:http'
 import { fileURLToPath } from 'node:url'
-import puppeteer from 'puppeteer'
+
+// Environment-detection: op Vercel/CI gebruiken we puppeteer-core met
+// @sparticuz/chromium (serverless-ready, self-contained binary, geen
+// apt-dependencies nodig). Lokaal gebruiken we de full puppeteer met
+// de bundled chromium, want die is al geïnstalleerd en makkelijker voor
+// dev-iteratie.
+const isServerless = process.env.VERCEL === '1' || process.env.CI === 'true'
+
+async function getBrowser() {
+  if (isServerless) {
+    const { default: chromium } = await import('@sparticuz/chromium')
+    const { default: puppeteer } = await import('puppeteer-core')
+    return puppeteer.launch({
+      args: chromium.args,
+      executablePath: await chromium.executablePath(),
+      headless: true,
+    })
+  } else {
+    const { default: puppeteer } = await import('puppeteer')
+    return puppeteer.launch({
+      headless: true,
+      args: [
+        '--no-sandbox',
+        '--disable-setuid-sandbox',
+        '--disable-dev-shm-usage',
+      ],
+    })
+  }
+}
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const ROOT = join(__dirname, '..')
@@ -180,15 +208,8 @@ async function main() {
 
   const server = await startStaticServer()
 
-  console.log(`[prerender] Launch headless Chrome...\n`)
-  const browser = await puppeteer.launch({
-    headless: true,
-    args: [
-      '--no-sandbox',
-      '--disable-setuid-sandbox',
-      '--disable-dev-shm-usage',
-    ],
-  })
+  console.log(`[prerender] Launch headless Chrome (${isServerless ? 'serverless/sparticuz' : 'local/puppeteer'})...\n`)
+  const browser = await getBrowser()
 
   let success = 0
   let failed = 0
