@@ -14,8 +14,8 @@ export const SITE = {
 // eslint-disable-next-line no-unused-vars
 export const SEO_CONFIG = {
   '/': {
-    title: 'Stage Curaçao: checklist, kosten, vergunning',
-    description: 'Stage Curaçao regelen in 2026: vergunning (XCG 525, 4 maanden), kosten (€1.100-1.500/mnd), wonen en eerste week. Onafhankelijke gids, geen bureau, geen commissie.',
+    title: 'Stage Curaçao: onafhankelijke gids zonder bureau',
+    description: 'Onafhankelijke gids voor Nederlanders die stage lopen op Curaçao. Vergunning, kosten, wonen, eerste week. Geen bureau, geen pakket, geen commissie.',
     type: 'website',
   },
   '/begin-hier': {

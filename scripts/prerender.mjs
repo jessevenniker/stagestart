@@ -92,12 +92,20 @@ function findSitemap() {
   throw new Error(`Geen sitemap.xml gevonden in: ${SITEMAP_CANDIDATES.join(', ')}`)
 }
 
+// Extra URLs die we wél willen prerenderen maar bewust niet in de sitemap
+// staan (meestal met noindex, zoals /partner-worden). Zonder deze zou
+// Vercel terugvallen op de catch-all rewrite en de SPA-shell met
+// homepage-title serveren — precies het probleem dat we willen oplossen.
+const EXTRA_ROUTES = ['/partner-worden']
+
 function extractUrls(sitemapXml) {
   const matches = [...sitemapXml.matchAll(/<loc>([^<]+)<\/loc>/g)]
   const urls = matches.map((m) => m[1].trim())
-  return urls
+  const fromSitemap = urls
     .filter((u) => u.startsWith(BASE_ORIGIN))
     .map((u) => u.slice(BASE_ORIGIN.length) || '/')
+  // Deduplicate: sitemap + extras
+  return [...new Set([...fromSitemap, ...EXTRA_ROUTES])]
 }
 
 // --- Static server voor dist/ ----------------------------------------------
