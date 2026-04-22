@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
 import SEO from '../components/SEO'
 import LastChecked from '../components/LastChecked'
+import { trackEvent } from '../utils/plausible'
 
 const CATEGORIEEN = [
   '',
@@ -83,6 +84,7 @@ export default function PartnerWorden() {
 
       setStatus('sent')
       setForm(INITIAL_FORM)
+      trackEvent('Partner Form Submit', { props: { categorie: form.categorie || 'onbekend' } })
     } catch {
       setErrorMsg('Kon de aanvraag niet versturen. Controleer je verbinding of mail rechtstreeks naar info@jescoinnovation.nl.')
       setStatus('error')

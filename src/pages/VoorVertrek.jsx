@@ -6,6 +6,7 @@ import LastChecked from '../components/LastChecked'
 import ClaimLabel from '../components/ClaimLabel'
 import RelatedPages from '../components/RelatedPages'
 import { howToSchema } from '../utils/schema'
+import { trackEvent } from '../utils/plausible'
 
 const RELATED = [
   { to: '/vergunning', label: 'Vergunning', desc: 'Studie/stage en Verklaring van Rechtswege uitgelegd.' },
@@ -267,7 +268,10 @@ export default function VoorVertrek() {
                 />
               </div>
               <button
-                onClick={() => setTijdlijn(true)}
+                onClick={() => {
+                  setTijdlijn(true)
+                  trackEvent('Tijdlijn Generate')
+                }}
                 disabled={!vertrekDatum}
                 className="btn-terra disabled:opacity-40 disabled:cursor-not-allowed"
               >

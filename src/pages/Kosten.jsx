@@ -7,6 +7,7 @@ import ClaimLabel from '../components/ClaimLabel'
 import RelatedPages from '../components/RelatedPages'
 import ReadingProgress from '../components/ReadingProgress'
 import { articleSchema } from '../utils/schema'
+import { useScrollDepth } from '../hooks/useScrollDepth'
 
 const RELATED = [
   { to: '/wonen', label: 'Wonen', desc: 'Wijken vergeleken op huurprijs en bereik.' },
@@ -55,6 +56,8 @@ export default function Kosten() {
   const [v, setV] = useState({ rent: 425, car: 440, food: 200, eat: 120, fun: 200, ins: 90, salary: 375 })
   const [duo, setDuo] = useState(true)
   const [basis, setBasis] = useState(324.52)
+
+  useScrollDepth('Scroll 75 Kosten')
 
   const costs = v.rent + v.car + v.food + v.eat + v.fun + v.ins + 50 + 22
   const income = v.salary + (duo ? 110.95 : 0) + basis

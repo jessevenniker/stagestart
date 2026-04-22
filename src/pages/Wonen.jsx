@@ -7,6 +7,7 @@ import LastChecked from '../components/LastChecked'
 import RelatedPages from '../components/RelatedPages'
 import ReadingProgress from '../components/ReadingProgress'
 import { articleSchema, faqSchema } from '../utils/schema'
+import { useScrollDepth } from '../hooks/useScrollDepth'
 
 const RELATED = [
   { to: '/auto', label: 'Auto', desc: 'Wijk en stage-locatie bepalen of je een auto nodig hebt.' },
@@ -185,6 +186,8 @@ const WIJKEN = [
 export default function Wonen() {
   const [active, setActive] = useState(null)
   const wijk = active !== null ? WIJKEN[active] : null
+
+  useScrollDepth('Scroll 75 Wonen')
 
   return (
     <>
