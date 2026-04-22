@@ -6,7 +6,6 @@ import LastChecked from '../components/LastChecked'
 import RelatedPages from '../components/RelatedPages'
 import ReadingProgress from '../components/ReadingProgress'
 import { articleSchema } from '../utils/schema'
-import { useScrollDepth } from '../hooks/useScrollDepth'
 
 const RELATED = [
   { to: '/voor-vertrek', label: 'Voor vertrek', desc: 'Documenten en stappen in de juiste volgorde.' },
@@ -22,8 +21,6 @@ const SCHEMA = articleSchema({
 })
 
 export default function Vergunning() {
-  useScrollDepth('Scroll 75 Vergunning')
-
   return (
     <>
       <ReadingProgress />
