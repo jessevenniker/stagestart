@@ -1,4 +1,4 @@
-import { lazy, Suspense } from 'react'
+import { lazy, Suspense, useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
@@ -56,6 +56,13 @@ function PageLoader() {
 }
 
 export default function App() {
+  // Deterministisch signal voor het prerender-script: puppeteer wacht op dit
+  // attribuut voordat het de HTML exporteert. Zet ná mount zodat ook
+  // react-helmet-async's head-mutaties klaar zijn op het moment van capture.
+  useEffect(() => {
+    document.documentElement.setAttribute('data-prerender-ready', '1')
+  }, [])
+
   return (
     <div className="min-h-screen flex flex-col">
       <Nav />

@@ -5,8 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node scripts/sitemap-build.mjs && vite build",
+    "build": "node scripts/sitemap-build.mjs && vite build && node scripts/prerender.mjs",
+    "build:novsg": "node scripts/sitemap-build.mjs && vite build",
     "preview": "vite preview",
+    "prerender": "node scripts/prerender.mjs",
     "sitemap:build": "node scripts/sitemap-build.mjs",
     "verhaal:new": "node scripts/verhaal-new.mjs",
     "verhaal:photos": "node scripts/verhaal-photos.mjs"
@@ -24,6 +26,7 @@
     "@vitejs/plugin-react": "^4.2.1",
     "autoprefixer": "^10.4.17",
     "postcss": "^8.4.35",
+    "puppeteer": "^24.42.0",
     "tailwindcss": "^3.4.1",
     "vite": "^5.1.0"
   }
