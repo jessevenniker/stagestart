@@ -286,7 +286,7 @@ export const VERHALEN = [
     persoonlijk: {
       favoriete_spot: 'Zonsondergang op het strand met afhaal en huisgenoten',
       grootste_les: 'Een kleiner huis maakt het verschil',
-      eerste_aankoop: 'Auto delen met huisgenoot',
+      eerste_aankoop: 'Koelbox voor naar het strand',
       moest_wennen: 'Dat alles in eerste instantie via het huis gaat',
     },
     pull_quotes: [

@@ -283,14 +283,18 @@ export default function VoorVertrek() {
                   const deadline = new Date(vertrekDatum)
                   deadline.setDate(deadline.getDate() - (item.weken * 7))
                   const isPast = deadline < new Date()
-                  const formatted = deadline.toLocaleDateString('nl-NL', { weekday: 'short', day: 'numeric', month: 'short' })
+                  // Jaar altijd tonen zodat bv. "vr 25 apr 2025" (52 weken voor
+                  // vertrek op 25 apr 2026) niet verward wordt met de vertrekdatum.
+                  const formatted = deadline.toLocaleDateString('nl-NL', { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' })
+                  const wekenLabel = item.weken === 0 ? 'vertrekdag' : `${item.weken} ${item.weken === 1 ? 'week' : 'weken'} voor vertrek`
                   return (
                     <div key={i} className="flex gap-3 items-start py-2 border-b border-gray-100 last:border-0">
                       <div className="w-2.5 h-2.5 rounded-full mt-1 shrink-0" style={{ background: item.kleur }} />
                       <div className="flex-1">
-                        <div className="flex items-center gap-2 mb-0.5">
+                        <div className="flex flex-wrap items-center gap-x-2 gap-y-0.5 mb-0.5">
                           <span className="text-xs font-medium text-dark">{formatted}</span>
-                          {isPast && <span className="text-[10px] text-terra italic">Let op, deze datum is al gepasseerd</span>}
+                          <span className="text-[10px] text-gray-400">({wekenLabel})</span>
+                          {isPast && <span className="text-[10px] text-terra italic">al gepasseerd</span>}
                         </div>
                         <p className="text-xs text-gray-500 leading-relaxed">{item.taak}</p>
                       </div>
