@@ -293,7 +293,23 @@ export const VERHALEN = [
       'In een kleiner huis leer je iedereen sneller en intiemer kennen.',
       'Iedereen zegt dat Curaçao crimineel is, daar heb ik weinig van gemerkt.',
     ],
-    gallery: [],
+    gallery: [
+      {
+        src: '/img/verhalen/elke-christoffelberg-uitzicht.jpg',
+        caption: 'Op pad met de huisgenoten, bovenaan de Christoffelberg',
+        half: true,
+      },
+      {
+        src: '/img/verhalen/elke-zonsondergang-palmen-curacao.jpg',
+        caption: 'Die avonden dat we eten afhaalden en doorreden naar het strand',
+        half: true,
+      },
+      {
+        src: '/img/verhalen/elke-strand-parasols-curacao.jpg',
+        caption: 'Een doordeweekse middag, weggegaan met het hele huis',
+        half: true,
+      },
+    ],
     qa: [
       {
         vraag: 'Had je een auto, en zou je die keuze weer zo maken?',
@@ -330,8 +346,8 @@ export const VERHALEN = [
       'Achteraf is mijn belangrijkste advies dit: kies voor een kleiner studentenhuis. Acht huisgenoten klinkt als veel, maar in een huis met twintig of dertig zou ik nooit dezelfde band hebben opgebouwd. En neem een auto. Niet voor het gemak — voor de mogelijkheid om spontaan ja te zeggen tegen iets.',
     ],
     tip: 'Kies een kleiner studentenhuis (acht huisgenoten of minder), zo leer je iedereen echt kennen. En een auto is geen luxe maar een must.',
-    voorbeeld: true,
-    laatste_update: '2026-04-21',
+    voorbeeld: false,
+    laatste_update: '2026-04-22',
   },
   {
     slug: 'emma',
@@ -357,7 +373,23 @@ export const VERHALEN = [
       'Je wordt eigenlijk een soort van verplicht om vrienden te maken.',
       'De zonsondergangen zijn hier iedere dag anders.',
     ],
-    gallery: [],
+    gallery: [
+      {
+        src: '/img/verhalen/emma-zonsondergang-zee-curacao.jpg',
+        caption: 'Kijken hoe de zon in de zee zakt, met een spelletje of een frietje',
+        half: true,
+      },
+      {
+        src: '/img/verhalen/emma-koloniale-huizen-pietermaai.jpg',
+        caption: 'Wandelen door Pietermaai tussen de pastelkleurige gevels',
+        half: true,
+      },
+      {
+        src: '/img/verhalen/emma-muurschildering-curacao.jpg',
+        caption: 'Altijd iets nieuws om te ontdekken op het eiland',
+        half: true,
+      },
+    ],
     qa: [
       {
         vraag: 'Had je een auto, en zou je die keuze weer zo maken?',
@@ -394,8 +426,8 @@ export const VERHALEN = [
       'En over heimwee: het is er. Vooral de eerste weken. Wat hielp was iets dat tegen-intuïtief klinkt — minder met thuis bellen. Hoe meer je hangt aan het oude, hoe langer het duurt voordat het nieuwe ruimte krijgt. Het sociale leven hier komt vanzelf op je af; je moet het alleen toelaten.',
     ],
     tip: 'Regel je vergunningen, VOG en afspraken met je stagebedrijf goed vooraf — dat scheelt verrassingen op het eiland. En blijf niet op je kamer zitten: bezoek strandjes, restaurants, feestjes, doe dingen.',
-    voorbeeld: true,
-    laatste_update: '2026-04-21',
+    voorbeeld: false,
+    laatste_update: '2026-04-22',
   },
   {
     slug: 'jayden',
