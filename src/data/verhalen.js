@@ -270,9 +270,9 @@ export const VERHALEN = [
     laatste_update: '2026-04-21',
   },
   {
-    slug: 'elke',
+    slug: 'emma',
     type: 'stage',
-    voornaam: 'Elke',
+    voornaam: 'Emma',
     opleiding: 'MBO Interieuradviseur',
     periode: 'februari tot juli 2026',
     sector: 'Interieur en woonbranche',
@@ -281,7 +281,7 @@ export const VERHALEN = [
     auto: true,
     budget: '±€1.200 per maand',
     accent: '#3EAD6E',
-    foto: '/img/verhalen/elke.svg',
+    foto: '/img/verhalen/emma.svg',
     quote: 'In een kleiner huis leer je iedereen sneller en intiemer kennen.',
     persoonlijk: {
       favoriete_spot: 'Zonsondergang op het strand met afhaal en huisgenoten',
@@ -295,17 +295,17 @@ export const VERHALEN = [
     ],
     gallery: [
       {
-        src: '/img/verhalen/elke-christoffelberg-uitzicht.jpg',
+        src: '/img/verhalen/emma-christoffelberg-uitzicht.jpg',
         caption: 'Op pad met de huisgenoten, bovenaan de Christoffelberg',
         half: true,
       },
       {
-        src: '/img/verhalen/elke-zonsondergang-palmen-curacao.jpg',
+        src: '/img/verhalen/emma-zonsondergang-palmen-curacao.jpg',
         caption: 'Die avonden dat we eten afhaalden en doorreden naar het strand',
         half: true,
       },
       {
-        src: '/img/verhalen/elke-strand-parasols-curacao.jpg',
+        src: '/img/verhalen/emma-strand-parasols-curacao.jpg',
         caption: 'Een doordeweekse middag, weggegaan met het hele huis',
         half: true,
       },
@@ -350,9 +350,9 @@ export const VERHALEN = [
     laatste_update: '2026-04-22',
   },
   {
-    slug: 'emma',
+    slug: 'elke',
     type: 'stage',
-    voornaam: 'Emma',
+    voornaam: 'Elke',
     opleiding: 'MBO Interieuradviseur',
     periode: 'februari tot juli 2026',
     sector: 'Interieur- en woonbranche',
@@ -361,7 +361,7 @@ export const VERHALEN = [
     auto: true,
     budget: '±€1.200 per maand',
     accent: '#1A7EC5',
-    foto: '/img/verhalen/emma.svg',
+    foto: '/img/verhalen/elke.svg',
     quote: 'Mijn weken voelden lichter dan mijn weken thuis.',
     persoonlijk: {
       favoriete_spot: 'Zonsondergang aan zee met huisgenoot',
@@ -375,17 +375,17 @@ export const VERHALEN = [
     ],
     gallery: [
       {
-        src: '/img/verhalen/emma-zonsondergang-zee-curacao.jpg',
+        src: '/img/verhalen/elke-zonsondergang-zee-curacao.jpg',
         caption: 'Kijken hoe de zon in de zee zakt, met een spelletje of een frietje',
         half: true,
       },
       {
-        src: '/img/verhalen/emma-koloniale-huizen-pietermaai.jpg',
+        src: '/img/verhalen/elke-koloniale-huizen-pietermaai.jpg',
         caption: 'Wandelen door Pietermaai tussen de pastelkleurige gevels',
         half: true,
       },
       {
-        src: '/img/verhalen/emma-muurschildering-curacao.jpg',
+        src: '/img/verhalen/elke-muurschildering-curacao.jpg',
         caption: 'Altijd iets nieuws om te ontdekken op het eiland',
         half: true,
       },
