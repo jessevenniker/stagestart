@@ -3,15 +3,16 @@ import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
 import SEO from '../components/SEO'
 import LastChecked from '../components/LastChecked'
+import LastCheckedBanner from '../components/LastCheckedBanner'
 import ClaimLabel from '../components/ClaimLabel'
 import RelatedPages from '../components/RelatedPages'
 import ReadingProgress from '../components/ReadingProgress'
 import { articleSchema } from '../utils/schema'
 
 const RELATED = [
-  { to: '/wonen', label: 'Wonen', desc: 'Wijken vergeleken op huurprijs en bereik.' },
-  { to: '/auto', label: 'Auto', desc: 'Beslisboom: wel of geen auto nodig.' },
-  { to: '/voor-vertrek', label: 'Voor vertrek', desc: 'Eenmalige kosten in het stappenplan.' },
+  { to: '/wonen', label: 'Wonen: wijken op huurprijs vergeleken', desc: 'Zes wijken vergeleken op huur, bereik en sfeer.' },
+  { to: '/auto', label: 'Auto: beslisboom huur of delen?', desc: 'Wanneer een eigen auto nodig is en wanneer delen werkt.' },
+  { to: '/voor-vertrek', label: 'Voor vertrek: eenmalige opstartkosten', desc: 'Alle eenmalige kosten in het stappenplan van 8 weken.' },
 ]
 
 const SCHEMA = articleSchema({
@@ -76,6 +77,12 @@ export default function Kosten() {
       />
 
       <div className="max-w-5xl mx-auto px-5 pb-16">
+
+        <LastCheckedBanner
+          date="2026-04-16"
+          bron="Immigratiedienst Curaçao + DUO"
+          bronUrl="https://immigrationcur.org/dep/studie-stage/"
+        />
 
         {/* Eenmalige kosten */}
         <section className="mb-14">

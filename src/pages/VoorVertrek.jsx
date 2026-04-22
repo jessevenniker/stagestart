@@ -9,9 +9,9 @@ import { howToSchema } from '../utils/schema'
 import { trackEvent } from '../utils/plausible'
 
 const RELATED = [
-  { to: '/vergunning', label: 'Vergunning', desc: 'Studie/stage en Verklaring van Rechtswege uitgelegd.' },
-  { to: '/kosten', label: 'Kosten', desc: 'Wat alles bij elkaar realistisch kost.' },
-  { to: '/eerste-week', label: 'Eerste week', desc: 'Wat je doet zodra je geland bent.' },
+  { to: '/vergunning', label: 'Stagevergunning: €263 en 4 maanden', desc: 'Studie/stage en Verklaring van Rechtswege uitgelegd.' },
+  { to: '/kosten', label: 'Kosten stage Curaçao per maand', desc: 'Wat alles bij elkaar realistisch kost, inclusief buffer.' },
+  { to: '/eerste-week', label: 'Eerste week: dag-voor-dag plan', desc: 'Wat je doet zodra je geland bent, van SIM-kaart tot supermarkt.' },
 ]
 
 const STAPPEN = [

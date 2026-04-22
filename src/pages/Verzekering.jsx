@@ -7,9 +7,9 @@ import RelatedPages from '../components/RelatedPages'
 import { articleSchema } from '../utils/schema'
 
 const RELATED = [
-  { to: '/voor-vertrek', label: 'Voor vertrek', desc: 'Polisblad als verplicht document voor de aanvraag.' },
-  { to: '/vergunning', label: 'Vergunning', desc: 'Studie/stage en Verklaring van Rechtswege.' },
-  { to: '/auto', label: 'Auto', desc: 'Autoverzekering en eigen risico op Curaçao.' },
+  { to: '/voor-vertrek', label: 'Voor vertrek: polisblad als verplicht document', desc: 'Polisblad Curaçao-dekking is onderdeel van de vergunningaanvraag.' },
+  { to: '/vergunning', label: 'Stagevergunning Curaçao: €263', desc: 'Studie/stage en Verklaring van Rechtswege uitgelegd.' },
+  { to: '/auto', label: 'Auto huren: verzekering en eigen risico', desc: 'Autoverzekering, eigen risico en schadeprocedure op Curaçao.' },
 ]
 
 const SCHEMA = articleSchema({

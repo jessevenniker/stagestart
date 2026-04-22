@@ -8,9 +8,9 @@ import RelatedPages from '../components/RelatedPages'
 import { articleSchema } from '../utils/schema'
 
 const RELATED = [
-  { to: '/wonen', label: 'Wonen', desc: 'Wijk bepaalt of een auto strikt nodig is.' },
-  { to: '/eerste-week', label: 'Eerste week', desc: 'Eerste autorit, route en tanken.' },
-  { to: '/kosten', label: 'Kosten', desc: 'Auto als grootste flexibele post in je budget.' },
+  { to: '/wonen', label: 'Wonen: wijk bepaalt autobehoefte', desc: 'Jan Thiel, Piscadera of Pietermaai vraagt elk iets anders qua vervoer.' },
+  { to: '/eerste-week', label: 'Eerste autorit, route en tanken', desc: 'Wat je in week één moet weten over rijden op Curaçao.' },
+  { to: '/kosten', label: 'Kosten: auto als flexibele post', desc: 'Auto als grootste flexibele post in je maandbudget.' },
 ]
 
 const SCHEMA = articleSchema({

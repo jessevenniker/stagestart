@@ -4,14 +4,15 @@ import SEO from '../components/SEO'
 import { Link } from 'react-router-dom'
 import ClaimLabel from '../components/ClaimLabel'
 import LastChecked from '../components/LastChecked'
+import LastCheckedBanner from '../components/LastCheckedBanner'
 import RelatedPages from '../components/RelatedPages'
 import ReadingProgress from '../components/ReadingProgress'
 import { articleSchema, faqSchema } from '../utils/schema'
 
 const RELATED = [
-  { to: '/auto', label: 'Auto', desc: 'Wijk en stage-locatie bepalen of je een auto nodig hebt.' },
-  { to: '/kosten', label: 'Kosten', desc: 'Huur als grootste maandlast in je budget.' },
-  { to: '/eerste-week', label: 'Eerste week', desc: 'Wat je in je woning moet checken bij aankomst.' },
+  { to: '/auto', label: 'Auto nodig vanuit jouw wijk?', desc: 'Wijk en stage-locatie bepalen of een auto strikt nodig is.' },
+  { to: '/kosten', label: 'Kosten: huur als grootste maandlast', desc: 'Huurprijzen verwerkt in een maandbudget plus eenmalige opstartkosten.' },
+  { to: '/eerste-week', label: 'Eerste week in je nieuwe woning', desc: 'Wat je in je woning moet checken bij aankomst, inclusief Pagatinu.' },
 ]
 
 /**
@@ -198,6 +199,11 @@ export default function Wonen() {
       />
 
       <div className="max-w-5xl mx-auto px-5 pb-16">
+
+        <LastCheckedBanner
+          date="2026-04-16"
+          bron="Eigen redactie + ervaringen stagiairs"
+        />
 
         {/* Woonvormen introductie: vangt long-tail zoektermen als
             'stagehuis curacao', 'appartement curacao stage', 'studentenhuis',

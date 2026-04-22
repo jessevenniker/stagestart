@@ -3,14 +3,15 @@ import PageHero from '../components/PageHero'
 import SEO from '../components/SEO'
 import ClaimLabel from '../components/ClaimLabel'
 import LastChecked from '../components/LastChecked'
+import LastCheckedBanner from '../components/LastCheckedBanner'
 import RelatedPages from '../components/RelatedPages'
 import ReadingProgress from '../components/ReadingProgress'
 import { articleSchema } from '../utils/schema'
 
 const RELATED = [
-  { to: '/voor-vertrek', label: 'Voor vertrek', desc: 'Documenten en stappen in de juiste volgorde.' },
-  { to: '/verzekering', label: 'Verzekering', desc: 'Polisblad met dekking voor Curaçao is onderdeel van de aanvraag.' },
-  { to: '/bronnen', label: 'Bronnen', desc: 'Elke claim met bron en datum, voor controle.' },
+  { to: '/voor-vertrek', label: 'Voor vertrek: documenten op volgorde', desc: 'VOG, paspoort, geboorteakte en vergunning in de juiste volgorde.' },
+  { to: '/verzekering', label: 'Verzekering: polisblad voor de aanvraag', desc: 'Polisblad met dekking voor Curaçao is onderdeel van de vergunningsaanvraag.' },
+  { to: '/bronnen', label: 'Bronnen: elke claim met datum en bron', desc: 'Het volledige claim-register, publiek controleerbaar.' },
 ]
 
 const SCHEMA = articleSchema({
@@ -33,6 +34,12 @@ export default function Vergunning() {
       />
 
       <div className="max-w-5xl mx-auto px-5 pb-16">
+
+        <LastCheckedBanner
+          date="2026-04-16"
+          bron="Immigratiedienst Curaçao"
+          bronUrl="https://immigrationcur.org/dep/studie-stage/"
+        />
 
         {/* Autoriteitssignaal, deze pagina is geen vervanging voor de officiële bron */}
         <div className="card border-l-4 mb-10" style={{ borderLeftColor: '#1A7EC5' }}>

@@ -51,12 +51,12 @@ export const SEO_CONFIG = {
     description: 'Dag 1 tot 7 uitgeschreven: aankomst Hato, SIM-kaart, pinpas testen, boodschappen, eerste stagedag. Plus noodnummers zoals Forensys 9223 om direct op te slaan.',
   },
   '/leven': {
-    title: 'Leven op Curaçao als stagiair',
+    title: 'Leven op Curaçao: cultuur, eten en ritme',
     description: 'Cultuur, taal, eten, stranden en sociale codes op Curaçao. Wat je in maand één gaat voelen en hoe je het sneller thuis krijgt. Geen reisblog.',
   },
   '/werken': {
-    title: 'Werken op Curaçao als stagiair',
-    description: 'Poko poko, hiërarchie, feedback en netwerken op een eiland van 150.000 inwoners.',
+    title: 'Werken op Curaçao: stage en tussenjaar',
+    description: 'Poko poko, hiërarchie, feedback en netwerken op een eiland van 150.000 inwoners. Werkcultuur uitgelegd voor stagiairs én tussenjaar-werkers.',
   },
   '/veiligheid': {
     title: 'Veiligheid Curaçao: gedrag per situatie',
