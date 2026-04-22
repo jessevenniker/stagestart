@@ -33,14 +33,18 @@ const COL2 = [
   { to: '/startgids',     label: 'Gratis startgids' },
 ]
 
-const COL3 = [
+const COL3_PLATFORM = [
   { to: '/over',           label: 'Over StageStart' },
   { to: '/contact',        label: 'Contact' },
+  { to: '/partners',       label: 'Partners' },
   { to: '/partner-worden', label: 'Partner worden' },
   { to: '/bronnen',        label: 'Bronnen & verantwoording' },
-  { to: '/disclaimer',     label: 'Disclaimer / Voorwaarden' },
-  { to: '/privacy',        label: 'Privacyverklaring' },
-  { to: '/cookies',        label: 'Cookieverklaring' },
+]
+
+const COL3_JURIDISCH = [
+  { to: '/disclaimer', label: 'Disclaimer / Voorwaarden' },
+  { to: '/privacy',    label: 'Privacyverklaring' },
+  { to: '/cookies',    label: 'Cookieverklaring' },
 ]
 
 export default function Footer() {
@@ -92,11 +96,11 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Col 3, Juridisch */}
+          {/* Col 3, Over het platform (incl. commercieel) */}
           <div>
-            <p className="text-[10px] font-medium tracking-widest uppercase text-gray-400 mb-3">Juridisch</p>
+            <p className="text-[10px] font-medium tracking-widest uppercase text-gray-400 mb-3">Over het platform</p>
             <ul className="flex flex-col gap-2">
-              {COL3.map(l => (
+              {COL3_PLATFORM.map(l => (
                 <li key={l.to}>
                   <Link to={l.to} className="text-sm text-gray-500 hover:text-dark transition-colors">
                     {l.label}
@@ -109,11 +113,17 @@ export default function Footer() {
 
         <div className="border-t border-gray-100 mt-10 pt-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-3">
           <p className="text-xs text-gray-400">
-            © {new Date().getFullYear()} StageStart Curaçao, stagestartcuracao.nl
+            © {new Date().getFullYear()} StageStart Curaçao, stagestartcuracao.nl · Geen bureau. Geen pakket. Geen verborgen belangen.
           </p>
-          <p className="text-xs text-gray-400">
-            Geen bureau. Geen pakket. Geen verborgen belangen.
-          </p>
+          <ul className="flex flex-wrap gap-x-4 gap-y-1">
+            {COL3_JURIDISCH.map(l => (
+              <li key={l.to}>
+                <Link to={l.to} className="text-xs text-gray-400 hover:text-gray-600 transition-colors">
+                  {l.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </footer>

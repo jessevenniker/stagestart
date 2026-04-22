@@ -81,7 +81,7 @@ const UNDERESTIMATE = [
     num: '03',
     color: '#3EAD6E',
     title: 'Zonnebrand en verzorging zijn duurder op het eiland',
-    desc: 'Factor 50 kost op Curaçao soms het dubbele. Neem voldoende mee vanuit Nederland, plus tandpasta, shampoo en medicijnen.',
+    desc: 'Factor 50 ligt op Curaçao vaak hoger dan in Nederland volgens eerdere stagiairs. Neem voldoende mee, plus tandpasta, shampoo en medicijnen.',
   },
   {
     num: '04',
@@ -338,7 +338,7 @@ export default function Home() {
             </div>
 
             <p className="text-[11px] text-gray-400 leading-relaxed">
-              Inkomsten inclusief OV-vergoeding DUO (€110,95/mnd in 2026). Kosten inclusief ±€50 utilities. Dit vergeten de meeste stagiairs aan te vragen.
+              Inkomsten inclusief OV-vergoeding DUO (€110,95/mnd in 2026, wordt vaak niet aangevraagd). Kosten inclusief ±€50 utilities.
             </p>
             <Link to="/kosten" className="block text-center btn-primary mt-4 text-xs">
               Bekijk uitgebreide kostenpagina →
