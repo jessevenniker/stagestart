@@ -139,7 +139,7 @@ const WIJKEN = [
     auto: 'Handig maar niet noodzakelijk',
     sfeer: 'Residentieel, rustig, veel stagehuizen',
     afstand: '10 min van Willemstad',
-    img: '/img/wijk-mahaai.svg',
+    img: '/img/verhalen/dominique-stagehuis-mahaai.jpg',
     pros: ['Veel stagehuizen in deze buurt', 'Centrale supermarkt (Centrum Supermarkt Mahaai) dichtbij', 'Rustige woonwijk, overzichtelijk', 'Centraal tussen Willemstad en de stranden'],
     cons: ['Geen uitgesproken buurtleven of horeca', 'Minder lokaal karakter dan Pietermaai', 'Voor strand alsnog auto of rit nodig'],
     voor: 'Stagiairs die centraal en rustig willen wonen, in een studentenhuis met medestagiairs, zonder direct in het uitgaansgebied te zitten.',
