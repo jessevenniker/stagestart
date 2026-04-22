@@ -76,6 +76,43 @@ export default function Partners() {
           </div>
         </section>
 
+        {/* Gedragscode: toetsbare rode lijnen vóórdat we partners aannemen.
+            Verplaatst van /over naar hier, waar potentiële partners en
+            kritische lezers ze direct zoeken. */}
+        <section className="mb-10">
+          <h2 className="section-label">Onze gedragscode voor partners</h2>
+          <div className="card border-l-4" style={{ borderLeftColor: '#D4522A' }}>
+            <p className="text-sm text-gray-600 leading-relaxed mb-4">
+              Om de onafhankelijkheid van de redactionele inhoud te bewaken, houden wij vast aan vijf regels. Deze regels zijn <strong className="text-dark">bindend</strong> en worden opgenomen in elk partnercontract.
+            </p>
+            <ul className="flex flex-col gap-2.5 text-sm text-gray-600 leading-relaxed">
+              <li className="flex gap-3">
+                <span className="text-terra shrink-0 font-medium">1.</span>
+                <span><strong className="text-dark">Geen commissie per geboekte stage of doorverwezen lead.</strong> Partners betalen een vaste maandelijkse vergoeding voor zichtbaarheid, geen percentage per conversie.</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-terra shrink-0 font-medium">2.</span>
+                <span><strong className="text-dark">Geen invloed op redactionele content.</strong> Een partnerschap heeft geen enkele invloed op wat wij schrijven over regels, kosten, vergunningen, woonwijken of verzekeringen.</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-terra shrink-0 font-medium">3.</span>
+                <span><strong className="text-dark">Geen betaalde reviews of gesponsorde content in redactionele teksten.</strong> Partnerplaatsingen staan uitsluitend op deze pagina, duidelijk gelabeld als samenwerking.</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-terra shrink-0 font-medium">4.</span>
+                <span><strong className="text-dark">Geen ranking op betaalde basis.</strong> Volgorde van partners binnen een categorie is alfabetisch of op aanmelddatum, nooit op hoogte van vergoeding.</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-terra shrink-0 font-medium">5.</span>
+                <span><strong className="text-dark">Verwijdering bij gegronde klachten.</strong> Bij bewezen misleiding, oplichting of herhaalde klachten zonder verbetering wordt de vermelding verwijderd. Restitutie is uitgesloten (staat in de overeenkomst).</span>
+              </li>
+            </ul>
+            <p className="text-xs text-gray-500 leading-relaxed mt-4 italic">
+              Deze regels gelden vanaf de eerste partner. Zie ook <Link to="/over" className="underline">hoe wij ons geld verdienen</Link> op de Over-pagina.
+            </p>
+          </div>
+        </section>
+
         {/* Status-blok: nog geen partners */}
         <section className="mb-12">
           <div className="bg-cream rounded-2xl p-8">

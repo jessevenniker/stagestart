@@ -99,6 +99,21 @@ export default function Over() {
         </section>
 
         <section className="mb-10">
+          <h2 className="section-label">Hoe wij ons geld verdienen</h2>
+          <div className="card">
+            <p className="text-sm text-gray-600 leading-relaxed mb-3">
+              <strong className="text-dark">Status: pre-revenue.</strong> Op dit moment verdient StageStart Curaçao geen geld. De site wordt gefinancierd vanuit <strong className="text-dark">Jesco Innovation B.V.</strong> terwijl we bouwen.
+            </p>
+            <p className="text-sm text-gray-600 leading-relaxed mb-3">
+              We werken aan een partnermodel op <Link to="/partners" className="text-sky underline">/partners</Link> waarin relevante partijen (huisvesting, vervoer, support) een vaste maandelijkse vergoeding betalen voor een duidelijk gelabelde vermelding. Dat model gaat pas live als we zeker weten dat het onze redactionele onafhankelijkheid niet beschadigt. Daarom: vaste prijs (geen commissie per lead), strikte scheiding tussen redactie en partnerlaag, en publiek controleerbare regels.
+            </p>
+            <p className="text-sm text-gray-600 leading-relaxed">
+              Zie <Link to="/partners" className="text-sky underline">/partners</Link> voor de publieke regels die we onszelf opleggen, en <Link to="/partner-worden" className="text-sky underline">/partner-worden</Link> voor partijen die mee willen doen.
+            </p>
+          </div>
+        </section>
+
+        <section className="mb-10">
           <h2 className="section-label">Feedback en correcties</h2>
           <div className="card">
             <p className="text-sm text-gray-600 leading-relaxed">
