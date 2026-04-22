@@ -219,7 +219,7 @@ export const VERHALEN = [
       },
       {
         src: '/img/verhalen/dominique-boottrip-klein-curacao.jpg',
-        caption: 'Boottrip met de hele groep',
+        caption: 'Dagje op Fuik met het huis',
         layout: 'half',
       },
       {
@@ -266,7 +266,7 @@ export const VERHALEN = [
       'Voor iedereen die dit overweegt: doen. Een half jaar lang dat gevoel van vrijheid meedragen is echt heerlijk, en wat je erover leert van jezelf pak je niet meer uit. Het is geen vakantie, het is een verlenging van je leven waarvan je dacht dat het niet kon.',
     ],
     tip: 'Zorg dat je genoeg spaart voor vertrek en regel van tevoren een auto. Beide maken je eerste maand veel makkelijker.',
-    voorbeeld: true,
+    voorbeeld: false,
     laatste_update: '2026-04-21',
   },
   {
