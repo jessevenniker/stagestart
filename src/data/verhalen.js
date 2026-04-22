@@ -270,9 +270,9 @@ export const VERHALEN = [
     laatste_update: '2026-04-21',
   },
   {
-    slug: 'lieke',
+    slug: 'elke',
     type: 'stage',
-    voornaam: 'Lieke',
+    voornaam: 'Elke',
     opleiding: 'MBO Interieuradviseur',
     periode: 'februari tot juli 2026',
     sector: 'Interieur en woonbranche',
@@ -281,7 +281,7 @@ export const VERHALEN = [
     auto: true,
     budget: '±€1.200 per maand',
     accent: '#3EAD6E',
-    foto: '/img/verhalen/lieke.svg',
+    foto: '/img/verhalen/elke.svg',
     quote: 'In een kleiner huis leer je iedereen sneller en intiemer kennen.',
     persoonlijk: {
       favoriete_spot: 'Zonsondergang op het strand met afhaal en huisgenoten',
