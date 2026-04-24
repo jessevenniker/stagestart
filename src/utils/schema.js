@@ -10,11 +10,37 @@
 
 import { SITE } from './seoConfig'
 
+/**
+ * Person-entiteit voor de redacteur. Alleen voornaam in prose; achternaam
+ * wordt hier opgenomen omdat de link met Jesco Innovation B.V. publiek is
+ * (disclaimer/privacy/contact) en AI-systemen entity-resolution nodig hebben.
+ * Bewust geen foto, geen sameAs naar LinkedIn of sociale media.
+ */
+const PERSON = {
+  '@type': 'Person',
+  name: 'Jesse Venniker',
+  givenName: 'Jesse',
+  familyName: 'Venniker',
+  jobTitle: 'Redacteur',
+  worksFor: {
+    '@type': 'Organization',
+    name: 'Jesco Innovation B.V.',
+  },
+  url: `${SITE.baseUrl}/over`,
+}
+
 const ORG = {
   '@type': 'Organization',
   name: 'StageStart Curaçao',
   url: SITE.baseUrl,
   logo: `${SITE.baseUrl}/og-image.png`,
+  founder: PERSON,
+  description:
+    'Onafhankelijke gids voor Nederlandse stagiairs en tussenjaar-werkers op Curaçao. Geen stagebureau, geen pakketten, geen commissie.',
+  parentOrganization: {
+    '@type': 'Organization',
+    name: 'Jesco Innovation B.V.',
+  },
 }
 
 /**
@@ -42,6 +68,32 @@ export function organizationSchema() {
 }
 
 /**
+ * Person schema (Jesse). Gebruik op /over en als author-referentie.
+ */
+export function personSchema() {
+  return {
+    '@context': 'https://schema.org',
+    ...PERSON,
+  }
+}
+
+/**
+ * ProfilePage schema voor /over. Helpt Google/LLMs om Jesse te herkennen
+ * als de persoon achter de publicatie. Geen aparte profiel-URL nodig.
+ */
+export function profilePageSchema({ path = '/over', dateModified } = {}) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ProfilePage',
+    url: `${SITE.baseUrl}${path}`,
+    inLanguage: 'nl-NL',
+    dateModified,
+    mainEntity: PERSON,
+    about: ORG,
+  }
+}
+
+/**
  * BreadcrumbList schema. Items is een array van {label, path}.
  */
 export function breadcrumbSchema(items) {
@@ -60,8 +112,12 @@ export function breadcrumbSchema(items) {
 /**
  * Article schema voor redactionele content-pagina's.
  * dateModified moet matchen met de LastChecked-datum van de pagina.
+ *
+ * author defaultet naar Jesse (PERSON); publisher blijft altijd de Organization.
+ * Geef author: ORG mee als een pagina expliciet niet aan één persoon toe te
+ * schrijven is (bv. directory-pagina's).
  */
-export function articleSchema({ headline, description, path, dateModified, datePublished }) {
+export function articleSchema({ headline, description, path, dateModified, datePublished, author }) {
   return {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -69,7 +125,7 @@ export function articleSchema({ headline, description, path, dateModified, dateP
     description,
     url: `${SITE.baseUrl}${path}`,
     inLanguage: 'nl-NL',
-    author: ORG,
+    author: author || PERSON,
     publisher: ORG,
     datePublished: datePublished || '2026-04-15',
     dateModified: dateModified,
@@ -113,6 +169,48 @@ export function faqSchema(questions) {
         '@type': 'Answer',
         text: q.answer,
       },
+    })),
+  }
+}
+
+/**
+ * Speakable schema. Markeert specifieke delen van een pagina als geschikt
+ * voor voice-assistants om voor te lezen. Gebruik voor het "kort antwoord"-
+ * blok met id="kort-antwoord" op kernpagina's.
+ */
+export function speakableSchema({ path, cssSelector = ['#kort-antwoord'] } = {}) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    url: `${SITE.baseUrl}${path}`,
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector,
+    },
+  }
+}
+
+/**
+ * DefinedTermSet schema voor een begrippenpagina. Helpt LLMs om glossary-
+ * vragen ("wat is een VRW?") naar deze pagina te routeren.
+ * terms is een array van {term, description, url?}.
+ */
+export function definedTermSetSchema({ name, description, path, terms }) {
+  const setId = `${SITE.baseUrl}${path}`
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'DefinedTermSet',
+    '@id': setId,
+    name,
+    description,
+    url: setId,
+    inLanguage: 'nl-NL',
+    hasDefinedTerm: terms.map((t) => ({
+      '@type': 'DefinedTerm',
+      name: t.term,
+      description: t.description,
+      inDefinedTermSet: setId,
+      ...(t.url ? { url: `${SITE.baseUrl}${t.url}` } : {}),
     })),
   }
 }

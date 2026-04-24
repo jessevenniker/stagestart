@@ -8,7 +8,7 @@ import ShortAnswer from '../components/ShortAnswer'
 import ClaimLabel from '../components/ClaimLabel'
 import RelatedPages from '../components/RelatedPages'
 import ReadingProgress from '../components/ReadingProgress'
-import { articleSchema } from '../utils/schema'
+import { articleSchema, speakableSchema } from '../utils/schema'
 
 const RELATED = [
   { to: '/wonen', label: 'Wonen: wijken op huurprijs vergeleken', desc: 'Zes wijken vergeleken op huur, bereik en sfeer.' },
@@ -16,12 +16,15 @@ const RELATED = [
   { to: '/voor-vertrek', label: 'Voor vertrek: eenmalige opstartkosten', desc: 'Alle eenmalige kosten in het stappenplan van 8 weken.' },
 ]
 
-const SCHEMA = articleSchema({
-  headline: 'Kosten stage Curaçao: realistisch overzicht',
-  description: 'XCG 525 leges, DUO 2026 bedragen, maandlasten en verborgen kosten. Officieel, richtlijn en ervaring apart gelabeld.',
-  path: '/kosten',
-  dateModified: '2026-04-16',
-})
+const SCHEMA = [
+  articleSchema({
+    headline: 'Kosten stage Curaçao: realistisch overzicht',
+    description: 'XCG 525 leges, DUO 2026 bedragen, maandlasten en verborgen kosten. Officieel, richtlijn en ervaring apart gelabeld.',
+    path: '/kosten',
+    dateModified: '2026-04-16',
+  }),
+  speakableSchema({ path: '/kosten' }),
+]
 
 function fmt(n) {
   return '€\u00a0' + Math.round(n).toLocaleString('nl-NL')

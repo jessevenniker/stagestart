@@ -98,6 +98,10 @@ export const SEO_CONFIG = {
     title: 'Bronnen en verantwoording',
     description: 'Elke claim met bron, datum en gevoeligheid. Het reliability framework volledig transparant.',
   },
+  '/begrippen': {
+    title: 'Begrippen stage Curaçao: VRW, XCG, Sedula',
+    description: 'Uitleg van VRW, Sedula, XCG, ANG, VOG, DI Card, Immigratiedienst en andere termen die Nederlandse stagiairs op Curaçao tegenkomen.',
+  },
   '/contact': {
     title: 'Contact',
     description: 'Mail de redactie voor correcties, suggesties of samenwerkingen. Kleine redactie, duidelijke scope, reactie binnen enkele werkdagen.',

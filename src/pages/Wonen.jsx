@@ -8,7 +8,7 @@ import LastCheckedBanner from '../components/LastCheckedBanner'
 import ShortAnswer from '../components/ShortAnswer'
 import RelatedPages from '../components/RelatedPages'
 import ReadingProgress from '../components/ReadingProgress'
-import { articleSchema, faqSchema } from '../utils/schema'
+import { articleSchema, faqSchema, speakableSchema } from '../utils/schema'
 
 const RELATED = [
   { to: '/auto', label: 'Auto nodig vanuit jouw wijk?', desc: 'Wijk en stage-locatie bepalen of een auto strikt nodig is.' },
@@ -107,7 +107,7 @@ const SCHEMA_FAQ = faqSchema([
   },
 ])
 
-const SCHEMA = [SCHEMA_ARTICLE, SCHEMA_FAQ]
+const SCHEMA = [SCHEMA_ARTICLE, SCHEMA_FAQ, speakableSchema({ path: '/wonen' })]
 
 const WIJKEN = [
   {

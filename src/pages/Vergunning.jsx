@@ -7,7 +7,7 @@ import LastCheckedBanner from '../components/LastCheckedBanner'
 import ShortAnswer from '../components/ShortAnswer'
 import RelatedPages from '../components/RelatedPages'
 import ReadingProgress from '../components/ReadingProgress'
-import { articleSchema } from '../utils/schema'
+import { articleSchema, speakableSchema } from '../utils/schema'
 
 const RELATED = [
   { to: '/voor-vertrek', label: 'Voor vertrek: documenten op volgorde', desc: 'VOG, paspoort, geboorteakte en vergunning in de juiste volgorde.' },
@@ -15,12 +15,15 @@ const RELATED = [
   { to: '/bronnen', label: 'Bronnen: elke claim met datum en bron', desc: 'Het volledige claim-register, publiek controleerbaar.' },
 ]
 
-const SCHEMA = articleSchema({
-  headline: 'Stagevergunning Curaçao: studie/stage en Verklaring van Rechtswege',
-  description: 'Studie/stage en Verklaring van Rechtswege uitgelegd volgens de officiële Immigratiedienst Curaçao. Twee aparte informatiestromen, geen verwarring.',
-  path: '/vergunning',
-  dateModified: '2026-04-16',
-})
+const SCHEMA = [
+  articleSchema({
+    headline: 'Stagevergunning Curaçao: studie/stage en Verklaring van Rechtswege',
+    description: 'Studie/stage en Verklaring van Rechtswege uitgelegd volgens de officiële Immigratiedienst Curaçao. Twee aparte informatiestromen, geen verwarring.',
+    path: '/vergunning',
+    dateModified: '2026-04-16',
+  }),
+  speakableSchema({ path: '/vergunning' }),
+]
 
 export default function Vergunning() {
   return (

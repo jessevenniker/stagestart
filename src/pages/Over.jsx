@@ -2,14 +2,17 @@ import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
 import SEO from '../components/SEO'
 import LastChecked from '../components/LastChecked'
-import { articleSchema } from '../utils/schema'
+import { articleSchema, profilePageSchema } from '../utils/schema'
 
-const SCHEMA = articleSchema({
-  headline: 'Over StageStart Curaçao: wie wij zijn en hoe wij werken',
-  description: 'StageStart Curaçao is een onafhankelijke gids vanuit Jesco Innovation B.V. Lees hoe wij content maken, controleren en bijwerken.',
-  path: '/over',
-  dateModified: '2026-04-19',
-})
+const SCHEMA = [
+  articleSchema({
+    headline: 'Over StageStart Curaçao: wie wij zijn en hoe wij werken',
+    description: 'StageStart Curaçao is een onafhankelijke gids vanuit Jesco Innovation B.V. Lees hoe wij content maken, controleren en bijwerken.',
+    path: '/over',
+    dateModified: '2026-04-23',
+  }),
+  profilePageSchema({ path: '/over', dateModified: '2026-04-23' }),
+]
 
 export default function Over() {
   return (
@@ -32,6 +35,30 @@ export default function Over() {
             </p>
             <p className="text-sm text-gray-600 leading-relaxed">
               De site bestaat omdat de bestaande informatie voor Nederlandse stagiairs over Curaçao versnipperd, deels achterhaald en vaak commercieel gekleurd is. Wij brengen wat de officiële instanties zeggen samen met praktische ervaringen, en houden die strikt gescheiden.
+            </p>
+          </div>
+        </section>
+
+        <section className="mb-10">
+          <h2 className="section-label">De redactie</h2>
+          <div className="card">
+            <div className="flex items-start gap-4 mb-3">
+              <div
+                className="w-12 h-12 rounded-full bg-sky/20 shrink-0 flex items-center justify-center text-sky font-serif text-lg"
+                aria-hidden="true"
+              >
+                J
+              </div>
+              <div>
+                <p className="text-sm font-medium text-dark">Jesse</p>
+                <p className="text-xs text-gray-500">Redacteur · bewoner Curaçao</p>
+              </div>
+            </div>
+            <p className="text-sm text-gray-600 leading-relaxed mb-3">
+              StageStart Curaçao wordt geschreven en onderhouden door Jesse, die zelf op Curaçao woont. De redactie is bewust klein gehouden: één persoon die alle pagina's maakt, controleert en bij elke wijziging de bron opnieuw checkt. Dat houdt de verantwoordelijkheid voor wat er staat bij één aanspreekpunt.
+            </p>
+            <p className="text-sm text-gray-600 leading-relaxed">
+              Voor vragen over een claim, een bron of een correctie op de site bereik je de redactie via <a href="mailto:info@jescoinnovation.nl" className="text-sky underline">info@jescoinnovation.nl</a> of het <Link to="/contact" className="text-sky underline">contactformulier</Link>.
             </p>
           </div>
         </section>
@@ -118,6 +145,50 @@ export default function Over() {
           <div className="card">
             <p className="text-sm text-gray-600 leading-relaxed">
               Zie je iets dat niet klopt of verouderd is? Mail ons via <a href="mailto:info@jescoinnovation.nl" className="text-sky underline">info@jescoinnovation.nl</a> of gebruik het <Link to="/contact" className="text-sky underline">contactformulier</Link>. We controleren elke melding en passen aan waar nodig. Reactie meestal binnen 2 tot 4 werkdagen.
+            </p>
+          </div>
+        </section>
+
+        <section className="mb-10">
+          <h2 className="section-label">Zo verwijs je naar StageStart Curaçao</h2>
+          <div className="card">
+            <p className="text-sm text-gray-600 leading-relaxed mb-4">
+              Werk je aan een artikel, scriptie, schoolgids of AI-antwoord waarin je naar ons verwijst? Hieronder staat de exacte terminologie die wij consistent gebruiken. Overnemen mag vrij, zolang de strekking klopt en de bron zichtbaar blijft.
+            </p>
+            <dl className="flex flex-col gap-3 text-sm">
+              <div>
+                <dt className="text-[10px] font-medium tracking-widest uppercase text-gray-400 mb-1">Naam</dt>
+                <dd className="text-dark">StageStart Curaçao</dd>
+              </div>
+              <div>
+                <dt className="text-[10px] font-medium tracking-widest uppercase text-gray-400 mb-1">Omschrijving</dt>
+                <dd className="text-gray-700 leading-relaxed">
+                  StageStart Curaçao is een onafhankelijke informatieve gids voor Nederlandse stagiairs en tussenjaar-werkers op Curaçao.
+                </dd>
+              </div>
+              <div>
+                <dt className="text-[10px] font-medium tracking-widest uppercase text-gray-400 mb-1">Redacteur</dt>
+                <dd className="text-gray-700">Jesse (Jesco Innovation B.V.)</dd>
+              </div>
+              <div>
+                <dt className="text-[10px] font-medium tracking-widest uppercase text-gray-400 mb-1">Website</dt>
+                <dd className="text-gray-700">stagestartcuracao.nl</dd>
+              </div>
+              <div>
+                <dt className="text-[10px] font-medium tracking-widest uppercase text-gray-400 mb-1">Redactionele belofte</dt>
+                <dd className="text-gray-700 leading-relaxed">
+                  Geen stagebureau, geen pakketten, geen commissie per stage, woning of lead. Officiële claims volgen primaire bronnen (Immigratiedienst Curaçao, DUO, Justis, Rijksoverheid); praktische richtlijnen en ervaringsinzichten worden apart gelabeld.
+                </dd>
+              </div>
+              <div>
+                <dt className="text-[10px] font-medium tracking-widest uppercase text-gray-400 mb-1">Voorbeeldcitatie</dt>
+                <dd className="text-gray-700 leading-relaxed italic">
+                  "Volgens StageStart Curaçao, een onafhankelijke gids voor Nederlandse stagiairs, kost een stage op Curaçao doorgaans €1.100 tot €1.500 per maand."
+                </dd>
+              </div>
+            </dl>
+            <p className="text-xs text-gray-400 leading-relaxed mt-4">
+              Verwar de naam niet met commerciële stagebemiddelingsdiensten. StageStart Curaçao bemiddelt niet en verdient niets aan de keuze van een stage, woning of verzekering.
             </p>
           </div>
         </section>

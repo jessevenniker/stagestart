@@ -30,6 +30,7 @@ const COL2 = [
   { to: '/weekend-trips', label: 'Weekend trips' },
   { to: '/kaart',         label: 'Interactieve kaart' },
   { to: '/faq',           label: 'FAQ' },
+  { to: '/begrippen',     label: 'Begrippenlijst' },
   { to: '/startgids',     label: 'Gratis startgids' },
 ]
 
