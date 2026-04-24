@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import ClaimLabel from '../components/ClaimLabel'
 import LastChecked from '../components/LastChecked'
 import LastCheckedBanner from '../components/LastCheckedBanner'
+import ShortAnswer from '../components/ShortAnswer'
 import RelatedPages from '../components/RelatedPages'
 import ReadingProgress from '../components/ReadingProgress'
 import { articleSchema, faqSchema } from '../utils/schema'
@@ -203,6 +204,19 @@ export default function Wonen() {
         <LastCheckedBanner
           date="2026-04-16"
           bron="Eigen redactie + ervaringen stagiairs"
+        />
+
+        <ShortAnswer
+          body={
+            <>
+              <p className="mb-2">
+                De meeste stagiairs op Curaçao wonen in één van zes wijken: <strong>Pietermaai</strong>, <strong>Salinja/Otrobanda</strong>, <strong>Mahaai</strong>, <strong>Piscadera</strong>, <strong>Jan Thiel</strong> of <strong>Bapor Kibra</strong>. Zonder auto zijn Pietermaai, Salinja/Otrobanda en Mahaai meestal praktischer. Jan Thiel en Bapor Kibra bieden meer strand en rust maar vragen vrijwel altijd om een auto.
+              </p>
+              <p>
+                Reken voor een kamer in een stagehuis op <strong>€ 375 – € 550</strong> per maand, voor een studio vanaf € 425 en voor een appartement vanaf € 475, vaak exclusief utilities (± € 50/mnd). Dit is een praktische richtlijn op basis van redactie en stagiair-ervaringen, geen officieel tarief.
+              </p>
+            </>
+          }
         />
 
         {/* Woonvormen introductie: vangt long-tail zoektermen als

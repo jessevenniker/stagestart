@@ -20,8 +20,10 @@ export default function LastCheckedBanner({ date, bron, bronUrl }) {
     <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-gray-500 mb-8 pb-4 border-b border-gray-100">
       <span className="inline-flex items-center gap-1.5">
         <span className="w-1.5 h-1.5 rounded-full bg-sage shrink-0" aria-hidden="true" />
-        <span className="font-medium text-gray-700">Bijgewerkt {formatted}</span>
+        <span className="font-medium text-gray-700">Door Jesse</span>
       </span>
+      <span className="text-gray-300" aria-hidden="true">·</span>
+      <span>bijgewerkt {formatted}</span>
       {bron && (
         <>
           <span className="text-gray-300" aria-hidden="true">·</span>

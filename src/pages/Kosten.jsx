@@ -4,6 +4,7 @@ import PageHero from '../components/PageHero'
 import SEO from '../components/SEO'
 import LastChecked from '../components/LastChecked'
 import LastCheckedBanner from '../components/LastCheckedBanner'
+import ShortAnswer from '../components/ShortAnswer'
 import ClaimLabel from '../components/ClaimLabel'
 import RelatedPages from '../components/RelatedPages'
 import ReadingProgress from '../components/ReadingProgress'
@@ -82,6 +83,19 @@ export default function Kosten() {
           date="2026-04-16"
           bron="Immigratiedienst Curaçao + DUO"
           bronUrl="https://immigrationcur.org/dep/studie-stage/"
+        />
+
+        <ShortAnswer
+          body={
+            <>
+              <p className="mb-2">
+                Een stage op Curaçao kost voor Nederlandse stagiairs doorgaans <strong>€ 1.100 – € 1.500 per maand</strong>, exclusief eenmalige vertrek- en borgkosten van circa <strong>€ 1.700 – € 3.300</strong>. De grootste maandposten zijn huur (€ 375 – € 1.000), auto of autodelen (€ 0 – € 475), boodschappen (€ 125 – € 200) en verzekering (€ 60 – € 120).
+              </p>
+              <p>
+                Aan inkomstenkant is de stagevergoeding op Curaçao <strong>niet verplicht</strong> (gemiddeld ± € 375/mnd), maar je DUO-basisbeurs en OV-vergoeding lopen door. Veel stagiairs vergeten de OV-vergoeding van € 110,95 per maand aan te vragen.
+              </p>
+            </>
+          }
         />
 
         {/* Eenmalige kosten */}

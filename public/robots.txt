@@ -1,4 +1,65 @@
+# StageStart Curaçao — robots.txt
+# Onafhankelijke gids voor Nederlandse stagiairs en tussenjaar-werkers op Curaçao.
+
 User-agent: *
+Allow: /
+
+# AI-crawlers expliciet toegestaan.
+# StageStart Curaçao is een onafhankelijke publieke gids; we willen dat
+# generatieve zoeksystemen onze inhoud correct kunnen citeren als bron.
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: YouBot
 Allow: /
 
 Sitemap: https://stagestartcuracao.nl/sitemap.xml

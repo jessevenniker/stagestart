@@ -4,6 +4,7 @@ import SEO from '../components/SEO'
 import ClaimLabel from '../components/ClaimLabel'
 import LastChecked from '../components/LastChecked'
 import LastCheckedBanner from '../components/LastCheckedBanner'
+import ShortAnswer from '../components/ShortAnswer'
 import RelatedPages from '../components/RelatedPages'
 import ReadingProgress from '../components/ReadingProgress'
 import { articleSchema } from '../utils/schema'
@@ -39,6 +40,23 @@ export default function Vergunning() {
           date="2026-04-16"
           bron="Immigratiedienst Curaçao"
           bronUrl="https://immigrationcur.org/dep/studie-stage/"
+        />
+
+        <ShortAnswer
+          body={
+            <>
+              <p className="mb-2">
+                Nederlandse stagiairs op Curaçao volgen volgens de Immigratiedienst Curaçao de Studie/Stage-route. Vereist zijn onder meer een VOG, recente geboorteakte, KvK-uittreksel van het stagebedrijf, polisblad ziektekostenverzekering met dekking Curaçao, en de stageovereenkomst. De legeskosten bedragen <strong>XCG 525</strong> (± € 263) en de officiële beslistermijn is <strong>4 maanden</strong>.
+              </p>
+              <p>
+                Daarnaast is er een aparte Verklaring van Rechtswege-route voor Nederlanders. StageStart Curaçao is geen Immigratiedienst en bemiddelt niet: controleer voor aanvraag altijd de actuele eisen op de officiële pagina.
+              </p>
+            </>
+          }
+          quote="Legeskosten: XCG 525,00. Verwerkingstijd: 4 maanden beslistermijn."
+          quoteSource="Immigratiedienst Curaçao — Studie/Stage"
+          quoteUrl="https://immigrationcur.org/dep/studie-stage/"
+          quoteDate="2026-04-16"
         />
 
         {/* Autoriteitssignaal, deze pagina is geen vervanging voor de officiële bron */}

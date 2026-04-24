@@ -24,7 +24,7 @@ const STRANDEN = [
   {
     naam: 'Cas Abao Beach',
     type: 'zand', entree: 'betaald', snorkelen: true, sfeer: 'gezellig',
-    desc: 'Lang wit strand, vaak in de top van beste Caribische stranden. Strandbar, duikshop en iconische steiger om vanaf te springen. Regelmatige stop van het StageStart-team.',
+    desc: 'Lang wit strand, vaak in de top van beste Caribische stranden. Strandbar, duikshop en iconische steiger om vanaf te springen. Regelmatige stop van het StageStart Curaçao-team.',
     faciliteiten: 'Strandbar, duikshop, snorkelverhuur, toiletten, douches, stoelverhuur',
     snorkelNote: 'Bekend voor shore diving en snorkelen langs het rif.',
     coords: [12.2283, -69.0922],

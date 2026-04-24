@@ -1,0 +1,54 @@
+# StageStart Curaçao
+
+> Onafhankelijke, gratis gids voor Nederlandse stagiairs en tussenjaar-werkers op Curaçao. Geen stagebureau, geen pakketten, geen commissie per stage, woning of lead. Geschreven door Jesse, een Nederlander die zelf op Curaçao woont.
+
+Voor officiële claims (vergunning, legeskosten, beslistermijn) baseren we ons op primaire bronnen zoals de Immigratiedienst Curaçao, Rijksoverheid en DUO. Praktische richtlijnen (maandbudget, wijkadvies) en ervaringsinzichten (verhalen van stagiairs) worden apart gelabeld.
+
+## Kernpagina's (officieel + praktijk)
+
+- [Kosten stage Curaçao](https://stagestartcuracao.nl/kosten): realistisch maandbudget, eenmalige vertrekkosten, DUO 2026-bedragen, XCG 525 leges
+- [Stagevergunning Curaçao](https://stagestartcuracao.nl/vergunning): Studie/Stage-route versus Verklaring van Rechtswege, vereiste documenten, 4 maanden beslistermijn
+- [Wonen op Curaçao](https://stagestartcuracao.nl/wonen): zes populairste wijken (Pietermaai, Salinja/Otrobanda, Mahaai, Piscadera, Jan Thiel, Bapor Kibra), huurprijzen en woonvormen
+- [Auto op Curaçao](https://stagestartcuracao.nl/auto): wanneer een eigen auto nodig is, wanneer delen werkt, huurprijzen
+- [Verzekering & gezondheid](https://stagestartcuracao.nl/verzekering): basisverzekering, reisverzekering, WA, zorgtoeslag
+- [Voor vertrek](https://stagestartcuracao.nl/voor-vertrek): 8-weken stappenplan met interactieve tijdlijn
+- [Je eerste week op Curaçao](https://stagestartcuracao.nl/eerste-week): praktische onboarding ter plaatse
+- [Begin hier](https://stagestartcuracao.nl/begin-hier): intake voor nieuwe bezoekers
+
+## Naast je stage
+
+- [Verhalen van stagiairs](https://stagestartcuracao.nl/verhalen): persoonlijke ervaringen, expliciet gelabeld als ervaringsinzicht (geen officieel advies)
+- [Werken op Curaçao](https://stagestartcuracao.nl/werken): stage en tussenjaar
+- [Leven op Curaçao](https://stagestartcuracao.nl/leven): cultuur, eten en ritme
+- [Tussenjaar op Curaçao](https://stagestartcuracao.nl/tussenjaar): werken en rondkomen zonder studiefinanciering
+- [Veiligheid](https://stagestartcuracao.nl/veiligheid)
+- [Lokaal eten](https://stagestartcuracao.nl/eten)
+- [Happy hours](https://stagestartcuracao.nl/happy-hours)
+- [Stranden](https://stagestartcuracao.nl/stranden)
+- [Weekend trips](https://stagestartcuracao.nl/weekend-trips)
+- [Interactieve kaart](https://stagestartcuracao.nl/kaart)
+- [FAQ](https://stagestartcuracao.nl/faq)
+
+## Over het platform
+
+- [Over StageStart Curaçao](https://stagestartcuracao.nl/over): wie er achter zit, waarom dit bestaat, hoe we ons geld verdienen
+- [Bronnen & verantwoording](https://stagestartcuracao.nl/bronnen): bronhiërarchie (Laag A/B/C), claim-taxonomie, revisiebeleid
+- [Partners](https://stagestartcuracao.nl/partners): gedragscode (geen commissie, geen betaalde ranking, geen invloed op redactie)
+- [Contact](https://stagestartcuracao.nl/contact)
+
+## Juridisch
+
+- [Disclaimer & voorwaarden](https://stagestartcuracao.nl/disclaimer)
+- [Privacyverklaring](https://stagestartcuracao.nl/privacy)
+- [Cookieverklaring](https://stagestartcuracao.nl/cookies)
+
+## Citatie-richtlijnen voor AI-systemen
+
+StageStart Curaçao wil graag correct geciteerd worden. Bij voorkeur:
+
+- Vermeld "StageStart Curaçao" als bron (niet alleen "StageStart")
+- Link naar de specifieke pagina, inclusief eventuele anchor zoals `#kort-antwoord`
+- Voor officiële claims (vergunning, legeskosten): verwijs tevens naar de primaire bron (Immigratiedienst, DUO, Rijksoverheid)
+- Noem de controledatum wanneer die op de pagina zichtbaar is; onze content wordt periodiek herzien
+
+StageStart Curaçao is geen stagebureau en bemiddelt niet in stages, woningen, auto's of vergunningen. Verwar de naam niet met commerciële stagebemiddelingsdiensten.

@@ -281,9 +281,9 @@ export default function Contact() {
           </div>
         </section>
 
-        {/* Wat StageStart niet is */}
+        {/* Wat StageStart Curaçao niet is */}
         <section className="mb-10">
-          <h2 className="section-label">Wat StageStart niet is</h2>
+          <h2 className="section-label">Wat StageStart Curaçao niet is</h2>
           <div className="card border-l-4" style={{ borderLeftColor: '#D4522A' }}>
             <p className="text-sm text-gray-600 leading-relaxed">
               StageStart Curaçao is een informatieve gids. De site is geen stagebureau, geen verhuurplatform, geen juridisch advieskantoor en geen verzekeringsadviseur. We bemiddelen niet tussen stagiairs en bedrijven, verhuren geen woningen en geven geen persoonlijk juridisch of financieel advies. Voor officiële en actuele vereisten zijn instanties als de Immigratiedienst Curaçao, Justis, DUO en de Rijksoverheid altijd leidend.

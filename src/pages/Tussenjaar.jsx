@@ -220,7 +220,7 @@ export default function Tussenjaar() {
             </div>
             <div className="border-l-4 border-amber-400 bg-amber-50 px-4 py-3 rounded mt-5 text-sm text-gray-700 leading-relaxed">
               <strong className="text-dark">Doe altijd je eigen check op de officiële bron.</strong>{' '}
-              StageStart is een informatiegids, geen juridisch advies. Jouw route hangt af van duur, soort werk en persoonlijke situatie. Check altijd de{' '}
+              StageStart Curaçao is een informatiegids, geen juridisch advies. Jouw route hangt af van duur, soort werk en persoonlijke situatie. Check altijd de{' '}
               <a href="https://immigrationcur.org/dep/van-rechtswege/" target="_blank" rel="noopener noreferrer" className="text-sky underline">Immigratiedienst Curaçao</a>
               {' '}en Toelatingsorganisatie vóór vertrek.
             </div>
@@ -383,7 +383,7 @@ export default function Tussenjaar() {
             </div>
             <div className="card border-l-4" style={{ borderLeftColor: '#1A7EC5' }}>
               <p className="text-sm font-medium text-dark mb-1">2. Verblijfsroute via officiële bron</p>
-              <p className="text-sm text-gray-600 leading-relaxed">Je situatie bepaalt welke route geldt. Doe de check bij de Immigratiedienst, niet alleen op StageStart of Reddit.</p>
+              <p className="text-sm text-gray-600 leading-relaxed">Je situatie bepaalt welke route geldt. Doe de check bij de Immigratiedienst, niet alleen op StageStart Curaçao of Reddit.</p>
             </div>
             <div className="card border-l-4" style={{ borderLeftColor: '#3EAD6E' }}>
               <p className="text-sm font-medium text-dark mb-1">3. Verzekering voor de hele periode</p>
