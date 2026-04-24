@@ -16,6 +16,14 @@
  *
  * Anchor: het blok heeft id="kort-antwoord" zodat AI-systemen en deep-links
  * rechtstreeks naar dit antwoord kunnen verwijzen, bv. /kosten#kort-antwoord.
+ *
+ * LET OP, SPEAKABLE-CONTRACT: pagina's met een ShortAnswer-blok hebben
+ * vaak een SpeakableSpecification-schema dat naar #kort-antwoord wijst.
+ * Google's richtlijn voor speakable is "20-30 seconden voorlezen". Houd
+ * body daarom op maximaal ~90 woorden (één tot twee korte paragrafen,
+ * geen geneste kopjes of lijsten). Uitbreiden met extra secties hoort
+ * buiten dit blok te gebeuren — voeg dan een nieuwe sectie toe, laat
+ * ShortAnswer ongemoeid.
  */
 export default function ShortAnswer({ title = 'Kort antwoord', body, quote, quoteSource, quoteDate, quoteUrl }) {
   const formattedDate = quoteDate
