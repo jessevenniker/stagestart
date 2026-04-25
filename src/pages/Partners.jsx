@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
 import SEO from '../components/SEO'
 import LastChecked from '../components/LastChecked'
+import CommercialScope from '../components/CommercialScope'
 
 // Categorieen die we open hebben staan voor partnervermeldingen.
 // Zodra er een eerste partner bijkomt, vullen we een array per categorie
@@ -37,6 +38,8 @@ export default function Partners() {
         description="Partnerdirectory van StageStart Curaçao. Transparante samenwerkingen met bedrijven die relevant zijn voor stagiairs en tussenjaar-werkers, duidelijk gescheiden van onze redactionele gidsen."
         type="website"
       />
+
+      <CommercialScope position="top" />
 
       <PageHero
         eyebrow="Partners"
@@ -187,6 +190,8 @@ export default function Partners() {
             <Link to="/contact" className="text-sm font-medium text-sky underline self-start shrink-0">Naar contact →</Link>
           </div>
         </div>
+
+        <CommercialScope position="bottom" />
 
         <LastChecked
           date="2026-04-21"

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
 import SEO from '../components/SEO'
 import LastChecked from '../components/LastChecked'
+import CommercialScope from '../components/CommercialScope'
 import { trackEvent } from '../utils/plausible'
 
 const CATEGORIEEN = [
@@ -99,6 +100,9 @@ export default function PartnerWorden() {
         type="website"
         noindex
       />
+
+      <CommercialScope position="top" />
+
       <PageHero
         eyebrow="Partner worden"
         title="Wil je je bedrijf vermelden op StageStart Curaçao?"
@@ -376,6 +380,8 @@ export default function PartnerWorden() {
             </p>
           </div>
         </section>
+
+        <CommercialScope position="bottom" />
 
         <LastChecked
           date="2026-04-19"
