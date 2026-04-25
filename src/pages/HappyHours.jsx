@@ -77,13 +77,13 @@ const HAPPY_HOURS = [
 ]
 
 const DAGEN = [
-  { key: 'ma', label: 'Ma' },
-  { key: 'di', label: 'Di' },
-  { key: 'wo', label: 'Wo' },
-  { key: 'do', label: 'Do' },
-  { key: 'vr', label: 'Vr' },
-  { key: 'za', label: 'Za' },
-  { key: 'zo', label: 'Zo' },
+  { key: 'ma', label: 'Ma', full: 'Maandag' },
+  { key: 'di', label: 'Di', full: 'Dinsdag' },
+  { key: 'wo', label: 'Wo', full: 'Woensdag' },
+  { key: 'do', label: 'Do', full: 'Donderdag' },
+  { key: 'vr', label: 'Vr', full: 'Vrijdag' },
+  { key: 'za', label: 'Za', full: 'Zaterdag' },
+  { key: 'zo', label: 'Zo', full: 'Zondag' },
 ]
 
 const COLORS = ['#D4522A', '#F2B517', '#3EAD6E', '#1A7EC5', '#E8507A']
@@ -170,7 +170,7 @@ export default function HappyHours() {
           {specifiek.length > 0 && (
             <>
               <p className="text-xs font-medium text-dark uppercase tracking-wider mb-3">
-                {DAGEN.find(d => d.key === dag)?.label}dag specials
+                {DAGEN.find(d => d.key === dag)?.full} specials
               </p>
               <div className="grid sm:grid-cols-2 gap-3 mb-8">
                 {specifiek.map((h, i) => (
